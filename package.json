@@ -1,0 +1,66 @@
+{
+  "name": "css-star-rating",
+  "version": "0.0.0",
+  "license": "MIT",
+  "keywords": [
+    "Rating",
+    "Stars",
+    "Star Rating",
+    "Star-Rating",
+    "Starrating",
+    "Icon",
+    "Iconfont",
+    "Fonticons",
+    "Fontawesome",
+    "SVG",
+    "PNG",
+    "JPEG",
+    "CSS",
+    "Pure CSS",
+    "CSS only",
+    "SCSS"
+  ],
+  "description": "Css Star Rating is pure css component written in scss.",
+  "author": "Michael Hladky",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BioPhoton/css-star-rating.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BioPhoton/css-star-rating/issues"
+  },
+  "homepage": "https://github.com/BioPhoton/css-star-rating#readme",
+  "main": "dist/index.js",
+  "devDependencies": {
+    "css-loader": "^0.26.0",
+    "del": "^2.2.2",
+    "extendify": "^1.0.0",
+    "file-loader": "^0.9.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-task-listing": "^1.0.1",
+    "gulp-util": "^3.0.7",
+    "merge-stream": "^1.0.1",
+    "node-sass": "^3.13.0",
+    "sass-loader": "^4.0.2",
+    "sc5-styleguide": "^1.3.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.3",
+    "wrench": "^1.5.9"
+  },
+  "dependencies": {},
+  "scripts": {
+    "clean:dist": "rimraf dist",
+    "build": "gulp css:compile-optimize",
+    "styleguide": "gulp styleguide:watch",
+    "version:bump": "gulp version:bump",
+    "release": "npm publish bower publish"
+  }
+}
