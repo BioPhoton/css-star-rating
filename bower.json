@@ -1,6 +1,6 @@
 {
   "name": "css-star-rating",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Css Star Rating is pure css component written in scss.",
   "main": "dist/css/star-rating.css",
   "authors": [
@@ -35,6 +35,7 @@
     "chore",
     "sc5-styleguide",
     ".gitignore",
+    ".travis.yml",
     ".idea",
     "gulpfile.js"
   ],
