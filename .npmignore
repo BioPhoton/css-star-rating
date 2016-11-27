@@ -1,0 +1,5 @@
+chore
+/sc5-styleguide/
+.gitignore
+.idea
+gulpfile.js
