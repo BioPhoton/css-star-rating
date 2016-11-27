@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+/*CSS Star Rating Elements
+====================================================*/
+
+
+/*
+Star element
+==================================================================*/
+.star {
+  position: relative;
+
+  svg, i, img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    font-style: normal;
+
+    &.star-half,
+    &.star-filled {
+      opacity: 0;
+    }
+  }
+}
+
+/*
+Star Container
+==================================================================*/
+.star-container {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+
+  svg {
+    z-index: 3;
+  }
+  i {
+    z-index: 2;
+  }
+  img {
+    z-index: 1;
+  }
+}
