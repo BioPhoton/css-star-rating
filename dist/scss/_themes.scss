@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+/*theme modifiers
+====================================================*/
+
+.rating {
+  &.theme-kununu {
+    background :red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: $rating-margin-bottom;
+
+    .star-container {
+      display: flex;
+      align-items: center;
+      flex: 0 0 auto;
+
+      .star {
+        position: relative;
+      }
+    }
+  }
+}
