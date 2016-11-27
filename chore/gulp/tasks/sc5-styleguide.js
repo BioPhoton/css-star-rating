@@ -30,7 +30,7 @@ var config = require(path.join('..','..','chore.config'));
 var sc5Folder = 'sc5-styleguide';
 var defaultConfig = {
         srcFolder: [path.join(config.dist,'**','*.scss', config.src,'**','*.scss')],
-        generateSrc:[path.join(config.src,'**','*.scss')],
+        generateSrc:[path.join(config.src,'sc5-styleguide','*.scss')],
         copies:[],
         applyStylesSrc:[path.join(config.dist,'css','star-rating.css')],
         destFolder: path.join(sc5Folder),
@@ -113,7 +113,7 @@ gulp.task('styleguide:watch', ['styleguide:build'], function () {
     helper.log('View the styleguide in your browser under http://localhost:3500/', 'green');
     // Start watching changes and update styleguide whenever changes are detected
     // Styleguide automatically detects existing server instance
-    gulp.watch([path.join('dist','**','*.css')], ['styleguide:build']);
+    gulp.watch([path.join('dist','**','*.css'), path.join('src','sc5-styleguide','*.scss')], ['styleguide:build']);
 });
 
 gulp.task('styleguide:copy',  function(done) {

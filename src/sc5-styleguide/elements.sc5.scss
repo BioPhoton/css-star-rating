@@ -1,42 +1,60 @@
 /*
 Elements
 
-sdfdsfdsfdsfdsfdsfs
+The elements a css star rating component consists of.
+Her you can see the html structure and the combination of elements.
 
-Styleguide 2.0
+Styleguide 3.0
 */
 
 /*
-Value
+Star fill states
 
-Different styles for different rating values.
-Default colors are red for values equal to 2 or below, yellow for 3, and green for 4 or above.
+The Star element visualizes the interactive star element it it's three fill states.
 
-default                 - 0 rating
-.value-0                - 0 rating
-.value-1                - 1 rating
-.value-2                - 2 rating
-.value-3                - 3 rating
-.value-4                - 4 rating
-.value-5                - 5 rating
+none                    - displays the default star element (empty)
+.empty                  - displays the star element as empty
+.half                   - displays the star element as half filled
+.filled                 - displays the star element as filled
 
 markup:
-<div class="rating {$modifiers}">
-    <div class="star-container">
-        <div class="star" ng-repeat="i in [1,2,3,4,5]">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
+<div class="star {$modifiers}">
+  <svg class="star-empty">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+  </svg>
+  <svg class="star-half">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+  </svg>
+  <svg class="star-filled">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+  </svg>
 </div>
 
+Styleguide 3.1
+*/
 
-Styleguide 2.2
+/*
+Star colors
+
+The different star colors.
+
+.default           - Stars is colored default
+.positive          - Stars is colored positive
+.middle            - Stars is colored middle
+.negative          - Stars is colored negative
+
+markup:
+<div class="star filled {$modifiers}">
+  <svg class="star-empty">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+  </svg>
+  <svg class="star-half">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+  </svg>
+  <svg class="star-filled">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+  </svg>
+</div>
+
+Styleguide 3.2
 */

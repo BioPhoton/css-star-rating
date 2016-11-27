@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
-
 /*CSS Star Rating Elements
 ====================================================*/
-
 
 /*
 Star element
 ==================================================================*/
 .star {
   position: relative;
+  width: $default-star-width;
+  height: $default-star-height;
 
   svg, i, img {
     position: absolute;
@@ -24,6 +24,95 @@ Star element
     &.star-half,
     &.star-filled {
       opacity: 0;
+    }
+  }
+
+  i {
+    font-size: $default-star-font-size;
+    line-height: $default-star-line-height;
+    margin-left: -1px;
+  }
+  /*
+  Fill states
+  ==================================================================*/
+  &.empty {
+    svg, i, img {
+      &.star-half,
+      &.star-filled {
+        opacity: 0;
+      }
+      &.star-empty {
+        opacity: 1;
+      }
+    }
+  }
+  &.half {
+    svg, i, img {
+      &.star-filled,
+      &.star-empty {
+        opacity: 0;
+      }
+      &.star-half {
+        opacity: 1;
+      }
+    }
+  }
+  &.filled {
+    svg, i, img {
+      &.star-empty,
+      &.star-filled {
+        opacity: 0;
+      }
+      &.star-filled {
+        opacity: 1;
+      }
+    }
+  }
+  /*
+  Colors
+  ==================================================================*/
+  &.default {
+    svg {
+      fill: $color-default-rating;
+    }
+    i {
+      color: $color-default-rating;
+    }
+    img {
+      color: $color-default-rating;
+    }
+  }
+  &.negative {
+    svg {
+      fill: $color-negative-rating;
+    }
+    i {
+      color: $color-negative-rating;
+    }
+    img {
+      color: $color-negative-rating;
+    }
+  }
+  &.middle {
+    svg {
+      fill: $color-middle-rating;
+    }
+    i {
+      color: $color-middle-rating;
+    }
+    img {
+      color: $color-middle-rating;
+    }
+  }
+  &.positive {
+    svg {
+      fill: $color-positive-rating;
+    }
+    i {
+      color: $color-positive-rating;
+    }
+    img {
+      color: $color-positive-rating;
     }
   }
 }
