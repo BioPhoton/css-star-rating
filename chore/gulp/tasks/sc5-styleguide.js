@@ -28,7 +28,6 @@ var autoprefixer = require('gulp-autoprefixer');
 var config = require(path.join('..','..','chore.config'));
 
 var sc5Folder = 'sc5-styleguide';
-console.log(path.join(config.root,sc5Folder));
 var defaultConfig = {
         srcFolder: [path.join(config.src,'**','*.scss')],
         generateSrc:[path.join(config.src,'**','*.scss')],
@@ -101,7 +100,7 @@ gulp.task('styleguide:generate', ['styleguide:copy'], function (done) {
 gulp.task('styleguide:applystyles', function (done) {
     helper.log('Apply styles from ' + styleguideConfig.applyStylesSrc);
     return gulp.src(styleguideConfig.applyStylesSrc)
-        .pipe($.concat('app.css'))
+        .pipe($.concat('star-rating-stylegude.css'))
         //.pipe($.sass(styleguideConfig.sassOptions).on('error', $.sass.logError))
         //.pipe(autoprefixer(styleguideConfig.autoprefixerOptions))
         .pipe(styleguide.applyStyles())
