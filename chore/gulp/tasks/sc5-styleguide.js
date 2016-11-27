@@ -32,7 +32,7 @@ var defaultConfig = {
         srcFolder: [path.join(config.dist,'**','*.scss', config.src,'**','*.scss')],
         generateSrc:[path.join(config.src,'sc5-styleguide','*.scss')],
         copies:[],
-        applyStylesSrc:[path.join(config.dist,'css','star-rating.css')],
+        applyStylesSrc:[path.join(config.dist,'css','star-rating.css'), path.join(config.src,'sc5-styleguide','styles.css')],
         destFolder: path.join(sc5Folder),
         sassOptions : {
             indentWidth: 4,
@@ -100,7 +100,7 @@ gulp.task('styleguide:generate', ['styleguide:copy'], function (done) {
 gulp.task('styleguide:applystyles', function (done) {
     helper.log('Apply styles from ' + styleguideConfig.applyStylesSrc);
     return gulp.src(styleguideConfig.applyStylesSrc)
-        .pipe($.concat('star-rating-stylegude.css'))
+        .pipe($.concat('star-rating-styleguide.css'))
         //.pipe($.sass(styleguideConfig.sassOptions).on('error', $.sass.logError))
         //.pipe(autoprefixer(styleguideConfig.autoprefixerOptions))
         .pipe(styleguide.applyStyles())
