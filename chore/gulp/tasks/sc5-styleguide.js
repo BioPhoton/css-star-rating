@@ -29,10 +29,10 @@ var config = require(path.join('..','..','chore.config'));
 
 var sc5Folder = 'sc5-styleguide';
 var defaultConfig = {
-        srcFolder: [path.join(config.src,'**','*.scss')],
-        generateSrc:[path.join(config.src,'**','*.scss')],
+        srcFolder: [path.join(config.dist,'**','*.scss', config.src,'**','*.scss')],
+        generateSrc:[path.join(config.src,'sc5-styleguide','*.scss')],
         copies:[],
-        applyStylesSrc:[path.join(config.dist,'css','star-rating.css')],
+        applyStylesSrc:[path.join(config.dist,'css','star-rating.css'), path.join(config.src,'sc5-styleguide','styles.css')],
         destFolder: path.join(sc5Folder),
         sassOptions : {
             indentWidth: 4,
@@ -100,7 +100,7 @@ gulp.task('styleguide:generate', ['styleguide:copy'], function (done) {
 gulp.task('styleguide:applystyles', function (done) {
     helper.log('Apply styles from ' + styleguideConfig.applyStylesSrc);
     return gulp.src(styleguideConfig.applyStylesSrc)
-        .pipe($.concat('star-rating-stylegude.css'))
+        .pipe($.concat('star-rating-styleguide.css'))
         //.pipe($.sass(styleguideConfig.sassOptions).on('error', $.sass.logError))
         //.pipe(autoprefixer(styleguideConfig.autoprefixerOptions))
         .pipe(styleguide.applyStyles())
@@ -113,7 +113,7 @@ gulp.task('styleguide:watch', ['styleguide:build'], function () {
     helper.log('View the styleguide in your browser under http://localhost:3500/', 'green');
     // Start watching changes and update styleguide whenever changes are detected
     // Styleguide automatically detects existing server instance
-    gulp.watch([path.join('dist','**','*.css')], ['styleguide:build']);
+    gulp.watch([path.join('dist','**','*.css'), path.join('src','sc5-styleguide','*.scss')], ['styleguide:build']);
 });
 
 gulp.task('styleguide:copy',  function(done) {

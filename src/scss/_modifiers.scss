@@ -1,71 +1,37 @@
 @charset "UTF-8";
 
+@import "elements";
 
-/*Default styles and modifier
-====================================================*/
-
+/*
+Rating Component
+=========================================================================*/
 .rating {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: $rating-margin-bottom;
 
-  .star-container {
-    + .star {
-      margin-left: $default-stars-label-margin;
-    }
-  }
-
   /*Rating Value
   ====================================================*/
-
   @for $i from $minRatingValue through $maxNumOfStars {
     &.value-#{$i} {
 
       .star-container {
         .star:nth-child(-n+#{$i}) {
-          svg, i, img {
-            &.star-filled {
-              opacity: 1;
-            }
-          }
+          @extend .filled;
         }
 
         .star {
           @if $i <= 2 {
-            svg {
-              fill: $color-negative-rating;
-            }
-            i {
-              color: $color-negative-rating;
-            }
-            img {
-              color: $color-negative-rating;
-            }
+            @extend .star.negative;
           }
 
           @if $i == 3 {
-            svg {
-              fill: $color-middle-rating;
-            }
-            i {
-              color: $color-middle-rating;
-            }
-            img {
-              color: $color-middle-rating;
-            }
+            @extend .middle;
           }
 
           @if $i >= 4 {
-            svg {
-              fill: $color-positive-rating;
-            }
-            i {
-              color: $color-positive-rating;
-            }
-            img {
-              color: $color-positive-rating;
-            }
+            @extend .positive;
           }
         }
       }
@@ -78,55 +44,27 @@
 
       .star-container {
         .star:nth-child(-n+#{$i}) {
-          svg, i, img {
-            &.star-filled {
-              opacity: 1;
-            }
-          }
+          @extend .star.filled
         }
 
         .star {
-          svg {
-            fill: $color-positive-rating;
-          }
-          i {
-            color: $color-positive-rating;
-          }
-          img {
-            color: $color-positive-rating;
-          }
-
+          @extend .positive;
         }
       }
     }
   }
 
-  /*Half stars*/
 
-  //by default half stars are hidden
-  svg, i, img {
-    &.star-half {
-      opacity: 0;
-    }
-  }
+  /*Half stars
+  ====================================================*/
 
   //if we hals ratings > 0 && < 1 we color the first star
   &.value-0.half {
     .star {
-      svg {
-        fill: $color-negative-rating;
-      }
-      i {
-        color: $color-negative-rating;
-      }
-      img {
-        color: $color-negative-rating;
-      }
+      @extend .negative;
     }
     .star:nth-child(1) {
-      .star-half {
-        opacity: 1;
-      }
+      @extend .half;
     }
   }
 
@@ -136,11 +74,7 @@
       .star-container {
         @if ($i < $maxNumOfStars) {
           .star:nth-child(#{$i+1}) {
-            svg, i, img {
-              &.star-half {
-                opacity: 1;
-              }
-            }
+            @extend .half;
           }
         }
       }
@@ -150,7 +84,6 @@
 
   /*Rating Position
   ====================================================*/
-
   &.label-top {
     flex-direction: column;
 
@@ -161,12 +94,6 @@
         margin-top: $default-stars-label-margin;
       }
     }
-  }
-
-  //Default
-  .star-container {
-    margin-left: $default-stars-label-margin;
-    margin-right: $default-stars-label-margin;
   }
 
   &.label-left .label-value {
@@ -201,20 +128,123 @@
     }
   }
 
-  /*AnimationSpeed
-  ====================================================*/
+  /*
+Direction
+===================================================*/
+  &.direction-rtl {
+    direction: rtl;
 
-  //default
-  .star-container {
-    transition: all $default-animation-speed $default-animation-type;
+    .star-container {
+      @extend .star-container.direction-rtl;
+      .star {
+        @extend .star.direction-rtl;
+      }
+    }
+  }
+  &.direction-ltr {
+    direction: ltr;
+  }
+
+
+  /* Star Type
+  ====================================================*/
+  &.star-icon {
+    @extend .star.icon;
+  }
+  &.star-svg {
+    @extend .star.svg;
+  }
+
+
+  /* Sizes
+  ==========================================================*/
+  &.small {
     .star {
-      transition: all $default-animation-speed $default-animation-type;
-      svg, i, img {
-        transition: all $default-animation-speed $default-animation-type;
+      @extend .star.small;
+    }
+
+    .label-value {
+      @extend .label-value.small;
+    }
+  }
+
+  &.medium {
+    .star {
+      @extend .star.medium;
+    }
+
+    .label-value {
+      @extend .label-value.medium;
+    }
+  }
+
+  &.large {
+    .star {
+      @extend .star.large;
+    }
+
+    .label-value {
+      @extend .label-value.large;
+    }
+  }
+
+  /* Spread
+  ====================================================*/
+  &.spread {
+    .star-container {
+      @extend .star-container.spread;
+    }
+  }
+
+  /* Static Color
+    ====================================================*/
+  &.color-default {
+    .star-container {
+      .star {
+        @extend .default;
       }
     }
   }
 
+  &.color-negative {
+    .star-container {
+      .star{
+        @extend .negative;
+      }
+    }
+  }
+
+  &.color-middle {
+    .star-container {
+      .star {
+        @extend .middle;
+      }
+    }
+  }
+
+  &.color-positive {
+    .star-container {
+      .star {
+        @extend .positive;
+      }
+    }
+  }
+
+  /*Disabled
+  ====================================================*/
+  &.disabled {
+    .label-value {
+      @extend .label-value.disabled;
+    }
+    .star-container {
+      .star {
+        @extend .star.disabled;
+      }
+    }
+  }
+
+  /*AnimationSpeed
+ ====================================================*/
   &.immediately
   .star-container {
     transition: all $immediately-animation-type;
@@ -246,242 +276,6 @@
         svg, i, img {
           transition: all $slow-animation-speed $default-animation-type;
         }
-      }
-    }
-  }
-
-  /* Star Type
-  ====================================================*/
-
-  //default
-  .star {
-    i {
-      &.star-empty:before {
-        content: $default-star-character-empty;
-      }
-      &.star-half:before {
-        content: $default-star-character-half
-      }
-      &.star-filled:before {
-        content: $default-star-character-filled;
-      }
-    }
-  }
-
-  &.star-icon {
-    .star {
-      svg {
-        display: none;
-      }
-      img {
-        display: none;
-      }
-      i {
-        display: block;
-      }
-    }
-  }
-
-  &.star-img {
-    .star {
-      svg {
-        display: none;
-      }
-      i {
-        display: none;
-      }
-      img {
-        display: block;
-      }
-    }
-  }
-
-  &.star-svg {
-    .star {
-      svg {
-        display: block;
-      }
-      i {
-        display: none;
-      }
-      img {
-        display: none;
-      }
-    }
-  }
-
-  /* Sizes */
-  &.small {
-    .star {
-      width: $small-star-width;
-      height: $small-star-height;
-      i {
-        font-size: $small-star-font-size;
-        line-height: $small-star-line-height;
-      }
-    }
-
-    .label-value {
-      font-size: $small-label-font-size;
-      line-height: $small-label-line-height;
-    }
-  }
-
-  //default
-  .star {
-    width: $default-star-width;
-    height: $default-star-height;
-    i {
-      font-size: $default-star-font-size;
-      line-height: $default-star-line-height;
-      margin-left: -1px;
-    }
-  }
-
-  .label-value {
-    font-size: $default-label-font-size;
-    line-height: $default-label-line-height;
-  }
-
-  &.medium {
-    .star {
-      width: $default-star-width;
-      height: $default-star-width;
-      i {
-        font-size: $default-star-font-size;
-        line-height: $default-star-line-height;
-      }
-    }
-
-    .label-value {
-      font-size: $default-label-font-size;
-      line-height: $default-star-line-height;
-    }
-  }
-
-  &.large {
-    .star {
-      width: $large-star-width;
-      height: $large-star-height;
-      i {
-        font-size: $large-star-font-size;
-        line-height: $large-star-line-height;
-      }
-    }
-
-    .label-value {
-      font-size: $large-label-font-size;
-      line-height: $large-star-line-height;
-    }
-  }
-
-  /* Spread
-  ====================================================*/
-
-  //default
-  .star-container {
-    justify-content: center;
-  }
-
-  &.spread {
-    .star-container {
-      flex: 1 1 auto;
-      justify-content: space-between;
-    }
-  }
-
-  /* Static Color
-    ====================================================*/
-
-  &.color-default {
-    .star-container {
-      .star {
-        svg {
-          fill: $color-disabled-rating;
-        }
-        i {
-          color: $color-disabled-rating;
-        }
-        img {
-          color: $color-negative-rating;
-        }
-      }
-    }
-  }
-
-  //default
-  .star-container {
-    .star {
-      svg {
-        fill: $color-disabled-rating;
-      }
-      i {
-        color: $color-disabled-rating;
-      }
-      img {
-        color: $color-disabled-rating;
-      }
-    }
-  }
-
-  &.color-negative {
-    .star-container {
-      .star {
-        svg {
-          fill: $color-negative-rating;
-        }
-        i {
-          color: $color-negative-rating;
-        }
-        img {
-          color: $color-negative-rating;
-        }
-      }
-    }
-  }
-
-  &.color-middle {
-    .star-container {
-      .star {
-        svg {
-          fill: $color-middle-rating;
-        }
-        i {
-          color: $color-middle-rating;
-        }
-        img {
-          color: $color-middle-rating;
-        }
-      }
-    }
-  }
-
-  &.color-positive {
-    .star-container {
-      .star {
-        svg {
-          fill: $color-positive-rating;
-        }
-        i {
-          color: $color-positive-rating;
-        }
-        img {
-          color: $color-positive-rating;
-        }
-      }
-    }
-  }
-
-  /*Disabled
-  ====================================================*/
-
-  &.disabled {
-    .label-value {
-      opacity: $disabled-opacity;
-    }
-    .star-container {
-      .star {
-        opacity: $disabled-opacity;
       }
     }
   }

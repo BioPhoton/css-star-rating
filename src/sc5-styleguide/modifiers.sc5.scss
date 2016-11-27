@@ -1,5 +1,5 @@
 /*
-Star Rating
+Modifiers
 
 A beautiful ui component for displaying rating values of up to 5 stars with css only.
 Options are:
@@ -33,7 +33,7 @@ Options are:
        <sg-wrapper-content/>
    </div>
 
-Styleguide 1.0
+Styleguide 2.0
 */
 
 /*
@@ -516,7 +516,6 @@ Styleguide 1.6
    The stars can be generated oft of three different types. characters, svg's of any icon font
 
    default                  - The default star type is svg
-   .star-img                - Star-Image form the shipped images
    .star-icon               - Star-Characters for default browser font
    .star-svg                - Star-Vectors form the shipped svg images
 
@@ -536,12 +535,40 @@ Styleguide 1.6
             <i class="star-empty fa fa-this-icon"></i>
             <i class="star-half fa fa-half-icon"></i>
             <i class="star-filled fa fa-that-icon"></i>
-            <img class="star-empty" src="data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7" />
-            <img class="star-half" src="data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7" />
-            <img class="star-filled" src="data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7" />
-        </div>
+             </div>
     </div>
   </div>
 
    Styleguide 1.9
+*/
+
+/*
+   Direction
+
+   The the direction of the star container.
+
+   none                    - displays component elements in left to right direction. (direction-ltr)
+   .direction-rtl          - displays component elements in right to left direction.
+   .direction-ltr          - displays component elements in left to right direction.
+
+
+   markup:
+  <div class="rating padding value-3 half {$modifiers}">
+    <div class="label-value">3.5</div>
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5] track by $index">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+  </div>
+
+   Styleguide 1.10
 */

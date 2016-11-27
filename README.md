@@ -14,3 +14,9 @@
 Css Star Rating is written in scss and fully customizable over variables.  
 Easily compose your own rating component over a rich set of css modifiers for any kind of UI state.  
 
+
+
+Resources 
+Image and b64 conversion
+http://svgtopng.com/
+http://b64.io/

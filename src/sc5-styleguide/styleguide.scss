@@ -1,62 +1,41 @@
-.phone-simulator {
-  position: relative;
-  width: 375px;
-  border: 1px solid #cccccc;
-  font-family: Arial, Helvetica, sans-serif;
-  overflow: hidden;
-  padding-top: 5px;
+@import "elements.sc5";
+@import "modifiers.sc5";
 
-  &:before {
-    transition: all 0.3s ease;
-  }
 
-  &.simulate-height {
-    height: 667px;
-  }
+/*
+Star Rating
 
-  &.no-border {
-    border: none;
-  }
+A beautiful ui component for displaying rating values of up to 5 stars with css only.
+Options are:
+- Value
+- Size
+- Spread
+- Static Color
+- Label Position
+- Animation Speed
+- Disabled
 
-  &.overflow-visible {
-    overflow: visible;
-  }
+(in this html is additional angular markup to make the showcase interactive)
 
-  &.has-overlay:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.18);
-  }
 
-}
+   markup:
+   <div ng-init="data.rating = 0" class="rating padding value-{{data.rating}}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5] track by $index" ng-click="data.rating = $index+1">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+  </div>
 
-.demo-block {
-  width: 200px;
-  height: 200px;
-  box-shadow: 0px 0px 3px #aaa;
-}
+   sg-wrapper:
+   <div class="phone-simulator padding">
+       <sg-wrapper-content/>
+   </div>
 
-.icon.dummy {
-  width: 10px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: #000;
-  padding-left: 5px;
-}
-
-.rating {
-  &.star-icon {
-    .star {
-      i.star-empty.fa.fa-this-icon:before {
-        content: "O" !important;
-      }
-      i.star-filled.fa.fa-that-icon:before {
-        content: "X" !important;
-      }
-    }
-  }
-}
+Styleguide 1.0
+*/
