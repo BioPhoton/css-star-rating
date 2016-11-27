@@ -29,7 +29,7 @@ var config = require(path.join('..','..','chore.config'));
 
 var sc5Folder = 'sc5-styleguide';
 var defaultConfig = {
-        srcFolder: [path.join(config.src,'**','*.scss')],
+        srcFolder: [path.join(config.dist,'**','*.scss', config.src,'**','*.scss')],
         generateSrc:[path.join(config.src,'**','*.scss')],
         copies:[],
         applyStylesSrc:[path.join(config.dist,'css','star-rating.css')],
