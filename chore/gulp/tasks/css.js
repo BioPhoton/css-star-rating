@@ -119,7 +119,7 @@ function compile(done) {
     return gulp.src(cssConfig.sassScr)
         .pipe($.concat(cssConfig.mainCssFile))
         //move plumber into helper.js
-        .pipe($.plumber()) // exit gracefully if something fails after this
+        //.pipe($.plumber()) // exit gracefully if something fails after this
         .pipe($.sass(cssConfig.sassOptions).on('error', $.sass.logError))
         .pipe(autoprefixer(cssConfig.autoprefixerOptions))
         .pipe(gulp.dest(cssConfig.sassDest), done);
