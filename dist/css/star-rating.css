@@ -23,6 +23,18 @@ Star element
     /*
   Colors
   ==================================================================*/
+    /*
+  Icon Types
+  ==================================================================*/
+    /*
+  Star Size
+  ===================================================================*/
+    /*
+Disabled
+=================================================*/
+    /*
+  Direction
+  =================================================*/
 }
 
 .star svg, .star i, .star img {
@@ -39,10 +51,45 @@ Star element
     opacity: 0;
 }
 
+.star i,
+.star img {
+    display: none;
+}
+
+.star svg {
+    background-size: contain;
+    /*
+    svg.star-empty {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyBzdHlsZT0icG9zaXRpb246IGFic29sdXRlOyB3aWR0aDogMDsgaGVpZ2h0OiAwOyBvdmVyZmxvdzogaGlkZGVuOyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgICAgICA8cGF0aCBjbGFzcz0icGF0aC1zdGFyLWVtcHR5IiAgICAgICAgICAgICAgICAgIGQ9Ik0zMy40MTIgMTIuMzk1bC0xMS44NDItMS4wMjEtNC42MjgtMTAuOTA0LTQuNjI4IDEwLjkyLTExLjg0MiAxLjAwNSA4Ljk5MyA3Ljc5MS0yLjcwMSAxMS41NzkgMTAuMTc5LTYuMTQ0IDEwLjE3OSA2LjE0NC0yLjY4NS0xMS41NzkgOC45NzYtNy43OTF6TTE2Ljk0MSAyMi41NDFsLTYuMTkzIDMuNzM5IDEuNjQ3LTcuMDQ5LTUuNDY4LTQuNzQ0IDcuMjE0LTAuNjI2IDIuOC02LjYzOCAyLjgxNiA2LjY1NCA3LjIxNCAwLjYyNi01LjQ2OCA0Ljc0NCAxLjY0NyA3LjA0OS02LjIwOS0zLjc1NXoiLz48L3N2Zz4=);
+    }
+    svg.star-filled {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyBzdHlsZT0icG9zaXRpb246IGFic29sdXRlOyB3aWR0aDogMDsgaGVpZ2h0OiAwOyBvdmVyZmxvdzogaGlkZGVuOyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgIDxwYXRoIGNsYXNzPSJwYXRoLXN0YXItZmlsbGVkIiAgICAgICAgICAgICAgICAgIGQ9Ik0xNi45NDEgMjUuNjIxbDEwLjE3OSA2LjE0NC0yLjcwMS0xMS41NzkgOC45OTMtNy43OTEtMTEuODQyLTEuMDA1LTQuNjI4LTEwLjkyLTQuNjI4IDEwLjkyLTExLjg0MiAxLjAwNSA4Ljk5MyA3Ljc5MS0yLjcwMSAxMS41Nzl6Ii8+PC9zdmc+);
+    }
+    svg.star-half {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyBzdHlsZT0icG9zaXRpb246IGFic29sdXRlOyB3aWR0aDogMDsgaGVpZ2h0OiAwOyBvdmVyZmxvdzogaGlkZGVuOyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgICAgICA8cGF0aCBjbGFzcz0icGF0aC1zdGFyLWhhbGYiICAgICAgICAgICAgICAgICAgZD0iTSAzMy40MTIsMTIuMzk1IDIxLjU3LDExLjM3NCAxNi45NDIsMC40NyAxMi4zMTQsMTEuMzkgMC40NzIsMTIuMzk1IDkuNDY1LDIwLjE4NiA2Ljc2NCwzMS43NjUgMTYuOTQzLDI1LjYyMSAyNy4xMjIsMzEuNzY1IDI0LjQzNywyMC4xODYgMzMuNDEzLDEyLjM5NSBaIE0gMTYuOTQxLDIyLjU0MSBjIDAsMCAtMC4yOTc5NzEsLTE0LjY0NTU4MzMgMCwtMTUuMzE4IGwgMi44MTYsNi42NTQgNy4yMTQsMC42MjYgLTUuNDY4LDQuNzQ0IDEuNjQ3LDcuMDQ5IHoiLz48L3N2Zz4=);
+    }
+    */
+}
+
 .star i {
-    font-size: 26px;
+    font-size: 27px;
     line-height: 21px;
-    margin-left: -1px;
+}
+
+.star i.star-empty:before {
+    content: "☆";
+}
+
+.star i.star-half:before {
+    content: "★";
+}
+
+.star i.star-filled:before {
+    content: "★";
+}
+
+.star img {
+    background-size: cover;
 }
 
 .star.empty svg.star-half, .star.empty svg.star-filled, .star.empty i.star-half, .star.empty i.star-filled, .star.empty img.star-half, .star.empty img.star-filled {
@@ -61,35 +108,35 @@ Star element
     opacity: 1;
 }
 
-.star.filled svg.star-empty, .rating.value-1 .star-container .star:nth-child(-n+1) svg.star-empty, .rating.value-2 .star-container .star:nth-child(-n+2) svg.star-empty, .rating.value-3 .star-container .star:nth-child(-n+3) svg.star-empty, .rating.value-4 .star-container .star:nth-child(-n+4) svg.star-empty, .rating.value-5 .star-container .star:nth-child(-n+5) svg.star-empty, .rating.value-6 .star-container .star:nth-child(-n+6) svg.star-empty, .star.filled svg.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) svg.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) svg.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) svg.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) svg.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) svg.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) svg.star-filled, .star.filled i.star-empty, .rating.value-1 .star-container .star:nth-child(-n+1) i.star-empty, .rating.value-2 .star-container .star:nth-child(-n+2) i.star-empty, .rating.value-3 .star-container .star:nth-child(-n+3) i.star-empty, .rating.value-4 .star-container .star:nth-child(-n+4) i.star-empty, .rating.value-5 .star-container .star:nth-child(-n+5) i.star-empty, .rating.value-6 .star-container .star:nth-child(-n+6) i.star-empty, .star.filled i.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) i.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) i.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) i.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) i.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) i.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) i.star-filled, .star.filled img.star-empty, .rating.value-1 .star-container .star:nth-child(-n+1) img.star-empty, .rating.value-2 .star-container .star:nth-child(-n+2) img.star-empty, .rating.value-3 .star-container .star:nth-child(-n+3) img.star-empty, .rating.value-4 .star-container .star:nth-child(-n+4) img.star-empty, .rating.value-5 .star-container .star:nth-child(-n+5) img.star-empty, .rating.value-6 .star-container .star:nth-child(-n+6) img.star-empty, .star.filled img.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) img.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) img.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) img.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) img.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) img.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) img.star-filled {
+.star.filled svg.star-empty, .rating.value-1 .star-container .star:nth-child(-n+1) svg.star-empty, .rating.value-2 .star-container .star:nth-child(-n+2) svg.star-empty, .rating.value-3 .star-container .star:nth-child(-n+3) svg.star-empty, .rating.value-4 .star-container .star:nth-child(-n+4) svg.star-empty, .rating.value-5 .star-container .star:nth-child(-n+5) svg.star-empty, .rating.value-6 .star-container .star:nth-child(-n+6) svg.star-empty, .rating.value-7 .star-container .star:nth-child(-n+7) svg.star-empty, .rating.value-8 .star-container .star:nth-child(-n+8) svg.star-empty, .rating.value-9 .star-container .star:nth-child(-n+9) svg.star-empty, .rating.value-10 .star-container .star:nth-child(-n+10) svg.star-empty, .rating.value-11 .star-container .star:nth-child(-n+11) svg.star-empty, .rating.value-12 .star-container .star:nth-child(-n+12) svg.star-empty, .star.filled svg.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) svg.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) svg.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) svg.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) svg.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) svg.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) svg.star-filled, .rating.value-7 .star-container .star:nth-child(-n+7) svg.star-filled, .rating.value-8 .star-container .star:nth-child(-n+8) svg.star-filled, .rating.value-9 .star-container .star:nth-child(-n+9) svg.star-filled, .rating.value-10 .star-container .star:nth-child(-n+10) svg.star-filled, .rating.value-11 .star-container .star:nth-child(-n+11) svg.star-filled, .rating.value-12 .star-container .star:nth-child(-n+12) svg.star-filled, .star.filled i.star-empty, .rating.value-1 .star-container .star:nth-child(-n+1) i.star-empty, .rating.value-2 .star-container .star:nth-child(-n+2) i.star-empty, .rating.value-3 .star-container .star:nth-child(-n+3) i.star-empty, .rating.value-4 .star-container .star:nth-child(-n+4) i.star-empty, .rating.value-5 .star-container .star:nth-child(-n+5) i.star-empty, .rating.value-6 .star-container .star:nth-child(-n+6) i.star-empty, .rating.value-7 .star-container .star:nth-child(-n+7) i.star-empty, .rating.value-8 .star-container .star:nth-child(-n+8) i.star-empty, .rating.value-9 .star-container .star:nth-child(-n+9) i.star-empty, .rating.value-10 .star-container .star:nth-child(-n+10) i.star-empty, .rating.value-11 .star-container .star:nth-child(-n+11) i.star-empty, .rating.value-12 .star-container .star:nth-child(-n+12) i.star-empty, .star.filled i.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) i.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) i.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) i.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) i.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) i.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) i.star-filled, .rating.value-7 .star-container .star:nth-child(-n+7) i.star-filled, .rating.value-8 .star-container .star:nth-child(-n+8) i.star-filled, .rating.value-9 .star-container .star:nth-child(-n+9) i.star-filled, .rating.value-10 .star-container .star:nth-child(-n+10) i.star-filled, .rating.value-11 .star-container .star:nth-child(-n+11) i.star-filled, .rating.value-12 .star-container .star:nth-child(-n+12) i.star-filled, .star.filled img.star-empty, .rating.value-1 .star-container .star:nth-child(-n+1) img.star-empty, .rating.value-2 .star-container .star:nth-child(-n+2) img.star-empty, .rating.value-3 .star-container .star:nth-child(-n+3) img.star-empty, .rating.value-4 .star-container .star:nth-child(-n+4) img.star-empty, .rating.value-5 .star-container .star:nth-child(-n+5) img.star-empty, .rating.value-6 .star-container .star:nth-child(-n+6) img.star-empty, .rating.value-7 .star-container .star:nth-child(-n+7) img.star-empty, .rating.value-8 .star-container .star:nth-child(-n+8) img.star-empty, .rating.value-9 .star-container .star:nth-child(-n+9) img.star-empty, .rating.value-10 .star-container .star:nth-child(-n+10) img.star-empty, .rating.value-11 .star-container .star:nth-child(-n+11) img.star-empty, .rating.value-12 .star-container .star:nth-child(-n+12) img.star-empty, .star.filled img.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) img.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) img.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) img.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) img.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) img.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) img.star-filled, .rating.value-7 .star-container .star:nth-child(-n+7) img.star-filled, .rating.value-8 .star-container .star:nth-child(-n+8) img.star-filled, .rating.value-9 .star-container .star:nth-child(-n+9) img.star-filled, .rating.value-10 .star-container .star:nth-child(-n+10) img.star-filled, .rating.value-11 .star-container .star:nth-child(-n+11) img.star-filled, .rating.value-12 .star-container .star:nth-child(-n+12) img.star-filled {
     opacity: 0;
 }
 
-.star.filled svg.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) svg.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) svg.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) svg.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) svg.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) svg.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) svg.star-filled, .star.filled i.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) i.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) i.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) i.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) i.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) i.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) i.star-filled, .star.filled img.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) img.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) img.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) img.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) img.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) img.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) img.star-filled {
+.star.filled svg.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) svg.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) svg.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) svg.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) svg.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) svg.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) svg.star-filled, .rating.value-7 .star-container .star:nth-child(-n+7) svg.star-filled, .rating.value-8 .star-container .star:nth-child(-n+8) svg.star-filled, .rating.value-9 .star-container .star:nth-child(-n+9) svg.star-filled, .rating.value-10 .star-container .star:nth-child(-n+10) svg.star-filled, .rating.value-11 .star-container .star:nth-child(-n+11) svg.star-filled, .rating.value-12 .star-container .star:nth-child(-n+12) svg.star-filled, .star.filled i.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) i.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) i.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) i.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) i.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) i.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) i.star-filled, .rating.value-7 .star-container .star:nth-child(-n+7) i.star-filled, .rating.value-8 .star-container .star:nth-child(-n+8) i.star-filled, .rating.value-9 .star-container .star:nth-child(-n+9) i.star-filled, .rating.value-10 .star-container .star:nth-child(-n+10) i.star-filled, .rating.value-11 .star-container .star:nth-child(-n+11) i.star-filled, .rating.value-12 .star-container .star:nth-child(-n+12) i.star-filled, .star.filled img.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) img.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) img.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) img.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) img.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) img.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) img.star-filled, .rating.value-7 .star-container .star:nth-child(-n+7) img.star-filled, .rating.value-8 .star-container .star:nth-child(-n+8) img.star-filled, .rating.value-9 .star-container .star:nth-child(-n+9) img.star-filled, .rating.value-10 .star-container .star:nth-child(-n+10) img.star-filled, .rating.value-11 .star-container .star:nth-child(-n+11) img.star-filled, .rating.value-12 .star-container .star:nth-child(-n+12) img.star-filled {
     opacity: 1;
 }
 
-.star.default svg, .rating.color-default .star-container .star svg, .rating .star-container .star svg {
+.star.default svg, .star-container .star svg, .rating.color-default .star-container .star svg {
     fill: #999;
 }
 
-.star.default i, .rating.color-default .star-container .star i, .rating .star-container .star i {
+.star.default i, .star-container .star i, .rating.color-default .star-container .star i {
     color: #999;
 }
 
-.star.default img, .rating.color-default .star-container .star img, .rating .star-container .star img {
+.star.default img, .star-container .star img, .rating.color-default .star-container .star img {
     color: #999;
 }
 
-.star.negative svg, .rating.value-1 .star-container .star svg, .rating.value-2 .star-container .star svg, .rating.value-0.half .star svg, .rating.value-1.half .star-container .rating.value-0.star:nth-child(2) .star svg, .rating.value-2.half .star-container .rating.value-0.star:nth-child(3) .star svg, .rating.value-3.half .star-container .rating.value-0.star:nth-child(4) .star svg, .rating.value-4.half .star-container .rating.value-0.star:nth-child(5) .star svg, .rating.value-5.half .star-container .rating.value-0.star:nth-child(6) .star svg, .rating.color-negative .star.star-container svg {
+.star.negative svg, .rating.value-1 .star-container .star svg, .rating.value-2 .star-container .star svg, .rating.value-0.half .star svg, .rating.value-1.half .star-container .rating.value-0.star:nth-child(2) .star svg, .rating.value-2.half .star-container .rating.value-0.star:nth-child(3) .star svg, .rating.value-3.half .star-container .rating.value-0.star:nth-child(4) .star svg, .rating.value-4.half .star-container .rating.value-0.star:nth-child(5) .star svg, .rating.value-5.half .star-container .rating.value-0.star:nth-child(6) .star svg, .rating.color-negative .star-container .star svg {
     fill: #f03c56;
 }
 
-.star.negative i, .rating.value-1 .star-container .star i, .rating.value-2 .star-container .star i, .rating.value-0.half .star i, .rating.value-1.half .star-container .rating.value-0.star:nth-child(2) .star i, .rating.value-2.half .star-container .rating.value-0.star:nth-child(3) .star i, .rating.value-3.half .star-container .rating.value-0.star:nth-child(4) .star i, .rating.value-4.half .star-container .rating.value-0.star:nth-child(5) .star i, .rating.value-5.half .star-container .rating.value-0.star:nth-child(6) .star i, .rating.color-negative .star.star-container i {
+.star.negative i, .rating.value-1 .star-container .star i, .rating.value-2 .star-container .star i, .rating.value-0.half .star i, .rating.value-1.half .star-container .rating.value-0.star:nth-child(2) .star i, .rating.value-2.half .star-container .rating.value-0.star:nth-child(3) .star i, .rating.value-3.half .star-container .rating.value-0.star:nth-child(4) .star i, .rating.value-4.half .star-container .rating.value-0.star:nth-child(5) .star i, .rating.value-5.half .star-container .rating.value-0.star:nth-child(6) .star i, .rating.color-negative .star-container .star i {
     color: #f03c56;
 }
 
-.star.negative img, .rating.value-1 .star-container .star img, .rating.value-2 .star-container .star img, .rating.value-0.half .star img, .rating.value-1.half .star-container .rating.value-0.star:nth-child(2) .star img, .rating.value-2.half .star-container .rating.value-0.star:nth-child(3) .star img, .rating.value-3.half .star-container .rating.value-0.star:nth-child(4) .star img, .rating.value-4.half .star-container .rating.value-0.star:nth-child(5) .star img, .rating.value-5.half .star-container .rating.value-0.star:nth-child(6) .star img, .rating.color-negative .star.star-container img {
+.star.negative img, .rating.value-1 .star-container .star img, .rating.value-2 .star-container .star img, .rating.value-0.half .star img, .rating.value-1.half .star-container .rating.value-0.star:nth-child(2) .star img, .rating.value-2.half .star-container .rating.value-0.star:nth-child(3) .star img, .rating.value-3.half .star-container .rating.value-0.star:nth-child(4) .star img, .rating.value-4.half .star-container .rating.value-0.star:nth-child(5) .star img, .rating.value-5.half .star-container .rating.value-0.star:nth-child(6) .star img, .rating.color-negative .star-container .star img {
     color: #f03c56;
 }
 
@@ -117,6 +164,111 @@ Star element
     color: #7ed321;
 }
 
+.star.svg i, .rating.star-svg i, .star.svg img, .rating.star-svg img {
+    display: none;
+}
+
+.star.svg svg, .rating.star-svg svg {
+    display: block;
+}
+
+.star.icon svg, .rating.star-icon svg, .star.icon img, .rating.star-icon img {
+    display: none;
+}
+
+.star.icon i, .rating.star-icon i {
+    display: block;
+}
+
+.star.img i, .star.img svg {
+    display: none;
+}
+
+.star.img img {
+    display: block;
+}
+
+.star.small, .rating.small .star {
+    width: 10px;
+    height: 9, 5px;
+}
+
+.star.small i, .rating.small .star i {
+    font-size: 11px;
+    line-height: 10px;
+}
+
+.star.medium, .rating.medium .star {
+    width: 20px;
+    height: 20px;
+}
+
+.star.medium i, .rating.medium .star i {
+    font-size: 27px;
+    line-height: 21px;
+}
+
+.star.large, .rating.large .star {
+    width: 35px;
+    height: 33.3px;
+}
+
+.star.large i, .rating.large .star i {
+    font-size: 36px;
+    line-height: 35px;
+}
+
+.star.disabled, .rating.disabled .star-container .star {
+    opacity: 0.5;
+}
+
+.star.direction-rtl svg.star-half, .star-container.direction-rtl .star svg.star-half, .rating.direction-rtl .star-container .star svg.star-half, .star.direction-rtl i.star-half, .star-container.direction-rtl .star i.star-half, .rating.direction-rtl .star-container .star i.star-half {
+    -webkit-transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.star.direction-ltr svg.star-half, .star-container.direction-ltr .star svg.star-half, .star.direction-ltr i.star-half, .star-container.direction-ltr .star i.star-half {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+/*
+Label Element
+===================================================================*/
+.label-value {
+    font-size: 18px;
+    line-height: 18px;
+    /*
+  Sizes
+  =================================================================*/
+    /*
+  Disabled
+  =================================================*/
+}
+
+.label-value.small, .rating.small .label-value {
+    font-size: 9.5px;
+    line-height: 9.5px;
+}
+
+.label-value.medium, .rating.medium .label-value {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.label-value.large, .rating.large .label-value {
+    font-size: 28px;
+    line-height: 35px;
+}
+
+.label-value.disabled, .rating.disabled .label-value {
+    opacity: 0.5;
+}
+
 /*
 Star Container
 ==================================================================*/
@@ -136,18 +288,67 @@ Star Container
     -moz-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    /*
+ Direction
+ ===================================================*/
+    /*
+  Spread
+  ======================================================*/
+}
+
+.star-container + .star {
+    margin-left: 5px;
+}
+
+.star-container .star {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.star-container .star svg, .star-container .star i {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .star-container svg {
-    z-index: 3;
-}
-
-.star-container i {
     z-index: 2;
 }
 
-.star-container img {
+.star-container i {
     z-index: 1;
+}
+
+.star-container.direction-rtl, .rating.direction-rtl .star-container {
+    direction: rtl;
+}
+
+.star-container.direction-ltr {
+    direction: ltr;
+}
+
+.star-container.spread, .rating.spread .star-container {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -moz-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 /*CSS Star Rating Elements
@@ -165,6 +366,18 @@ Star element
     /*
   Colors
   ==================================================================*/
+    /*
+  Icon Types
+  ==================================================================*/
+    /*
+  Star Size
+  ===================================================================*/
+    /*
+Disabled
+=================================================*/
+    /*
+  Direction
+  =================================================*/
 }
 
 .star svg, .star i, .star img {
@@ -181,10 +394,45 @@ Star element
     opacity: 0;
 }
 
+.star i,
+.star img {
+    display: none;
+}
+
+.star svg {
+    background-size: contain;
+    /*
+    svg.star-empty {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyBzdHlsZT0icG9zaXRpb246IGFic29sdXRlOyB3aWR0aDogMDsgaGVpZ2h0OiAwOyBvdmVyZmxvdzogaGlkZGVuOyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgICAgICA8cGF0aCBjbGFzcz0icGF0aC1zdGFyLWVtcHR5IiAgICAgICAgICAgICAgICAgIGQ9Ik0zMy40MTIgMTIuMzk1bC0xMS44NDItMS4wMjEtNC42MjgtMTAuOTA0LTQuNjI4IDEwLjkyLTExLjg0MiAxLjAwNSA4Ljk5MyA3Ljc5MS0yLjcwMSAxMS41NzkgMTAuMTc5LTYuMTQ0IDEwLjE3OSA2LjE0NC0yLjY4NS0xMS41NzkgOC45NzYtNy43OTF6TTE2Ljk0MSAyMi41NDFsLTYuMTkzIDMuNzM5IDEuNjQ3LTcuMDQ5LTUuNDY4LTQuNzQ0IDcuMjE0LTAuNjI2IDIuOC02LjYzOCAyLjgxNiA2LjY1NCA3LjIxNCAwLjYyNi01LjQ2OCA0Ljc0NCAxLjY0NyA3LjA0OS02LjIwOS0zLjc1NXoiLz48L3N2Zz4=);
+    }
+    svg.star-filled {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyBzdHlsZT0icG9zaXRpb246IGFic29sdXRlOyB3aWR0aDogMDsgaGVpZ2h0OiAwOyBvdmVyZmxvdzogaGlkZGVuOyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgIDxwYXRoIGNsYXNzPSJwYXRoLXN0YXItZmlsbGVkIiAgICAgICAgICAgICAgICAgIGQ9Ik0xNi45NDEgMjUuNjIxbDEwLjE3OSA2LjE0NC0yLjcwMS0xMS41NzkgOC45OTMtNy43OTEtMTEuODQyLTEuMDA1LTQuNjI4LTEwLjkyLTQuNjI4IDEwLjkyLTExLjg0MiAxLjAwNSA4Ljk5MyA3Ljc5MS0yLjcwMSAxMS41Nzl6Ii8+PC9zdmc+);
+    }
+    svg.star-half {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyBzdHlsZT0icG9zaXRpb246IGFic29sdXRlOyB3aWR0aDogMDsgaGVpZ2h0OiAwOyBvdmVyZmxvdzogaGlkZGVuOyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgICAgICA8cGF0aCBjbGFzcz0icGF0aC1zdGFyLWhhbGYiICAgICAgICAgICAgICAgICAgZD0iTSAzMy40MTIsMTIuMzk1IDIxLjU3LDExLjM3NCAxNi45NDIsMC40NyAxMi4zMTQsMTEuMzkgMC40NzIsMTIuMzk1IDkuNDY1LDIwLjE4NiA2Ljc2NCwzMS43NjUgMTYuOTQzLDI1LjYyMSAyNy4xMjIsMzEuNzY1IDI0LjQzNywyMC4xODYgMzMuNDEzLDEyLjM5NSBaIE0gMTYuOTQxLDIyLjU0MSBjIDAsMCAtMC4yOTc5NzEsLTE0LjY0NTU4MzMgMCwtMTUuMzE4IGwgMi44MTYsNi42NTQgNy4yMTQsMC42MjYgLTUuNDY4LDQuNzQ0IDEuNjQ3LDcuMDQ5IHoiLz48L3N2Zz4=);
+    }
+    */
+}
+
 .star i {
-    font-size: 26px;
+    font-size: 27px;
     line-height: 21px;
-    margin-left: -1px;
+}
+
+.star i.star-empty:before {
+    content: "☆";
+}
+
+.star i.star-half:before {
+    content: "★";
+}
+
+.star i.star-filled:before {
+    content: "★";
+}
+
+.star img {
+    background-size: cover;
 }
 
 .star.empty svg.star-half, .star.empty svg.star-filled, .star.empty i.star-half, .star.empty i.star-filled, .star.empty img.star-half, .star.empty img.star-filled {
@@ -203,35 +451,35 @@ Star element
     opacity: 1;
 }
 
-.star.filled svg.star-empty, .rating.value-1 .star-container .star:nth-child(-n+1) svg.star-empty, .rating.value-2 .star-container .star:nth-child(-n+2) svg.star-empty, .rating.value-3 .star-container .star:nth-child(-n+3) svg.star-empty, .rating.value-4 .star-container .star:nth-child(-n+4) svg.star-empty, .rating.value-5 .star-container .star:nth-child(-n+5) svg.star-empty, .rating.value-6 .star-container .star:nth-child(-n+6) svg.star-empty, .star.filled svg.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) svg.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) svg.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) svg.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) svg.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) svg.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) svg.star-filled, .star.filled i.star-empty, .rating.value-1 .star-container .star:nth-child(-n+1) i.star-empty, .rating.value-2 .star-container .star:nth-child(-n+2) i.star-empty, .rating.value-3 .star-container .star:nth-child(-n+3) i.star-empty, .rating.value-4 .star-container .star:nth-child(-n+4) i.star-empty, .rating.value-5 .star-container .star:nth-child(-n+5) i.star-empty, .rating.value-6 .star-container .star:nth-child(-n+6) i.star-empty, .star.filled i.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) i.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) i.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) i.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) i.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) i.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) i.star-filled, .star.filled img.star-empty, .rating.value-1 .star-container .star:nth-child(-n+1) img.star-empty, .rating.value-2 .star-container .star:nth-child(-n+2) img.star-empty, .rating.value-3 .star-container .star:nth-child(-n+3) img.star-empty, .rating.value-4 .star-container .star:nth-child(-n+4) img.star-empty, .rating.value-5 .star-container .star:nth-child(-n+5) img.star-empty, .rating.value-6 .star-container .star:nth-child(-n+6) img.star-empty, .star.filled img.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) img.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) img.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) img.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) img.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) img.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) img.star-filled {
+.star.filled svg.star-empty, .rating.value-1 .star-container .star:nth-child(-n+1) svg.star-empty, .rating.value-2 .star-container .star:nth-child(-n+2) svg.star-empty, .rating.value-3 .star-container .star:nth-child(-n+3) svg.star-empty, .rating.value-4 .star-container .star:nth-child(-n+4) svg.star-empty, .rating.value-5 .star-container .star:nth-child(-n+5) svg.star-empty, .rating.value-6 .star-container .star:nth-child(-n+6) svg.star-empty, .rating.value-7 .star-container .star:nth-child(-n+7) svg.star-empty, .rating.value-8 .star-container .star:nth-child(-n+8) svg.star-empty, .rating.value-9 .star-container .star:nth-child(-n+9) svg.star-empty, .rating.value-10 .star-container .star:nth-child(-n+10) svg.star-empty, .rating.value-11 .star-container .star:nth-child(-n+11) svg.star-empty, .rating.value-12 .star-container .star:nth-child(-n+12) svg.star-empty, .star.filled svg.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) svg.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) svg.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) svg.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) svg.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) svg.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) svg.star-filled, .rating.value-7 .star-container .star:nth-child(-n+7) svg.star-filled, .rating.value-8 .star-container .star:nth-child(-n+8) svg.star-filled, .rating.value-9 .star-container .star:nth-child(-n+9) svg.star-filled, .rating.value-10 .star-container .star:nth-child(-n+10) svg.star-filled, .rating.value-11 .star-container .star:nth-child(-n+11) svg.star-filled, .rating.value-12 .star-container .star:nth-child(-n+12) svg.star-filled, .star.filled i.star-empty, .rating.value-1 .star-container .star:nth-child(-n+1) i.star-empty, .rating.value-2 .star-container .star:nth-child(-n+2) i.star-empty, .rating.value-3 .star-container .star:nth-child(-n+3) i.star-empty, .rating.value-4 .star-container .star:nth-child(-n+4) i.star-empty, .rating.value-5 .star-container .star:nth-child(-n+5) i.star-empty, .rating.value-6 .star-container .star:nth-child(-n+6) i.star-empty, .rating.value-7 .star-container .star:nth-child(-n+7) i.star-empty, .rating.value-8 .star-container .star:nth-child(-n+8) i.star-empty, .rating.value-9 .star-container .star:nth-child(-n+9) i.star-empty, .rating.value-10 .star-container .star:nth-child(-n+10) i.star-empty, .rating.value-11 .star-container .star:nth-child(-n+11) i.star-empty, .rating.value-12 .star-container .star:nth-child(-n+12) i.star-empty, .star.filled i.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) i.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) i.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) i.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) i.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) i.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) i.star-filled, .rating.value-7 .star-container .star:nth-child(-n+7) i.star-filled, .rating.value-8 .star-container .star:nth-child(-n+8) i.star-filled, .rating.value-9 .star-container .star:nth-child(-n+9) i.star-filled, .rating.value-10 .star-container .star:nth-child(-n+10) i.star-filled, .rating.value-11 .star-container .star:nth-child(-n+11) i.star-filled, .rating.value-12 .star-container .star:nth-child(-n+12) i.star-filled, .star.filled img.star-empty, .rating.value-1 .star-container .star:nth-child(-n+1) img.star-empty, .rating.value-2 .star-container .star:nth-child(-n+2) img.star-empty, .rating.value-3 .star-container .star:nth-child(-n+3) img.star-empty, .rating.value-4 .star-container .star:nth-child(-n+4) img.star-empty, .rating.value-5 .star-container .star:nth-child(-n+5) img.star-empty, .rating.value-6 .star-container .star:nth-child(-n+6) img.star-empty, .rating.value-7 .star-container .star:nth-child(-n+7) img.star-empty, .rating.value-8 .star-container .star:nth-child(-n+8) img.star-empty, .rating.value-9 .star-container .star:nth-child(-n+9) img.star-empty, .rating.value-10 .star-container .star:nth-child(-n+10) img.star-empty, .rating.value-11 .star-container .star:nth-child(-n+11) img.star-empty, .rating.value-12 .star-container .star:nth-child(-n+12) img.star-empty, .star.filled img.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) img.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) img.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) img.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) img.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) img.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) img.star-filled, .rating.value-7 .star-container .star:nth-child(-n+7) img.star-filled, .rating.value-8 .star-container .star:nth-child(-n+8) img.star-filled, .rating.value-9 .star-container .star:nth-child(-n+9) img.star-filled, .rating.value-10 .star-container .star:nth-child(-n+10) img.star-filled, .rating.value-11 .star-container .star:nth-child(-n+11) img.star-filled, .rating.value-12 .star-container .star:nth-child(-n+12) img.star-filled {
     opacity: 0;
 }
 
-.star.filled svg.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) svg.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) svg.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) svg.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) svg.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) svg.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) svg.star-filled, .star.filled i.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) i.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) i.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) i.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) i.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) i.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) i.star-filled, .star.filled img.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) img.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) img.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) img.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) img.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) img.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) img.star-filled {
+.star.filled svg.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) svg.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) svg.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) svg.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) svg.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) svg.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) svg.star-filled, .rating.value-7 .star-container .star:nth-child(-n+7) svg.star-filled, .rating.value-8 .star-container .star:nth-child(-n+8) svg.star-filled, .rating.value-9 .star-container .star:nth-child(-n+9) svg.star-filled, .rating.value-10 .star-container .star:nth-child(-n+10) svg.star-filled, .rating.value-11 .star-container .star:nth-child(-n+11) svg.star-filled, .rating.value-12 .star-container .star:nth-child(-n+12) svg.star-filled, .star.filled i.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) i.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) i.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) i.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) i.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) i.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) i.star-filled, .rating.value-7 .star-container .star:nth-child(-n+7) i.star-filled, .rating.value-8 .star-container .star:nth-child(-n+8) i.star-filled, .rating.value-9 .star-container .star:nth-child(-n+9) i.star-filled, .rating.value-10 .star-container .star:nth-child(-n+10) i.star-filled, .rating.value-11 .star-container .star:nth-child(-n+11) i.star-filled, .rating.value-12 .star-container .star:nth-child(-n+12) i.star-filled, .star.filled img.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) img.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) img.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) img.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) img.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) img.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) img.star-filled, .rating.value-7 .star-container .star:nth-child(-n+7) img.star-filled, .rating.value-8 .star-container .star:nth-child(-n+8) img.star-filled, .rating.value-9 .star-container .star:nth-child(-n+9) img.star-filled, .rating.value-10 .star-container .star:nth-child(-n+10) img.star-filled, .rating.value-11 .star-container .star:nth-child(-n+11) img.star-filled, .rating.value-12 .star-container .star:nth-child(-n+12) img.star-filled {
     opacity: 1;
 }
 
-.star.default svg, .rating.color-default .star-container .star svg, .rating .star-container .star svg {
+.star.default svg, .star-container .star svg, .rating.color-default .star-container .star svg {
     fill: #999;
 }
 
-.star.default i, .rating.color-default .star-container .star i, .rating .star-container .star i {
+.star.default i, .star-container .star i, .rating.color-default .star-container .star i {
     color: #999;
 }
 
-.star.default img, .rating.color-default .star-container .star img, .rating .star-container .star img {
+.star.default img, .star-container .star img, .rating.color-default .star-container .star img {
     color: #999;
 }
 
-.star.negative svg, .rating.value-1 .star-container .star svg, .rating.value-2 .star-container .star svg, .rating.value-0.half .star svg, .rating.value-1.half .star-container .rating.value-0.star:nth-child(2) .star svg, .rating.value-2.half .star-container .rating.value-0.star:nth-child(3) .star svg, .rating.value-3.half .star-container .rating.value-0.star:nth-child(4) .star svg, .rating.value-4.half .star-container .rating.value-0.star:nth-child(5) .star svg, .rating.value-5.half .star-container .rating.value-0.star:nth-child(6) .star svg, .rating.color-negative .star.star-container svg {
+.star.negative svg, .rating.value-1 .star-container .star svg, .rating.value-2 .star-container .star svg, .rating.value-0.half .star svg, .rating.value-1.half .star-container .rating.value-0.star:nth-child(2) .star svg, .rating.value-2.half .star-container .rating.value-0.star:nth-child(3) .star svg, .rating.value-3.half .star-container .rating.value-0.star:nth-child(4) .star svg, .rating.value-4.half .star-container .rating.value-0.star:nth-child(5) .star svg, .rating.value-5.half .star-container .rating.value-0.star:nth-child(6) .star svg, .rating.color-negative .star-container .star svg {
     fill: #f03c56;
 }
 
-.star.negative i, .rating.value-1 .star-container .star i, .rating.value-2 .star-container .star i, .rating.value-0.half .star i, .rating.value-1.half .star-container .rating.value-0.star:nth-child(2) .star i, .rating.value-2.half .star-container .rating.value-0.star:nth-child(3) .star i, .rating.value-3.half .star-container .rating.value-0.star:nth-child(4) .star i, .rating.value-4.half .star-container .rating.value-0.star:nth-child(5) .star i, .rating.value-5.half .star-container .rating.value-0.star:nth-child(6) .star i, .rating.color-negative .star.star-container i {
+.star.negative i, .rating.value-1 .star-container .star i, .rating.value-2 .star-container .star i, .rating.value-0.half .star i, .rating.value-1.half .star-container .rating.value-0.star:nth-child(2) .star i, .rating.value-2.half .star-container .rating.value-0.star:nth-child(3) .star i, .rating.value-3.half .star-container .rating.value-0.star:nth-child(4) .star i, .rating.value-4.half .star-container .rating.value-0.star:nth-child(5) .star i, .rating.value-5.half .star-container .rating.value-0.star:nth-child(6) .star i, .rating.color-negative .star-container .star i {
     color: #f03c56;
 }
 
-.star.negative img, .rating.value-1 .star-container .star img, .rating.value-2 .star-container .star img, .rating.value-0.half .star img, .rating.value-1.half .star-container .rating.value-0.star:nth-child(2) .star img, .rating.value-2.half .star-container .rating.value-0.star:nth-child(3) .star img, .rating.value-3.half .star-container .rating.value-0.star:nth-child(4) .star img, .rating.value-4.half .star-container .rating.value-0.star:nth-child(5) .star img, .rating.value-5.half .star-container .rating.value-0.star:nth-child(6) .star img, .rating.color-negative .star.star-container img {
+.star.negative img, .rating.value-1 .star-container .star img, .rating.value-2 .star-container .star img, .rating.value-0.half .star img, .rating.value-1.half .star-container .rating.value-0.star:nth-child(2) .star img, .rating.value-2.half .star-container .rating.value-0.star:nth-child(3) .star img, .rating.value-3.half .star-container .rating.value-0.star:nth-child(4) .star img, .rating.value-4.half .star-container .rating.value-0.star:nth-child(5) .star img, .rating.value-5.half .star-container .rating.value-0.star:nth-child(6) .star img, .rating.color-negative .star-container .star img {
     color: #f03c56;
 }
 
@@ -259,6 +507,111 @@ Star element
     color: #7ed321;
 }
 
+.star.svg i, .rating.star-svg i, .star.svg img, .rating.star-svg img {
+    display: none;
+}
+
+.star.svg svg, .rating.star-svg svg {
+    display: block;
+}
+
+.star.icon svg, .rating.star-icon svg, .star.icon img, .rating.star-icon img {
+    display: none;
+}
+
+.star.icon i, .rating.star-icon i {
+    display: block;
+}
+
+.star.img i, .star.img svg {
+    display: none;
+}
+
+.star.img img {
+    display: block;
+}
+
+.star.small, .rating.small .star {
+    width: 10px;
+    height: 9, 5px;
+}
+
+.star.small i, .rating.small .star i {
+    font-size: 11px;
+    line-height: 10px;
+}
+
+.star.medium, .rating.medium .star {
+    width: 20px;
+    height: 20px;
+}
+
+.star.medium i, .rating.medium .star i {
+    font-size: 27px;
+    line-height: 21px;
+}
+
+.star.large, .rating.large .star {
+    width: 35px;
+    height: 33.3px;
+}
+
+.star.large i, .rating.large .star i {
+    font-size: 36px;
+    line-height: 35px;
+}
+
+.star.disabled, .rating.disabled .star-container .star {
+    opacity: 0.5;
+}
+
+.star.direction-rtl svg.star-half, .star-container.direction-rtl .star svg.star-half, .rating.direction-rtl .star-container .star svg.star-half, .star.direction-rtl i.star-half, .star-container.direction-rtl .star i.star-half, .rating.direction-rtl .star-container .star i.star-half {
+    -webkit-transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.star.direction-ltr svg.star-half, .star-container.direction-ltr .star svg.star-half, .star.direction-ltr i.star-half, .star-container.direction-ltr .star i.star-half {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+/*
+Label Element
+===================================================================*/
+.label-value {
+    font-size: 18px;
+    line-height: 18px;
+    /*
+  Sizes
+  =================================================================*/
+    /*
+  Disabled
+  =================================================*/
+}
+
+.label-value.small, .rating.small .label-value {
+    font-size: 9.5px;
+    line-height: 9.5px;
+}
+
+.label-value.medium, .rating.medium .label-value {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.label-value.large, .rating.large .label-value {
+    font-size: 28px;
+    line-height: 35px;
+}
+
+.label-value.disabled, .rating.disabled .label-value {
+    opacity: 0.5;
+}
+
 /*
 Star Container
 ==================================================================*/
@@ -278,22 +631,72 @@ Star Container
     -moz-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    /*
+ Direction
+ ===================================================*/
+    /*
+  Spread
+  ======================================================*/
+}
+
+.star-container + .star {
+    margin-left: 5px;
+}
+
+.star-container .star {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.star-container .star svg, .star-container .star i {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .star-container svg {
-    z-index: 3;
-}
-
-.star-container i {
     z-index: 2;
 }
 
-.star-container img {
+.star-container i {
     z-index: 1;
 }
 
-/*Default styles and modifier
-====================================================*/
+.star-container.direction-rtl, .rating.direction-rtl .star-container {
+    direction: rtl;
+}
+
+.star-container.direction-ltr {
+    direction: ltr;
+}
+
+.star-container.spread, .rating.spread .star-container {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -moz-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+/*
+Rating Component
+=========================================================================*/
 .rating {
     display: -webkit-box;
     display: -webkit-flex;
@@ -313,52 +716,25 @@ Star Container
     margin-bottom: 5px;
     /*Rating Value
   ====================================================*/
-    /*Half stars*/
+    /*Half stars
+  ====================================================*/
     /*Rating Position
   ====================================================*/
-    /*AnimationSpeed
-  ====================================================*/
+    /*
+Direction
+===================================================*/
     /* Star Type
   ====================================================*/
-    /* Sizes */
+    /* Sizes
+  ==========================================================*/
     /* Spread
   ====================================================*/
     /* Static Color
     ====================================================*/
     /*Disabled
   ====================================================*/
-}
-
-.rating .star-container + .star {
-    margin-left: 5px;
-}
-
-.rating.value-6 .star-container .star:nth-child(-n+6) svg.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) i.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) img.star-filled {
-    opacity: 1;
-}
-
-.rating.value-7 .star-container .star:nth-child(-n+7) svg.star-filled, .rating.value-7 .star-container .star:nth-child(-n+7) i.star-filled, .rating.value-7 .star-container .star:nth-child(-n+7) img.star-filled {
-    opacity: 1;
-}
-
-.rating.value-8 .star-container .star:nth-child(-n+8) svg.star-filled, .rating.value-8 .star-container .star:nth-child(-n+8) i.star-filled, .rating.value-8 .star-container .star:nth-child(-n+8) img.star-filled {
-    opacity: 1;
-}
-
-.rating.value-9 .star-container .star:nth-child(-n+9) svg.star-filled, .rating.value-9 .star-container .star:nth-child(-n+9) i.star-filled, .rating.value-9 .star-container .star:nth-child(-n+9) img.star-filled {
-    opacity: 1;
-}
-
-.rating.value-10 .star-container .star:nth-child(-n+10) svg.star-filled, .rating.value-10 .star-container .star:nth-child(-n+10) i.star-filled, .rating.value-10 .star-container .star:nth-child(-n+10) img.star-filled {
-    opacity: 1;
-}
-
-.rating.value-11 .star-container .star:nth-child(-n+11) svg.star-filled, .rating.value-11 .star-container .star:nth-child(-n+11) i.star-filled, .rating.value-11 .star-container .star:nth-child(-n+11) img.star-filled {
-    opacity: 1;
-}
-
-.rating.value-12 .star-container .star:nth-child(-n+12) svg.star-filled, .rating.value-12 .star-container .star:nth-child(-n+12) i.star-filled, .rating.value-12 .star-container .star:nth-child(-n+12) img.star-filled {
-    opacity: 1;
+    /*AnimationSpeed
+ ====================================================*/
 }
 
 .rating.label-top {
@@ -375,11 +751,6 @@ Star Container
     margin-left: 0;
     margin-right: 0;
     margin-top: 5px;
-}
-
-.rating .star-container {
-    margin-left: 5px;
-    margin-right: 5px;
 }
 
 .rating.label-left .label-value {
@@ -426,22 +797,12 @@ Star Container
     margin-bottom: 5px;
 }
 
-.rating .star-container {
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+.rating.direction-rtl {
+    direction: rtl;
 }
 
-.rating .star-container .star {
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-
-.rating .star-container .star svg, .rating .star-container .star i, .rating .star-container .star img {
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+.rating.direction-ltr {
+    direction: ltr;
 }
 
 .rating.immediately .star-container {
@@ -496,133 +857,6 @@ Star Container
     -webkit-transition: all 0.8s ease;
     -moz-transition: all 0.8s ease;
     transition: all 0.8s ease;
-}
-
-.rating .star i.star-empty:before {
-    content: "☆";
-}
-
-.rating .star i.star-half:before {
-    content: "";
-}
-
-.rating .star i.star-filled:before {
-    content: "★";
-}
-
-.rating.star-icon .star svg {
-    display: none;
-}
-
-.rating.star-icon .star img {
-    display: none;
-}
-
-.rating.star-icon .star i {
-    display: block;
-}
-
-.rating.star-img .star svg {
-    display: none;
-}
-
-.rating.star-img .star i {
-    display: none;
-}
-
-.rating.star-img .star img {
-    display: block;
-}
-
-.rating.star-svg .star svg {
-    display: block;
-}
-
-.rating.star-svg .star i {
-    display: none;
-}
-
-.rating.star-svg .star img {
-    display: none;
-}
-
-.rating.small .star {
-    width: 10px;
-    height: 9, 5px;
-}
-
-.rating.small .star i {
-    font-size: 11px;
-    line-height: 10px;
-}
-
-.rating.small .label-value {
-    font-size: 9.5px;
-    line-height: 9.5px;
-}
-
-.rating .label-value {
-    font-size: 18px;
-    line-height: 18px;
-}
-
-.rating.medium .star {
-    width: 20px;
-    height: 20px;
-}
-
-.rating.medium .star i {
-    font-size: 26px;
-    line-height: 21px;
-}
-
-.rating.medium .label-value {
-    font-size: 18px;
-    line-height: 21px;
-}
-
-.rating.large .star {
-    width: 35px;
-    height: 33.3px;
-}
-
-.rating.large .star i {
-    font-size: 36px;
-    line-height: 35px;
-}
-
-.rating.large .label-value {
-    font-size: 28px;
-    line-height: 35px;
-}
-
-.rating .star-container {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -moz-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.rating.spread .star-container {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-    -moz-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
-.rating.disabled .label-value {
-    opacity: 0.5;
-}
-
-.rating.disabled .star-container .star {
-    opacity: 0.5;
 }
 
 /*theme modifiers
