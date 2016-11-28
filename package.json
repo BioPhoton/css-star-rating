@@ -69,7 +69,7 @@
   "dependencies": {},
   "scripts": {
     "clean:dist": "rimraf dist",
-    "build": "gulp css:compile-optimize",
+    "build": "gulp project:build",
     "styleguide": "gulp styleguide:watch",
     "version:bump": "gulp version:bump",
     "release": "npm publish"
