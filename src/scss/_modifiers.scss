@@ -54,7 +54,6 @@ Rating Component
     }
   }
 
-
   /*Half stars
   ====================================================*/
 
@@ -145,7 +144,6 @@ Direction
     direction: ltr;
   }
 
-
   /* Star Type
   ====================================================*/
   &.star-icon {
@@ -154,7 +152,6 @@ Direction
   &.star-svg {
     @extend .star.svg;
   }
-
 
   /* Sizes
   ==========================================================*/
@@ -201,15 +198,12 @@ Direction
   &.color-default {
     .star-container {
       .star {
-        @extend .default;
-      }
-    }
-  }
-
-  &.color-negative {
-    .star-container {
-      .star{
-        @extend .negative;
+        svg {
+          fill: $color-default-rating;
+        }
+        i {
+          color: $color-default-rating;
+        }
       }
     }
   }
@@ -217,7 +211,12 @@ Direction
   &.color-middle {
     .star-container {
       .star {
-        @extend .middle;
+        svg {
+          fill: $color-middle-rating;
+        }
+        i {
+          color: $color-middle-rating;
+        }
       }
     }
   }
@@ -225,7 +224,25 @@ Direction
   &.color-positive {
     .star-container {
       .star {
-        @extend .positive;
+        svg {
+          fill: $color-positive-rating;
+        }
+        i {
+          color: $color-positive-rating;
+        }
+      }
+    }
+  }
+
+  &.color-negative {
+    .star-container {
+      .star {
+        svg {
+          fill: $color-negative-rating;
+        }
+        i {
+          color: $color-negative-rating;
+        }
       }
     }
   }
