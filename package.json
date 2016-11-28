@@ -26,6 +26,12 @@
     "type": "git",
     "url": "git+https://github.com/BioPhoton/css-star-rating.git"
   },
+  "contributors": [
+    {
+      "name": "Michael Hladky",
+      "email": "michael@hladky.at"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/BioPhoton/css-star-rating/issues"
   },
