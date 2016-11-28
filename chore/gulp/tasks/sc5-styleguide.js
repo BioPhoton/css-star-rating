@@ -32,7 +32,10 @@ var defaultConfig = {
         srcFolder: [path.join(config.dist,'**','*.scss', config.src,'**','*.scss')],
         generateSrc:[path.join(config.src,'sc5-styleguide','*.scss')],
         copies:[],
-        applyStylesSrc:[path.join(config.dist,'css','star-rating.css'), path.join(config.src,'sc5-styleguide','styles.css')],
+        applyStylesSrc:[
+            path.join(config.dist,'css','star-rating.css')
+            , path.join(config.src,'sc5-styleguide','styles.css')
+            , path.join('node_modules','font-awesome','css','font-awesome.min.css')],
         destFolder: path.join(sc5Folder),
         sassOptions : {
             indentWidth: 4,
