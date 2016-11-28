@@ -3,13 +3,54 @@ Elements
 
 The elements a css star rating component consists of.
 Her you can see the html structure and the combination of elements.
+The star rating component consists of:
+- A star element
+  to display the star state
+- A star-container element
+  to handle multiple stars as a rating
+- A label element
+  to display the additional test next to the rating
+
+markup:
+<b>Star:</b>
+<div class="star half large positive direction-ltr">
+  <svg class="star-empty">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+  </svg>
+  <svg class="star-half">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+  </svg>
+  <svg class="star-fille ">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+  </svg>
+</div>
+<b>Star Container:</b>
+<div class="star-container direction-rtl">
+  <div class="star icon filled positive large">
+    <i class="star-empty fa-heart-o"></i>
+    <i class="star-half fa fa-heartbeat"></i>
+    <i class="star-filled fa fa-heart"></i>
+  </div>
+  <div class="star icon filled positive large">
+   <i class="star-empty fa-heart-o"></i>
+    <i class="star-half fa fa-heartbeat"></i>
+    <i class="star-filled fa fa-heart"></i>
+  </div>
+  <div class="star icon empty positive large">
+    <i class="star-empty fa-heart-o"></i>
+    <i class="star-half fa fa-heartbeat"></i>
+    <i class="star-filled fa fa-heart"></i>
+  </div>
+</div>
+<b>Label:</b>
+<div class="label-value {$modifiers}">good</div>
 
 sg-wrapper:
-<div class="phone-simulator padding">
+<div class="phone-simulator no-border padding">
    <sg-wrapper-content/>
 </div>
 
-Styleguide 3.0
+Styleguide 1.2
 */
 
 
@@ -25,7 +66,7 @@ markup:
   <i class="star-filled"></i>
 </div>
 
-Styleguide 3.1
+Styleguide 1.2.1
 */
 
 
@@ -52,7 +93,7 @@ markup:
   </svg>
 </div>
 
-Styleguide 3.1.1
+Styleguide 1.2.1.1
 */
 
 /*
@@ -76,9 +117,9 @@ markup:
   <svg class="star-filled">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
   </svg>
-  <i class="star-empty fa fa-this-icon"></i>
-  <i class="star-half fa fa-half-icon"></i>
-  <i class="star-filled fa fa-that-icon"></i>
+  <i class="star-empty "></i>
+  <i class="star-half "></i>
+  <i class="star-filled "></i>
 </div>
 <div class="star filled icon {$modifiers}">
   <svg class="star-empty">
@@ -90,9 +131,9 @@ markup:
   <svg class="star-filled">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
   </svg>
-  <i class="star-empty fa fa-this-icon"></i>
-  <i class="star-half fa fa-half-icon"></i>
-  <i class="star-filled fa fa-that-icon"></i>
+  <i class="star-empty "></i>
+  <i class="star-half "></i>
+  <i class="star-filled "></i>
 </div>
 <div class="star filled img {$modifiers}">
   <svg class="star-empty">
@@ -104,13 +145,13 @@ markup:
   <svg class="star-filled">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
   </svg>
-  <i class="star-empty fa fa-this-icon"></i>
-  <i class="star-half fa fa-half-icon"></i>
-  <i class="star-filled fa fa-that-icon"></i>
+  <i class="star-empty "></i>
+  <i class="star-half "></i>
+  <i class="star-filled "></i>
 </div>
 
 
-Styleguide 3.1.2
+Styleguide 1.2.1.2
 */
 
 /*
@@ -118,9 +159,10 @@ Star types
 
 The different star types.
 
-none          - Stars svg icon is used
-.svg          - Stars svg icon is used
-.icon         - Stars character icon is used
+none                  - Stars svg icon is used
+.svg                  - Stars svg icon is used
+.icon                 - Stars character icon is used
+.custom-icon          - Stars character icon is used
 
 markup:
 <div class="star empty {$modifiers}">
@@ -133,9 +175,9 @@ markup:
   <svg class="star-filled">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
   </svg>
-  <i class="star-empty fa fa-this-icon"></i>
-  <i class="star-half fa fa-half-icon"></i>
-  <i class="star-filled fa fa-that-icon"></i>
+  <i class="star-empty fa fa-heart-o"></i>
+  <i class="star-half fa fa-heartbeat"></i>
+  <i class="star-filled fa fa-heart"></i>
 </div>
 <div class="star half {$modifiers}">
   <svg class="star-empty">
@@ -147,9 +189,9 @@ markup:
   <svg class="star-filled">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
   </svg>
-  <i class="star-empty fa fa-this-icon"></i>
-  <i class="star-half fa fa-half-icon"></i>
-  <i class="star-filled fa fa-that-icon"></i>
+ <i class="star-empty fa fa-heart-o"></i>
+ <i class="star-half fa fa-heartbeat"></i>
+ <i class="star-filled fa fa-heart"></i>
 </div>
 <div class="star filled {$modifiers}">
   <svg class="star-empty">
@@ -161,13 +203,34 @@ markup:
   <svg class="star-filled">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
   </svg>
-  <i class="star-empty fa fa-this-icon"></i>
-  <i class="star-half fa fa-half-icon"></i>
-  <i class="star-filled fa fa-that-icon"></i>
+  <i class="star-empty fa-heart-o"></i>
+  <i class="star-half fa fa-heartbeat"></i>
+  <i class="star-filled fa fa-heart"></i>
 </div>
 
-Styleguide 3.1.3
+Styleguide 1.2.1.1.3
 */
+
+/*
+Star types
+
+The different star types.
+
+none                  - Stars svg icon is used
+.fa fa-star           -font-awesome star-icon
+.fa fa-heart          -bootstrat star-icon
+.fa fa-gear           -ionic star-icon
+
+markup:
+<div class="star filled custom-icon">
+  <i class="star-empty {$modifiers}"></i>
+  <i class="star-half fa fa-star-half"></i>
+  <i class="star-filled fa fa-heart"></i>
+</div>
+
+Styleguide 1.2.1.1.3.1
+*/
+
 
 /*
 Star sizes
@@ -192,7 +255,7 @@ markup:
   </svg>
 </div>
 
-Styleguide 3.1.4
+Styleguide 1.2.1.3
 */
 
 /*
@@ -216,7 +279,7 @@ markup:
   </svg>
 </div>
 
-Styleguide 3.1.5
+Styleguide 1.2.1.4
 */
 
 /*
@@ -239,51 +302,9 @@ markup:
   </svg>
 </div>
 
-Styleguide 3.1.6
+Styleguide 1.2.1.5
 */
 
-
-/*
-Label Element
-
-The Label element.
-
-markup:
-<div class="label-value">3.5</div>
-
-Styleguide 3.2
-*/
-
-
-/*
-Label Sizes
-
-The Label element.
-
-none                    - displays star in default size (medium)
-.small                  - displays star in small size
-.medium                 - displays star in medium size
-.large                  - displays star in large size
-
-markup:
-<div class="label-value {$modifiers}">3.5</div>
-
-Styleguide 3.2.1
-*/
-
-/*
-Label Disabled state
-
-The Label n disabled state.
-
-none                    - displays label in normal (medium)
-.disabled               - displays label in disabled state
-
-markup:
-<div class="label-value {$modifiers}">3.5</div>
-
-Styleguide 3.2.2
-*/
 
 /*
 Star Container
@@ -309,7 +330,7 @@ markup:
   </div>
 </div>
 
-Styleguide 3.3
+Styleguide 1.2.2
 */
 
 
@@ -360,7 +381,7 @@ markup:
   </div>
 </div>
 
-Styleguide 3.3.1
+Styleguide 1.2.2.1
 */
 
 /*
@@ -391,5 +412,47 @@ markup:
 </div>
 </div>
 
-Styleguide 3.3.2
+Styleguide 1.2.2.4
+*/
+
+/*
+Label Element
+
+The Label element.
+
+markup:
+<div class="label-value">3.5</div>
+
+Styleguide 1.2.3
+*/
+
+
+/*
+Label Sizes
+
+The Label element.
+
+none                    - displays star in default size (medium)
+.small                  - displays star in small size
+.medium                 - displays star in medium size
+.large                  - displays star in large size
+
+markup:
+<div class="label-value {$modifiers}">3.5</div>
+
+Styleguide 1.2.3.1
+*/
+
+/*
+Label Disabled state
+
+The Label n disabled state.
+
+none                    - displays label in normal (medium)
+.disabled               - displays label in disabled state
+
+markup:
+<div class="label-value {$modifiers}">3.5</div>
+
+Styleguide 1.2.3.2
 */
