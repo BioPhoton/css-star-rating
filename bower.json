@@ -1,6 +1,6 @@
 {
   "name": "css-star-rating",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Css Star Rating is pure css component written in scss.",
   "main": "dist/css/star-rating.css",
   "authors": [
