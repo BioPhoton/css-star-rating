@@ -11,7 +11,7 @@ Star element
   width: $default-star-width;
   height: $default-star-height;
 
-  svg, i, img {
+  svg, i {
     position: absolute;
     top: 0;
     left: 0;
@@ -27,8 +27,7 @@ Star element
     }
   }
 
-  i,
-  img {
+  i {
     display: none;
   }
 
@@ -47,7 +46,7 @@ Star element
     */
   }
 
-  i {
+  &.icon i {
     font-size: $default-star-font-size;
     line-height: $default-star-line-height;
 
@@ -62,15 +61,12 @@ Star element
     }
   }
 
-  img {
-    background-size: cover;
-  }
 
   /*
   Fill states
   ==================================================================*/
   &.empty {
-    svg, i, img {
+    svg, i {
       &.star-half,
       &.star-filled {
         opacity: 0;
@@ -81,7 +77,7 @@ Star element
     }
   }
   &.half {
-    svg, i, img {
+    svg, i {
       &.star-filled,
       &.star-empty {
         opacity: 0;
@@ -92,7 +88,7 @@ Star element
     }
   }
   &.filled {
-    svg, i, img {
+    svg, i {
       &.star-empty,
       &.star-filled {
         opacity: 0;
@@ -113,18 +109,12 @@ Star element
     i {
       color: $color-default-rating;
     }
-    img {
-      color: $color-default-rating;
-    }
   }
   &.negative {
     svg {
       fill: $color-negative-rating;
     }
     i {
-      color: $color-negative-rating;
-    }
-    img {
       color: $color-negative-rating;
     }
   }
@@ -135,9 +125,6 @@ Star element
     i {
       color: $color-middle-rating;
     }
-    img {
-      color: $color-middle-rating;
-    }
   }
   &.positive {
     svg {
@@ -146,16 +133,13 @@ Star element
     i {
       color: $color-positive-rating;
     }
-    img {
-      color: $color-positive-rating;
-    }
   }
 
   /*
   Icon Types
   ==================================================================*/
   &.svg {
-    i, img {
+    i {
       display: none;
     }
     svg {
@@ -163,20 +147,12 @@ Star element
     }
   }
 
+  &.custom-icon,
   &.icon {
-    svg, img {
+    svg {
       display: none;
     }
     i {
-      display: block;
-    }
-  }
-
-  &.img {
-    i, svg {
-      display: none;
-    }
-    img {
       display: block;
     }
   }
