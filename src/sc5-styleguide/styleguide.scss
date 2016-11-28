@@ -1,7 +1,6 @@
 @import "elements.sc5";
 @import "modifiers.sc5";
 
-
 /*
 Star Rating
 
@@ -16,7 +15,6 @@ Options are:
 - Disabled
 
 (in this html is additional angular markup to make the showcase interactive)
-
 
    markup:
    <div ng-init="data.rating = 0" class="rating padding value-{{data.rating}}">
@@ -37,5 +35,5 @@ Options are:
        <sg-wrapper-content/>
    </div>
 
-Styleguide 1.0
+Styleguide 1
 */
