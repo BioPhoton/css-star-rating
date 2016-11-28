@@ -3,3 +3,4 @@ chore
 .gitignore
 .idea
 gulpfile.js
+.travis.yml

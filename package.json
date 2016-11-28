@@ -1,6 +1,6 @@
 {
   "name": "css-star-rating",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "license": "MIT",
   "keywords": [
     "Rating",
@@ -26,6 +26,12 @@
     "type": "git",
     "url": "git+https://github.com/BioPhoton/css-star-rating.git"
   },
+  "contributors": [
+    {
+      "name": "Michael Hladky",
+      "email": "michael@hladky.at"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/BioPhoton/css-star-rating/issues"
   },
@@ -63,7 +69,7 @@
   "dependencies": {},
   "scripts": {
     "clean:dist": "rimraf dist",
-    "build": "gulp css:compile-optimize",
+    "build": "gulp project:build",
     "styleguide": "gulp styleguide:watch",
     "version:bump": "gulp version:bump",
     "release": "npm publish"
