@@ -26,5 +26,5 @@ gulp.task('project:clean', function (done) {
 gulp.task('project:build',['css:compile-optimize'], function (done) {
   helper.log('copy assets.');
   return gulp.src(['./src/assets/star-rating.icons.svg'])
-      .pipe(gulp.dest(config.dist), done);
+      .pipe(gulp.dest(config.dist+'/images'), done);
 });
