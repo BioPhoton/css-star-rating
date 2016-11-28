@@ -15,8 +15,48 @@ Css Star Rating is written in scss and fully customizable over variables.
 Easily compose your own rating component over a rich set of css modifiers for any kind of UI state.  
 
 
+## Install
 
-Resources 
-Image and b64 conversion
-http://svgtopng.com/
-http://b64.io/
+**Get Css Star Rating:**
+ - clone & build this repository
+ - [download as .zip](https://github.com/BioPhoton/css-star-rating/releases)
+ - via **[npm](https://www.npmjs.org/)**: by running `$ npm install css-star-rating` from your console
+ - via **[bower](https://bower.io/)**: by running `$ bower install css-star-rating` from your console
+ 
+**Load library**
+```html
+<link rel="stylesheet" href="bower_components/css-star-rating/dist/css/star-rating.css">
+```
+
+**Copy asstes (optional)**
+If you want to use svg as icon type copy the  
+```tar-rating.icons.svg``` image form ```bower_components/css-star-rating/dist/images/star-rating.css``` to your roots assets folder.
+
+**Use it**
+```html
+<div class="rating large star-icon direction-rtl value-1 half color-default label-top">
+   <div class="label-value">1.5</div>
+    <div class="star-container">
+        <div class="star">
+            <i class="star-empty fa fa-this-icon"></i>
+            <i class="star-half fa fa-half-icon"></i>
+            <i class="star-filled fa fa-that-icon"></i>
+        </div>
+        <div class="star">
+            <i class="star-empty fa fa-this-icon"></i>
+            <i class="star-half fa fa-half-icon"></i>
+            <i class="star-filled fa fa-that-icon"></i>
+        </div>
+        <div class="star">
+            <i class="star-empty fa fa-this-icon"></i>
+            <i class="star-half fa fa-half-icon"></i>
+            <i class="star-filled fa fa-that-icon"></i>
+        </div>
+    </div>
+</div>
+```
+
+##Resources 
+Image and b64 conversion tools
+- http://svgtopng.com/
+- http://b64.io/
