@@ -1,6 +1,6 @@
 {
   "name": "css-star-rating",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "keywords": [
     "Rating",
@@ -39,6 +39,7 @@
   "main": "dist/index.js",
   "devDependencies": {
     "angularic-ionicon": "^1.1.0",
+    "conventional-changelog": "^1.1.0",
     "css-loader": "^0.26.0",
     "del": "^2.2.2",
     "extendify": "^1.0.0",
@@ -67,24 +68,12 @@
     "yargs": "^6.4.0"
   },
   "dependencies": {},
-  "testling": {
-    "files": "dist/css/star-rating.css",
-    "browsers": [
-      "ie/6..latest",
-      "chrome/22..latest",
-      "firefox/16..latest",
-      "safari/latest",
-      "opera/11.0..latest",
-      "iphone/6",
-      "ipad/6",
-      "android-browser/latest"
-    ]
-  },
   "scripts": {
     "clean:dist": "rimraf dist",
     "build": "gulp project:build",
     "styleguide": "gulp styleguide:watch",
     "version:bump": "gulp version:bump",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "release": "npm publish"
   }
 }
