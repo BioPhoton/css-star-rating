@@ -67,6 +67,19 @@
     "yargs": "^6.4.0"
   },
   "dependencies": {},
+  "testling": {
+    "files": "dist/css/star-rating.css",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  },
   "scripts": {
     "clean:dist": "rimraf dist",
     "build": "gulp project:build",
