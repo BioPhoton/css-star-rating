@@ -15,6 +15,26 @@ Css Star Rating is written in scss and fully customizable over variables.
 Easily compose your own rating component over a rich set of css modifiers for any kind of UI state.  
 
 
+
+##Features
+
+- [x] **Written in scss**
+- [x] **Customizable over variables**
+- [x] **Different Numbers of stars**
+- [x] **Color of stars depend on rating**
+- [x] **Display rating over css class**
+- [x] **Half stars**
+- [x] **Sizes**
+- [x] **Star alignments**
+- [x] **Static colors**
+- [x] **Disabled mode**
+- [x] **Star types**
+- [x] **Label**
+- [x] **Label positions**
+- [x] **Animations**
+- [x] **Directions**
+- [x] **Themes**
+
 ## Install
 
 **Get Css Star Rating:**
@@ -56,7 +76,193 @@ If you want to use svg as icon type copy the
 </div>
 ```
 
-##Resources 
-Image and b64 conversion tools
-- http://svgtopng.com/
-- http://b64.io/
+
+
+##Css Modifiers
+
+**.value-[N]**:  
+The actual star rating value. The color of the stars depends on the rating number  
+- .value-0
+- .value-1
+- .value-2
+- .value-3
+- .value-4
+- .value-5
+```html
+<div class="rating value-3">
+   <div class="star-container">
+        ...stars...
+    </div>
+</div>
+```
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-value.PNG" width="290">
+
+**.half**:
+If set, every rating value will have a hlaf star at the end.  
+
+```html
+<div class="rating value-3 half">
+   <div class="star-container">
+        ...stars...
+    </div>
+</div>```
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-show_half_stars-false.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-show_half_stars-true.PNG" width="290">  
+
+**text**: string (Optional)  
+The text next to the stars.  
+Default: undefined  
+
+```html
+<div class="rating value-3">
+   <div class="label-value">My text</div>
+   <div class="star-container">
+        ...stars...
+    </div>
+</div>
+```
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-text.PNG" width="290">
+
+**.label-[POSITION]**:  
+The position of the label.
+- .label-top
+- .label-right
+- .label-bottom
+- .label-left
+
+```html
+<div class="rating value-3 label-right">
+   <div class="label-value">Good</div>
+   <div class="star-container">
+        ...stars...
+    </div>
+</div>
+```
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-label-top.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-label-bottom.PNG" width="290">  
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-label-right.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-label-left.PNG" width="290">
+
+**.spread**:   
+If the start use the whole space or not.  
+
+```html
+<div class="rating value-3 spread">
+   <div class="star-container">
+        ...stars...
+    </div>
+</div>
+```
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-spread-false.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-spread-true.PNG" width="290">
+
+**.[SIZE]**:  
+The height and width of the stars.    
+- .small
+- .medium
+- .large
+```html
+<div class="rating value-3 large">
+   <div class="star-container">
+        ...stars...
+    </div>
+</div>
+```
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-size-small.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-size-medium.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-size-large.PNG" width="290">
+
+**color-[COLOR_NAME]**:  
+Static color of stars.
+- .color-default
+- .color-negative
+- .color-middle
+- .color-positive  
+
+```html
+<div class="rating value-3 color-negative">
+   <div class="star-container">
+        ...stars...
+    </div>
+</div>
+```
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-color-default.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-color-positive.PNG" width="290">  
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-color-middle.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-color-negative.PNG" width="290">
+
+**.disabled**:
+The click callback is disabled, colors are transparent   
+  
+```html
+<div class="rating value-3 color-negative">
+   <div class="star-container">
+        ...stars...
+    </div>
+</div>
+```
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-disabled-false.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-disabled-true.PNG" width="290">
+  
+**.direction-[DIRECTION]**:   
+The direction of the stars and label.   
+- .direction-rtl
+- .direction-ltr  
+
+```html
+<div class="rating value-3 direction-rtl">
+   <div class="star-container">
+        ...stars...
+    </div>
+</div>
+```
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-direction-rtl.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-direction-ltr.PNG" width="290">
+  
+**.[ANIMATION_SPEED]**:   
+The duration of the animation in ms.   
+- .immediately
+- .noticeable
+- .slow  
+ 
+```html
+<div class="rating value-3 slow">
+   <div class="star-container">
+        ...stars...
+    </div>
+</div>
+```
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-animation_speed-immediately.gif" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-animation_speed-noticeable.gif" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-animation_speed-slow.gif" width="290">
+
+**starType**:  
+The type of start resource to use.     
+- .star-icon
+- .star-svg
+
+```html
+<div class="rating value-3 star-icon">
+   <div class="star-container">
+        ...svg and icon stars...
+    </div>
+</div>
+```
+
+##Themes
+As a bonus there are some themes as classes. 
+**theme-[NAME]**:  
+The type of start resource to use.     
+- .theme-google-places
+- .theme-kununu
+
+```html
+<div class="rating value-3 theme-google-places">
+   <div class="star-container">
+        ...stars...
+    </div>
+</div>
+```
+
+## Related projects:
+- [Angular Star Rating](https://github.com/BioPhoton/angular-star-rating)

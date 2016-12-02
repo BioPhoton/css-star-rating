@@ -18,6 +18,12 @@
     border: none;
 }
 
+.phone-simulator.center-all {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .phone-simulator.overflow-visible {
     overflow: visible;
 }
@@ -51,4 +57,11 @@
 }
 .rating .star-icon .star i.star-filled.fa.fa-that-icon:before {
     content: "X" !important;
+}
+
+
+.star.show-all svg,
+.star.show-all i {
+opacity: 0.5 !important;
+    display: flex !important;
 }
