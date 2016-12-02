@@ -1,3 +1,32 @@
+<a name="1.0.6"></a>
+## [1.0.6](https://github.com/BioPhoton/css-star-rating/compare/v1.0.3...v1.0.6) (2016-12-02)
+
+
+### Bug Fixes
+
+* **assets:** moved images to assets folder ([65185ba](https://github.com/BioPhoton/css-star-rating/commit/65185ba))
+* **assets:** removed images ([c018301](https://github.com/BioPhoton/css-star-rating/commit/c018301))
+* **build:** rebuild project ([ac02fde](https://github.com/BioPhoton/css-star-rating/commit/ac02fde))
+* **readme:** image paths ([091b91d](https://github.com/BioPhoton/css-star-rating/commit/091b91d))
+* **readme:** image paths ([7f55739](https://github.com/BioPhoton/css-star-rating/commit/7f55739))
+* **readme:** updated readme ([2bb59fe](https://github.com/BioPhoton/css-star-rating/commit/2bb59fe))
+* **readme:** updated readme ([6870720](https://github.com/BioPhoton/css-star-rating/commit/6870720))
+* **readme:** updated readme ([6fa3b0e](https://github.com/BioPhoton/css-star-rating/commit/6fa3b0e))
+* **refactored:** scss, kss, scripts ([f1a6b5a](https://github.com/BioPhoton/css-star-rating/commit/f1a6b5a))
+* **star icon position:** fixed star icon position ([b121d9b](https://github.com/BioPhoton/css-star-rating/commit/b121d9b))
+
+
+### Features
+
+* **browser support:** try testling ([2b596d9](https://github.com/BioPhoton/css-star-rating/commit/2b596d9))
+* **changelog:** implement changelog [#18](https://github.com/BioPhoton/css-star-rating/issues/18) ([7700c0b](https://github.com/BioPhoton/css-star-rating/commit/7700c0b))
+* **resources:** added images ([c9a4482](https://github.com/BioPhoton/css-star-rating/commit/c9a4482))
+* **styleguide:** updated styleguide ([6b5ac43](https://github.com/BioPhoton/css-star-rating/commit/6b5ac43))
+* **themes:** imtroduced themes with 2 themes ([ec4171e](https://github.com/BioPhoton/css-star-rating/commit/ec4171e))
+* **version-bump:** bumped version to 1.0.5 ([42e7ea4](https://github.com/BioPhoton/css-star-rating/commit/42e7ea4))
+
+
+
 <a name="1.0.4"></a>
 ## [1.0.4](https://github.com/BioPhoton/css-star-rating/compare/v1.0.3...v1.0.4) (2016-11-30)
 
