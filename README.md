@@ -92,7 +92,7 @@ The actual star rating value. The color of the stars depends on the rating numbe
     </div>
 </div>
 ```
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-value.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-value.PNG" width="290">
 
 **.half**:
 If set, every rating value will have a hlaf star at the end.  
@@ -103,8 +103,8 @@ If set, every rating value will have a hlaf star at the end.
         ...stars...
     </div>
 </div>```
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-show_half_stars-false.PNG" width="290">
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-show_half_stars-true.PNG" width="290">  
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-show_half_stars-false.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-show_half_stars-true.PNG" width="290">  
 
 **text**: string (Optional)  
 The text next to the stars.  
@@ -118,7 +118,7 @@ Default: undefined
     </div>
 </div>
 ```
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-text.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-text.PNG" width="290">
 
 **.label-[POSITION]**:  
 The position of the label.
@@ -135,10 +135,10 @@ The position of the label.
     </div>
 </div>
 ```
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-label-top.PNG" width="290">
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-label-bottom.PNG" width="290">  
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-label-right.PNG" width="290">
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-label-left.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-label-top.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-label-bottom.PNG" width="290">  
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-label-right.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-label-left.PNG" width="290">
 
 **.spread**:   
 If the start use the whole space or not.  
@@ -150,8 +150,8 @@ If the start use the whole space or not.
     </div>
 </div>
 ```
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-spread-false.PNG" width="290">
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-spread-true.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-spread-false.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-spread-true.PNG" width="290">
 
 **.[SIZE]**:  
 The height and width of the stars.    
@@ -165,9 +165,9 @@ The height and width of the stars.
     </div>
 </div>
 ```
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-size-small.PNG" width="290">
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-size-medium.PNG" width="290">
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-size-large.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-size-small.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-size-medium.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-size-large.PNG" width="290">
 
 **color-[COLOR_NAME]**:  
 - .color-default
@@ -182,10 +182,10 @@ The height and width of the stars.
     </div>
 </div>
 ```
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-color-default.PNG" width="290">
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-color-positive.PNG" width="290">  
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-color-middle.PNG" width="290">
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-color-negative.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-color-default.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-color-positive.PNG" width="290">  
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-color-middle.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-color-negative.PNG" width="290">
 
 **.disabled**:
 The click callback is disabled, colors are transparent   
@@ -197,8 +197,8 @@ The click callback is disabled, colors are transparent
     </div>
 </div>
 ```
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-disabled-false.PNG" width="290">
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-disabled-true.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-disabled-false.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-disabled-true.PNG" width="290">
   
 **.direction-[DIRECTION]**:   
 The direction of the stars and label.   
@@ -212,8 +212,8 @@ The direction of the stars and label.
     </div>
 </div>
 ```
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-direction-rtl.gif" width="290">
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-direction-ltr.gif" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-direction-rtl.gif" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-direction-ltr.gif" width="290">
   
 **.[ANIMATION_SPEED]**: 
 The duration of the animation in ms.   
@@ -228,9 +228,9 @@ The duration of the animation in ms.
     </div>
 </div>
 ```
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-animation_speed-immediately.gif" width="290">
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-animation_speed-noticeable.gif" width="290">
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/prop-animation_speed-slow.gif" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-animation_speed-immediately.gif" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-animation_speed-noticeable.gif" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-animation_speed-slow.gif" width="290">
 
 **starType**: starRatingStarTypes (Optional)  
 The type of start resource to use.     
