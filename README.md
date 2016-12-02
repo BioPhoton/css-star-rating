@@ -216,8 +216,8 @@ The direction of the stars and label.
     </div>
 </div>
 ```
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-direction-rtl.gif" width="290">
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-direction-ltr.gif" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-direction-rtl.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-direction-ltr.PNG" width="290">
   
 **.[ANIMATION_SPEED]**:   
 The duration of the animation in ms.   
