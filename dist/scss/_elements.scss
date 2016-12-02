@@ -3,6 +3,15 @@
 /*CSS Star Rating Elements
 ====================================================*/
 
+/*HELPER*/
+
+.center-all{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 /*
 Star element
 ==================================================================*/
@@ -10,15 +19,16 @@ Star element
   position: relative;
   width: $default-star-width;
   height: $default-star-height;
+  @extend .center-all;
 
   svg, i {
+    @extend .center-all;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 
-    display: block;
     font-style: normal;
 
     &.star-half,
@@ -28,12 +38,13 @@ Star element
   }
 
   i {
+    top:1px;
     display: none;
   }
 
   svg {
     background-size: contain;
-    
+
     svg.star-empty {
       background-image: url(data:image/svg+xml;base64,PHN2ZyBzdHlsZT0icG9zaXRpb246IGFic29sdXRlOyB3aWR0aDogMDsgaGVpZ2h0OiAwOyBvdmVyZmxvdzogaGlkZGVuOyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgICAgICA8cGF0aCBjbGFzcz0icGF0aC1zdGFyLWVtcHR5IiAgICAgICAgICAgICAgICAgIGQ9Ik0zMy40MTIgMTIuMzk1bC0xMS44NDItMS4wMjEtNC42MjgtMTAuOTA0LTQuNjI4IDEwLjkyLTExLjg0MiAxLjAwNSA4Ljk5MyA3Ljc5MS0yLjcwMSAxMS41NzkgMTAuMTc5LTYuMTQ0IDEwLjE3OSA2LjE0NC0yLjY4NS0xMS41NzkgOC45NzYtNy43OTF6TTE2Ljk0MSAyMi41NDFsLTYuMTkzIDMuNzM5IDEuNjQ3LTcuMDQ5LTUuNDY4LTQuNzQ0IDcuMjE0LTAuNjI2IDIuOC02LjYzOCAyLjgxNiA2LjY1NCA3LjIxNCAwLjYyNi01LjQ2OCA0Ljc0NCAxLjY0NyA3LjA0OS02LjIwOS0zLjc1NXoiLz48L3N2Zz4=);
     }
@@ -54,7 +65,7 @@ Star element
       content: $default-star-character-empty;
     }
     &.star-half:before {
-      content: $default-star-character-half
+      content: $default-star-character-half;
     }
     &.star-filled:before {
       content: $default-star-character-filled;

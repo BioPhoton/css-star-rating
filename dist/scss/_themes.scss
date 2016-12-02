@@ -1,25 +1,114 @@
 @charset "UTF-8";
 
+@import "elements";
 
 /*theme modifiers
 ====================================================*/
 
 .rating {
-  &.theme-kununu {
-    background :red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: $rating-margin-bottom;
 
+  &.theme-kununu {
+    $kununu-color-white: #fff !default;
+    $kununu-color-lightgray: #f8f8f8 !default;
+    $kununu-color-gray: #e9ecec !default;
+    $kununu-color-blue: #2286dc !default;
+    $kununu-color-darkblue: #2f3940 !default;
+    $kununu-color-green: #99c613 !default;
+
+    flex-direction: column;
+    width: 78px;
+
+    .label-value,
     .star-container {
+      width: 100%;
+    }
+
+    .label-value {
+
       display: flex;
       align-items: center;
-      flex: 0 0 auto;
+      justify-content: center;
+
+      border-radius: 6px 6px 0 0;
+      height: 50px;
+      border: 1px solid $kununu-color-gray;
+      border-bottom: 0px;
+      font-size: 18px;
+      font-weight: 600;
+      color: $kununu-color-darkblue;
+      letter-spacing: -1px;
+
+      background-color: $kununu-color-lightgray;
+    }
+    .star-container {
+      border-radius: 0 0 6px 6px;
+      padding: 2px 0 4px 0;
+      margin-left: 0px;
+      margin-right: 0px;
+
+      justify-content: center;
+      background-color: $kununu-color-green;
+
+      border: 1px solid $kununu-color-green;
+      border-bottom: 0px;
 
       .star {
-        position: relative;
+        font-size: 11px;
+        height: 11px;
+        width: 11px;
+        @extend .star.custom-icon;
+
+        i {
+          color: $kununu-color-white;
+          text-align: center;
+        }
       }
     }
+
   }
+
+  &.theme-google-places {
+    $google_places-color-default: #e1e1e1 !default;
+    $google_places-color-red: #e7711b !default;
+
+    .label-value {
+      color: $google_places-color-red;
+      font-family: arial, sans-serif;
+      font-size: 13px;
+      line-height: 15px;
+    }
+
+    .star-container {
+      width: 65px;
+      margin-left: 2px;
+
+      .star {
+
+        i {
+          font-size:17px;
+          color: $google_places-color-red !important;
+          &.star-empty {
+            opacity: 1 !important;
+            color: $google_places-color-default !important;
+            &:before {
+              content: $default-star-character-filled;
+            }
+          }
+          &.star-half{
+            width:8px;
+            overflow:hidden;
+            &:before {
+              content: $default-star-character-half;
+            }
+          }
+          &.star-filled:before {
+            content: $default-star-character-filled;
+          }
+        }
+      }
+
+    }
+
+  }
+
 }
