@@ -249,5 +249,20 @@ The type of start resource to use.
 </div>
 ```
 
+##Themes
+As a bonus there are some themes as classes. 
+**starType**:  
+The type of start resource to use.     
+- .theme-google-places
+- .theme-kununu
+
+```html
+<div class="rating value-3 theme-google-places">
+   <div class="star-container">
+        ...stars...
+    </div>
+</div>
+```
+
 ## Related projects:
 - [Angular Star Rating](https://github.com/BioPhoton/angular-star-rating)
