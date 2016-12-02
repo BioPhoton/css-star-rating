@@ -251,7 +251,7 @@ The type of start resource to use.
 
 ##Themes
 As a bonus there are some themes as classes. 
-**starType**:  
+**theme-[NAME]**:  
 The type of start resource to use.     
 - .theme-google-places
 - .theme-kununu
