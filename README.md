@@ -15,6 +15,26 @@ Css Star Rating is written in scss and fully customizable over variables.
 Easily compose your own rating component over a rich set of css modifiers for any kind of UI state.  
 
 
+
+##Features
+
+- [x] **Written in scss**
+- [x] **Customizable over variables**
+- [x] **Different Numbers of stars**
+- [x] **Color of stars depend on rating**
+- [x] **Display rating over css class**
+- [x] **Half stars**
+- [x] **Sizes**
+- [x] **Star alignments**
+- [x] **Static colors**
+- [x] **Disabled mode**
+- [x] **Star types**
+- [x] **Label**
+- [x] **Label positions**
+- [x] **Animations**
+- [x] **Directions**
+- [x] **Themes**
+
 ## Install
 
 **Get Css Star Rating:**
@@ -56,24 +76,7 @@ If you want to use svg as icon type copy the
 </div>
 ```
 
-##Features
 
-- [x] **Written in scss**
-- [x] **Customizable over variables**
-- [x] **Different Numbers of stars**
-- [x] **Color of stars depend on rating**
-- [x] **Display rating over css class**
-- [x] **Half stars**
-- [x] **Sizes**
-- [x] **Star alignments**
-- [x] **Static colors**
-- [x] **Disabled mode**
-- [x] **Star types**
-- [x] **Label**
-- [x] **Label positions**
-- [x] **Animations**
-- [x] **Directions**
-- [x] **Themes**
 
 ##Css Modifiers
 
@@ -170,6 +173,7 @@ The height and width of the stars.
 <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-size-large.PNG" width="290">
 
 **color-[COLOR_NAME]**:  
+Static color of stars.
 - .color-default
 - .color-negative
 - .color-middle
@@ -215,7 +219,7 @@ The direction of the stars and label.
 <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-direction-rtl.gif" width="290">
 <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-direction-ltr.gif" width="290">
   
-**.[ANIMATION_SPEED]**: 
+**.[ANIMATION_SPEED]**:   
 The duration of the animation in ms.   
 - .immediately
 - .noticeable
@@ -232,7 +236,7 @@ The duration of the animation in ms.
 <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-animation_speed-noticeable.gif" width="290">
 <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-animation_speed-slow.gif" width="290">
 
-**starType**: starRatingStarTypes (Optional)  
+**starType**:  
 The type of start resource to use.     
 - .star-icon
 - .star-svg
@@ -244,3 +248,6 @@ The type of start resource to use.
     </div>
 </div>
 ```
+
+## Related projects:
+- [Angular Star Rating](https://github.com/BioPhoton/angular-star-rating)
