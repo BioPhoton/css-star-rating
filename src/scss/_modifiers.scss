@@ -1,10 +1,8 @@
 @charset "UTF-8";
 
-@import "elements";
-
 /*
 Rating Component
-=========================================================================*/
+========================================================================= */
 .rating {
   display: flex;
   align-items: center;
@@ -127,7 +125,7 @@ Rating Component
     }
   }
 
-  /*
+/*
 Direction
 ===================================================*/
   &.direction-rtl {
@@ -148,6 +146,9 @@ Direction
   ====================================================*/
   &.star-icon {
     @extend .star.icon;
+  }
+  &.star-custom-icon {
+    @extend .star.custom-icon;
   }
   &.star-svg {
     @extend .star.svg;
@@ -267,7 +268,7 @@ Direction
     transition: all $immediately-animation-type;
     .star {
       transition: $immediately-animation-type;
-      svg, i, img {
+      svg, i {
         transition: $immediately-animation-type;
       }
     }
@@ -278,7 +279,7 @@ Direction
       transition: all $default-animation-speed $default-animation-type;
       .star {
         transition: all $default-animation-speed $default-animation-type;
-        svg, i, img {
+        svg, i {
           transition: all $default-animation-speed $default-animation-type;
         }
       }
@@ -290,7 +291,7 @@ Direction
       transition: all $slow-animation-speed $default-animation-type;
       .star {
         transition: all $slow-animation-speed $default-animation-type;
-        svg, i, img {
+        svg, i {
           transition: all $slow-animation-speed $default-animation-type;
         }
       }
