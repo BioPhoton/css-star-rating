@@ -253,9 +253,9 @@ The type of start resource to use.
     </div>
 </div>
 ```
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-type-svg.gif" width="290">
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-type-icon.gif" width="290">
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-type-custom-icon.gif" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-type-svg.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-type-icon.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-type-custom-icon.PNG" width="290">
 
 
 ##Themes
