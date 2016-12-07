@@ -1,3 +1,20 @@
+<a name="1.0.7"></a>
+## [1.0.7](https://github.com/BioPhoton/css-star-rating/compare/v1.0.6...v1.0.7) (2016-12-07)
+
+
+### Bug Fixes
+
+* **build:** rebuild project ([0db5fa4](https://github.com/BioPhoton/css-star-rating/commit/0db5fa4))
+* **resources:** remved resources ([2e27cfe](https://github.com/BioPhoton/css-star-rating/commit/2e27cfe))
+
+
+### Features
+
+* **font-icon:** implemented fonticon styles ([9543d14](https://github.com/BioPhoton/css-star-rating/commit/9543d14))
+* **themes:** implemented themes ([7f82d98](https://github.com/BioPhoton/css-star-rating/commit/7f82d98))
+
+
+
 <a name="1.0.6"></a>
 ## [1.0.6](https://github.com/BioPhoton/css-star-rating/compare/v1.0.3...v1.0.6) (2016-12-02)
 
