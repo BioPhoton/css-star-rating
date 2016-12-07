@@ -20,9 +20,12 @@ Easily compose your own rating component over a rich set of css modifiers for an
 
 - [x] **Written in scss**
 - [x] **Customizable over variables**
+- [x] **Flexbox layout**
+- [x] **SVG icons**
+- [x] **Icon fonts like fontawesome, ionicon...**
+- [x] **Display rating over css class**
 - [x] **Different Numbers of stars**
 - [x] **Color of stars depend on rating**
-- [x] **Display rating over css class**
 - [x] **Half stars**
 - [x] **Sizes**
 - [x] **Star alignments**
@@ -239,6 +242,7 @@ The duration of the animation in ms.
 **starType**:  
 The type of start resource to use.     
 - .star-icon
+ - .custom-icon
 - .star-svg
 
 ```html
