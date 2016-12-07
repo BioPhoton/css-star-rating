@@ -11,15 +11,8 @@
 
 [![Package Quality](http://npm.packagequality.com/badge/css-star-rating.png)](http://packagequality.com/#?package=css-star-rating)  
 
-| IE | Firefox | Chrome | Safari | Opera |
-|--- |---	   |--- 	|---	 |---|
-| 11  	|  50 	|   55	|  10 	|   41	|
-| <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browser/ie.png" width="100">	| <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browser/firefox.png" width="100"> | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browser/chrome.png" width="100">  | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browser/safari.png" width="100">  | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browser/opera.png" width="100"> |
-
 Css Star Rating is written in scss and fully customizable over variables.  
 Easily compose your own rating component over a rich set of css modifiers for any kind of UI state.  
-
-
 
 ##Features
 
@@ -42,6 +35,16 @@ Easily compose your own rating component over a rich set of css modifiers for an
 - [x] **Animations**
 - [x] **Directions**
 - [x] **Themes**
+
+## Browser support
+
+
+| IE | Firefox | Chrome | Safari | Opera |
+|--- |---	   |--- 	|---	 |---|
+| 11  	|  50 	|   55	|  10 	|   41	|
+| <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browsers/ie.png" width="100">	| <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browsers/firefox.png" width="100"> | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browsers/chrome.png" width="100">  | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browsers/safari.png" width="100">  | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browsers/opera.png" width="100"> |
+
+
 
 ## Install
 
