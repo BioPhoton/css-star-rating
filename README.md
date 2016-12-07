@@ -11,6 +11,11 @@
 
 [![Package Quality](http://npm.packagequality.com/badge/css-star-rating.png)](http://packagequality.com/#?package=css-star-rating)  
 
+| IE | Firefox | Chrome | Safari | Opera |
+|--- |---	   |--- 	|---	 |---|
+| 11  	|  50 	|   55	|  10 	|   41	|
+| <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browser/ie.png" width="100">	| <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browser/firefox.png" width="100"> | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browser/chrome.png" width="100">  | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browser/safari.png" width="100">  | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browser/opera.png" width="100"> |
+
 Css Star Rating is written in scss and fully customizable over variables.  
 Easily compose your own rating component over a rich set of css modifiers for any kind of UI state.  
 
@@ -100,8 +105,9 @@ The actual star rating value. The color of the stars depends on the rating numbe
 ```
 <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-value.PNG" width="290">
 
-**.half**:
-If set, every rating value will have a hlaf star at the end.  
+**.half**:  
+If set, every rating value will have a half star at the end.
+- .half
 
 ```html
 <div class="rating value-3 half">
@@ -113,9 +119,9 @@ If set, every rating value will have a hlaf star at the end.
 <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-show_half_stars-false.PNG" width="290">
 <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-show_half_stars-true.PNG" width="290">  
 
-**text**: string (Optional)  
-The text next to the stars.  
-Default: undefined  
+**text**:  
+The text next to the stars. 
+- (Just additional css)
 
 ```html
 <div class="rating value-3">
