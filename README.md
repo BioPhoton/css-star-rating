@@ -108,7 +108,8 @@ If set, every rating value will have a hlaf star at the end.
    <div class="star-container">
         ...stars...
     </div>
-</div>```
+</div>
+```
 <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-show_half_stars-false.PNG" width="290">
 <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-show_half_stars-true.PNG" width="290">  
 
