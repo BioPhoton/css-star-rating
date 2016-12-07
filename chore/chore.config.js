@@ -29,17 +29,10 @@ module.exports = (function () {
     var styleguideCopies = [
         {
             src: [
-                path.join( 'src', '**', '*.svg')
+                path.join( 'src', 'assets', 'star-rating.icons.svg')
             ],
             dest: path.join(styleguideFolder, 'assets', 'images'),
             name: 'styleguide images copies'
-        },
-        {
-            src: [
-                path.join( 'node_modules', 'font-awesome', 'css', 'font-awesome.min.css')
-            ],
-            dest: path.join(styleguideFolder, 'assets', 'css'),
-            name: 'styleguide icon-fonts copies'
         }
     ];
 

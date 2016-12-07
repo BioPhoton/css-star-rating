@@ -35,7 +35,9 @@ var defaultConfig = {
         applyStylesSrc:[
             path.join(config.dist,'css','star-rating.css')
             , path.join(config.src,'sc5-styleguide','styles.css')
-            , path.join('node_modules','font-awesome','css','font-awesome.min.css')],
+            , path.join('node_modules','font-awesome','css','font-awesome.min.css')
+            , path.join('node_modules','ionicons','css','ionicons.min.css')
+        ],
         destFolder: path.join(sc5Folder),
         sassOptions : {
             indentWidth: 4,
@@ -58,7 +60,10 @@ var defaultConfig = {
         },
         styleguideOptions : {
             title: config.projectName,
-            afterBody:  '<script src="../node_modules/font-awesome/css/font-awesome.css">',
+           /*
+            afterBody:  '<script src="../node_modules/font-awesome/css/font-awesome.min.css"></script>' +
+                        '<script src="../node_modules/ionicons/dist/css/ionicons.min.css"></script>',
+            */
             server: true,
             rootPath: sc5Folder,
             overviewPath: path.join('README.md'),
