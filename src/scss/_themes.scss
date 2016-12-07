@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-@import "elements";
-
 /*theme modifiers
 ====================================================*/
 
@@ -53,12 +51,12 @@
       border-bottom: 0px;
 
       .star {
-        font-size: 11px;
         height: 11px;
         width: 11px;
         @extend .star.custom-icon;
 
         i {
+          font-size: 11px;
           color: $kununu-color-white;
           text-align: center;
         }
@@ -85,7 +83,7 @@
       .star {
 
         i {
-          font-size:17px;
+          font-size: 17px;
           color: $google_places-color-red !important;
           &.star-empty {
             opacity: 1 !important;
@@ -94,9 +92,9 @@
               content: $default-star-character-filled;
             }
           }
-          &.star-half{
-            width:7px;
-            overflow:hidden;
+          &.star-half {
+            width: 7px;
+            overflow: hidden;
             &:before {
               content: $default-star-character-half;
             }
@@ -107,6 +105,56 @@
         }
       }
 
+    }
+
+  }
+
+  &.theme-classic {
+
+  }
+
+  &.theme-material {
+
+  }
+
+  &.theme-rolling-stars {
+
+    .star-container {
+      .star {
+        transition: transform 1s;
+        transform: rotate(0deg);
+      }
+    }
+
+    @for $i from $minRatingValue through $maxNumOfStars {
+      &.value-#{$i} {
+        .star-container {
+          .star:nth-child(-n+#{$i}) {
+            transition: transform 1s;
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+
+    &.value-0.half {
+      .star:nth-child(1) {
+        transition: transform 1s;
+        transform: rotate(360deg);
+      }
+    }
+
+    @for $i from $minRatingValue through $maxNumOfStars {
+      &.value-#{$i}.half {
+        .star-container {
+          @if ($i < $maxNumOfStars) {
+            .star:nth-child(#{$i+1}) {
+              transition: transform 1s;
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
     }
 
   }
