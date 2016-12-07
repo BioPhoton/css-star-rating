@@ -27,19 +27,19 @@ markup:
 <b>Star Container:</b>
 <div class="star-container direction-rtl">
   <div class="star icon filled positive large">
-    <i class="star-empty fa-heart-o"></i>
-    <i class="star-half fa fa-heartbeat"></i>
-    <i class="star-filled fa fa-heart"></i>
+    <i class="star-empty fa-circle-o"></i>
+    <i class="star-half fa fa-check-circle-o"></i>
+    <i class="star-filled fa fa-check-circle"></i>
   </div>
   <div class="star icon filled positive large">
-   <i class="star-empty fa-heart-o"></i>
-    <i class="star-half fa fa-heartbeat"></i>
-    <i class="star-filled fa fa-heart"></i>
+   <i class="star-empty fa-circle-o"></i>
+    <i class="star-half fa fa-check-circle-o"></i>
+    <i class="star-filled fa fa-check-circle"></i>
   </div>
   <div class="star icon empty positive large">
-    <i class="star-empty fa-heart-o"></i>
-    <i class="star-half fa fa-heartbeat"></i>
-    <i class="star-filled fa fa-heart"></i>
+    <i class="star-empty fa-circle-o"></i>
+    <i class="star-half fa fa-check-circle-o"></i>
+    <i class="star-filled fa fa-check-circle"></i>
   </div>
 </div>
 <b>Label:</b>
@@ -134,19 +134,10 @@ markup:
   <i class="star-half "></i>
   <i class="star-filled "></i>
 </div>
-<div class="star filled img {$modifiers}">
-  <svg class="star-empty">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-  </svg>
-  <svg class="star-half">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-  </svg>
-  <svg class="star-filled">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-  </svg>
-  <i class="star-empty "></i>
-  <i class="star-half "></i>
-  <i class="star-filled "></i>
+<div class="star filled custom-icon {$modifiers}">
+  <i class="star-empty fa fa-star-o"></i>
+  <i class="star-half  fa fa-star-half-o"></i>
+  <i class="star-filled  fa fa-star"></i>
 </div>
 
 
@@ -174,9 +165,9 @@ markup:
   <svg class="star-filled">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
   </svg>
-  <i class="star-empty fa fa-heart-o"></i>
-  <i class="star-half fa fa-heartbeat"></i>
-  <i class="star-filled fa fa-heart"></i>
+<i class="star-empty fa fa-star-o"></i>
+  <i class="star-half fa fa-star-half-o"></i>
+  <i class="star-filled fa fa-star"></i>
 </div>
 <div class="star half {$modifiers}">
   <svg class="star-empty">
@@ -188,9 +179,9 @@ markup:
   <svg class="star-filled">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
   </svg>
- <i class="star-empty fa fa-heart-o"></i>
- <i class="star-half fa fa-heartbeat"></i>
- <i class="star-filled fa fa-heart"></i>
+  <i class="star-empty fa fa-star-o"></i>
+  <i class="star-half fa fa-star-half-o"></i>
+  <i class="star-filled fa fa-star"></i>
 </div>
 <div class="star filled {$modifiers}">
   <svg class="star-empty">
@@ -202,9 +193,9 @@ markup:
   <svg class="star-filled">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
   </svg>
-  <i class="star-empty fa-heart-o"></i>
-  <i class="star-half fa fa-heartbeat"></i>
-  <i class="star-filled fa fa-heart"></i>
+ <i class="star-empty fa fa-star-o"></i>
+  <i class="star-half fa fa-star-half-o"></i>
+  <i class="star-filled fa fa-star"></i>
 </div>
 
 Styleguide 1.2.1.1.3
@@ -215,16 +206,13 @@ Star icons
 
 The different star icons.
 
-none                  - Stars svg icon is used
-.fa fa-star           - font-awesome star-icon
-.fa fa-heart          - bootstrap star-icon
-.fa fa-gear           - ionic star-icon
+.fa.fa-star-half-o    - font-awesome star-icon
+.ion-ios-star-half    - bootstrap star-icon
+.fa.fa-gear           - ionicons star-icon
 
 markup:
-<div class="star filled custom-icon">
-  <i class="star-empty {$modifiers}"></i>
-  <i class="star-half fa fa-star-half"></i>
-  <i class="star-filled fa fa-heart"></i>
+<div class="star half custom-icon">
+  <i class="star-half {$modifiers}"></i>
 </div>
 
 Styleguide 1.2.1.1.3.1

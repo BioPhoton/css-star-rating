@@ -46,7 +46,7 @@ Value
 Different styles for different rating values.
 Default colors are red for values equal to 2 or below, yellow for 3, and green for 4 or above.
 
-default                 - 0 rating
+                        - no rating
 .value-0                - 0 rating
 .value-1                - 1 rating
 .value-2                - 2 rating
@@ -113,10 +113,25 @@ Half-Stars
 Different styles for different rating values.
 Default colors are red for values equal to 2 or below, yellow for 3, and green for 4 or above.
 
-default                  - rating with full stars
+default                 - rating with full stars
 .half                   - rating with half stars on the end
 
 markup:
+<div class="rating {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
 <div class="rating value-0 {$modifiers}">
     <div class="star-container">
         <div class="star" ng-repeat="i in [1,2,3,4,5]">
@@ -278,6 +293,21 @@ default                  - No static color
 .color-negative          - Stars are always colored negative
 
 markup:
+<div class="rating {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
 <div class="rating half value-0 {$modifiers}">
     <div class="star-container">
         <div class="star" ng-repeat="i in [1,2,3,4,5]">
@@ -535,10 +565,11 @@ Styleguide 1.1.6
 /*
    Star Type
 
-   The stars can be generated oft of three different types. characters, svg's of any icon font
+   The stars can be generated out of three different types. characters, svg's of any icon font
 
    default                  - The default star type is svg
-   .star-icon               - Star-Characters for default browser font
+   .star-icon               - Star-Characters from default browser font
+   .star-custom-icon        - Star-Characters from icon-fonts like fontawesome and others
    .star-svg                - Star-Vectors form the shipped svg images
 
    markup:
@@ -554,9 +585,9 @@ Styleguide 1.1.6
             <svg class="star-filled">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
             </svg>
-            <i class="star-empty fa fa-this-icon"></i>
-            <i class="star-half fa fa-half-icon"></i>
-            <i class="star-filled fa fa-that-icon"></i>
+            <i class="star-empty fa fa-star-o"></i>
+            <i class="star-half fa fa-star-half-o"></i>
+            <i class="star-filled fa fa-star"></i>
              </div>
     </div>
   </div>
