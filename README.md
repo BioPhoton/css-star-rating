@@ -242,9 +242,9 @@ The duration of the animation in ms.
 
 **starType**:  
 The type of start resource to use.     
-- .star-icon
- - .custom-icon
 - .star-svg
+- .star-icon (star character)
+- .custom-icon (i.e. font-awesome)
 
 ```html
 <div class="rating value-3 star-icon">
@@ -253,6 +253,10 @@ The type of start resource to use.
     </div>
 </div>
 ```
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-type-svg.gif" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-type-icon.gif" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-type-custom-icon.gif" width="290">
+
 
 ##Themes
 As a bonus there are some themes as classes. 
