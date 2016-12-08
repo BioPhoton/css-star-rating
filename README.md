@@ -69,19 +69,19 @@ If you want to use svg as icon type copy the
    <div class="label-value">1.5</div>
     <div class="star-container">
         <div class="star">
-            <i class="star-empty fa fa-this-icon"></i>
-            <i class="star-half fa fa-half-icon"></i>
-            <i class="star-filled fa fa-that-icon"></i>
+            <i class="star-empty"></i>
+            <i class="star-half"></i>
+            <i class="star-filled"></i>
         </div>
         <div class="star">
-            <i class="star-empty fa fa-this-icon"></i>
-            <i class="star-half fa fa-half-icon"></i>
-            <i class="star-filled fa fa-that-icon"></i>
+            <i class="star-empty"></i>
+            <i class="star-half"></i>
+            <i class="star-filled"></i>
         </div>
         <div class="star">
-            <i class="star-empty fa fa-this-icon"></i>
-            <i class="star-half fa fa-half-icon"></i>
-            <i class="star-filled fa fa-that-icon"></i>
+            <i class="star-empty"></i>
+            <i class="star-half"></i>
+            <i class="star-filled"></i>
         </div>
     </div>
 </div>
@@ -208,7 +208,7 @@ Static color of stars.
 The click callback is disabled, colors are transparent   
   
 ```html
-<div class="rating value-3 color-negative">
+<div class="rating value-3 disabled">
    <div class="star-container">
         ...stars...
     </div>
@@ -258,7 +258,24 @@ The type of start resource to use.
 ```html
 <div class="rating value-3 star-icon">
    <div class="star-container">
-        ...svg and icon stars...
+        <!-- font icons-->
+        <star>
+            <i class="star-empty"></i>
+            <i class="star-half"></i>
+            <i class="star-filled"></i> 
+        </star>
+        <!-- or svg icons-->
+        <star>
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </star>
     </div>
 </div>
 ```
