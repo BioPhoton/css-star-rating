@@ -1,5 +1,5 @@
-# Css Star Rating
-#### Css Star Rating is a pure css star rating plugin based on best practice UX/UI methods.  
+# Css Star Rating ⭐⭐⭐⭐⭐
+####  ⭐ Css Star Rating is a pure css star rating plugin based on best practice UX/UI methods. ⭐  
 
 ![License](https://img.shields.io/npm/l/css-star-rating.svg) 
 ![Bower Version](https://img.shields.io/bower/v/css-star-rating.svg)
@@ -156,18 +156,19 @@ The position of the label.
 <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-label-right.PNG" width="290">
 <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-label-left.PNG" width="290">
 
-**.spread**:   
+**.space**:   
 If the start use the whole space or not.  
 
 ```html
-<div class="rating value-3 spread">
+<div class="rating value-3 space-between">
    <div class="star-container">
         ...stars...
     </div>
 </div>
 ```
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-spread-false.PNG" width="290">
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-spread-true.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-space-default.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-space-between.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-space-around.PNG" width="290">
 
 **.[SIZE]**:  
 The height and width of the stars.    
@@ -189,7 +190,7 @@ The height and width of the stars.
 Static color of stars.
 - .color-default
 - .color-negative
-- .color-middle
+- .color-ok
 - .color-positive  
 
 ```html
@@ -201,7 +202,7 @@ Static color of stars.
 ```
 <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-color-default.PNG" width="290">
 <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-color-positive.PNG" width="290">  
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-color-middle.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-color-ok.PNG" width="290">
 <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-color-negative.PNG" width="290">
 
 **.disabled**:
@@ -281,7 +282,7 @@ The type of start resource to use.
 ```
 <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-type-svg.PNG" width="290">
 <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-type-icon.PNG" width="290">
-<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-type-custom-icon.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-type-custom_icon.PNG" width="290">
 
 
 ##Themes
