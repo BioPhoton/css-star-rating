@@ -374,13 +374,13 @@ Styleguide 1.2.2.1
 */
 
 /*
-Container stars spread
+Container stars space
 
 The spacing between stars.
 
-none             - stars center im horizontal center.
-.spread          - stars take all available space to position.
-
+none             - stars position at horizontal center.
+.space-between   - stars take all available space to position. Space is only between the stars.
+.space-around    - stars take all available space to position. Space is only around the stars.
 
 markup:
 <div class="star-container {$modifiers}">

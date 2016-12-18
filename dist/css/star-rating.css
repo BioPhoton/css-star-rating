@@ -320,7 +320,7 @@ Star Container
  Direction
  ===================================================*/
     /*
-  Spread
+  Space
   ======================================================*/
 }
 
@@ -356,7 +356,20 @@ Star Container
     direction: ltr;
 }
 
-.star-container.spread, .rating.spread .star-container {
+.star-container.space-no, .rating.space-no .star-container {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -moz-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.star-container.space-between, .rating.space-between .star-container {
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 auto;
     -moz-box-flex: 1;
@@ -367,6 +380,17 @@ Star Container
     -moz-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+
+.star-container.space-around, .rating.space-around .star-container {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -moz-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
 }
 
 /*
@@ -393,7 +417,9 @@ Rating Component
   ====================================================*/
     /*Half stars
   ====================================================*/
-    /*Rating Position
+    /*Label Visible
+  ====================================================*/
+    /*Label Position
   ====================================================*/
     /*
 Direction
@@ -402,7 +428,7 @@ Direction
   ====================================================*/
     /* Sizes
   ==========================================================*/
-    /* Spread
+    /* Space
   ====================================================*/
     /* Static Color
     ====================================================*/
@@ -410,6 +436,18 @@ Direction
   ====================================================*/
     /*AnimationSpeed
  ====================================================*/
+}
+
+.rating.label-hidden .label-value {
+    display: none;
+}
+
+.rating.label-visible {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .rating.label-top {
@@ -488,11 +526,11 @@ Direction
     color: #999;
 }
 
-.rating.color-middle .star-container .star svg {
+.rating.color-ok .star-container .star svg {
     fill: #ffc058;
 }
 
-.rating.color-middle .star-container .star i {
+.rating.color-ok .star-container .star i {
     color: #ffc058;
 }
 

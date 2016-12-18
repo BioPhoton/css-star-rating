@@ -126,10 +126,10 @@ Star element
   }
   &.middle {
     svg {
-      fill: $color-middle-rating;
+      fill: $color-ok-rating;
     }
     i {
-      color: $color-middle-rating;
+      color: $color-ok-rating;
     }
   }
   &.positive {
@@ -305,11 +305,21 @@ Star Container
   }
 
   /*
-  Spread
+  Space
   ======================================================*/
-  &.spread {
+  &.space-no {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+
+  &.space-between {
       flex: 1 1 auto;
       justify-content: space-between;
+  }
+
+  &.space-around {
+    flex: 1 1 auto;
+    justify-content: space-around;
   }
 
 }

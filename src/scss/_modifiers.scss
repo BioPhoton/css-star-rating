@@ -79,7 +79,21 @@ Rating Component
     }
   }
 
-  /*Rating Position
+
+
+  /*Label Visible
+  ====================================================*/
+  &.label-hidden {
+    .label-value{
+      display: none;
+    }
+  }
+  &.label-visible {
+    display: flex;
+  }
+
+
+  /*Label Position
   ====================================================*/
   &.label-top {
     flex-direction: column;
@@ -186,11 +200,23 @@ Direction
     }
   }
 
-  /* Spread
+  /* Space
   ====================================================*/
-  &.spread {
+  &.space-no{
     .star-container {
-      @extend .star-container.spread;
+      @extend .star-container.space-no;
+    }
+  }
+
+  &.space-between {
+    .star-container {
+      @extend .star-container.space-between;
+    }
+  }
+
+  &.space-around {
+    .star-container {
+      @extend .star-container.space-around;
     }
   }
 
@@ -209,14 +235,14 @@ Direction
     }
   }
 
-  &.color-middle {
+  &.color-ok {
     .star-container {
       .star {
         svg {
-          fill: $color-middle-rating;
+          fill: $color-ok-rating;
         }
         i {
-          color: $color-middle-rating;
+          color: $color-ok-rating;
         }
       }
     }
