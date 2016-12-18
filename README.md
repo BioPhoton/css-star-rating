@@ -136,6 +136,22 @@ The text next to the stars.
 ```
 <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-text.PNG" width="290">
 
+**.label-[VISIBILITY]**:  
+The position of the label.
+- .label-visible
+- .label-hidden
+
+```html
+<div class="rating value-3 label-hidden">
+   <div class="label-value">3.5</div>
+   <div class="star-container">
+        ...stars...
+    </div>
+</div>
+```
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-label-visible.PNG" width="290">
+<img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-label-hidden.PNG" width="290">  
+
 **.label-[POSITION]**:  
 The position of the label.
 - .label-top
