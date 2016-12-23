@@ -124,7 +124,7 @@ If set, every rating value will have a half star at the end.
 
 **text**:  
 The text next to the stars. 
-- (Just additional css)
+- (Just additional HTML)
 
 ```html
 <div class="rating value-3">
