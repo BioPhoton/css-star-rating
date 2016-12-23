@@ -25,7 +25,7 @@ Rating Component
           }
 
           @if $i == 3 {
-            @extend .middle;
+            @extend .ok;
           }
 
           @if $i >= 4 {

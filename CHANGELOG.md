@@ -1,3 +1,20 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/BioPhoton/css-star-rating/compare/v1.0.7...v1.1.1) (2016-12-19)
+
+
+### Bug Fixes
+
+* **build:** rebuild project ([9fad8f8](https://github.com/BioPhoton/css-star-rating/commit/9fad8f8))
+
+
+### Features
+
+* **changed color names:** changed middle to ok ([b70125b](https://github.com/BioPhoton/css-star-rating/commit/b70125b))
+* **modifier:** implemebted star space and label visibility [#22](https://github.com/BioPhoton/css-star-rating/issues/22), [#17](https://github.com/BioPhoton/css-star-rating/issues/17) ([713183c](https://github.com/BioPhoton/css-star-rating/commit/713183c))
+* **modifier:** implemebted star space and label visibility and updated readme [#22](https://github.com/BioPhoton/css-star-rating/issues/22), [#17](https://github.com/BioPhoton/css-star-rating/issues/17) ([5842174](https://github.com/BioPhoton/css-star-rating/commit/5842174))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/BioPhoton/css-star-rating/compare/v1.0.7...v1.1.0) (2016-12-18)
 
