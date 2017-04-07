@@ -1,3 +1,14 @@
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/BioPhoton/css-star-rating/compare/v1.1.2...v1.1.3) (2017-04-07)
+
+
+### Bug Fixes
+
+* **build:** rebuild project ([c2b693e](https://github.com/BioPhoton/css-star-rating/commit/c2b693e))
+* **hover:** fixed hover for half star ratings, extended styleguide ([7f56a09](https://github.com/BioPhoton/css-star-rating/commit/7f56a09))
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/BioPhoton/css-star-rating/compare/v1.1.1...v1.1.2) (2017-04-07)
 
