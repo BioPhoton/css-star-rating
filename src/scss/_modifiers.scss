@@ -61,14 +61,18 @@ Rating Component
   &.hover:hover {
 
     @for $i from $minRatingValue through $maxNumOfStars {
+
+      &.value-#{$i}.half,
       &.hover-#{$i} {
-
         .star-container {
-
-          .star,
-          .star:nth-child(-n+#{$i}) {
+          .star {
             @extend .empty;
           }
+        }
+      }
+
+      &.hover-#{$i} {
+        .star-container {
 
           .star:nth-child(-n+#{$i}) {
             @extend .filled;

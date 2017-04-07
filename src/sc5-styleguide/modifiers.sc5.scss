@@ -82,6 +82,7 @@ Styles for mouse hover effects.
 The star and all previous the one the mouse hovers are visible as filled and have opacity
 
                         - no hover
+.hover-0                - hover over no star
 .hover-1                - hover over 1st star
 .hover-2                - hover over 2nd star
 .hover-3                - hover over 3rd star
@@ -89,11 +90,14 @@ The star and all previous the one the mouse hovers are visible as filled and hav
 .hover-5                - hover over 5th star
 
 markup:
-<div class="rating value-2 hover {$modifiers}">
+<div class="rating value-2 half hover {$modifiers}">
   <div class="star-container">
       <div class="star">
            <svg class="star-filled">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+          </svg>
+          <svg class="star-half">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
           </svg>
            <svg class="star-empty">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
@@ -103,6 +107,9 @@ markup:
            <svg class="star-filled">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
           </svg>
+          <svg class="star-half">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+          </svg>
            <svg class="star-empty">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
           </svg>
@@ -111,6 +118,9 @@ markup:
            <svg class="star-filled">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
           </svg>
+          <svg class="star-half">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+          </svg>
            <svg class="star-empty">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
           </svg>
@@ -119,6 +129,9 @@ markup:
           <svg class="star-filled">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
           </svg>
+          <svg class="star-half">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+          </svg>
           <svg class="star-empty">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
           </svg>
@@ -126,6 +139,9 @@ markup:
       <div class="star">
           <svg class="star-filled">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+          </svg>
+          <svg class="star-half">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
           </svg>
           <svg class="star-empty">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
