@@ -44,6 +44,12 @@ Easily compose your own rating component over a rich set of css modifiers for an
 | 11  	|  50 	|   55	|  10 	|   41	|
 | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browsers/ie.png" width="100">	| <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browsers/firefox.png" width="100"> | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browsers/chrome.png" width="100">  | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browsers/safari.png" width="100">  | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browsers/opera.png" width="100"> |
 
+##Related Projects
+
+| Css | Angular1 (>=1.5)| Angular (>=2) |
+|---  |---	    |--- 	       |
+| <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/family/css3.png" width="100"> | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/family/angular1.png" width="100"> | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/family/angular.png" width="80"> |
+| [Css Star Rating](https://github.com/BioPhoton/css-star-rating) | [Angular1 Star Rating](https://github.com/BioPhoton/angular1-star-rating) | [Angular Star Rating](https://github.com/BioPhoton/angular-star-rating) |
 
 
 ## Install
@@ -316,5 +322,3 @@ The type of start resource to use.
 </div>
 ```
 
-## Related projects:
-- [Angular Star Rating](https://github.com/BioPhoton/angular-star-rating)
