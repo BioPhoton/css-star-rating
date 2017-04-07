@@ -25,7 +25,7 @@ Rating Component
           }
 
           @if $i == 3 {
-            @extend .middle;
+            @extend .ok;
           }
 
           @if $i >= 4 {
@@ -36,7 +36,7 @@ Rating Component
     }
   }
 
-  //Handling values > $maxNumOfStars up to $maxNumOfStars*2 (i know it's ugly)
+  //Handling values > $maxNumOfStars up to $maxNumOfStars*2 (i know it's ugly. Maybe i will skip this completely)
   @for $i from $maxNumOfStars through $maxNumOfStars*2 {
     &.value-#{$i} {
 
@@ -50,6 +50,47 @@ Rating Component
         }
       }
     }
+  }
+
+  /*Hover states
+  ====================================================*/
+
+  //- all stars before and the hover star should be filled
+  //- filled stars after the hover star should be empty
+
+  &.hover:hover {
+
+    @for $i from $minRatingValue through $maxNumOfStars {
+      &.hover-#{$i} {
+
+        .star-container {
+
+          .star,
+          .star:nth-child(-n+#{$i}) {
+            @extend .empty;
+          }
+
+          .star:nth-child(-n+#{$i}) {
+            @extend .filled;
+          }
+
+          .star {
+            @if $i <= 2 {
+              @extend .star.negative;
+            }
+
+            @if $i == 3 {
+              @extend .ok;
+            }
+
+            @if $i >= 4 {
+              @extend .positive;
+            }
+          }
+        }
+      }
+    }
+
   }
 
   /*Half stars
@@ -79,19 +120,16 @@ Rating Component
     }
   }
 
-
-
   /*Label Visible
   ====================================================*/
   &.label-hidden {
-    .label-value{
+    .label-value {
       display: none;
     }
   }
   &.label-visible {
     display: flex;
   }
-
 
   /*Label Position
   ====================================================*/
@@ -139,9 +177,9 @@ Rating Component
     }
   }
 
-/*
-Direction
-===================================================*/
+  /*
+  Direction
+  ===================================================*/
   &.direction-rtl {
     direction: rtl;
 
@@ -202,7 +240,7 @@ Direction
 
   /* Space
   ====================================================*/
-  &.space-no{
+  &.space-no {
     .star-container {
       @extend .star-container.space-no;
     }
