@@ -89,135 +89,50 @@ The star and all previous the one the mouse hovers are visible as filled and hav
 .hover-5                - hover over 5th star
 
 markup:
-<p>no hover</p>
-    <div class="star-container">
-        <div class="star filled">
-             <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-         <div class="star filled">
-             <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-         <div class="star filled">
-             <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star empty">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-        </div>
-    </div>
-<p>hover on star 4</p>
-    <div class="star-container">
-        <div class="star filled disabled">
-             <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-         <div class="star filled disabled">
-             <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-         <div class="star filled disabled">
-             <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star filled disabled">
-             <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-        </div>
-    </div>
-<hr>
-    <div class="star-container">
-        <div class="star filled">
-             <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-         <div class="star filled">
-             <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-         <div class="star filled">
-             <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star filled disabled">
-             <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-        </div>
-    </div>
-<p>hover on star 3</p>
-    <div class="star-container">
-        <div class="star filled">
-             <svg class="star-filled disabled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-         <div class="star filled disabled">
-             <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-         <div class="star filled disabled">
-             <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-             <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-        </div>
-    </div>
-<hr>
-<div class="rating hover value-3 hover-4 {$modifiers}">
-    <div class="star-container">
-        <div class="star" ng-repeat="i in [1,2,3,4,5]">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
+<div class="rating value-2 hover {$modifiers}">
+  <div class="star-container">
+      <div class="star">
+           <svg class="star-filled">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+          </svg>
+           <svg class="star-empty">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+          </svg>
+      </div>
+       <div class="star">
+           <svg class="star-filled">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+          </svg>
+           <svg class="star-empty">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+          </svg>
+      </div>
+      <div class="star">
+           <svg class="star-filled">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+          </svg>
+           <svg class="star-empty">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+          </svg>
+      </div>
+      <div class="star">
+          <svg class="star-filled">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+          </svg>
+          <svg class="star-empty">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+          </svg>
+      </div>
+      <div class="star">
+          <svg class="star-filled">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+          </svg>
+          <svg class="star-empty">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+          </svg>
+      </div>
+  </div>
 </div>
-
 
 Styleguide 1.1.2.1
 */

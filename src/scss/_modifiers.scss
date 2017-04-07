@@ -58,115 +58,38 @@ Rating Component
   //- all stars before and the hover star should be filled
   //- filled stars after the hover star should be empty
 
-  /*
-  PATTERN
-
-  //default style
-  .star-container {
-    .star:hover,
-    .star:hover ~ .star {  }
-  }
-
-  //hover style
-  .star-container {
-    .star { }
-    .star:hover ~ .star { }
-  }
-  */
-
   &.hover:hover {
-    /*
-        //default style
+
+    @for $i from $minRatingValue through $maxNumOfStars {
+      &.hover-#{$i} {
+
         .star-container {
-          .star:hover,
-          .star:hover ~ .star {
+
+          .star,
+          .star:nth-child(-n+#{$i}) {
+            @extend .empty;
+          }
+
+          .star:nth-child(-n+#{$i}) {
             @extend .filled;
           }
-        }
 
-        //hover style
-        .star-container {
           .star {
-            //@extend .filled;
-            svg, i {
-              &.star-half,
-              &.star-empty {
-                opacity: 0 !important;
-              }
-              &.star-filled {
-                opacity: 1 !important;
-              }
-            }
-          }
-          .star:hover ~ .star {
-            //@extend .empty;
-            svg, i {
-              &.star-half,
-              &.star-filled {
-                opacity: 0 !important;
-              }
-              &.star-empty {
-                opacity: 1 !important;
-              }
-            }
-          }
-
-        }
-
-        @for $i from $minRatingValue through $maxNumOfStars {
-
-          //default style
-
-          //hover style
-          .star-container {
-            .star:nth-child(-n+#{$i}):nth-child(#{$i}):hover {
-              @if $i <= 2 {
-                background: red !important;
-              }
+            @if $i <= 2 {
+              @extend .star.negative;
             }
 
-            .star:nth-child(#{$i}):hover,
-            .star:nth-child(#{$i}):hover ~ .star {
-              @if $i <= 2 {
-                @extend .star.negative;
-              }
+            @if $i == 3 {
+              @extend .ok;
+            }
 
-              @if $i == 3 {
-                @extend .ok;
-              }
-
-              @if $i >= 4 {
-                @extend .positive;
-              }
+            @if $i >= 4 {
+              @extend .positive;
             }
           }
         }
-        */
-
-        @for $i from $minRatingValue through $maxNumOfStars {
-          &.hover-#{$i} {
-
-            .star-container {
-              .star:nth-child(-n+#{$i}) {
-                @extend .filled;
-              }
-
-              .star {
-                @if $i <= 2 {
-                  @extend .star.negative;
-                }
-
-                @if $i == 3 {
-                  @extend .ok;
-                }
-
-                @if $i >= 4 {
-                  @extend .positive;
-                }
-              }
-            }
-          }
-        }
+      }
+    }
 
   }
 
