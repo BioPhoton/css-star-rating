@@ -44,7 +44,7 @@ Easily compose your own rating component over a rich set of css modifiers for an
 | 11  	|  50 	|   55	|  10 	|   41	|
 | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browsers/ie.png" width="100">	| <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browsers/firefox.png" width="100"> | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browsers/chrome.png" width="100">  | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browsers/safari.png" width="100">  | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/browsers/opera.png" width="100"> |
 
-##Related Projects
+## Related Projects
 
 | Css | Angular1 (>=1.5)| Angular (>=2) |
 |---  |---	    |--- 	       |
