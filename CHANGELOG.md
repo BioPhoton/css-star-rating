@@ -1,3 +1,20 @@
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/BioPhoton/css-star-rating/compare/v1.1.1...v1.1.2) (2017-04-07)
+
+
+### Bug Fixes
+
+* **build:** rebuild project ([bc1ea5d](https://github.com/BioPhoton/css-star-rating/commit/bc1ea5d))
+* **color names:** changed middle to ok ([9c48b46](https://github.com/BioPhoton/css-star-rating/commit/9c48b46))
+* **hover:** started tests with hover ([e008396](https://github.com/BioPhoton/css-star-rating/commit/e008396))
+
+
+### Features
+
+* **hover:** implemented hover modifiers and tests in the styleguide ([5eea511](https://github.com/BioPhoton/css-star-rating/commit/5eea511))
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/BioPhoton/css-star-rating/compare/v1.0.7...v1.1.1) (2016-12-19)
 
