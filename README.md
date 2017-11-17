@@ -282,13 +282,13 @@ The type of start resource to use.
 <div class="rating value-3 star-icon">
    <div class="star-container">
         <!-- font icons-->
-        <star>
+        <div class="star">
             <i class="star-empty"></i>
             <i class="star-half"></i>
             <i class="star-filled"></i> 
-        </star>
+        </div>
         <!-- or svg icons-->
-        <star>
+        <div class="star">
             <svg class="star-empty">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
             </svg>
@@ -298,7 +298,7 @@ The type of start resource to use.
             <svg class="star-filled">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
             </svg>
-        </star>
+        </div>
     </div>
 </div>
 ```
