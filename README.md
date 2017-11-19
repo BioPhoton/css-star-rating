@@ -14,7 +14,7 @@
 Css Star Rating is written in scss and fully customizable over variables.  
 Easily compose your own rating component over a rich set of css modifiers for any kind of UI state.  
 
-##Features
+## Features
 
 - [x] **Written in scss**
 - [x] **Customizable over variables**
@@ -95,7 +95,7 @@ If you want to use svg as icon type copy the
 
 
 
-##Css Modifiers
+## Css Modifiers
 
 **.value-[N]**:  
 The actual star rating value. The color of the stars depends on the rating number  
@@ -307,7 +307,7 @@ The type of start resource to use.
 <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/prop-type-custom_icon.PNG" width="290">
 
 
-##Themes
+## Themes
 As a bonus there are some themes as classes. 
 **theme-[NAME]**:  
 The type of start resource to use.     
