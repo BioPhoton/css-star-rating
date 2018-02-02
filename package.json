@@ -37,7 +37,7 @@
     "url": "https://github.com/BioPhoton/css-star-rating/issues"
   },
   "homepage": "https://github.com/BioPhoton/css-star-rating#readme",
-  "main": "dist/index.js",
+  "main": "dist/css/star-rating.css",
   "devDependencies": {
     "angularic-ionicon": "^1.1.0",
     "conventional-changelog": "^1.1.0",
