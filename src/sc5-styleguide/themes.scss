@@ -11,7 +11,7 @@ default                 - default theme
 .theme-google-places    - google-places theme
 
    markup:
-   <div ng-init="data.rating=3" class="rating value-{{data.rating}} half {$modifiers}" >
+   <div ng-init="data.rating=3" class="rating value-{{data.rating}} half {{modifier_class}}" >
    <div class="label-value">{{data.rating}},57</div>
     <div class="star-container">
       <div class="star custom-icon" ng-repeat="i in [1,2,3,4,5] track by $index"  ng-click="data.rating = $index">
