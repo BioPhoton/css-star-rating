@@ -1,0 +1,229 @@
+/* Main color definitions */
+/* Button and link colors */
+/* Navigation */
+/* Header */
+/* Fonts */
+/* Misc */
+/* Temporary declaration of variables in native CSS syntax */
+:root {
+  /* Main color definitions */
+  --primary-color: #1C3849 !default;
+  --secondary-color: #E4E4E4 !default;
+  --tertiary-color: #F7FCF1 !default;
+  /* Button and link colors */
+  --primary-action-color: #EB7F00 !default;
+  --default-action-color: #1695A3 !default;
+  --action-color-change: 5% !default;
+  /* Navigation */
+  --header-text-color: #FFFFFF !default;
+  --navigation-arrows-visible: false;
+  --header-background-color: #1C3849 !default;
+  --nav-background-color: #1C3849 !default;
+  --nav-button-color: #1C3849 !default;
+  --nav-button-text-color: rgb(23, 209, 230) !default;
+  --nav-button-ref-color: #E4E4E4 !default;
+  --active-nav-button-color: #1695A3 !default;
+  --active-nav-button-text-color: #FFFFFF !default;
+  --active-nav-button-ref-color: #FFFFFF !default;
+  --nav-item-color: #E4E4E4 !default;
+  --nav-item-text-color: #1695A3 !default;
+  --nav-item-ref-color: rgb(23, 209, 230) !default;
+  /* Header */
+  --section-header-color: #1C3849 !default;
+  --section-header-ref-color: #FFFFFF !default;
+  --section-header-text-color: #E4E4E4 !default;
+  --section-header-source-text-color: rgba(228, 228, 228, 0.6) !default;
+  --active-section-header-color: rgb(24, 48, 63);
+  --active-section-header-ref-color: #FFFFFF !default;
+  --active-section-header-text-color: #E4E4E4 !default;
+  --active-section-header-source-text-color: rgba(28, 56, 73, 0.6) !default;
+  --main-section-header-source-text-color: #E4E4E4 !default;
+  /* Fonts */
+  --primary-font: Helvetica, Arial, sans-serif !default;
+  --secondary-font: Helvetica, Arial, sans-serif !default;
+  --min-content-margin: 13px !default;
+  --content-margin: 30px !default;
+  /* Misc */
+  --designer-tool-width: 30% !default;
+  --designer-tool-width-mobile: 90% !default;
+  --header-height: 70px !default;
+  --menu-height: 40px !default;
+  --sub-menu-height: 30px !default;
+  --wrapper-vertical-padding: 60px !default;
+  --content-max-width: 68em !default;
+}
+/* Main color definitions */
+/* Button and link colors */
+/* Navigation */
+/* Header */
+/* Fonts */
+/* Misc */
+/* Temporary declaration of variables in native CSS syntax */
+:root {
+  /* Main color definitions */
+  --primary-color: #1C3849 !default;
+  --secondary-color: #E4E4E4 !default;
+  --tertiary-color: #F7FCF1 !default;
+  /* Button and link colors */
+  --primary-action-color: #EB7F00 !default;
+  --default-action-color: #1695A3 !default;
+  --action-color-change: 5% !default;
+  /* Navigation */
+  --header-text-color: #FFFFFF !default;
+  --navigation-arrows-visible: false;
+  --header-background-color: #1C3849 !default;
+  --nav-background-color: #1C3849 !default;
+  --nav-button-color: #1C3849 !default;
+  --nav-button-text-color: rgb(23, 209, 230) !default;
+  --nav-button-ref-color: #E4E4E4 !default;
+  --active-nav-button-color: #1695A3 !default;
+  --active-nav-button-text-color: #FFFFFF !default;
+  --active-nav-button-ref-color: #FFFFFF !default;
+  --nav-item-color: #E4E4E4 !default;
+  --nav-item-text-color: #1695A3 !default;
+  --nav-item-ref-color: rgb(23, 209, 230) !default;
+  /* Header */
+  --section-header-color: #1C3849 !default;
+  --section-header-ref-color: #FFFFFF !default;
+  --section-header-text-color: #E4E4E4 !default;
+  --section-header-source-text-color: rgba(228, 228, 228, 0.6) !default;
+  --active-section-header-color: rgb(24, 48, 63);
+  --active-section-header-ref-color: #FFFFFF !default;
+  --active-section-header-text-color: #E4E4E4 !default;
+  --active-section-header-source-text-color: rgba(28, 56, 73, 0.6) !default;
+  --main-section-header-source-text-color: #E4E4E4 !default;
+  /* Fonts */
+  --primary-font: Helvetica, Arial, sans-serif !default;
+  --secondary-font: Helvetica, Arial, sans-serif !default;
+  --min-content-margin: 13px !default;
+  --content-margin: 30px !default;
+  /* Misc */
+  --designer-tool-width: 30% !default;
+  --designer-tool-width-mobile: 90% !default;
+  --header-height: 70px !default;
+  --menu-height: 40px !default;
+  --sub-menu-height: 30px !default;
+  --wrapper-vertical-padding: 60px !default;
+  --content-max-width: 68em !default;
+}
+/* TODO: it does not understand viribales from imports */
+/* styleguide:ignore:start */
+/* We need to denite fonts separatedly to every element since we do not want to pollute previews */
+/* with inherited styles */
+/* styleguide:ignore:end */
+
+/* Helper elements
+
+Helper elements are meant to be used for displaying various attributes that
+are hard to demonstrate otherwise (e.g. grids and colors)
+
+Styleguide 5.0*/
+
+/* .styleguide-color
+
+Color helper can be used to demonstrate colors
+
+markup:
+<div style="background: #4183c4;" class="styleguide-color">$brand-linkBlue</div>
+<div style="background: #999;" class="styleguide-color">$brand-lightGrey</div>
+<div style="background: #666;" class="styleguide-color">$brand-medGrey</div>
+<div style="background: #333;" class="styleguide-color">$brand-darkGrey</div>
+<div style="background: #6CC644;" class="styleguide-color">$brand-green</div>
+<div style="background: #BD2C00;" class="styleguide-color">$brand-red</div>
+<div style="background: #f93;" class="styleguide-color">$brand-orange</div>
+
+Styleguide 5.1 */
+
+.styleguide-color {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  box-sizing: border-box;
+  font-weight: 300;
+  display: block;
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  margin-bottom: .5em;
+  padding: 0;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  text-shadow: #000 0 0 2px;
+}
+
+/* .styleguide-grid-unit
+
+Grid unit helps to demonstrate layouts and grid structures
+
+markup:
+<div class="styleguide-grid-unit"> Outer
+  <div class="styleguide-grid-unit"> Inner
+    <div class="styleguide-grid-unit"> Inception! </div>
+  </div>
+</div>
+
+Styleguide 5.2 */
+
+.styleguide-grid-unit {
+  min-height: 3em;
+  padding: 1em;
+
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.1);
+}
+
+sg-common-class-wrapper {
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Tables
+
+Table styles, mainly used in many overview files (README.md)
+
+markup:
+<table class="sg ng-scope">
+	<thead class="sg">
+		<tr class="sg">
+			<th class="sg">Header 1</th>
+			<th class="sg">Header 2</th>
+			<th class="sg">Header 3</th>
+		</tr>
+	</thead>
+	<tbody class="sg">
+		<tr class="sg">
+			<td class="sg">SC5 Styleguide</td>
+			<td class="sg">Overview</td>
+			<td class="sg">README.md</td>
+		</tr>
+	</tbody>
+</table>
+
+Styleguide 5.3 */
+
+table.sg {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.45;
+    color: #222;
+    font-weight: 400;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-collapse: collapse;
+
+}
+
+table.sg th,
+    table.sg td {
+  text-align: left;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5em 1em;
+}

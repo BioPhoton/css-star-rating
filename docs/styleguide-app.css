@@ -1,0 +1,4549 @@
+/*!
+ *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('/assets/fonts/fontawesome-webfont.eot?v=4.2.0');
+  src: url('/assets/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0) format(embedded-opentype'),
+    url('/assets/fonts/fontawesome-webfont.woff?v=4.2.0) format(woff'),
+    url('/assets/fonts/fontawesome-webfont.ttf?v=4.2.0) format(truetype'),
+    url('/assets/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular) format(svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* makes the font 33% larger relative to the icon container */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.fa-2x {
+  font-size: 2em;
+}
+.fa-3x {
+  font-size: 3em;
+}
+.fa-4x {
+  font-size: 4em;
+}
+.fa-5x {
+  font-size: 5em;
+}
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+.fa-ul > li {
+  position: relative;
+}
+.fa-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+.fa-li.fa-lg {
+  left: -1.85714286em;
+}
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+.fa-pull-left {
+  float: left;
+}
+.fa-pull-right {
+  float: right;
+}
+.fa.fa-pull-left {
+  margin-right: .3em;
+}
+.fa.fa-pull-right {
+  margin-left: .3em;
+}
+/* Deprecated as of 4.4.0 */
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.fa.pull-left {
+  margin-right: .3em;
+}
+.fa.pull-right {
+  margin-left: .3em;
+}
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+  -webkit-filter: none;
+          filter: none;
+}
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.fa-stack-1x,
+.fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.fa-stack-1x {
+  line-height: inherit;
+}
+.fa-stack-2x {
+  font-size: 2em;
+}
+.fa-inverse {
+  color: #ffffff;
+}
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+.fa-glass:before {
+  content: "\f000";
+}
+.fa-music:before {
+  content: "\f001";
+}
+.fa-search:before {
+  content: "\f002";
+}
+.fa-envelope-o:before {
+  content: "\f003";
+}
+.fa-heart:before {
+  content: "\f004";
+}
+.fa-star:before {
+  content: "\f005";
+}
+.fa-star-o:before {
+  content: "\f006";
+}
+.fa-user:before {
+  content: "\f007";
+}
+.fa-film:before {
+  content: "\f008";
+}
+.fa-th-large:before {
+  content: "\f009";
+}
+.fa-th:before {
+  content: "\f00a";
+}
+.fa-th-list:before {
+  content: "\f00b";
+}
+.fa-check:before {
+  content: "\f00c";
+}
+.fa-remove:before,
+.fa-close:before,
+.fa-times:before {
+  content: "\f00d";
+}
+.fa-search-plus:before {
+  content: "\f00e";
+}
+.fa-search-minus:before {
+  content: "\f010";
+}
+.fa-power-off:before {
+  content: "\f011";
+}
+.fa-signal:before {
+  content: "\f012";
+}
+.fa-gear:before,
+.fa-cog:before {
+  content: "\f013";
+}
+.fa-trash-o:before {
+  content: "\f014";
+}
+.fa-home:before {
+  content: "\f015";
+}
+.fa-file-o:before {
+  content: "\f016";
+}
+.fa-clock-o:before {
+  content: "\f017";
+}
+.fa-road:before {
+  content: "\f018";
+}
+.fa-download:before {
+  content: "\f019";
+}
+.fa-arrow-circle-o-down:before {
+  content: "\f01a";
+}
+.fa-arrow-circle-o-up:before {
+  content: "\f01b";
+}
+.fa-inbox:before {
+  content: "\f01c";
+}
+.fa-play-circle-o:before {
+  content: "\f01d";
+}
+.fa-rotate-right:before,
+.fa-repeat:before {
+  content: "\f01e";
+}
+.fa-refresh:before {
+  content: "\f021";
+}
+.fa-list-alt:before {
+  content: "\f022";
+}
+.fa-lock:before {
+  content: "\f023";
+}
+.fa-flag:before {
+  content: "\f024";
+}
+.fa-headphones:before {
+  content: "\f025";
+}
+.fa-volume-off:before {
+  content: "\f026";
+}
+.fa-volume-down:before {
+  content: "\f027";
+}
+.fa-volume-up:before {
+  content: "\f028";
+}
+.fa-qrcode:before {
+  content: "\f029";
+}
+.fa-barcode:before {
+  content: "\f02a";
+}
+.fa-tag:before {
+  content: "\f02b";
+}
+.fa-tags:before {
+  content: "\f02c";
+}
+.fa-book:before {
+  content: "\f02d";
+}
+.fa-bookmark:before {
+  content: "\f02e";
+}
+.fa-print:before {
+  content: "\f02f";
+}
+.fa-camera:before {
+  content: "\f030";
+}
+.fa-font:before {
+  content: "\f031";
+}
+.fa-bold:before {
+  content: "\f032";
+}
+.fa-italic:before {
+  content: "\f033";
+}
+.fa-text-height:before {
+  content: "\f034";
+}
+.fa-text-width:before {
+  content: "\f035";
+}
+.fa-align-left:before {
+  content: "\f036";
+}
+.fa-align-center:before {
+  content: "\f037";
+}
+.fa-align-right:before {
+  content: "\f038";
+}
+.fa-align-justify:before {
+  content: "\f039";
+}
+.fa-list:before {
+  content: "\f03a";
+}
+.fa-dedent:before,
+.fa-outdent:before {
+  content: "\f03b";
+}
+.fa-indent:before {
+  content: "\f03c";
+}
+.fa-video-camera:before {
+  content: "\f03d";
+}
+.fa-photo:before,
+.fa-image:before,
+.fa-picture-o:before {
+  content: "\f03e";
+}
+.fa-pencil:before {
+  content: "\f040";
+}
+.fa-map-marker:before {
+  content: "\f041";
+}
+.fa-adjust:before {
+  content: "\f042";
+}
+.fa-tint:before {
+  content: "\f043";
+}
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: "\f044";
+}
+.fa-share-square-o:before {
+  content: "\f045";
+}
+.fa-check-square-o:before {
+  content: "\f046";
+}
+.fa-arrows:before {
+  content: "\f047";
+}
+.fa-step-backward:before {
+  content: "\f048";
+}
+.fa-fast-backward:before {
+  content: "\f049";
+}
+.fa-backward:before {
+  content: "\f04a";
+}
+.fa-play:before {
+  content: "\f04b";
+}
+.fa-pause:before {
+  content: "\f04c";
+}
+.fa-stop:before {
+  content: "\f04d";
+}
+.fa-forward:before {
+  content: "\f04e";
+}
+.fa-fast-forward:before {
+  content: "\f050";
+}
+.fa-step-forward:before {
+  content: "\f051";
+}
+.fa-eject:before {
+  content: "\f052";
+}
+.fa-chevron-left:before {
+  content: "\f053";
+}
+.fa-chevron-right:before {
+  content: "\f054";
+}
+.fa-plus-circle:before {
+  content: "\f055";
+}
+.fa-minus-circle:before {
+  content: "\f056";
+}
+.fa-times-circle:before {
+  content: "\f057";
+}
+.fa-check-circle:before {
+  content: "\f058";
+}
+.fa-question-circle:before {
+  content: "\f059";
+}
+.fa-info-circle:before {
+  content: "\f05a";
+}
+.fa-crosshairs:before {
+  content: "\f05b";
+}
+.fa-times-circle-o:before {
+  content: "\f05c";
+}
+.fa-check-circle-o:before {
+  content: "\f05d";
+}
+.fa-ban:before {
+  content: "\f05e";
+}
+.fa-arrow-left:before {
+  content: "\f060";
+}
+.fa-arrow-right:before {
+  content: "\f061";
+}
+.fa-arrow-up:before {
+  content: "\f062";
+}
+.fa-arrow-down:before {
+  content: "\f063";
+}
+.fa-mail-forward:before,
+.fa-share:before {
+  content: "\f064";
+}
+.fa-expand:before {
+  content: "\f065";
+}
+.fa-compress:before {
+  content: "\f066";
+}
+.fa-plus:before {
+  content: "\f067";
+}
+.fa-minus:before {
+  content: "\f068";
+}
+.fa-asterisk:before {
+  content: "\f069";
+}
+.fa-exclamation-circle:before {
+  content: "\f06a";
+}
+.fa-gift:before {
+  content: "\f06b";
+}
+.fa-leaf:before {
+  content: "\f06c";
+}
+.fa-fire:before {
+  content: "\f06d";
+}
+.fa-eye:before {
+  content: "\f06e";
+}
+.fa-eye-slash:before {
+  content: "\f070";
+}
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+  content: "\f071";
+}
+.fa-plane:before {
+  content: "\f072";
+}
+.fa-calendar:before {
+  content: "\f073";
+}
+.fa-random:before {
+  content: "\f074";
+}
+.fa-comment:before {
+  content: "\f075";
+}
+.fa-magnet:before {
+  content: "\f076";
+}
+.fa-chevron-up:before {
+  content: "\f077";
+}
+.fa-chevron-down:before {
+  content: "\f078";
+}
+.fa-retweet:before {
+  content: "\f079";
+}
+.fa-shopping-cart:before {
+  content: "\f07a";
+}
+.fa-folder:before {
+  content: "\f07b";
+}
+.fa-folder-open:before {
+  content: "\f07c";
+}
+.fa-arrows-v:before {
+  content: "\f07d";
+}
+.fa-arrows-h:before {
+  content: "\f07e";
+}
+.fa-bar-chart-o:before,
+.fa-bar-chart:before {
+  content: "\f080";
+}
+.fa-twitter-square:before {
+  content: "\f081";
+}
+.fa-facebook-square:before {
+  content: "\f082";
+}
+.fa-camera-retro:before {
+  content: "\f083";
+}
+.fa-key:before {
+  content: "\f084";
+}
+.fa-gears:before,
+.fa-cogs:before {
+  content: "\f085";
+}
+.fa-comments:before {
+  content: "\f086";
+}
+.fa-thumbs-o-up:before {
+  content: "\f087";
+}
+.fa-thumbs-o-down:before {
+  content: "\f088";
+}
+.fa-star-half:before {
+  content: "\f089";
+}
+.fa-heart-o:before {
+  content: "\f08a";
+}
+.fa-sign-out:before {
+  content: "\f08b";
+}
+.fa-linkedin-square:before {
+  content: "\f08c";
+}
+.fa-thumb-tack:before {
+  content: "\f08d";
+}
+.fa-external-link:before {
+  content: "\f08e";
+}
+.fa-sign-in:before {
+  content: "\f090";
+}
+.fa-trophy:before {
+  content: "\f091";
+}
+.fa-github-square:before {
+  content: "\f092";
+}
+.fa-upload:before {
+  content: "\f093";
+}
+.fa-lemon-o:before {
+  content: "\f094";
+}
+.fa-phone:before {
+  content: "\f095";
+}
+.fa-square-o:before {
+  content: "\f096";
+}
+.fa-bookmark-o:before {
+  content: "\f097";
+}
+.fa-phone-square:before {
+  content: "\f098";
+}
+.fa-twitter:before {
+  content: "\f099";
+}
+.fa-facebook-f:before,
+.fa-facebook:before {
+  content: "\f09a";
+}
+.fa-github:before {
+  content: "\f09b";
+}
+.fa-unlock:before {
+  content: "\f09c";
+}
+.fa-credit-card:before {
+  content: "\f09d";
+}
+.fa-feed:before,
+.fa-rss:before {
+  content: "\f09e";
+}
+.fa-hdd-o:before {
+  content: "\f0a0";
+}
+.fa-bullhorn:before {
+  content: "\f0a1";
+}
+.fa-bell:before {
+  content: "\f0f3";
+}
+.fa-certificate:before {
+  content: "\f0a3";
+}
+.fa-hand-o-right:before {
+  content: "\f0a4";
+}
+.fa-hand-o-left:before {
+  content: "\f0a5";
+}
+.fa-hand-o-up:before {
+  content: "\f0a6";
+}
+.fa-hand-o-down:before {
+  content: "\f0a7";
+}
+.fa-arrow-circle-left:before {
+  content: "\f0a8";
+}
+.fa-arrow-circle-right:before {
+  content: "\f0a9";
+}
+.fa-arrow-circle-up:before {
+  content: "\f0aa";
+}
+.fa-arrow-circle-down:before {
+  content: "\f0ab";
+}
+.fa-globe:before {
+  content: "\f0ac";
+}
+.fa-wrench:before {
+  content: "\f0ad";
+}
+.fa-tasks:before {
+  content: "\f0ae";
+}
+.fa-filter:before {
+  content: "\f0b0";
+}
+.fa-briefcase:before {
+  content: "\f0b1";
+}
+.fa-arrows-alt:before {
+  content: "\f0b2";
+}
+.fa-group:before,
+.fa-users:before {
+  content: "\f0c0";
+}
+.fa-chain:before,
+.fa-link:before {
+  content: "\f0c1";
+}
+.fa-cloud:before {
+  content: "\f0c2";
+}
+.fa-flask:before {
+  content: "\f0c3";
+}
+.fa-cut:before,
+.fa-scissors:before {
+  content: "\f0c4";
+}
+.fa-copy:before,
+.fa-files-o:before {
+  content: "\f0c5";
+}
+.fa-paperclip:before {
+  content: "\f0c6";
+}
+.fa-save:before,
+.fa-floppy-o:before {
+  content: "\f0c7";
+}
+.fa-square:before {
+  content: "\f0c8";
+}
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+  content: "\f0c9";
+}
+.fa-list-ul:before {
+  content: "\f0ca";
+}
+.fa-list-ol:before {
+  content: "\f0cb";
+}
+.fa-strikethrough:before {
+  content: "\f0cc";
+}
+.fa-underline:before {
+  content: "\f0cd";
+}
+.fa-table:before {
+  content: "\f0ce";
+}
+.fa-magic:before {
+  content: "\f0d0";
+}
+.fa-truck:before {
+  content: "\f0d1";
+}
+.fa-pinterest:before {
+  content: "\f0d2";
+}
+.fa-pinterest-square:before {
+  content: "\f0d3";
+}
+.fa-google-plus-square:before {
+  content: "\f0d4";
+}
+.fa-google-plus:before {
+  content: "\f0d5";
+}
+.fa-money:before {
+  content: "\f0d6";
+}
+.fa-caret-down:before {
+  content: "\f0d7";
+}
+.fa-caret-up:before {
+  content: "\f0d8";
+}
+.fa-caret-left:before {
+  content: "\f0d9";
+}
+.fa-caret-right:before {
+  content: "\f0da";
+}
+.fa-columns:before {
+  content: "\f0db";
+}
+.fa-unsorted:before,
+.fa-sort:before {
+  content: "\f0dc";
+}
+.fa-sort-down:before,
+.fa-sort-desc:before {
+  content: "\f0dd";
+}
+.fa-sort-up:before,
+.fa-sort-asc:before {
+  content: "\f0de";
+}
+.fa-envelope:before {
+  content: "\f0e0";
+}
+.fa-linkedin:before {
+  content: "\f0e1";
+}
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: "\f0e2";
+}
+.fa-legal:before,
+.fa-gavel:before {
+  content: "\f0e3";
+}
+.fa-dashboard:before,
+.fa-tachometer:before {
+  content: "\f0e4";
+}
+.fa-comment-o:before {
+  content: "\f0e5";
+}
+.fa-comments-o:before {
+  content: "\f0e6";
+}
+.fa-flash:before,
+.fa-bolt:before {
+  content: "\f0e7";
+}
+.fa-sitemap:before {
+  content: "\f0e8";
+}
+.fa-umbrella:before {
+  content: "\f0e9";
+}
+.fa-paste:before,
+.fa-clipboard:before {
+  content: "\f0ea";
+}
+.fa-lightbulb-o:before {
+  content: "\f0eb";
+}
+.fa-exchange:before {
+  content: "\f0ec";
+}
+.fa-cloud-download:before {
+  content: "\f0ed";
+}
+.fa-cloud-upload:before {
+  content: "\f0ee";
+}
+.fa-user-md:before {
+  content: "\f0f0";
+}
+.fa-stethoscope:before {
+  content: "\f0f1";
+}
+.fa-suitcase:before {
+  content: "\f0f2";
+}
+.fa-bell-o:before {
+  content: "\f0a2";
+}
+.fa-coffee:before {
+  content: "\f0f4";
+}
+.fa-cutlery:before {
+  content: "\f0f5";
+}
+.fa-file-text-o:before {
+  content: "\f0f6";
+}
+.fa-building-o:before {
+  content: "\f0f7";
+}
+.fa-hospital-o:before {
+  content: "\f0f8";
+}
+.fa-ambulance:before {
+  content: "\f0f9";
+}
+.fa-medkit:before {
+  content: "\f0fa";
+}
+.fa-fighter-jet:before {
+  content: "\f0fb";
+}
+.fa-beer:before {
+  content: "\f0fc";
+}
+.fa-h-square:before {
+  content: "\f0fd";
+}
+.fa-plus-square:before {
+  content: "\f0fe";
+}
+.fa-angle-double-left:before {
+  content: "\f100";
+}
+.fa-angle-double-right:before {
+  content: "\f101";
+}
+.fa-angle-double-up:before {
+  content: "\f102";
+}
+.fa-angle-double-down:before {
+  content: "\f103";
+}
+.fa-angle-left:before {
+  content: "\f104";
+}
+.fa-angle-right:before {
+  content: "\f105";
+}
+.fa-angle-up:before {
+  content: "\f106";
+}
+.fa-angle-down:before {
+  content: "\f107";
+}
+.fa-desktop:before {
+  content: "\f108";
+}
+.fa-laptop:before {
+  content: "\f109";
+}
+.fa-tablet:before {
+  content: "\f10a";
+}
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: "\f10b";
+}
+.fa-circle-o:before {
+  content: "\f10c";
+}
+.fa-quote-left:before {
+  content: "\f10d";
+}
+.fa-quote-right:before {
+  content: "\f10e";
+}
+.fa-spinner:before {
+  content: "\f110";
+}
+.fa-circle:before {
+  content: "\f111";
+}
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: "\f112";
+}
+.fa-github-alt:before {
+  content: "\f113";
+}
+.fa-folder-o:before {
+  content: "\f114";
+}
+.fa-folder-open-o:before {
+  content: "\f115";
+}
+.fa-smile-o:before {
+  content: "\f118";
+}
+.fa-frown-o:before {
+  content: "\f119";
+}
+.fa-meh-o:before {
+  content: "\f11a";
+}
+.fa-gamepad:before {
+  content: "\f11b";
+}
+.fa-keyboard-o:before {
+  content: "\f11c";
+}
+.fa-flag-o:before {
+  content: "\f11d";
+}
+.fa-flag-checkered:before {
+  content: "\f11e";
+}
+.fa-terminal:before {
+  content: "\f120";
+}
+.fa-code:before {
+  content: "\f121";
+}
+.fa-mail-reply-all:before,
+.fa-reply-all:before {
+  content: "\f122";
+}
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: "\f123";
+}
+.fa-location-arrow:before {
+  content: "\f124";
+}
+.fa-crop:before {
+  content: "\f125";
+}
+.fa-code-fork:before {
+  content: "\f126";
+}
+.fa-unlink:before,
+.fa-chain-broken:before {
+  content: "\f127";
+}
+.fa-question:before {
+  content: "\f128";
+}
+.fa-info:before {
+  content: "\f129";
+}
+.fa-exclamation:before {
+  content: "\f12a";
+}
+.fa-superscript:before {
+  content: "\f12b";
+}
+.fa-subscript:before {
+  content: "\f12c";
+}
+.fa-eraser:before {
+  content: "\f12d";
+}
+.fa-puzzle-piece:before {
+  content: "\f12e";
+}
+.fa-microphone:before {
+  content: "\f130";
+}
+.fa-microphone-slash:before {
+  content: "\f131";
+}
+.fa-shield:before {
+  content: "\f132";
+}
+.fa-calendar-o:before {
+  content: "\f133";
+}
+.fa-fire-extinguisher:before {
+  content: "\f134";
+}
+.fa-rocket:before {
+  content: "\f135";
+}
+.fa-maxcdn:before {
+  content: "\f136";
+}
+.fa-chevron-circle-left:before {
+  content: "\f137";
+}
+.fa-chevron-circle-right:before {
+  content: "\f138";
+}
+.fa-chevron-circle-up:before {
+  content: "\f139";
+}
+.fa-chevron-circle-down:before {
+  content: "\f13a";
+}
+.fa-html5:before {
+  content: "\f13b";
+}
+.fa-css3:before {
+  content: "\f13c";
+}
+.fa-anchor:before {
+  content: "\f13d";
+}
+.fa-unlock-alt:before {
+  content: "\f13e";
+}
+.fa-bullseye:before {
+  content: "\f140";
+}
+.fa-ellipsis-h:before {
+  content: "\f141";
+}
+.fa-ellipsis-v:before {
+  content: "\f142";
+}
+.fa-rss-square:before {
+  content: "\f143";
+}
+.fa-play-circle:before {
+  content: "\f144";
+}
+.fa-ticket:before {
+  content: "\f145";
+}
+.fa-minus-square:before {
+  content: "\f146";
+}
+.fa-minus-square-o:before {
+  content: "\f147";
+}
+.fa-level-up:before {
+  content: "\f148";
+}
+.fa-level-down:before {
+  content: "\f149";
+}
+.fa-check-square:before {
+  content: "\f14a";
+}
+.fa-pencil-square:before {
+  content: "\f14b";
+}
+.fa-external-link-square:before {
+  content: "\f14c";
+}
+.fa-share-square:before {
+  content: "\f14d";
+}
+.fa-compass:before {
+  content: "\f14e";
+}
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+  content: "\f150";
+}
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+  content: "\f151";
+}
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+  content: "\f152";
+}
+.fa-euro:before,
+.fa-eur:before {
+  content: "\f153";
+}
+.fa-gbp:before {
+  content: "\f154";
+}
+.fa-dollar:before,
+.fa-usd:before {
+  content: "\f155";
+}
+.fa-rupee:before,
+.fa-inr:before {
+  content: "\f156";
+}
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: "\f157";
+}
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+  content: "\f158";
+}
+.fa-won:before,
+.fa-krw:before {
+  content: "\f159";
+}
+.fa-bitcoin:before,
+.fa-btc:before {
+  content: "\f15a";
+}
+.fa-file:before {
+  content: "\f15b";
+}
+.fa-file-text:before {
+  content: "\f15c";
+}
+.fa-sort-alpha-asc:before {
+  content: "\f15d";
+}
+.fa-sort-alpha-desc:before {
+  content: "\f15e";
+}
+.fa-sort-amount-asc:before {
+  content: "\f160";
+}
+.fa-sort-amount-desc:before {
+  content: "\f161";
+}
+.fa-sort-numeric-asc:before {
+  content: "\f162";
+}
+.fa-sort-numeric-desc:before {
+  content: "\f163";
+}
+.fa-thumbs-up:before {
+  content: "\f164";
+}
+.fa-thumbs-down:before {
+  content: "\f165";
+}
+.fa-youtube-square:before {
+  content: "\f166";
+}
+.fa-youtube:before {
+  content: "\f167";
+}
+.fa-xing:before {
+  content: "\f168";
+}
+.fa-xing-square:before {
+  content: "\f169";
+}
+.fa-youtube-play:before {
+  content: "\f16a";
+}
+.fa-dropbox:before {
+  content: "\f16b";
+}
+.fa-stack-overflow:before {
+  content: "\f16c";
+}
+.fa-instagram:before {
+  content: "\f16d";
+}
+.fa-flickr:before {
+  content: "\f16e";
+}
+.fa-adn:before {
+  content: "\f170";
+}
+.fa-bitbucket:before {
+  content: "\f171";
+}
+.fa-bitbucket-square:before {
+  content: "\f172";
+}
+.fa-tumblr:before {
+  content: "\f173";
+}
+.fa-tumblr-square:before {
+  content: "\f174";
+}
+.fa-long-arrow-down:before {
+  content: "\f175";
+}
+.fa-long-arrow-up:before {
+  content: "\f176";
+}
+.fa-long-arrow-left:before {
+  content: "\f177";
+}
+.fa-long-arrow-right:before {
+  content: "\f178";
+}
+.fa-apple:before {
+  content: "\f179";
+}
+.fa-windows:before {
+  content: "\f17a";
+}
+.fa-android:before {
+  content: "\f17b";
+}
+.fa-linux:before {
+  content: "\f17c";
+}
+.fa-dribbble:before {
+  content: "\f17d";
+}
+.fa-skype:before {
+  content: "\f17e";
+}
+.fa-foursquare:before {
+  content: "\f180";
+}
+.fa-trello:before {
+  content: "\f181";
+}
+.fa-female:before {
+  content: "\f182";
+}
+.fa-male:before {
+  content: "\f183";
+}
+.fa-gittip:before,
+.fa-gratipay:before {
+  content: "\f184";
+}
+.fa-sun-o:before {
+  content: "\f185";
+}
+.fa-moon-o:before {
+  content: "\f186";
+}
+.fa-archive:before {
+  content: "\f187";
+}
+.fa-bug:before {
+  content: "\f188";
+}
+.fa-vk:before {
+  content: "\f189";
+}
+.fa-weibo:before {
+  content: "\f18a";
+}
+.fa-renren:before {
+  content: "\f18b";
+}
+.fa-pagelines:before {
+  content: "\f18c";
+}
+.fa-stack-exchange:before {
+  content: "\f18d";
+}
+.fa-arrow-circle-o-right:before {
+  content: "\f18e";
+}
+.fa-arrow-circle-o-left:before {
+  content: "\f190";
+}
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+  content: "\f191";
+}
+.fa-dot-circle-o:before {
+  content: "\f192";
+}
+.fa-wheelchair:before {
+  content: "\f193";
+}
+.fa-vimeo-square:before {
+  content: "\f194";
+}
+.fa-turkish-lira:before,
+.fa-try:before {
+  content: "\f195";
+}
+.fa-plus-square-o:before {
+  content: "\f196";
+}
+.fa-space-shuttle:before {
+  content: "\f197";
+}
+.fa-slack:before {
+  content: "\f198";
+}
+.fa-envelope-square:before {
+  content: "\f199";
+}
+.fa-wordpress:before {
+  content: "\f19a";
+}
+.fa-openid:before {
+  content: "\f19b";
+}
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
+  content: "\f19c";
+}
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+  content: "\f19d";
+}
+.fa-yahoo:before {
+  content: "\f19e";
+}
+.fa-google:before {
+  content: "\f1a0";
+}
+.fa-reddit:before {
+  content: "\f1a1";
+}
+.fa-reddit-square:before {
+  content: "\f1a2";
+}
+.fa-stumbleupon-circle:before {
+  content: "\f1a3";
+}
+.fa-stumbleupon:before {
+  content: "\f1a4";
+}
+.fa-delicious:before {
+  content: "\f1a5";
+}
+.fa-digg:before {
+  content: "\f1a6";
+}
+.fa-pied-piper:before {
+  content: "\f1a7";
+}
+.fa-pied-piper-alt:before {
+  content: "\f1a8";
+}
+.fa-drupal:before {
+  content: "\f1a9";
+}
+.fa-joomla:before {
+  content: "\f1aa";
+}
+.fa-language:before {
+  content: "\f1ab";
+}
+.fa-fax:before {
+  content: "\f1ac";
+}
+.fa-building:before {
+  content: "\f1ad";
+}
+.fa-child:before {
+  content: "\f1ae";
+}
+.fa-paw:before {
+  content: "\f1b0";
+}
+.fa-spoon:before {
+  content: "\f1b1";
+}
+.fa-cube:before {
+  content: "\f1b2";
+}
+.fa-cubes:before {
+  content: "\f1b3";
+}
+.fa-behance:before {
+  content: "\f1b4";
+}
+.fa-behance-square:before {
+  content: "\f1b5";
+}
+.fa-steam:before {
+  content: "\f1b6";
+}
+.fa-steam-square:before {
+  content: "\f1b7";
+}
+.fa-recycle:before {
+  content: "\f1b8";
+}
+.fa-automobile:before,
+.fa-car:before {
+  content: "\f1b9";
+}
+.fa-cab:before,
+.fa-taxi:before {
+  content: "\f1ba";
+}
+.fa-tree:before {
+  content: "\f1bb";
+}
+.fa-spotify:before {
+  content: "\f1bc";
+}
+.fa-deviantart:before {
+  content: "\f1bd";
+}
+.fa-soundcloud:before {
+  content: "\f1be";
+}
+.fa-database:before {
+  content: "\f1c0";
+}
+.fa-file-pdf-o:before {
+  content: "\f1c1";
+}
+.fa-file-word-o:before {
+  content: "\f1c2";
+}
+.fa-file-excel-o:before {
+  content: "\f1c3";
+}
+.fa-file-powerpoint-o:before {
+  content: "\f1c4";
+}
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
+  content: "\f1c5";
+}
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
+  content: "\f1c6";
+}
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
+  content: "\f1c7";
+}
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
+  content: "\f1c8";
+}
+.fa-file-code-o:before {
+  content: "\f1c9";
+}
+.fa-vine:before {
+  content: "\f1ca";
+}
+.fa-codepen:before {
+  content: "\f1cb";
+}
+.fa-jsfiddle:before {
+  content: "\f1cc";
+}
+.fa-life-bouy:before,
+.fa-life-buoy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
+  content: "\f1cd";
+}
+.fa-circle-o-notch:before {
+  content: "\f1ce";
+}
+.fa-ra:before,
+.fa-rebel:before {
+  content: "\f1d0";
+}
+.fa-ge:before,
+.fa-empire:before {
+  content: "\f1d1";
+}
+.fa-git-square:before {
+  content: "\f1d2";
+}
+.fa-git:before {
+  content: "\f1d3";
+}
+.fa-y-combinator-square:before,
+.fa-yc-square:before,
+.fa-hacker-news:before {
+  content: "\f1d4";
+}
+.fa-tencent-weibo:before {
+  content: "\f1d5";
+}
+.fa-qq:before {
+  content: "\f1d6";
+}
+.fa-wechat:before,
+.fa-weixin:before {
+  content: "\f1d7";
+}
+.fa-send:before,
+.fa-paper-plane:before {
+  content: "\f1d8";
+}
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+  content: "\f1d9";
+}
+.fa-history:before {
+  content: "\f1da";
+}
+.fa-circle-thin:before {
+  content: "\f1db";
+}
+.fa-header:before {
+  content: "\f1dc";
+}
+.fa-paragraph:before {
+  content: "\f1dd";
+}
+.fa-sliders:before {
+  content: "\f1de";
+}
+.fa-share-alt:before {
+  content: "\f1e0";
+}
+.fa-share-alt-square:before {
+  content: "\f1e1";
+}
+.fa-bomb:before {
+  content: "\f1e2";
+}
+.fa-soccer-ball-o:before,
+.fa-futbol-o:before {
+  content: "\f1e3";
+}
+.fa-tty:before {
+  content: "\f1e4";
+}
+.fa-binoculars:before {
+  content: "\f1e5";
+}
+.fa-plug:before {
+  content: "\f1e6";
+}
+.fa-slideshare:before {
+  content: "\f1e7";
+}
+.fa-twitch:before {
+  content: "\f1e8";
+}
+.fa-yelp:before {
+  content: "\f1e9";
+}
+.fa-newspaper-o:before {
+  content: "\f1ea";
+}
+.fa-wifi:before {
+  content: "\f1eb";
+}
+.fa-calculator:before {
+  content: "\f1ec";
+}
+.fa-paypal:before {
+  content: "\f1ed";
+}
+.fa-google-wallet:before {
+  content: "\f1ee";
+}
+.fa-cc-visa:before {
+  content: "\f1f0";
+}
+.fa-cc-mastercard:before {
+  content: "\f1f1";
+}
+.fa-cc-discover:before {
+  content: "\f1f2";
+}
+.fa-cc-amex:before {
+  content: "\f1f3";
+}
+.fa-cc-paypal:before {
+  content: "\f1f4";
+}
+.fa-cc-stripe:before {
+  content: "\f1f5";
+}
+.fa-bell-slash:before {
+  content: "\f1f6";
+}
+.fa-bell-slash-o:before {
+  content: "\f1f7";
+}
+.fa-trash:before {
+  content: "\f1f8";
+}
+.fa-copyright:before {
+  content: "\f1f9";
+}
+.fa-at:before {
+  content: "\f1fa";
+}
+.fa-eyedropper:before {
+  content: "\f1fb";
+}
+.fa-paint-brush:before {
+  content: "\f1fc";
+}
+.fa-birthday-cake:before {
+  content: "\f1fd";
+}
+.fa-area-chart:before {
+  content: "\f1fe";
+}
+.fa-pie-chart:before {
+  content: "\f200";
+}
+.fa-line-chart:before {
+  content: "\f201";
+}
+.fa-lastfm:before {
+  content: "\f202";
+}
+.fa-lastfm-square:before {
+  content: "\f203";
+}
+.fa-toggle-off:before {
+  content: "\f204";
+}
+.fa-toggle-on:before {
+  content: "\f205";
+}
+.fa-bicycle:before {
+  content: "\f206";
+}
+.fa-bus:before {
+  content: "\f207";
+}
+.fa-ioxhost:before {
+  content: "\f208";
+}
+.fa-angellist:before {
+  content: "\f209";
+}
+.fa-cc:before {
+  content: "\f20a";
+}
+.fa-shekel:before,
+.fa-sheqel:before,
+.fa-ils:before {
+  content: "\f20b";
+}
+.fa-meanpath:before {
+  content: "\f20c";
+}
+.fa-buysellads:before {
+  content: "\f20d";
+}
+.fa-connectdevelop:before {
+  content: "\f20e";
+}
+.fa-dashcube:before {
+  content: "\f210";
+}
+.fa-forumbee:before {
+  content: "\f211";
+}
+.fa-leanpub:before {
+  content: "\f212";
+}
+.fa-sellsy:before {
+  content: "\f213";
+}
+.fa-shirtsinbulk:before {
+  content: "\f214";
+}
+.fa-simplybuilt:before {
+  content: "\f215";
+}
+.fa-skyatlas:before {
+  content: "\f216";
+}
+.fa-cart-plus:before {
+  content: "\f217";
+}
+.fa-cart-arrow-down:before {
+  content: "\f218";
+}
+.fa-diamond:before {
+  content: "\f219";
+}
+.fa-ship:before {
+  content: "\f21a";
+}
+.fa-user-secret:before {
+  content: "\f21b";
+}
+.fa-motorcycle:before {
+  content: "\f21c";
+}
+.fa-street-view:before {
+  content: "\f21d";
+}
+.fa-heartbeat:before {
+  content: "\f21e";
+}
+.fa-venus:before {
+  content: "\f221";
+}
+.fa-mars:before {
+  content: "\f222";
+}
+.fa-mercury:before {
+  content: "\f223";
+}
+.fa-intersex:before,
+.fa-transgender:before {
+  content: "\f224";
+}
+.fa-transgender-alt:before {
+  content: "\f225";
+}
+.fa-venus-double:before {
+  content: "\f226";
+}
+.fa-mars-double:before {
+  content: "\f227";
+}
+.fa-venus-mars:before {
+  content: "\f228";
+}
+.fa-mars-stroke:before {
+  content: "\f229";
+}
+.fa-mars-stroke-v:before {
+  content: "\f22a";
+}
+.fa-mars-stroke-h:before {
+  content: "\f22b";
+}
+.fa-neuter:before {
+  content: "\f22c";
+}
+.fa-genderless:before {
+  content: "\f22d";
+}
+.fa-facebook-official:before {
+  content: "\f230";
+}
+.fa-pinterest-p:before {
+  content: "\f231";
+}
+.fa-whatsapp:before {
+  content: "\f232";
+}
+.fa-server:before {
+  content: "\f233";
+}
+.fa-user-plus:before {
+  content: "\f234";
+}
+.fa-user-times:before {
+  content: "\f235";
+}
+.fa-hotel:before,
+.fa-bed:before {
+  content: "\f236";
+}
+.fa-viacoin:before {
+  content: "\f237";
+}
+.fa-train:before {
+  content: "\f238";
+}
+.fa-subway:before {
+  content: "\f239";
+}
+.fa-medium:before {
+  content: "\f23a";
+}
+.fa-yc:before,
+.fa-y-combinator:before {
+  content: "\f23b";
+}
+.fa-optin-monster:before {
+  content: "\f23c";
+}
+.fa-opencart:before {
+  content: "\f23d";
+}
+.fa-expeditedssl:before {
+  content: "\f23e";
+}
+.fa-battery-4:before,
+.fa-battery-full:before {
+  content: "\f240";
+}
+.fa-battery-3:before,
+.fa-battery-three-quarters:before {
+  content: "\f241";
+}
+.fa-battery-2:before,
+.fa-battery-half:before {
+  content: "\f242";
+}
+.fa-battery-1:before,
+.fa-battery-quarter:before {
+  content: "\f243";
+}
+.fa-battery-0:before,
+.fa-battery-empty:before {
+  content: "\f244";
+}
+.fa-mouse-pointer:before {
+  content: "\f245";
+}
+.fa-i-cursor:before {
+  content: "\f246";
+}
+.fa-object-group:before {
+  content: "\f247";
+}
+.fa-object-ungroup:before {
+  content: "\f248";
+}
+.fa-sticky-note:before {
+  content: "\f249";
+}
+.fa-sticky-note-o:before {
+  content: "\f24a";
+}
+.fa-cc-jcb:before {
+  content: "\f24b";
+}
+.fa-cc-diners-club:before {
+  content: "\f24c";
+}
+.fa-clone:before {
+  content: "\f24d";
+}
+.fa-balance-scale:before {
+  content: "\f24e";
+}
+.fa-hourglass-o:before {
+  content: "\f250";
+}
+.fa-hourglass-1:before,
+.fa-hourglass-start:before {
+  content: "\f251";
+}
+.fa-hourglass-2:before,
+.fa-hourglass-half:before {
+  content: "\f252";
+}
+.fa-hourglass-3:before,
+.fa-hourglass-end:before {
+  content: "\f253";
+}
+.fa-hourglass:before {
+  content: "\f254";
+}
+.fa-hand-grab-o:before,
+.fa-hand-rock-o:before {
+  content: "\f255";
+}
+.fa-hand-stop-o:before,
+.fa-hand-paper-o:before {
+  content: "\f256";
+}
+.fa-hand-scissors-o:before {
+  content: "\f257";
+}
+.fa-hand-lizard-o:before {
+  content: "\f258";
+}
+.fa-hand-spock-o:before {
+  content: "\f259";
+}
+.fa-hand-pointer-o:before {
+  content: "\f25a";
+}
+.fa-hand-peace-o:before {
+  content: "\f25b";
+}
+.fa-trademark:before {
+  content: "\f25c";
+}
+.fa-registered:before {
+  content: "\f25d";
+}
+.fa-creative-commons:before {
+  content: "\f25e";
+}
+.fa-gg:before {
+  content: "\f260";
+}
+.fa-gg-circle:before {
+  content: "\f261";
+}
+.fa-tripadvisor:before {
+  content: "\f262";
+}
+.fa-odnoklassniki:before {
+  content: "\f263";
+}
+.fa-odnoklassniki-square:before {
+  content: "\f264";
+}
+.fa-get-pocket:before {
+  content: "\f265";
+}
+.fa-wikipedia-w:before {
+  content: "\f266";
+}
+.fa-safari:before {
+  content: "\f267";
+}
+.fa-chrome:before {
+  content: "\f268";
+}
+.fa-firefox:before {
+  content: "\f269";
+}
+.fa-opera:before {
+  content: "\f26a";
+}
+.fa-internet-explorer:before {
+  content: "\f26b";
+}
+.fa-tv:before,
+.fa-television:before {
+  content: "\f26c";
+}
+.fa-contao:before {
+  content: "\f26d";
+}
+.fa-500px:before {
+  content: "\f26e";
+}
+.fa-amazon:before {
+  content: "\f270";
+}
+.fa-calendar-plus-o:before {
+  content: "\f271";
+}
+.fa-calendar-minus-o:before {
+  content: "\f272";
+}
+.fa-calendar-times-o:before {
+  content: "\f273";
+}
+.fa-calendar-check-o:before {
+  content: "\f274";
+}
+.fa-industry:before {
+  content: "\f275";
+}
+.fa-map-pin:before {
+  content: "\f276";
+}
+.fa-map-signs:before {
+  content: "\f277";
+}
+.fa-map-o:before {
+  content: "\f278";
+}
+.fa-map:before {
+  content: "\f279";
+}
+.fa-commenting:before {
+  content: "\f27a";
+}
+.fa-commenting-o:before {
+  content: "\f27b";
+}
+.fa-houzz:before {
+  content: "\f27c";
+}
+.fa-vimeo:before {
+  content: "\f27d";
+}
+.fa-black-tie:before {
+  content: "\f27e";
+}
+.fa-fonticons:before {
+  content: "\f280";
+}
+.fa-reddit-alien:before {
+  content: "\f281";
+}
+.fa-edge:before {
+  content: "\f282";
+}
+.fa-credit-card-alt:before {
+  content: "\f283";
+}
+.fa-codiepie:before {
+  content: "\f284";
+}
+.fa-modx:before {
+  content: "\f285";
+}
+.fa-fort-awesome:before {
+  content: "\f286";
+}
+.fa-usb:before {
+  content: "\f287";
+}
+.fa-product-hunt:before {
+  content: "\f288";
+}
+.fa-mixcloud:before {
+  content: "\f289";
+}
+.fa-scribd:before {
+  content: "\f28a";
+}
+.fa-pause-circle:before {
+  content: "\f28b";
+}
+.fa-pause-circle-o:before {
+  content: "\f28c";
+}
+.fa-stop-circle:before {
+  content: "\f28d";
+}
+.fa-stop-circle-o:before {
+  content: "\f28e";
+}
+.fa-shopping-bag:before {
+  content: "\f290";
+}
+.fa-shopping-basket:before {
+  content: "\f291";
+}
+.fa-hashtag:before {
+  content: "\f292";
+}
+.fa-bluetooth:before {
+  content: "\f293";
+}
+.fa-bluetooth-b:before {
+  content: "\f294";
+}
+.fa-percent:before {
+  content: "\f295";
+}
+/*@import 'bourbon';*/
+
+/* This file will be overwritten by styleguide:generate task if user specifies custom UI colors */
+
+/* This file should always exists since it is importendin app.scss */
+/* Main color definitions */
+/* Button and link colors */
+/* Navigation */
+/* Header */
+/* Fonts */
+/* Misc */
+/* Temporary declaration of variables in native CSS syntax */
+:root {/* Main color definitions */
+  --primary-color: #1C3849 !default;
+  --secondary-color: #E4E4E4 !default;
+  --tertiary-color: #F7FCF1 !default;/* Button and link colors */
+  --primary-action-color: #EB7F00 !default;
+  --default-action-color: #1695A3 !default;
+  --action-color-change: 5% !default;/* Navigation */
+  --header-text-color: #FFFFFF !default;
+  --navigation-arrows-visible: false;
+  --header-background-color: #1C3849 !default;
+  --nav-background-color: #1C3849 !default;
+  --nav-button-color: #1C3849 !default;
+  --nav-button-text-color: rgb(23, 209, 230) !default;
+  --nav-button-ref-color: #E4E4E4 !default;
+  --active-nav-button-color: #1695A3 !default;
+  --active-nav-button-text-color: #FFFFFF !default;
+  --active-nav-button-ref-color: #FFFFFF !default;
+  --nav-item-color: #E4E4E4 !default;
+  --nav-item-text-color: #1695A3 !default;
+  --nav-item-ref-color: rgb(23, 209, 230) !default;/* Header */
+  --section-header-color: #1C3849 !default;
+  --section-header-ref-color: #FFFFFF !default;
+  --section-header-text-color: #E4E4E4 !default;
+  --section-header-source-text-color: rgba(228, 228, 228, 0.6) !default;
+  --active-section-header-color: rgb(24, 48, 63);
+  --active-section-header-ref-color: #FFFFFF !default;
+  --active-section-header-text-color: #E4E4E4 !default;
+  --active-section-header-source-text-color: rgba(28, 56, 73, 0.6) !default;
+  --main-section-header-source-text-color: #E4E4E4 !default;/* Fonts */
+  --primary-font: Helvetica, Arial, sans-serif !default;
+  --secondary-font: Helvetica, Arial, sans-serif !default;
+  --min-content-margin: 13px !default;
+  --content-margin: 30px !default;/* Misc */
+  --designer-tool-width: 30% !default;
+  --designer-tool-width-mobile: 90% !default;
+  --header-height: 70px !default;
+  --menu-height: 40px !default;
+  --sub-menu-height: 30px !default;
+  --wrapper-vertical-padding: 60px !default;
+  --content-max-width: 68em !default;
+}
+/* Main color definitions */
+/* Button and link colors */
+/* Navigation */
+/* Header */
+/* Fonts */
+/* Misc */
+/* Temporary declaration of variables in native CSS syntax */
+:root {/* Main color definitions */
+  --primary-color: #1C3849 !default;
+  --secondary-color: #E4E4E4 !default;
+  --tertiary-color: #F7FCF1 !default;/* Button and link colors */
+  --primary-action-color: #EB7F00 !default;
+  --default-action-color: #1695A3 !default;
+  --action-color-change: 5% !default;/* Navigation */
+  --header-text-color: #FFFFFF !default;
+  --navigation-arrows-visible: false;
+  --header-background-color: #1C3849 !default;
+  --nav-background-color: #1C3849 !default;
+  --nav-button-color: #1C3849 !default;
+  --nav-button-text-color: rgb(23, 209, 230) !default;
+  --nav-button-ref-color: #E4E4E4 !default;
+  --active-nav-button-color: #1695A3 !default;
+  --active-nav-button-text-color: #FFFFFF !default;
+  --active-nav-button-ref-color: #FFFFFF !default;
+  --nav-item-color: #E4E4E4 !default;
+  --nav-item-text-color: #1695A3 !default;
+  --nav-item-ref-color: rgb(23, 209, 230) !default;/* Header */
+  --section-header-color: #1C3849 !default;
+  --section-header-ref-color: #FFFFFF !default;
+  --section-header-text-color: #E4E4E4 !default;
+  --section-header-source-text-color: rgba(228, 228, 228, 0.6) !default;
+  --active-section-header-color: rgb(24, 48, 63);
+  --active-section-header-ref-color: #FFFFFF !default;
+  --active-section-header-text-color: #E4E4E4 !default;
+  --active-section-header-source-text-color: rgba(28, 56, 73, 0.6) !default;
+  --main-section-header-source-text-color: #E4E4E4 !default;/* Fonts */
+  --primary-font: Helvetica, Arial, sans-serif !default;
+  --secondary-font: Helvetica, Arial, sans-serif !default;
+  --min-content-margin: 13px !default;
+  --content-margin: 30px !default;/* Misc */
+  --designer-tool-width: 30% !default;
+  --designer-tool-width-mobile: 90% !default;
+  --header-height: 70px !default;
+  --menu-height: 40px !default;
+  --sub-menu-height: 30px !default;
+  --wrapper-vertical-padding: 60px !default;
+  --content-max-width: 68em !default;
+}
+/* TODO: it does not understand viribales from imports */
+/* styleguide:ignore:start */
+/* We need to denite fonts separatedly to every element since we do not want to pollute previews */
+/* with inherited styles */
+/* styleguide:ignore:end */
+/* Main color definitions */
+/* Button and link colors */
+/* Navigation */
+/* Header */
+/* Fonts */
+/* Misc */
+/* Temporary declaration of variables in native CSS syntax */
+:root {/* Main color definitions */
+  --primary-color: #1C3849 !default;
+  --secondary-color: #E4E4E4 !default;
+  --tertiary-color: #F7FCF1 !default;/* Button and link colors */
+  --primary-action-color: #EB7F00 !default;
+  --default-action-color: #1695A3 !default;
+  --action-color-change: 5% !default;/* Navigation */
+  --header-text-color: #FFFFFF !default;
+  --navigation-arrows-visible: false;
+  --header-background-color: #1C3849 !default;
+  --nav-background-color: #1C3849 !default;
+  --nav-button-color: #1C3849 !default;
+  --nav-button-text-color: rgb(23, 209, 230) !default;
+  --nav-button-ref-color: #E4E4E4 !default;
+  --active-nav-button-color: #1695A3 !default;
+  --active-nav-button-text-color: #FFFFFF !default;
+  --active-nav-button-ref-color: #FFFFFF !default;
+  --nav-item-color: #E4E4E4 !default;
+  --nav-item-text-color: #1695A3 !default;
+  --nav-item-ref-color: rgb(23, 209, 230) !default;/* Header */
+  --section-header-color: #1C3849 !default;
+  --section-header-ref-color: #FFFFFF !default;
+  --section-header-text-color: #E4E4E4 !default;
+  --section-header-source-text-color: rgba(228, 228, 228, 0.6) !default;
+  --active-section-header-color: rgb(24, 48, 63);
+  --active-section-header-ref-color: #FFFFFF !default;
+  --active-section-header-text-color: #E4E4E4 !default;
+  --active-section-header-source-text-color: rgba(28, 56, 73, 0.6) !default;
+  --main-section-header-source-text-color: #E4E4E4 !default;/* Fonts */
+  --primary-font: Helvetica, Arial, sans-serif !default;
+  --secondary-font: Helvetica, Arial, sans-serif !default;
+  --min-content-margin: 13px !default;
+  --content-margin: 30px !default;/* Misc */
+  --designer-tool-width: 30% !default;
+  --designer-tool-width-mobile: 90% !default;
+  --header-height: 70px !default;
+  --menu-height: 40px !default;
+  --sub-menu-height: 30px !default;
+  --wrapper-vertical-padding: 60px !default;
+  --content-max-width: 68em !default;
+}
+/* Main color definitions */
+/* Button and link colors */
+/* Navigation */
+/* Header */
+/* Fonts */
+/* Misc */
+/* Temporary declaration of variables in native CSS syntax */
+:root {/* Main color definitions */
+  --primary-color: #1C3849 !default;
+  --secondary-color: #E4E4E4 !default;
+  --tertiary-color: #F7FCF1 !default;/* Button and link colors */
+  --primary-action-color: #EB7F00 !default;
+  --default-action-color: #1695A3 !default;
+  --action-color-change: 5% !default;/* Navigation */
+  --header-text-color: #FFFFFF !default;
+  --navigation-arrows-visible: false;
+  --header-background-color: #1C3849 !default;
+  --nav-background-color: #1C3849 !default;
+  --nav-button-color: #1C3849 !default;
+  --nav-button-text-color: rgb(23, 209, 230) !default;
+  --nav-button-ref-color: #E4E4E4 !default;
+  --active-nav-button-color: #1695A3 !default;
+  --active-nav-button-text-color: #FFFFFF !default;
+  --active-nav-button-ref-color: #FFFFFF !default;
+  --nav-item-color: #E4E4E4 !default;
+  --nav-item-text-color: #1695A3 !default;
+  --nav-item-ref-color: rgb(23, 209, 230) !default;/* Header */
+  --section-header-color: #1C3849 !default;
+  --section-header-ref-color: #FFFFFF !default;
+  --section-header-text-color: #E4E4E4 !default;
+  --section-header-source-text-color: rgba(228, 228, 228, 0.6) !default;
+  --active-section-header-color: rgb(24, 48, 63);
+  --active-section-header-ref-color: #FFFFFF !default;
+  --active-section-header-text-color: #E4E4E4 !default;
+  --active-section-header-source-text-color: rgba(28, 56, 73, 0.6) !default;
+  --main-section-header-source-text-color: #E4E4E4 !default;/* Fonts */
+  --primary-font: Helvetica, Arial, sans-serif !default;
+  --secondary-font: Helvetica, Arial, sans-serif !default;
+  --min-content-margin: 13px !default;
+  --content-margin: 30px !default;/* Misc */
+  --designer-tool-width: 30% !default;
+  --designer-tool-width-mobile: 90% !default;
+  --header-height: 70px !default;
+  --menu-height: 40px !default;
+  --sub-menu-height: 30px !default;
+  --wrapper-vertical-padding: 60px !default;
+  --content-max-width: 68em !default;
+}
+/* TODO: it does not understand viribales from imports */
+/* styleguide:ignore:start */
+/* We need to denite fonts separatedly to every element since we do not want to pollute previews */
+/* with inherited styles */
+/* styleguide:ignore:end */
+/* Helper elements
+
+Helper elements are meant to be used for displaying various attributes that
+are hard to demonstrate otherwise (e.g. grids and colors)
+
+Styleguide 5.0*/
+/* .styleguide-color
+
+Color helper can be used to demonstrate colors
+
+markup:
+<div style="background: #4183c4;" class="styleguide-color">$brand-linkBlue</div>
+<div style="background: #999;" class="styleguide-color">$brand-lightGrey</div>
+<div style="background: #666;" class="styleguide-color">$brand-medGrey</div>
+<div style="background: #333;" class="styleguide-color">$brand-darkGrey</div>
+<div style="background: #6CC644;" class="styleguide-color">$brand-green</div>
+<div style="background: #BD2C00;" class="styleguide-color">$brand-red</div>
+<div style="background: #f93;" class="styleguide-color">$brand-orange</div>
+
+Styleguide 5.1 */
+.styleguide-color {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  box-sizing: border-box;
+  font-weight: 300;
+  display: block;
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  margin-bottom: .5em;
+  padding: 0;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  text-shadow: #000 0 0 2px;
+}
+/* .styleguide-grid-unit
+
+Grid unit helps to demonstrate layouts and grid structures
+
+markup:
+<div class="styleguide-grid-unit"> Outer
+  <div class="styleguide-grid-unit"> Inner
+    <div class="styleguide-grid-unit"> Inception! </div>
+  </div>
+</div>
+
+Styleguide 5.2 */
+.styleguide-grid-unit {
+  min-height: 3em;
+  padding: 1em;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.1);
+}
+sg-common-class-wrapper {
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* Tables
+
+Table styles, mainly used in many overview files (README.md)
+
+markup:
+<table class="sg ng-scope">
+	<thead class="sg">
+		<tr class="sg">
+			<th class="sg">Header 1</th>
+			<th class="sg">Header 2</th>
+			<th class="sg">Header 3</th>
+		</tr>
+	</thead>
+	<tbody class="sg">
+		<tr class="sg">
+			<td class="sg">SC5 Styleguide</td>
+			<td class="sg">Overview</td>
+			<td class="sg">README.md</td>
+		</tr>
+	</tbody>
+</table>
+
+Styleguide 5.3 */
+table.sg {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-collapse: collapse;
+}
+table.sg th,
+    table.sg td {
+  text-align: left;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5em 1em;
+}
+
+.colorpicker-visible,
+.colorpicker-visible .dropdown-menu {
+  display: block !important;
+}
+
+colorpicker-saturation {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: url('data:image/png;base64,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');
+  cursor: crosshair;
+  float: left;
+}
+
+colorpicker-saturation i {
+  display: block;
+  height: 7px;
+  width: 7px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: -4px 0 0 -4px;
+}
+
+colorpicker-saturation i::after {
+  content: '';
+  display: block;
+  height: 7px;
+  width: 7px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+colorpicker-hue,
+colorpicker-alpha {
+  width: 15px;
+  height: 100px;
+  float: left;
+  cursor: row-resize;
+  margin-left: 4px;
+  margin-bottom: 4px;
+}
+
+colorpicker-hue i,
+colorpicker-alpha i {
+  display: block;
+  height: 2px;
+  background: #000;
+  border-top: 1px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: -1px;
+}
+
+colorpicker-hue {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABkCAMAAABw8qpSAAABLFBMVEUA/z8AuP//JAAA/33/3AAA/1ABAv8A/7r/AH7/jgD2AP8A//j/AEHmAP/XAP/HAP+4AP//ALyoAP+aAP+JAP97AP9rAP9cAP9MAP8+AP8tAP8fAP8PAP8ATv//AG7/cAD/vgD/APoAmv//ADH/AKwB/wMA5//4Eg4AL///AOr/UQD/nwAA/27/7AAA/+kAe/8Ayf8A/5sA/zEA/6z/ABEAEP8A/17/MgAA/9n/ACL/gAD/AJ0AXP8Aqv//AMoA/yHqFBb/zAD/AGD/ANsA9//1/wDk/wDV/wDF/wC3/wD/AI2m/wD/FACY/wCI/wB5/wBp/wD/YgBb/wBK/wA8/wAs/wAd/wAN/wAAPv8A/xH/AFAAi///rQAA/8r/+gAA1///QwAAH/8Abf8A/43c/JNGAAAAiUlEQVR4AQXBg2EDAAAAsMy2bds2ttp2+/8PTby79mDLsKJPq/oFPdk24dWXAxsGjRg1ZtykKdNmzJozb8GiJct63WjYl7fiWdOZkk0vOpyr2fVtyKl7FX2uXGjpcuxWDy69KdiRk5WRlpIUFxMVERLw78+vH1Unun1YV3ZkwKM1CYfq7nQK22sD03ITV2Aqp0IAAAAASUVORK5CYII=');
+}
+
+colorpicker-alpha {
+  display: none;
+}
+
+colorpicker-alpha,
+.colorpicker-color {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAABkCAMAAACIElGlAAADAFBMVEUAAADT09PT09P////T09P////e3t7q6urT09Px8fHT09P////////T09PT09P////////T09PT09P////////////T09PT09P////////////T09P////T09PT09PT09P////T09PT09P////////////////T09P////T09PT09P////T09PT09PT09PT09PT09PT09P////T09P////T09PT09P////////////T09P////T09P////////////T09PT09P////T09P////////////////////T09P////////T09PT09P////////////////////////T09PT09P////////////////////////T09PT09P////T09PT09P////////T09P////////////T09P////////T09P////T09P////T09P////T09PT09PT09PT09P////T09PT09PT09PT09PT09PT09P////T09P////T09PT09P////////////T09PT09PT09P////T09PT09PT09PT09PT09PT09PT09P////////////////T09PT09P////////////T09P////////T09P////T09PT09PT09P////////T09P////////T09P////T09PT09P////////////////T09PT09PT09PT09P////T09PT09PT09PT09PT09PT09PT09P////T09P////T09PT09PT09PT09PT09P////////////////////////////////////T09P////T09P////T09P////T09PT09P////////////T09P////T09P////T09P////////////T09PT09P////////////////T09PT09P////T09P////T09PT09P////T09P////T09PT09P////T09PT09PT09PT09P////T09PT09P////////////T09PT09P////T09P////////T09MQsm1FAAABAHRSTlMAgJN8/vcDAfcCnJyGaZmZlomGk4yJOmM/eTxs8wY0YDFC7HNdLx18n5/7aUvzCcW9+qKiK8P0ZiltRwfdw/n8Px3WduJjItj78ss5PDHUNELbwP5wplA2FglEVwvkqNarCs4Z7b2sDLgQ0xNdyLrr0eLLUeW1Vs5TWQLwjPI3ZvQGdvxFyFrAeevaLCLvGd0kpRskGyf4qK605xKvFrGyDRHnBYMEkJaDkIBvB/gpH99O6CrbIC4nH3Lg2SXp4A7Qul/GDEgPSlMQ6LjqFU0SjyCCj5V/gnBN7xglL3O70WBU7gjFFEfft0sPTo1ndRipwXr2yRemWRVENq+ytbGuxGaWGQAAAnpJREFUeNpNxmdcDHAAxvEHOWXvmXX23ntv2XvvMg/Z44x0KaRBSnfcKSqlnYZKp1QqGpT20KZh783/eePj+3vzw3/q/AM9iURPTy6XS+RwcXNzcZMQTE1dTE3bE7y9S0u9xxD600rCGtpI2ErOsbGxzoiMrIqscnaOi4vDdnp4XYSrguwxQSb7KpMllycnl2MFaTSaTxrY5NrY5BoKb2BnZ2doZ29vb2OPSdSd4Bcc7OcXGhqamgqrYCsrq+mEiEtC3gUBDg55Dg53IkQYSYG+gb6+GEqB5wV0o5D8/JAQdKK5hA40n3BS+L6c0JJmE+ZQW8JEak1YQJ0Jq+jbaQEPnotGE+IrK+Pj+xKqU6pTUrIDAgKysZ+WEY5QQkJxcQIO0WrCUbL4YmFhgZ3UlVAUHR1d1JEwjVoRRpDJKxMTE/ShBoRR1I6whLyyvLyyUFAQFhbWhTCFFArFawXOCu/bEHpQLYKnZ0aGZw2CR1qah0dmpqurK+pTU0ILakJoTi+PC7j5RHTrqQg1qRkh3T3d3b0xoSE1ItSleoSe1IswmIYQPl8UlhLWkaOj41tHbKENBLX6j1qt/KFUKnFN+Onk9NvJCQdJpfqlUqGiIjExcRthN91/JsJmGkhYRO/OCBhHwwgxMWUxZQMIu8j8o7m5OfbRLMJh2kTYQ1FRhYVR2EHzCOtpMmEG3SUsJEvLoKAg2Prb2tqOJYSH+/uH33shwlTaS1hLBwhX6AYX2tuiRwStVntOa5yUZJwEqbREKjUi5Bjl5BhZW1uXWOMYGRBOnNDX1zfoxz1FwwkfSJfgo6vr41P7soBBNJ7Qm2YSzHTMzMwmEHRoMf0Fm5mYOUrzNBYAAAAASUVORK5CYII=');
+}
+
+.colorpicker {
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+}
+
+.colorpicker colorpicker-hue,
+.colorpicker colorpicker-alpha,
+.colorpicker colorpicker-saturation {
+  position: relative;
+}
+
+.colorpicker input {
+  width: 100px;
+  font-size: 11px;
+  color: #000;
+  background-color: #fff;
+}
+
+.colorpicker.alpha {
+  min-width: 140px;
+}
+
+.colorpicker.alpha colorpicker-alpha {
+  display: block;
+}
+
+.colorpicker.dropdown {
+  position: absolute;
+}
+
+.colorpicker.colorpicker-fixed-position {
+  position: fixed;
+}
+
+.colorpicker .dropdown-menu::after,
+.colorpicker .dropdown-menu::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+}
+
+.colorpicker .dropdown-menu::after {
+  clear: both;
+  border: 6px solid transparent;
+  top: -5px;
+  left: 7px;
+}
+
+.colorpicker .dropdown-menu::before {
+  border: 7px solid transparent;
+  top: -6px;
+  left: 6px;
+}
+
+.colorpicker .dropdown-menu {
+  position: static;
+  top: 0;
+  left: 0;
+  min-width: 129px;
+  padding: 4px;
+  margin-top: 0;
+}
+
+.colorpicker-position-top .dropdown-menu::after {
+  border-top: 6px solid #fff;
+  border-bottom: 0;
+  top: auto;
+  bottom: -5px;
+}
+
+.colorpicker-position-top .dropdown-menu::before {
+  border-top: 7px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 0;
+  top: auto;
+  bottom: -6px;
+}
+
+.colorpicker-position-right .dropdown-menu::after {
+  border-right: 6px solid #fff;
+  border-left: 0;
+  top: 11px;
+  left: -5px;
+}
+
+.colorpicker-position-right .dropdown-menu::before {
+  border-right: 7px solid rgba(0, 0, 0, 0.2);
+  border-left: 0;
+  top: 10px;
+  left: -6px;
+}
+
+.colorpicker-position-bottom .dropdown-menu::after {
+  border-bottom: 6px solid #fff;
+  border-top: 0;
+}
+
+.colorpicker-position-bottom .dropdown-menu::before {
+  border-bottom: 7px solid rgba(0, 0, 0, 0.2);
+  border-top: 0;
+}
+
+.colorpicker-position-left .dropdown-menu::after {
+  border-left: 6px solid #fff;
+  border-right: 0;
+  top: 11px;
+  left: auto;
+  right: -5px;
+}
+
+.colorpicker-position-left .dropdown-menu::before {
+  border-left: 7px solid rgba(0, 0, 0, 0.2);
+  border-right: 0;
+  top: 10px;
+  left: auto;
+  right: -6px;
+}
+
+colorpicker-preview {
+  display: block;
+  height: 10px;
+  margin: 5px 0 3px 0;
+  clear: both;
+  background-position: 0 100%;
+}
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+  -webkit-text-size-adjust: none;
+}
+.hljs-comment,
+.hljs-template_comment,
+.diff .hljs-header,
+.hljs-javadoc {
+  color: #998;
+  font-style: italic;
+}
+.hljs-keyword,
+.hljs-name,
+.css .rule .hljs-keyword,
+.hljs-winutils,
+.javascript .hljs-title,
+.nginx .hljs-title,
+.hljs-subst,
+.hljs-request,
+.hljs-status {
+  color: #333;
+  font-weight: bold;
+}
+.hljs-number,
+.hljs-hexcolor,
+.ruby .hljs-constant {
+  color: #008080;
+}
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-phpdoc,
+.hljs-dartdoc,
+.tex .hljs-formula {
+  color: #d14;
+}
+.hljs-title,
+.hljs-id,
+.scss .hljs-preprocessor {
+  color: #900;
+  font-weight: bold;
+}
+.javascript .hljs-title,
+.hljs-list .hljs-keyword,
+.hljs-subst {
+  font-weight: normal;
+}
+.hljs-class .hljs-title,
+.hljs-type,
+.hljs-attr,
+.vhdl .hljs-literal,
+.tex .hljs-command {
+  color: #458;
+  font-weight: bold;
+}
+.hljs-tag,
+.hljs-tag .hljs-title,
+.hljs-rules .hljs-property,
+.django .hljs-tag .hljs-keyword {
+  color: #000080;
+  font-weight: normal;
+}
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body {
+  color: #008080;
+}
+.hljs-regexp {
+  color: #009926;
+}
+.hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.lisp .hljs-keyword,
+.clojure .hljs-keyword,
+.scheme .hljs-keyword,
+.tex .hljs-special,
+.hljs-prompt {
+  color: #990073;
+}
+.hljs-built_in {
+  color: #0086b3;
+}
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-doctype,
+.hljs-shebang,
+.hljs-cdata {
+  color: #999;
+  font-weight: bold;
+}
+.hljs-deletion {
+  background: #fdd;
+}
+.hljs-addition {
+  background: #dfd;
+}
+.diff .hljs-change {
+  background: #0086b3;
+}
+.hljs-chunk {
+  color: #aaa;
+}
+
+html,
+body.sg {
+  width: 100%;
+  height: 100%;
+}
+
+.sg.view-index {
+  height: 100%;
+}
+
+.sg {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*
+Colors and typography
+
+This section describes base colors and typography
+
+Styleguide 1.0
+*/
+
+/*
+Main colors
+
+$primary-color - Primary color
+$secondary-color - Secondary color
+$primary-action-color - Primary button color
+$default-action-color - Default button color and link color
+$tertiary-color - Used for input hovers and hilights
+
+markup:
+<div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
+
+Styleguide 1.1
+*/
+
+/*
+Calculated colors
+
+.color_lighten - Lighter than default action color
+.color_darken - Darker than default action color
+
+markup:
+<div class="styleguide-color {$modifiers}"></div>
+
+Styleguide 1.1.1
+*/
+
+.color_lighten {
+  background-color: lighten(#1695A3, 5%);
+}
+
+.color_darken {
+  background-color: rgb(23, 220, 242);
+}
+
+/*
+Headings
+
+These are our headings
+
+markup:
+<h1 class="sg">Heading 1</h1>
+<p class="sg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa ipsum, tincidunt vel convallis in, suscipit et risus. Morbi erat dolor, mattis at dignissim sed, feugiat sed lorem.
+<h2 class="sg">Heading 2</h2>
+<p class="sg">Mauris feugiat suscipit turpis, ut rhoncus lectus finibus sed. Etiam suscipit consectetur eros vitae venenatis.</p>
+<h3 class="sg">Heading 3</h3>
+<p class="sg">Ut leo ipsum, tincidunt vel mauris eget, convallis egestas justo. Nunc ligula neque, porta ac lorem id, ultrices dapibus dolor.</p>
+<h4 class="sg">Heading 4</h4>
+<p class="sg"> Phasellus interdum massa ante, ac placerat felis ultricies at. Fusce vulputate, odio sed convallis laoreet, tortor orci venenatis massa, a placerat ligula nisl vitae felis. In pellentesque ornare eleifend. Suspendisse potenti. Quisque eget mauris enim.</p>
+<h5 class="sg">Heading 5</h5>
+
+Styleguide 1.2
+*/
+
+h1.sg,
+h2.sg,
+h3.sg,
+h4.sg,
+h5.sg {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  font-family: var(--primary-font);
+  font-family: Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+  margin: 1.414em 0 .5em;
+  color: #444;
+}
+
+h1.sg {
+  font-size: 3.157em;
+
+  margin-top: .5em;
+}
+
+h2.sg {
+  font-size: 2.369em;
+}
+
+h3.sg {
+  font-size: 1.777em;
+}
+
+h4.sg {
+  font-size: 1.333em;
+}
+
+h4.sg,
+h5.sg {
+  font-weight: 500;
+}
+
+/*
+Buttons and inputs
+
+Links, buttons, input boxes etc.
+
+Styleguide 2.0
+ */
+
+/*
+Links
+
+Link styles used in the styleguide
+
+.sg - Normal link
+:hover - Hover
+
+markup:
+<a href="#" class="sg {$modifiers}">Link text</a>
+
+Styleguide 2.1
+ */
+
+/* TODO
+:active - Active
+:visited - Visited
+*/
+
+a.sg {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  display: inline;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--default-action-color);
+  color: #1695A3;
+}
+
+a.sg:hover {
+  color: lighten(#1695A3, 5%);
+}
+
+a.sg:active {
+  color: rgb(23, 220, 242);
+}
+
+p.sg {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-top: 1.3em;
+  margin-bottom: 1.3em;
+  color: #333;
+}
+
+code.sg,
+pre.sg {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  font-family: 'Lucida Console', Monaco, monospace;
+  font-size: 1.0em;
+  white-space: pre-wrap;
+}
+
+li.sg {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  margin-left: 1em;
+  padding: .2em 0;
+}
+
+strong.sg {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  font-weight: 700;
+}
+
+small.sg {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  color: #888;
+}
+
+/*
+Buttons
+
+Button styles used in the styleguide
+
+default - Default button
+.sg-primary - Primary button
+:disabled - Disabled button
+
+markup:
+<button class="sg {$modifiers}">Button text</button>
+
+Styleguide 2.3
+ */
+
+
+button.sg {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  display: inline;
+
+  margin-right: 8px;
+  padding: 8px;
+
+  cursor: pointer;
+
+  color: white;
+  border-radius: 5px;
+  background-color: var(--default-action-color);
+  background-color: #1695A3;
+}
+
+
+button.sg:hover {
+  background-color: rgb(3, 21, 22);
+}
+
+
+button.sg:active {
+  background-color: rgb(23, 220, 242);
+}
+
+
+button.sg.sg-primary {
+  color: white;
+  background-color: var(--primary-action-color);
+  background-color: #EB7F00;
+}
+
+
+button.sg.sg-primary:hover {
+  background-color: rgb(26, 14, 0);
+}
+
+
+button.sg.sg-primary:active {
+  background-color: rgb(242, 129, 0);
+}
+
+
+button.sg:disabled {
+  cursor: default;
+  color: #999;
+  background-color: var(--secondary-color);
+  background-color: #E4E4E4;
+}
+
+/*
+Input boxes
+
+Styles for input boxes
+
+default - Default input
+:hover - Hovered input
+
+markup:
+<input class="sg {$modifiers}" type="text" value="Default text box">
+<input class="sg {$modifiers}" type="text" placeholder="Default placeholder">
+<input class="sg {$modifiers}" type="search" value="Search text box">
+
+Styleguide 2.4
+ */
+
+/* TODO
+:focus - Focused input
+:active - Active input
+*/
+
+input.sg {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  font-family: Helvetica,Arial,sans-serif;
+  font-weight: 300;
+
+  margin: 8px;
+  padding: 8px;
+  padding: .5em;
+
+  border: 1px solid var(--secondary-color);
+  border: 1px solid #E4E4E4;
+}
+
+input.sg:focus {
+  background-color: var(--tertiary-color);
+  background-color: #F7FCF1;
+  border: 1px solid #E4E4E4;
+}
+
+/*
+Structure
+
+Styleguide 3.0
+ */
+
+/*
+Grid
+
+Our grid is built using Bourbon's Neat grid framework. We use the default
+12 column layout.
+
+Styleguide 3.1
+ */
+
+/*
+Main layout
+
+.sg.wrapper acts as a container for .sg.nav and .sg.body
+
+markup:
+<header class="sg sg-header styleguide-grid-unit">Header</header>
+<div class="sg sg-wrapper styleguide-grid-unit">
+  <div class="sg sg-body styleguide-grid-unit">Body</div>
+</div>
+
+Styleguide 3.1.1
+ */
+
+.sg.full-height {
+  min-height: 100vh;
+}
+
+.sg.sg-wrapper {
+  position: relative;
+  overflow: hidden;
+  max-width: 68em;
+  margin: 0 auto;
+  padding: 60px 30px 60px 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .sg.sg-wrapper {
+    padding: 0;
+  }
+}
+
+.sg.sg-wrapper.designerToolVisible {
+  margin-right: var(--designer-tool-width);
+  margin-right: 30%;
+}
+
+.sg.sg-wrapper .sg.sg-body {
+  display: inline-block;
+  width: 70%;
+  min-height: 680px;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .sg.sg-wrapper .sg.sg-body {
+    padding: 0.25em;
+    padding-top: 30px;
+    width: 100%;
+  }
+}
+
+.sg.sg-wrapper .sg.sg-body // Remove top margin from first header in markdown
+    .sg.sg-heading:nth-of-type(1) {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.sg.sg-wrapper .sg.full-width {
+  width: 100%;
+}
+
+.sg.sg-wrapper .sg.sg-side-nav {
+  display: none;
+  float: left;
+  display: inline-block;
+  width: 30%;
+  opacity: 1;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 768px) {
+  .sg.sg-wrapper .sg.sg-side-nav {
+    width: 100%;
+    padding-top: 30px;
+    z-index: 99999;
+    background: #8b8b8b;
+    overflow: scroll;
+    -webkit-transition: opacity .4s cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    transition: opacity .4s cubic-bezier(0.000, 0.995, 0.990, 1.000);
+  }
+}
+
+.sg.sg-wrapper .sg.sg-side-nav .sg.option {
+  text-align: center;
+}
+
+.sg.sg-wrapper .sg.sg-side-nav .sg.option a {
+  color: white;
+}
+
+.sg.sg-wrapper .sg.sg-side-nav li {
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sg.sg-wrapper .sg.sg-side-nav li {
+    background: #8b8b8b;
+    border-bottom: 1px solid #d4d4d4;
+  }
+}
+
+.sg.sg-wrapper .sg.sg-side-nav .sg-nav-section {
+  list-style: none;
+  margin: 2em 0 0 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0);
+}
+
+@media screen and (max-width: 768px) {
+  .sg.sg-wrapper .sg.sg-side-nav .sg-nav-section {
+    margin: 0;
+  }
+}
+
+.sg.sg-wrapper .sg.sg-side-nav .sg-nav-section .sg-nav-subsection:before {
+  position: absolute;
+  top: 0;
+  left: -1em;
+  display: block;
+  width: 5px;
+  height: 100%;
+  content: '';
+  background: lighten(#1C3849, 75%);
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.sg.sg-wrapper .sg.sg-side-nav .sg-nav-subsection .plus:before {
+  position: absolute;
+  margin-top: 0;
+  margin-left: -1em;
+  display: block;
+  width: 5px;
+  height: 100%;
+  content: '+';
+  background: lighten(#1C3849, 75%);
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.sg.sg-wrapper .sg.sg-side-nav .sg-nav-subsection .minus:before {
+  position: absolute;
+  margin-top: 0;
+  margin-left: -1em;
+  display: block;
+  width: 5px;
+  height: 100%;
+  content: '-';
+  background: lighten(#1C3849, 75%);
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.sg.sg-wrapper .sg.sg-side-nav .sg-nav-section li {
+  margin-bottom: .3em;
+}
+
+@media screen and (max-width: 768px) {
+  .sg.sg-wrapper .sg.sg-side-nav .sg-nav-section li {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sg.sg-wrapper .sg.sg-side-nav .sg-nav-section li a {
+    color: #FFFFFF;
+    margin-left: 5px;
+  }
+}
+
+.sg.sg-wrapper .sg.sg-side-nav .sg-nav-section > li > a {
+  font-family: Helvetica,Arial,sans-serif;
+  line-height: 2em;
+  position: relative;
+  display: block;
+  padding: .5em;
+}
+
+.sg.sg-wrapper .sg.sg-side-nav .sg-nav-section > li > a:before {
+  position: absolute;
+  top: 0;
+  left: -1em;
+  display: block;
+  width: 5px;
+  height: 100%;
+  content: '';
+  background: lighten(#1C3849, 75%);
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.sg.sg-wrapper .sg.sg-side-nav .sg-nav-section > li > a:after {
+  position: absolute;
+  bottom: -.25em;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  content: '';
+  background: rgba(228, 228, 228, 0);
+}
+
+.sg.sg-wrapper .sg.sg-side-nav .sg-nav-section > li > a:hover:before, .sg.sg-wrapper .sg.sg-side-nav .sg-nav-section > li > a.active:before {
+  background: #1C3849;
+}
+
+.sg.sg-wrapper .sg.sg-side-nav .sg-nav-subsubsection{
+  padding-left: 10px;
+}
+
+.sg.sg-wrapper .sg.sg-side-nav .sg-nav-subsection{
+  padding-left: 30px;
+}
+
+.sg.sg-wrapper .sg.sg-side-nav .sg-nav-subsection li {
+  border: none;
+}
+
+.sg.sg-wrapper .sg.sg-side-nav .sg-nav-subsection li a {
+  line-height: 2em;
+  position: relative;
+  display: block;
+  color: #23485f;
+}
+
+.sg.sg-wrapper .sg.animate-show {
+  opacity: 0;
+  z-index: -1;
+  width: 0;
+}
+
+.sg.sg-wrapper .sg.side-nav-toggle {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  position: absolute;
+  top: 2.0em;
+  cursor: pointer;
+  color: rgba(var(--primary-color), .2);
+  border-radius: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: color .3s ease-in;
+  transition: color .3s ease-in;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .sg.sg-wrapper .sg.side-nav-toggle {
+    display: none;
+  }
+}
+
+.sg.sg-wrapper .sg.side-nav-toggle:before {
+  position: absolute;
+  top: -1.5em;
+  width: 10em;
+  content: 'Toggle navigation';
+  opacity: 0;
+  color: rgba(28, 56, 73, 0.2);
+  -webkit-transition: opacity .3s ease-in;
+  transition: opacity .3s ease-in;
+}
+
+.sg.sg-wrapper .sg.side-nav-toggle:hover {
+  color: rgba(28, 56, 73, 0.7);
+}
+
+.sg.sg-wrapper .sg.side-nav-toggle:hover:before {
+  opacity: 1;
+}
+/*
+Header and footer
+
+The header and footer are included in all styleguide pages
+
+Styleguide 3.2
+ */
+
+/*
+Header
+
+Header bar description
+
+default - Default header
+.error - Error state
+
+markup:
+<header class="sg sg-header {$modifiers}">
+  <div class="sg-inner">
+    <div class="sg-title">
+      <h1>Title</h1>
+    </div>
+  </div>
+</header>
+
+Styleguide 3.2.1
+ */
+
+
+.sg.sg-header {
+  width: 100%;
+  padding: 0;
+  color: #fff;
+  background: var(--header-background-color);
+  background: #1C3849;
+
+}
+
+
+.sg.sg-header pre {
+  clear: both;
+}
+
+
+.sg.sg-header .sg-inner {
+  box-sizing: border-box;
+  padding: 0 var(--min-content-margin) 0 var(--min-content-margin);
+  padding: 0 13px 0 13px;
+  height: 100%;
+  padding-right: calc(var(--content-margin) - var(13px));
+  padding-right: calc(30px - 13px);
+  max-width: var(--content-max-width);
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  .sg.sg-header .sg-inner {
+    padding-right: 0;
+  }
+}
+
+
+.sg.sg-header .sg-inner:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+
+.sg.sg-header .sg-title {
+  min-height: 70px;
+  float: left;
+  padding-bottom: 20px;
+  white-space: nowrap;
+  padding: 0;
+  height: 100%;
+}
+
+
+.sg.sg-header .sg-title h1 {
+  font-family: var(--secondary-font);
+  font-family: Helvetica,Arial,sans-serif;
+  font-style: normal;
+  font-size: 1.8em;
+  font-weight: 100;
+  margin: 0;
+  color: var(--header-text-color);
+  color: #FFFFFF;
+  line-height: var(--header-height);
+  line-height: 70px;
+}
+
+
+.sg.sg-header .sg-title h1 span {
+  font-size: .9em;
+}
+
+
+.sg.sg-header.error {
+  height: auto;
+  background-color: #d2301c;
+}
+
+
+.sg.sg-header.designerToolVisible .sg-inner {
+  margin-right: var(--designer-tool-width);
+  margin-right: 30%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .sg.sg-header {
+    height: auto;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .sg.sg-header .sg.sg-search-container {
+    clear: both;
+  }
+}
+
+
+.sg.sg-header .sg.sg-search-container .sg-hamburger {
+  display: none;
+  float: left;
+  cursor: pointer;
+  position: relative;
+}
+
+
+@media screen and (max-width: 768px) {
+  .sg.sg-header .sg.sg-search-container .sg-hamburger {
+    display: inline-block;
+    padding-top: 2px;
+    padding-bottom: 3px;
+  }
+}
+
+
+.sg.sg-header .sg.sg-search-container .sg-hamburger-item {
+  position: relative;
+  width: 40px;
+  height: 4px;
+  background: white;
+  margin-bottom: 9px;
+  top: 0;
+  -webkit-transition: top 0.1s ease-in-out 0.2s, opacity 0.25s ease-in-out 0.1s, -webkit-transform 0.15s ease-in-out;
+  transition: top 0.1s ease-in-out 0.2s, opacity 0.25s ease-in-out 0.1s, -webkit-transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out, top 0.1s ease-in-out 0.2s, opacity 0.25s ease-in-out 0.1s;
+  transition: transform 0.15s ease-in-out, top 0.1s ease-in-out 0.2s, opacity 0.25s ease-in-out 0.1s, -webkit-transform 0.15s ease-in-out;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+
+.sg.sg-header .sg.sg-search-container .sg-hamburger-active .sg-hamburger-item {
+  -webkit-transition: top 0.1s ease-in-out, opacity 0.25s ease-in-out, -webkit-transform 0.15s ease-in-out 0.2s;
+  transition: top 0.1s ease-in-out, opacity 0.25s ease-in-out, -webkit-transform 0.15s ease-in-out 0.2s;
+  transition: transform 0.15s ease-in-out 0.2s, top 0.1s ease-in-out, opacity 0.25s ease-in-out;
+  transition: transform 0.15s ease-in-out 0.2s, top 0.1s ease-in-out, opacity 0.25s ease-in-out, -webkit-transform 0.15s ease-in-out 0.2s;
+}
+
+
+.sg.sg-header .sg.sg-search-container .sg-hamburger-active .top {
+  top: 13px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+
+.sg.sg-header .sg.sg-search-container .sg-hamburger-active .middle {
+  opacity: 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+
+.sg.sg-header .sg.sg-search-container .sg-hamburger-active .bottom {
+  top: -13px;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+
+.sg.sg-header .sg.sg-search-container .sg.sg-search-field {
+  margin-top: calc(var(--header-height)/2 - 18px);
+  margin-top: calc(70px/2 - 18px);
+  box-sizing : border-box;
+  float: right;
+}
+
+
+@media screen and (max-width: 768px) {
+  .sg.sg-header .sg.sg-search-container .sg.sg-search-field {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+    width: 100%;
+  }
+}
+
+
+.sg.sg-header .sg.side-nav-search .sg.sg-search-field {
+  margin-top: calc(var(--header-height)/2 - 18px);
+  box-sizing : border-box;
+  float: right;
+}
+
+
+@media screen and (max-width: 768px) {
+  .sg.sg-header .sg.side-nav-search .sg.sg-search-field {
+    margin-left: 24px;
+    margin-right: 0;
+    float: left;
+    width: auto;
+  }
+}
+
+/*
+Footer
+
+markup:
+<footer class="sg sg-footer">
+ <div class="sg sg-content">
+   <span class="sg">
+     Footer text. <a class="sg" target="_blank" href="http://styleguide.sc5.io/">Footer link</a>.
+   </span>
+ </div>
+</footer>
+
+Styleguide 3.2.2
+ */
+
+.sg.sg-footer {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  box-sizing: border-box;
+  font-weight: 300;
+
+  padding: var(--footer-padding);
+  padding: 2em;
+
+  text-align: center;
+  border-top: 2px solid #333;
+  margin: 0 20px 0 20px;
+  background: #FFF;
+}
+
+.sg.sg-footer .sg-logo {
+  width: 42px;
+  height: var(--footer-logo-height);
+  height: 42px;
+  margin-top: -5px;
+
+  vertical-align: middle;
+}
+
+/*
+Navigation
+
+Navigation provides navigation menu between different sections
+
+markup:
+<ul class="sg sg-top-nav-menu">
+  <li>
+    <a><span class="ref">1.0</span> First section</a>
+  </li>
+  <li>
+    <a><span class="ref">2.0</span> Second section</a>
+  </li>
+  <li>
+    <a><span class="ref">3.0</span> Third section</a>
+  </li>
+</ul>
+
+Styleguide 3.3
+ */
+
+/*
+Navigation item
+
+default - Default state
+.active - Active item
+.sub-active - Item with active subsection
+:hover - Hover
+
+markup:
+<li>
+  <a class="{$modifiers}"><span class="ref">1.0</span> First section</a>
+</li>
+
+sg-wrapper:
+<ul class="sg sg-top-nav-menu">
+<sg-wrapper-content/>
+</ul>
+
+Styleguide 3.3.1
+ */
+
+.sg.sg-top-nav {
+  display: none;
+  clear: both;
+  background-color: var(--nav-background-color);
+  background-color: #1C3849;
+  z-index: 8000;
+  width: 100%;
+}
+
+.sg.sg-nav-visible {
+  display: block;
+}
+
+.sg.sg-top-nav-menu {
+  padding: 0 var(--min-content-margin) 0 var(--min-content-margin);
+  padding: 0 13px 0 13px;
+  margin: 0;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+}
+
+.designerToolVisible .sg.sg-top-nav-menu {
+  margin-right: var(--designer-tool-width);
+  margin-right: 30%;
+}
+
+.sg.sg-top-nav-menu li {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  background-color: var(--nav-button-color);
+  background-color: #1C3849;
+  float:left;
+}
+
+.sg.sg-top-nav-menu li a {
+  padding: 0 20px;
+  display: block;
+  text-decoration: none;
+}
+
+.sg.sg-top-nav-menu > li > a {
+  color: var(--nav-button-text-color);
+  color: rgb(23, 209, 230);
+  line-height: var(--menu-height);
+  line-height: 40px;
+}
+
+.sg.sg-top-nav-menu > li > a:hover, .sg.sg-top-nav-menu > li > a.active {
+  color: var(--active-nav-button-text-color);
+  color: #FFFFFF;
+  background: var(--active-nav-button-color);
+  background: #1695A3;
+}
+
+.sg.sg-top-nav-menu > li > a.sub-active {
+  border: var(--active-nav-button-color) solid;
+  border: #1695A3 solid;
+  border-width: 0 0 3px;
+  line-height: calc(var(--menu-height) - 3px);
+  line-height: calc(40px - 3px);
+}
+
+.sg.sg-top-nav-menu > li > a .sg-ref {
+  color: #E4E4E4;
+}
+
+/* Submenu */
+
+.sg.sg-top-nav-menu ul {
+  z-index: 8000;
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  list-style-type: none;
+}
+
+.sg.sg-top-nav-menu li:hover {
+  position:relative;
+}
+
+// Button should still have background color when sub-menu item is hovered
+    .sg.sg-top-nav-menu li:hover > a {
+  color: var(--active-nav-button-text-color);
+  color: #FFFFFF;
+  background: var(--active-nav-button-color);
+  background: #1695A3;
+}
+
+.sg.sg-top-nav-menu li:hover ul {
+  left: 0px;
+  top: 40px;
+  padding: 0px;
+}
+
+.sg.sg-top-nav-menu li:hover .sg-ref {
+  color: var(--active-nav-button-ref-color);
+  color: #FFFFFF;
+}
+
+.sg.sg-top-nav-menu li:hover ul li a, .sg.sg-top-nav-menu li ul li a.active {
+  line-height: var(--sub-menu-height);
+  line-height: 30px;
+  background: var(--nav-item-color);
+  background: #E4E4E4;
+  color: var(--nav-item-text-color);
+  color: #1695A3;
+  display: block;
+  width: 260px;
+  border-top: 1px solid white;
+}
+
+.sg.sg-top-nav-menu li:hover ul li a .sg-ref, .sg.sg-top-nav-menu li ul li a.active .sg-ref {
+  color: var(--nav-item-ref-color);
+  color: rgb(23, 209, 230);
+}
+
+.sg.sg-top-nav-menu a:hover, .sg.sg-top-nav-menu a.active, .sg.sg-top-nav-menu li:hover ul li a:hover, .sg.sg-top-nav-menu li ul li a.active {
+  background: var(--active-nav-button-color);
+  background: #1695A3;
+  color: var(--active-nav-button-text-color);
+  color: #FFFFFF;
+}
+
+.sg.sg-top-nav-menu a:hover .sg-ref, .sg.sg-top-nav-menu a.active .sg-ref, .sg.sg-top-nav-menu li:hover ul li a:hover .sg-ref, .sg.sg-top-nav-menu li ul li a.active .sg-ref {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+  .sg.sg-top-nav-menu {
+    padding: 0;
+  }
+  .sg.sg-top-nav-menu li {
+    float: none;
+  }
+}
+
+.sg.sg-top-nav-menu:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.sg.toggle {
+  font-family: var(--secondary-font);
+  font-family: Helvetica,Arial,sans-serif;
+  font-weight: 300;
+
+  cursor: pointer;
+
+  color: var(--secondary-color);
+  color: #E4E4E4;
+}
+
+.sg.toggle.all-markup {
+  margin: 0;
+  padding: 1em;
+}
+
+.sg.toggle.hide-markup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+}
+
+.sg.toggle.show-markup {
+  display: block;
+  padding: 0;
+}
+
+/*
+Sections header
+
+Sections can be used to structure content. Sections are generated from
+KSS reference numbers.
+
+Markup:
+<header class="sg sg-section-header">
+  <h1 class="sg"><span class="sg-reference-number">1.0</span> Section title </h1>
+</header>
+
+Styleguide 3.4
+ */
+
+.sg.sg-section-header {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  background-color: var(--section-header-color);
+  background-color: #1C3849;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+}
+
+.sg.sg-section-header a {
+  text-decoration: none;
+  display: block;
+}
+
+.sg.sg-section-header a:hover i.fa {
+  color: var(--secondary-color);
+  color: #E4E4E4;
+}
+
+.sg.sg-section-header h1 {
+  color: var(--section-header-text-color);
+  color: #E4E4E4;
+  padding: 13px;
+  margin: 0;
+  font-size: 1.777em;
+}
+
+.sg.sg-section-header h1 .sg-reference-number {
+  color: var(--section-header-ref-color);
+  color: #FFFFFF;
+}
+
+.sg.sg-section-header h1 .sg-section-source {
+  float: right;
+  color: var(--section-header-source-text-color);
+  color: rgba(228, 228, 228, 0.6);
+  font-size: 60%;
+  line-height: 1.777em;
+}
+
+.sg.sg-section-header i.fa {
+  font-size: 14px;
+  padding: 0.4em 0.7em;
+  float: right;
+  color: rgba(228, 228, 228, 0.6);
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+/* Active header styles */
+
+.sg.designerToolVisible .sg.section.active:not(.main) .sg.sg-section-header {
+  background-color: var(--active-section-header-color);
+  background-color: rgb(24, 48, 63);
+}
+
+.sg.designerToolVisible .sg.section.active:not(.main) .sg.sg-section-header h1 {
+  color: var(--active-section-header-text-color);
+  color: #E4E4E4;
+}
+
+.sg.designerToolVisible .sg.section.active:not(.main) .sg.sg-section-header h1 .sg-reference-number {
+  color: #FFFFFF;
+}
+
+.sg.designerToolVisible .sg.section.active:not(.main) .sg.sg-section-header h1 .sg-section-source {
+  color: var(--active-section-header-source-text-color);
+  color: rgba(28, 56, 73, 0.6);
+}
+
+.sg.designerToolVisible .sg.section.active:not(.main) .sg.sg-section-header i.fa {
+  color: rgba(228, 228, 228, 0.6);
+}
+
+.sg.sg-section.main .sg-section-header {
+  background-color: transparent;
+}
+
+.sg.sg-section.main .sg-section-header h1 {
+  padding-top: 0;
+  font-size: 2.369em;
+  color: #333;
+}
+
+.sg.sg-section.main .sg-section-header h1 .sg-section-source {
+  color: var(--main-section-header-source-text-color);
+  color: #E4E4E4;
+}
+
+.sg.sg-section.main .sg-section-header i.fa {
+  display: none;
+}
+
+.sg.sg-section.main .sg-reference-number {
+  display: none;
+}
+
+.sg.sg-section.main .sg.sg-section-partial, .sg.sg-section.main .sg.sg-section-partial:last-child {
+  padding-top: 0;
+  padding-bottom: 0;
+  border: none;
+}
+
+/*
+Sections blocks
+
+Sections can be used to structure content. Sections are generated from
+KSS reference numbers.
+
+Markup:
+<section class="sg sg-section">
+  <div class="sg sg-section-partial">
+    <p class="sg">Section description</p>
+    <ul class="sg modifier-list">
+      <li class="sg-item"><strong>.modifier1</strong> - <span>Modifier1 description</span></li>
+      <li class="sg-item"><strong>.modifier2</strong> - <span>Modifier2 description</span></li>
+      <li class="sg-item"><strong>.modifier3</strong> - <span>Modifier3 description</span></li>
+    </ul>
+  </div>
+  <div class="sg sg-section-partial">
+    <div class="sg sg-label">
+      <a ng-href="/section/3.5-0/fullscreen" target="_blank">
+        <span class="sg name">.modifier1</span><i class="fa fa-arrows-alt"></i>
+      </a>
+    </div>
+    <div>
+      <div style="width: 100px; height: 100px; background: #1695A3;"></div>
+    </div>
+  </div>
+  <div class="sg sg-section-partial">
+    <div class="sg sg-label">
+      <a ng-href="/section/3.5-1/fullscreen" target="_blank">
+        <span class="sg name">.modifier2</span><i class="fa fa-arrows-alt"></i>
+      </a>
+    </div>
+    <div>
+      <div style="width: 100px; height: 100px; background: #ACF0F2;"></div>
+    </div>
+  </div>
+  <div class="sg sg-section-partial">
+    <div class="sg sg-label">
+      <a ng-href="/section/3.5-2/fullscreen" target="_blank">
+        <span class="sg name">.modifier3</span><i class="fa fa-arrows-alt"></i>
+      </a>
+    </div>
+    <div>
+      <div style="width: 100px; height: 100px; background: #EB7F00;"></div>
+    </div>
+  </div>
+  <div class="sg sg-section-partial sg-code-listing">
+    <div class="sg sg-label">
+      <a target="_blank">
+        <i class="fa fa-close"></i>
+      </a>
+    </div>
+    <pre class="sg">
+      <code hljs hljs-language="html" class="html"><div style="width: 100px; height: 100px; background: {$modifier};"></div></code>
+    </pre>
+  </div>
+</section>
+
+Styleguide 3.5
+ */
+
+.sg.sg-section {
+  margin-bottom: 20px;
+}
+
+.sg.sg-section .sg.sg-section-partial {
+  position: relative;
+  overflow: auto;
+  padding: 1em;
+  border: 1px solid var(--secondary-color);
+  border: 1px solid #E4E4E4;
+  border-bottom: none;
+  background: #fff;
+  width: 100%;
+}
+
+.sg.sg-section .sg.sg-section-partial:last-child {
+  border-bottom: 1px solid #E4E4E4;
+}
+
+.sg.sg-section .sg.sg-code-listing {
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.sg.sg-section .sg.sg-code-listing pre {
+  padding: 1em;
+}
+
+.sg.sg-section .sg.sg-code-listing .hljs {
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.sg.sg-section .sg.sg-code-listing a.sg-show-section {
+  display: block;
+  padding: .8em 1.2em;
+  cursor: pointer;
+}
+
+.sg.sg-section .sg.modifier-list {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  list-style: none;
+  padding: 1em;
+}
+
+.sg.sg-section .sg.modifier-list > .sg-item {
+  line-height: 1.8em;
+}
+
+.sg.sg-section .sg.modifier-list > .sg-item > strong {
+  font-weight: bold;
+}
+
+.sg.sg-body section.sg.sg-section:last-of-type {
+  margin-bottom: 0;
+  min-height: calc(100vh - #{$header_height} - #{42px} - #{60px});
+}
+
+.sg.designerToolVisible .sg.sg-section.active:not(.main) .sg.sg-section-header {
+  background-color: var(--primary-color);
+  background-color: rgb(24, 48, 63);
+}
+
+.sg.sg-label {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  position: absolute;
+  z-index: 7000;
+  top: 0;
+  right: 0;
+
+  border: 1px solid var(--secondary-color);
+  border: 1px solid #E4E4E4;
+  border-top: none;
+  border-right: none;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.sg.sg-label span,
+  .sg.sg-label p {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  font-weight: 500;
+  display: inline;
+  padding: 0 .8em 0 0;
+  text-decoration: none;
+}
+
+.sg.sg-label a {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  display: inline-block;
+  padding: .4em .7em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sg.sg-label a:hover i.fa {
+  color: rgba(28, 56, 73, 0.7);
+}
+
+.sg.sg-label a:hover i.fa:after {
+  opacity: 1;
+}
+
+.sg.sg-label i.fa {
+  cursor: pointer;
+  color: rgba(28, 56, 73, 0.2);
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+/*
+Variable sections header
+
+Header for listing all sections which use the selected variable
+
+markup:
+<h2 class="sg sg-heading">
+  Sections using variable
+  <span class="sg sg-current-variable">variable name</span>
+</h2>
+
+Styleguide 3.6.
+ */
+
+.sg.sg-heading .sg-current-variable {
+  display: inline;
+  color: #009926;
+  font-weight: 700;
+}
+
+/*
+Designer tool
+
+Styles for styleguide designer tool
+
+Styleguide 4.0
+ */
+
+/*
+Variable listing
+
+markup:
+<div class="sg sg-design-content" ng-init="variables = [
+     {name: 'example-variable', value: '#00FF00', 'file': 'filename.scss'},
+     {name: 'edited-variable', value: '#FF0000', 'file': 'filename.scss', dirty: true}
+  ]">
+  <h3 class="sg">All variables</h3>
+  <ul>
+    <li ng-repeat="variable in variables">
+      <div sg-variable></div>
+    </li>
+  </ul>
+</div>
+
+Styleguide 4.1
+ */
+
+
+.sg.sg-design {
+  position: fixed;
+  top: 0;
+  left: 100%;
+
+  width: var(--designer-tool-width);
+  width: 30%;
+  height: 100%;
+
+  z-index: 9000;
+
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+
+  -webkit-transition: left .3s ease-out;
+
+  transition: left .3s ease-out;
+}
+
+
+@media screen and (max-width: 768px) {
+  .sg.sg-design {
+    width: var(--designer-tool-width-mobile);
+    width: 90%;
+  }
+}
+
+
+.sg.sg-design .sg-handle {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  position: absolute;
+  top: 220px;
+  left: -30px;
+  width: 150px;
+  height: 30px;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px 3px 0 0;
+  background: #fff;
+  -webkit-transition: left .3s ease-out;
+  transition: left .3s ease-out;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}
+
+
+.sg.sg-design .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+
+.sg.sg-design.sg-hidden {
+  left: 100%;
+}
+
+
+.sg.sg-design.sg-visible {
+  left: calc(100% - 30%);
+}
+
+
+@media screen and (max-width: 768px) {
+  .sg.sg-design.sg-visible {
+    left: calc(100% - 90%);
+  }
+}
+
+
+.sg.sg-design.sg-visible .sg-handle {
+  left: 0;
+}
+
+
+.sg.sg-design .sg-info-text {
+  margin-top: 10px;
+}
+
+.sg.sg-design-content {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #222;
+  font-weight: 400;
+  position: relative;
+  z-index: 9000;
+
+  overflow-x: auto;
+  overflow-y: auto;
+
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+
+  background: white;
+}
+
+.sg.sg-design-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sg.sg-design-content label {
+  display: block;
+}
+
+.sg.sg-design-content label i.fa {
+  padding-left: 8px;
+  color: red;
+}
+
+.sg.sg-design-content label a i.fa.fa-eye {
+  font-size: 16px;
+  padding-left: 4px;
+  color: var(--primary-color);
+  color: rgba(28, 56, 73, 0.2);
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.sg.sg-design-content label a:hover i.fa.fa-eye {
+  color: rgba(28, 56, 73, 0.8);
+}
+
+.sg.sg-design-content label .sg-variable-source {
+  display: block;
+  opacity: 0.5;
+  font-size: 80%;
+}
+
+.sg.sg-design-content input {
+  display: inline;
+}
+
+.sg.sg-design-content input[type='text'] {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.sg.sg-design-content input[type='color'] {
+  background: transparent;
+  position: absolute;
+  right: 0;
+  box-sizing: border-box;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+}
+
+/*
+Action footer
+
+markup:
+  <div class="sg action-footer">
+    <button class="sg button sg-primary">Primary action</button>
+    <button class="sg button sg-secondary">Secondary action</button>
+  </div>
+
+Styleguide 4.2
+*/
+
+.sg.sg-action-footer {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-top: 8px;
+
+  border-top: 1px solid var(--secondary-color);
+  border-top: 1px solid #E4E4E4;
+}
+
+
+/*
+Progress bar
+
+markup:
+<div id="ngProgress" style="width: 70%; opacity: 1;"></div>
+
+Styleguide 4.3
+ */
+
+#ngProgress {
+  z-index: 99998;
+
+  height: 4px;
+  margin: 0;
+  padding: 0;
+  /* Add CSS3 styles for transition smoothing */
+
+  -webkit-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out;
+
+  opacity: 0;
+  color: var(--primary-action-color);
+  color: #EB7F00;
+  background-color: #EB7F00;
+  box-shadow: 0 0 3px 0; /* Inherits the font color */
+}
+
+#ngProgress-container {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Socket disconnection icon
+
+markup:
+<div class="sg disconnection-icon" title="no socket connection">
+  <i class="fa fa-chain-broken"></i>
+</div>
+
+Styleguide 4.4
+*/
+
+.sg#socketDisconnection {
+  position: fixed;
+  z-index: 9100;
+  top: 0;
+  right: calc(var(--designer-tool-width) + 2)%;
+  right: calc(30% + 2%);
+
+  -webkit-transition: top .2s ease-in;
+
+  transition: top .2s ease-in;
+}
+
+.sg#socketDisconnection.ng-hide {
+  top: -60px;
+}
+
+.sg-navigation-section {
+  padding: 10px;
+  position: fixed;
+  z-index: 99999;
+  right: 0;
+  display: none;
+}
+
+.sg-navigation-section .next-nav, .sg-navigation-section .prev-nav {
+  float: left;
+  cursor: pointer;
+}
+
+.sg-navigation-section .sg-navigation-link,
+  .sg-navigation-section .sg-navigation-link:link,
+  .sg-navigation-section .sg-navigation-link:visited
+  {
+  color: #1695A3;
+  text-decoration: none;
+}
+
+.sg.disconnection-icon {
+  line-height: 32px;
+
+  width: 32px;
+  height: 32px;
+  padding-top: 3px;
+
+  text-align: center;
+  vertical-align: middle;
+
+  color: #fff;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: #d20000;
+}
+
+.sg.disconnection-icon i.fa {
+  font-size: 20px;
+  -webkit-animation: socket-disconnect-pulse 3s linear infinite;
+          animation: socket-disconnect-pulse 3s linear infinite;
+}
+
+@-webkit-keyframes socket-disconnect-pulse {
+  80% {
+    color: rgba(255, 255, 255, 1);
+  }
+  90% {
+    color: rgba(255, 255, 255, .35);
+  }
+  100% {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+@keyframes socket-disconnect-pulse {
+  80% {
+    color: rgba(255, 255, 255, 1);
+  }
+  90% {
+    color: rgba(255, 255, 255, .35);
+  }
+  100% {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+
+/*
+Angular Directives
+
+Example of lazy loaded AngularJS directive from external project
+
+Styleguide 6.0
+ */
+
+/*
+Test directive
+
+markup:
+<div sg-test-directive>If you see this something is wrong</div>
+
+sg-angular-directive:
+name: sgAppTest
+file: demo/testDirectiveInit.js
+file: demo/testDirective.js
+
+Styleguide 6.1
+ */
+
+.sg.demo-click-area {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  padding: 0.2em;
+  border: 2px solid red;
+  display: initial;
+  cursor: pointer;
+}
+
+
+/*
+Test directive2
+
+markup:
+<div sg-test-directive-two>If you see this something is wrong</div>
+
+sg-angular-directive:
+name: sgAppTest
+file: demo/testDirectiveInit.js
+file: demo/testDirectiveTwo.js
+
+Styleguide 6.2
+ */
+
+/* styleguide:ignore:start */
+/* User can re-define this mixin to create custom style overrides */
+/* This mixin is included in the end of the application stylesheet */
+/* styleguide:ignore:end */

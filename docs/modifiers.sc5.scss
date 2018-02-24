@@ -1,0 +1,734 @@
+/*
+Modifiers
+
+A beautiful ui component for displaying rating values of up to 5 stars with css only.
+Options are:
+- Value
+- Size
+- Spread
+- Static Color
+- Label Position
+- Animation Speed
+- Disabled
+
+(in this html is additional angular markup to make the showcase interactive)
+
+
+   markup:
+   <div class="rating large direction-rtl value-3 half color-negative label-top">
+   <div class="label-value">3.5</div>
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5] track by $index">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+             <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+  </div>
+
+   sg-wrapper:
+   <div class="phone-simulator padding">
+       <sg-wrapper-content/>
+   </div>
+
+Styleguide 1.1
+*/
+
+/*
+Value
+
+Different styles for different rating values.
+Default colors are red for values equal to 2 or below, yellow for 3, and green for 4 or above.
+
+                        - no rating
+.value-0                - 0 rating
+.value-1                - 1 rating
+.value-2                - 2 rating
+.value-3                - 3 rating
+.value-4                - 4 rating
+.value-5                - 5 rating
+
+markup:
+<div class="rating {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+
+
+Styleguide 1.1.1
+*/
+
+/*
+Hover
+
+Styles for mouse hover effects.
+The star and all previous the one the mouse hovers are visible as filled and have opacity
+
+                        - no hover
+.hover-0                - hover over no star
+.hover-1                - hover over 1st star
+.hover-2                - hover over 2nd star
+.hover-3                - hover over 3rd star
+.hover-4                - hover over 4th star
+.hover-5                - hover over 5th star
+
+markup:
+<div class="rating value-2 half hover {$modifiers}">
+  <div class="star-container">
+      <div class="star">
+           <svg class="star-filled">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+          </svg>
+          <svg class="star-half">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+          </svg>
+           <svg class="star-empty">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+          </svg>
+      </div>
+       <div class="star">
+           <svg class="star-filled">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+          </svg>
+          <svg class="star-half">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+          </svg>
+           <svg class="star-empty">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+          </svg>
+      </div>
+      <div class="star">
+           <svg class="star-filled">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+          </svg>
+          <svg class="star-half">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+          </svg>
+           <svg class="star-empty">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+          </svg>
+      </div>
+      <div class="star">
+          <svg class="star-filled">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+          </svg>
+          <svg class="star-half">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+          </svg>
+          <svg class="star-empty">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+          </svg>
+      </div>
+      <div class="star">
+          <svg class="star-filled">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+          </svg>
+          <svg class="star-half">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+          </svg>
+          <svg class="star-empty">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+          </svg>
+      </div>
+  </div>
+</div>
+
+Styleguide 1.1.2.1
+*/
+
+
+/*
+Value Fallback
+
+The different value modifiers are defined over the $maxNumOfStars. Values greater then this value get are handled here.
+This is mostly useful for people hwo generate this html dynamically
+
+.value-4                - 4 rating
+.value-5                - 5 rating
+.value-6                - 6 rating
+.value-7                - 7 rating
+.value-8                - 8 rating
+
+markup:
+<div class="rating {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5,6,7]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+
+Styleguide 1.1.1.1
+*/
+
+/*
+Half-Stars
+
+Different styles for different rating values.
+Default colors are red for values equal to 2 or below, yellow for 3, and green for 4 or above.
+
+default                 - rating with full stars
+.half                   - rating with half stars on the end
+
+markup:
+<div class="rating {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="rating value-0 {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="rating value-1 {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="rating value-2 {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="rating value-3 {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="rating value-4 {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="rating value-5 {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+
+
+Styleguide 1.1.2
+*/
+
+/*
+Size
+
+Different sizes of the stars and the label.
+Additional to the default size medium there are more sizes, small and large.
+
+
+default                  - Default size
+.small                   - Small size
+.medium                  - Medium size
+.large                   - Large size
+
+markup:
+<div class="rating value-4 {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+
+Styleguide 1.1.3
+*/
+
+/*
+Space
+
+Different space options
+
+default          - stars position at horizontal center.
+.space-between   - stars take all available space to position. Space is only between the stars.
+.space-around    - stars take all available space to position. Space is only around the stars.
+
+markup:
+<div class="rating value-4 {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+
+Styleguide 1.1.4
+*/
+
+/*
+Static Color
+
+Overriding default colors of ratings to display the color independent of the rating.
+
+default                  - No static color
+.color-default           - Stars are always colored default
+.color-positive          - Stars are always colored positive
+.color-ok            - Stars are always colored ok
+.color-negative          - Stars are always colored negative
+
+markup:
+<div class="rating {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="rating half value-0 {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="rating value-1 half {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="rating half value-2 {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="rating half value-3 {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="rating half value-4 {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="rating value-5 {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+
+
+Styleguide 1.1.5
+*/
+
+/*
+Label Position
+
+Displays the rating value as text label.
+
+ default                 - Value displayed on the left side
+.label-top               - Value displayed on the top
+.label-right             - Value displayed on the right side
+.label-bottom            - Value displayed on the bottom
+.label-left              - Value displayed on the left side
+
+
+markup:
+<div class="rating  {$modifiers}">
+    <div class="label-value">0</div>
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="rating value-2 small  {$modifiers}">
+    <div class="label-value">(bad)</div>
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="rating value-3 medium  {$modifiers}">
+    <div class="label-value">3.1</div>
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="rating value-4 large  {$modifiers}">
+    <div class="label-value">Good</div>
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+
+Styleguide 1.1.6
+*/
+
+/*
+   Disabled
+
+   Visualizes the disabled state of the rating component. The styles symbolizing that no interaction is possible
+
+   default                   - Stars are un usual style
+   .disabled                - Stars are grayed out, no interaction is possible
+
+   markup:
+   <div class="rating  {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="rating value-2 small  {$modifiers}">
+    <div class="label-value">(bad)</div>
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="rating value-3 medium  {$modifiers}">
+    <div class="label-value">3.1</div>
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="rating value-4 large  {$modifiers}">
+    <div class="label-value">Good</div>
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+
+   Styleguide 1.1.7
+   */
+/*
+   Animation Speed
+
+   By default the stars animate (fade) to the new state. These modifiers provide three different durations of the transition.
+
+   default                   - Transition runs in noticeable speed
+   .immediately              - No Transition
+   .noticeable               - Transition runs in noticeable speed
+   .slow                     - Transition runs very slow
+
+   markup:
+   <div ng-init="data.rating = 1" class="rating  value-{{data.rating}} {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5] track by $index" ng-click="data.rating = (data.rating == 1)?5:1">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+  </div>
+
+   Styleguide 1.1.8
+   */
+
+/*
+   Star Type
+
+   The stars can be generated out of three different types. characters, svg's of any icon font
+
+   default                  - The default star type is svg
+   .star-icon               - Star-Characters from default browser font
+   .star-custom-icon        - Star-Characters from icon-fonts like fontawesome and others
+   .star-svg                - Star-Vectors form the shipped svg images
+
+   markup:
+  <div class="rating  value-3 half {$modifiers}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5] track by $index">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+            <i class="star-empty fa fa-star-o"></i>
+            <i class="star-half fa fa-star-half-o"></i>
+            <i class="star-filled fa fa-star"></i>
+             </div>
+    </div>
+  </div>
+
+   Styleguide 1.1.9
+*/
+
+/*
+   Direction
+
+   The the direction of the star container.
+
+   none                    - displays component elements in left to right direction. (direction-ltr)
+   .direction-rtl          - displays component elements in right to left direction.
+   .direction-ltr          - displays component elements in left to right direction.
+
+
+   markup:
+  <div class="rating  value-3 half {$modifiers}">
+    <div class="label-value">3.5</div>
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5] track by $index">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-half">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+  </div>
+
+   Styleguide 1.1.10
+*/
+
+/*
+Label Visibility
+
+Label hidden or not
+
+default          - stars position at horizontal center.
+.label-hidden     - stars take all available space to position. Space is only between the stars.
+.label-visible    - stars take all available space to position. Space is only around the stars.
+
+markup:
+<div class="rating value-4 {$modifiers}">
+    <div class="label-value">3.5</div>
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5]">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+
+Styleguide 1.1.11
+*/
