@@ -1,60 +1,72 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="sgApp" route-css-class>
+<html class="no-js" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="/assets/img/favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    var _styleguideConfig = {"title":"Css Star Rating","disableEncapsulation":false,"disableHtml5Mode":false,"sideNav":false,"additionalNgDependencies":false};
-    (function() {
-      'use strict';
-      var userStyleFiles = [
-          '/styleguide.css',
-          '/styleguide_pseudo_styles.css',
-          '/styleguide_helper_elements.css'
-        ],
-        head = document.querySelector('head');
+  <meta charset="utf-8">
+  <title>KSS Style Guide</title>
 
-      function addCssLink(href, options) {
-        var link = document.createElement('link');
-        link.setAttribute('rel', 'stylesheet');
-        link.setAttribute('type', 'text/css');
-        link.setAttribute('href', href);
-        if (options && options.noReload) {
-          link.setAttribute('data-noreload', true);
-        }
-        head.appendChild(link);
-      }
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
 
-      // Use Shadow DOM but fallback to global styles if shadow DOM is not supported
-      if (typeof head.createShadowRoot !== 'function' || _styleguideConfig.disableEncapsulation) {
-        userStyleFiles.forEach(addCssLink);
-      }
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="assets/css/star-rating.css">
+<link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
 
-      addCssLink('/styleguide_at_rules.css');
-      addCssLink('/styleguide-app.css', {noReload: true});
-    }());
-  </script>
-  <script type="text/ng-template" id="userStyles.html">
-    <style>
-      @import url('/styleguide.css');
-      @import url('/styleguide_pseudo_styles.css');
-      @import url('/styleguide_helper_elements.css');
-    </style>
-  </script>
-  <title ng-bind-html="$root.pageTitle | unsafe">Css Star Rating</title>
-  
-  <script type="text/javascript">
-    var filesConfig = [];
-  </script>
-  <base href="/" />
 </head>
-<body class="sg">
-  
-  <div class="sg view-index" ui-view></div>
-  <script src="/css-star-rating/js/vendor.js"></script>
-  <script src="/css-star-rating/js/app.js"></script>
-    <script src="/css-star-rating/socket.io/socket.io.js"></script>
-  
+<body id="kss-node" >
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header>
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-1.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Star Rating</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+</article>
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/scrollspy.js"></script>
+<script src="kss-assets/prettify.js"></script>
+<script src="kss-assets/kss-fullscreen.js"></script>
+<script src="kss-assets/kss-guides.js"></script>
+<script src="kss-assets/kss-markup.js"></script>
+<script>
+  prettyPrint();
+  var spy = new ScrollSpy('#kss-node', {
+    nav: '.kss-nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
+  var kssFullScreen = new KssFullScreen({
+    idPrefix: 'kss-fullscreen-',
+    bodyClass: 'kss-fullscreen-mode',
+    elementClass: 'is-fullscreen'
+  });
+  var kssGuides = new KssGuides({
+    bodyClass: 'kss-guides-mode'
+  });
+  var kssMarkup = new KssMarkup({
+    bodyClass: 'kss-markup-mode',
+    detailsClass: 'kss-markup'
+  });
+</script>
+
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
 </body>
 </html>

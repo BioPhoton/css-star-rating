@@ -60,6 +60,7 @@
     "gulp-task-listing": "^1.0.1",
     "gulp-util": "^3.0.7",
     "ionicons": "^2",
+    "kss": "^3.0.0-beta.18",
     "merge-stream": "^1.0.1",
     "node-sass": "^4.5.2",
     "sass-loader": "^4.0.2",
@@ -75,6 +76,7 @@
     "build": "gulp project:build",
     "styleguide": "gulp styleguide:watch",
     "styleguide:build": "gulp styleguide:build",
+    "newstyleguide": "./node_modules/.bin/kss --config ./kss-config.json",
     "version:bump": "gulp version:bump",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "release": "npm publish"
