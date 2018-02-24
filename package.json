@@ -74,6 +74,7 @@
     "clean:dist": "rimraf dist",
     "build": "gulp project:build",
     "styleguide": "gulp styleguide:watch",
+    "styleguide:build": "gulp styleguide:build",
     "version:bump": "gulp version:bump",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "release": "npm publish"
