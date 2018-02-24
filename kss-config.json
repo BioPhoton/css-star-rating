@@ -1,0 +1,11 @@
+{
+  "source": [
+    "src/sc5-styleguide"
+  ],
+  "destination":  "docs/",
+  "css": [
+    "assets/css/star-rating.css",
+    "../node_modules/font-awesome/css/font-awesome.min.css"
+  ],
+  "js": []
+}

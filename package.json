@@ -37,7 +37,7 @@
     "url": "https://github.com/BioPhoton/css-star-rating/issues"
   },
   "homepage": "https://github.com/BioPhoton/css-star-rating#readme",
-  "main": "dist/index.js",
+  "main": "dist/css/star-rating.css",
   "devDependencies": {
     "angularic-ionicon": "^1.1.0",
     "conventional-changelog": "^1.1.0",
@@ -74,6 +74,7 @@
     "clean:dist": "rimraf dist",
     "build": "gulp project:build",
     "styleguide": "gulp styleguide:watch",
+    "styleguide:build": "gulp styleguide:build",
     "version:bump": "gulp version:bump",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "release": "npm publish"

@@ -51,7 +51,6 @@ Easily compose your own rating component over a rich set of css modifiers for an
 | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/family/css3.png" width="100"> | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/family/angular1.png" width="100"> | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/family/angular.png" width="80"> |
 | [Css Star Rating](https://github.com/BioPhoton/css-star-rating) | [Angular1 Star Rating](https://github.com/BioPhoton/angular1-star-rating) | [Angular Star Rating](https://github.com/BioPhoton/angular-star-rating) |
 
-
 ## Install
 
 **Get Css Star Rating:**
@@ -67,7 +66,7 @@ Easily compose your own rating component over a rich set of css modifiers for an
 
 **Copy asstes (optional)**
 If you want to use svg as icon type copy the  
-```tar-rating.icons.svg``` image form ```bower_components/css-star-rating/dist/images/star-rating.css``` to your roots assets folder.
+```star-rating.icons.svg``` image form ```bower_components/css-star-rating/dist/images/star-rating.css``` to your roots assets folder.
 
 **Use it**
 ```html

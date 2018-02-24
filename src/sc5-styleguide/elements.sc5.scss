@@ -43,7 +43,7 @@ markup:
   </div>
 </div>
 <b>Label:</b>
-<div class="label-value {$modifiers}">good</div>
+<div class="label-value {{modifier_class}}">good</div>
 
 sg-wrapper:
 <div class="phone-simulator no-border padding">
@@ -80,7 +80,7 @@ none                    - displays the default star element (empty)
 .filled                 - displays the star element as filled
 
 markup:
-<div class="star {$modifiers}">
+<div class="star {{modifier_class}}">
   <svg class="star-empty">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
   </svg>
@@ -106,7 +106,7 @@ The different star colors.
 .negative          - Stars is colored negative
 
 markup:
-<div class="star filled svg {$modifiers}">
+<div class="star filled svg {{modifier_class}}">
   <svg class="star-empty">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
   </svg>
@@ -120,7 +120,7 @@ markup:
   <i class="star-half "></i>
   <i class="star-filled "></i>
 </div>
-<div class="star filled icon {$modifiers}">
+<div class="star filled icon {{modifier_class}}">
   <svg class="star-empty">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
   </svg>
@@ -134,7 +134,7 @@ markup:
   <i class="star-half "></i>
   <i class="star-filled "></i>
 </div>
-<div class="star filled custom-icon {$modifiers}">
+<div class="star filled custom-icon {{modifier_class}}">
   <i class="star-empty fa fa-star-o"></i>
   <i class="star-half  fa fa-star-half-o"></i>
   <i class="star-filled  fa fa-star"></i>
@@ -155,7 +155,7 @@ none                  - Stars svg icon is used
 .custom-icon          - Stars character icon is used
 
 markup:
-<div class="star empty {$modifiers}">
+<div class="star empty {{modifier_class}}">
   <svg class="star-empty">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
   </svg>
@@ -169,7 +169,7 @@ markup:
   <i class="star-half fa fa-star-half-o"></i>
   <i class="star-filled fa fa-star"></i>
 </div>
-<div class="star half {$modifiers}">
+<div class="star half {{modifier_class}}">
   <svg class="star-empty">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
   </svg>
@@ -183,7 +183,7 @@ markup:
   <i class="star-half fa fa-star-half-o"></i>
   <i class="star-filled fa fa-star"></i>
 </div>
-<div class="star filled {$modifiers}">
+<div class="star filled {{modifier_class}}">
   <svg class="star-empty">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
   </svg>
@@ -212,7 +212,7 @@ The different star icons.
 
 markup:
 <div class="star half custom-icon">
-  <i class="star-half {$modifiers}"></i>
+  <i class="star-half {{modifier_class}}"></i>
 </div>
 
 Styleguide 1.2.1.1.3.1
@@ -229,7 +229,7 @@ none                    - displays star in default size (medium)
 .large                  - displays star in large size
 
 markup:
-<div class="star {$modifiers}">
+<div class="star {{modifier_class}}">
   <svg class="star-empty">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
   </svg>
@@ -253,7 +253,7 @@ none                    - displays star in normal (medium)
 .disabled               - displays star in disabled state
 
 markup:
-<div class="star half positive {$modifiers}">
+<div class="star half positive {{modifier_class}}">
   <svg class="star-empty">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
   </svg>
@@ -276,7 +276,7 @@ none                    - displays star icon in left to right direction. (direct
 .direction-ltr          - displays star icon in left to right direction.
 
 markup:
-<div class="star half {$modifiers}">
+<div class="star half {{modifier_class}}">
   <svg class="star-empty">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
   </svg>
@@ -334,7 +334,7 @@ none                    - displays star in left to right direction. (direction-l
 
 
 markup:
-<div class="star-container {$modifiers}">
+<div class="star-container {{modifier_class}}">
   <div class="star filled positive large">
      <svg class="star-empty">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
@@ -383,7 +383,7 @@ none             - stars position at horizontal center.
 .space-around    - stars take all available space to position. Space is only around the stars.
 
 markup:
-<div class="star-container {$modifiers}">
+<div class="star-container {{modifier_class}}">
 <div class="star icon filled positive large">
   <i class="star-empty"></i>
   <i class="star-half"></i>
@@ -426,7 +426,7 @@ none                    - displays star in default size (medium)
 .large                  - displays star in large size
 
 markup:
-<div class="label-value {$modifiers}">3.5</div>
+<div class="label-value {{modifier_class}}">3.5</div>
 
 Styleguide 1.2.3.1
 */
@@ -440,7 +440,7 @@ none                    - displays label in normal (medium)
 .disabled               - displays label in disabled state
 
 markup:
-<div class="label-value {$modifiers}">3.5</div>
+<div class="label-value {{modifier_class}}">3.5</div>
 
 Styleguide 1.2.3.2
 */
