@@ -25,7 +25,7 @@ module.exports = (function () {
         app = 'app',
         assets = 'assets';
 
-    var styleguideFolder = 'sc5-styleguide';
+    var styleguideFolder = 'docs';
     var styleguideCopies = [
         {
             src: [

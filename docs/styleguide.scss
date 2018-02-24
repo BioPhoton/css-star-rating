@@ -1,0 +1,34 @@
+@import "elements.sc5";
+@import "modifiers.sc5";
+
+/*
+Star Rating
+
+A beautiful ui component for displaying rating values of up to 5 stars with css only.
+Options are:
+- Value
+- Size
+- Spread
+- Static Color
+- Label Position
+- Animation Speed
+- Disabled
+
+(in this html is additional angular markup to make the showcase interactive)
+
+   markup:
+   <div ng-init="data.rating = 0" class="rating padding value-{{data.rating}}">
+    <div class="star-container">
+        <div class="star" ng-repeat="i in [1,2,3,4,5] track by $index" ng-click="data.rating = $index+1">
+            <svg class="star-empty">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+            </svg>
+            <svg class="star-filled">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+            </svg>
+        </div>
+    </div>
+  </div>
+
+Styleguide 1
+*/
