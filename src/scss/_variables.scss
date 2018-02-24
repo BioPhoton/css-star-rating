@@ -2,10 +2,12 @@
 
 /*VARIABLES
 ====================================================*/
+/*Prefix*/
+$prefix: 'csr-';
 
 /*Range*/
 $minRatingValue: 1;
-$maxNumOfStars: 6;
+$maxNumOfStars: 10;
 $numFractions: 3;
 $fractionSize: $maxNumOfStars/$numFractions;
 

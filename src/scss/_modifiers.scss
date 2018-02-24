@@ -3,7 +3,7 @@
 /*
 Rating Component
 ========================================================================= */
-.rating {
+.#{$prefix}rating {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,14 +14,14 @@ Rating Component
   @for $i from $minRatingValue through $maxNumOfStars {
     &.value-#{$i} {
 
-      .star-container {
-        .star:nth-child(-n+#{$i}) {
+      .#{$prefix}star-container {
+        .#{$prefix}star:nth-child(-n+#{$i}) {
           @extend .filled;
         }
 
-        .star {
+        .#{$prefix}star {
           @if $i <= 2 {
-            @extend .star.negative;
+            @extend .#{$prefix}star.negative;
           }
 
           @if $i == 3 {
@@ -40,12 +40,12 @@ Rating Component
   @for $i from $maxNumOfStars through $maxNumOfStars*2 {
     &.value-#{$i} {
 
-      .star-container {
-        .star:nth-child(-n+#{$i}) {
-          @extend .star.filled
+      .csr-star-container {
+        .csr-star:nth-child(-n+#{$i}) {
+          @extend .csr-star.filled
         }
 
-        .star {
+        .csr-star {
           @extend .positive;
         }
       }
@@ -64,23 +64,23 @@ Rating Component
 
       &.value-#{$i}.half,
       &.hover-#{$i} {
-        .star-container {
-          .star {
+        .csr-star-container {
+          .csr-star {
             @extend .empty;
           }
         }
       }
 
       &.hover-#{$i} {
-        .star-container {
+        .csr-star-container {
 
-          .star:nth-child(-n+#{$i}) {
+          .csr-star:nth-child(-n+#{$i}) {
             @extend .filled;
           }
 
-          .star {
+          .csr-star {
             @if $i <= 2 {
-              @extend .star.negative;
+              @extend .csr-star.negative;
             }
 
             @if $i == 3 {
@@ -102,10 +102,10 @@ Rating Component
 
   //if we hals ratings > 0 && < 1 we color the first star
   &.value-0.half {
-    .star {
+    .csr-star {
       @extend .negative;
     }
-    .star:nth-child(1) {
+    .csr-star:nth-child(1) {
       @extend .half;
     }
   }
@@ -113,9 +113,9 @@ Rating Component
   @for $i from $minRatingValue through $maxNumOfStars {
     &.value-#{$i}.half {
 
-      .star-container {
+      .csr-star-container {
         @if ($i < $maxNumOfStars) {
-          .star:nth-child(#{$i+1}) {
+          .csr-star:nth-child(#{$i+1}) {
             @extend .half;
           }
         }
@@ -140,8 +140,8 @@ Rating Component
   &.label-top {
     flex-direction: column;
 
-    .label-value {
-      + .star-container {
+    .csr-label-value {
+      + .csr-star-container {
         margin-left: 0;
         margin-right: 0;
         margin-top: $default-stars-label-margin;
@@ -149,10 +149,10 @@ Rating Component
     }
   }
 
-  &.label-left .label-value {
+  &.label-left .csr-label-value {
     flex: 0 0 auto;
 
-    + .star-container {
+    + .csr-star-container {
       margin-left: $default-stars-label-margin;
       margin-right: 0;
     }
@@ -161,8 +161,8 @@ Rating Component
   &.label-right {
     flex-direction: row-reverse;
 
-    .label-value {
-      + .star-container {
+    .csr-label-value {
+      + .csr-star-container {
         margin-left: 0;
         margin-right: $default-stars-label-margin;
       }
@@ -172,8 +172,8 @@ Rating Component
   &.label-bottom {
     flex-direction: column-reverse;
 
-    .label-value {
-      + .star-container {
+    .csr-label-value {
+      + .csr-star-container {
         margin-left: 0;
         margin-right: 0;
         margin-bottom: $default-stars-label-margin;
@@ -187,10 +187,10 @@ Rating Component
   &.direction-rtl {
     direction: rtl;
 
-    .star-container {
-      @extend .star-container.direction-rtl;
-      .star {
-        @extend .star.direction-rtl;
+    .csr-star-container {
+      @extend .csr-star-container.direction-rtl;
+      .csr-star {
+        @extend .csr-star.direction-rtl;
       }
     }
   }
@@ -201,72 +201,72 @@ Rating Component
   /* Star Type
   ====================================================*/
   &.star-icon {
-    @extend .star.icon;
+    @extend .csr-star.icon;
   }
   &.star-custom-icon {
-    @extend .star.custom-icon;
+    @extend .csr-star.custom-icon;
   }
   &.star-svg {
-    @extend .star.svg;
+    @extend .csr-star.svg;
   }
 
   /* Sizes
   ==========================================================*/
   &.small {
-    .star {
-      @extend .star.small;
+    .csr-star {
+      @extend .csr-star.small;
     }
 
-    .label-value {
-      @extend .label-value.small;
+    .csr-label-value {
+      @extend .csr-label-value.small;
     }
   }
 
   &.medium {
-    .star {
-      @extend .star.medium;
+    .csr-star {
+      @extend .csr-star.medium;
     }
 
-    .label-value {
-      @extend .label-value.medium;
+    .csr-label-value {
+      @extend .csr-label-value.medium;
     }
   }
 
   &.large {
-    .star {
-      @extend .star.large;
+    .csr-star {
+      @extend .csr-star.large;
     }
 
-    .label-value {
-      @extend .label-value.large;
+    .csr-label-value {
+      @extend .csr-label-value.large;
     }
   }
 
   /* Space
   ====================================================*/
   &.space-no {
-    .star-container {
-      @extend .star-container.space-no;
+    .csr-star-container {
+      @extend .csr-star-container.space-no;
     }
   }
 
   &.space-between {
-    .star-container {
-      @extend .star-container.space-between;
+    .csr-star-container {
+      @extend .csr-star-container.space-between;
     }
   }
 
   &.space-around {
-    .star-container {
-      @extend .star-container.space-around;
+    .csr-star-container {
+      @extend .csr-star-container.space-around;
     }
   }
 
   /* Static Color
     ====================================================*/
   &.color-default {
-    .star-container {
-      .star {
+    .csr-star-container {
+      .csr-star {
         svg {
           fill: $color-default-rating;
         }
@@ -278,8 +278,8 @@ Rating Component
   }
 
   &.color-ok {
-    .star-container {
-      .star {
+    .csr-star-container {
+      .csr-star {
         svg {
           fill: $color-ok-rating;
         }
@@ -291,8 +291,8 @@ Rating Component
   }
 
   &.color-positive {
-    .star-container {
-      .star {
+    .csr-star-container {
+      .csr-star {
         svg {
           fill: $color-positive-rating;
         }
@@ -304,8 +304,8 @@ Rating Component
   }
 
   &.color-negative {
-    .star-container {
-      .star {
+    .csr-star-container {
+      .csr-star {
         svg {
           fill: $color-negative-rating;
         }
@@ -319,12 +319,12 @@ Rating Component
   /*Disabled
   ====================================================*/
   &.disabled {
-    .label-value {
-      @extend .label-value.disabled;
+    .csr-label-value {
+      @extend .csr-label-value.disabled;
     }
-    .star-container {
-      .star {
-        @extend .star.disabled;
+    .csr-star-container {
+      .csr-star {
+        @extend .csr-star.disabled;
       }
     }
   }
@@ -332,9 +332,9 @@ Rating Component
   /*AnimationSpeed
  ====================================================*/
   &.immediately
-  .star-container {
+  .csr-star-container {
     transition: all $immediately-animation-type;
-    .star {
+    .csr-star {
       transition: $immediately-animation-type;
       svg, i {
         transition: $immediately-animation-type;
@@ -343,9 +343,9 @@ Rating Component
   }
 
   &.noticeable {
-    .star-container {
+    .csr-star-container {
       transition: all $default-animation-speed $default-animation-type;
-      .star {
+      .csr-star {
         transition: all $default-animation-speed $default-animation-type;
         svg, i {
           transition: all $default-animation-speed $default-animation-type;
@@ -355,9 +355,9 @@ Rating Component
   }
 
   &.slow {
-    .star-container {
+    .csr-star-container {
       transition: all $slow-animation-speed $default-animation-type;
-      .star {
+      .csr-star {
         transition: all $slow-animation-speed $default-animation-type;
         svg, i {
           transition: all $slow-animation-speed $default-animation-type;

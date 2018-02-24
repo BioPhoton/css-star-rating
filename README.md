@@ -73,18 +73,18 @@ If you want to use svg as icon type copy the
 ```html
 <div class="rating large star-icon direction-rtl value-1 half color-default label-top">
    <div class="label-value">1.5</div>
-    <div class="star-container">
-        <div class="star">
+    <div class="csr-star-container">
+        <div class="csr-star">
             <i class="star-empty"></i>
             <i class="star-half"></i>
             <i class="star-filled"></i>
         </div>
-        <div class="star">
+        <div class="csr-star">
             <i class="star-empty"></i>
             <i class="star-half"></i>
             <i class="star-filled"></i>
         </div>
-        <div class="star">
+        <div class="csr-star">
             <i class="star-empty"></i>
             <i class="star-half"></i>
             <i class="star-filled"></i>
@@ -106,8 +106,8 @@ The actual star rating value. The color of the stars depends on the rating numbe
 - .value-4
 - .value-5
 ```html
-<div class="rating value-3">
-   <div class="star-container">
+<div class="csr-rating value-3">
+   <div class="csr-star-container">
         ...stars...
     </div>
 </div>
@@ -119,8 +119,8 @@ If set, every rating value will have a half star at the end.
 - .half
 
 ```html
-<div class="rating value-3 half">
-   <div class="star-container">
+<div class="csr-rating value-3 half">
+   <div class="csr-star-container">
         ...stars...
     </div>
 </div>
@@ -133,9 +133,9 @@ The text next to the stars.
 - (Just additional HTML)
 
 ```html
-<div class="rating value-3">
+<div class="csr-rating value-3">
    <div class="label-value">My text</div>
-   <div class="star-container">
+   <div class="csr-star-container">
         ...stars...
     </div>
 </div>
@@ -148,9 +148,9 @@ The position of the label.
 - .label-hidden
 
 ```html
-<div class="rating value-3 label-hidden">
+<div class="csr-rating value-3 label-hidden">
    <div class="label-value">3.5</div>
-   <div class="star-container">
+   <div class="csr-star-container">
         ...stars...
     </div>
 </div>
@@ -166,9 +166,9 @@ The position of the label.
 - .label-left
 
 ```html
-<div class="rating value-3 label-right">
+<div class="csr-rating value-3 label-right">
    <div class="label-value">Good</div>
-   <div class="star-container">
+   <div class="csr-star-container">
         ...stars...
     </div>
 </div>
@@ -182,8 +182,8 @@ The position of the label.
 If the start use the whole space or not.  
 
 ```html
-<div class="rating value-3 space-between">
-   <div class="star-container">
+<div class="csr-rating value-3 space-between">
+   <div class="csr-star-container">
         ...stars...
     </div>
 </div>
@@ -198,8 +198,8 @@ The height and width of the stars.
 - .medium
 - .large
 ```html
-<div class="rating value-3 large">
-   <div class="star-container">
+<div class="csr-rating value-3 large">
+   <div class="csr-star-container">
         ...stars...
     </div>
 </div>
@@ -216,8 +216,8 @@ Static color of stars.
 - .color-positive  
 
 ```html
-<div class="rating value-3 color-negative">
-   <div class="star-container">
+<div class="csr-rating value-3 color-negative">
+   <div class="csr-star-container">
         ...stars...
     </div>
 </div>
@@ -231,8 +231,8 @@ Static color of stars.
 The click callback is disabled, colors are transparent   
   
 ```html
-<div class="rating value-3 disabled">
-   <div class="star-container">
+<div class="csr-rating value-3 disabled">
+   <div class="csr-star-container">
         ...stars...
     </div>
 </div>
@@ -246,8 +246,8 @@ The direction of the stars and label.
 - .direction-ltr  
 
 ```html
-<div class="rating value-3 direction-rtl">
-   <div class="star-container">
+<div class="csr-rating value-3 direction-rtl">
+   <div class="csr-star-container">
         ...stars...
     </div>
 </div>
@@ -262,8 +262,8 @@ The duration of the animation in ms.
 - .slow  
  
 ```html
-<div class="rating value-3 slow">
-   <div class="star-container">
+<div class="csr-rating value-3 slow">
+   <div class="csr-star-container">
         ...stars...
     </div>
 </div>
@@ -279,8 +279,8 @@ The type of start resource to use.
 - .custom-icon (i.e. font-awesome)
 
 ```html
-<div class="rating value-3 star-icon">
-   <div class="star-container">
+<div class="csr-rating value-3 star-icon">
+   <div class="csr-star-container">
         <!-- font icons-->
         <star>
             <i class="star-empty"></i>
@@ -312,11 +312,11 @@ As a bonus there are some themes as classes.
 **theme-[NAME]**:  
 The type of start resource to use.     
 - .theme-google-places
-- .theme-kununu
+- .theme-box
 
 ```html
-<div class="rating value-3 theme-google-places">
-   <div class="star-container">
+<div class="csr-rating value-3 theme-google-places">
+   <div class="csr-star-container">
         ...stars...
     </div>
 </div>

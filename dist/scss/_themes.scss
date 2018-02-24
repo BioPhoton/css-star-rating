@@ -3,25 +3,25 @@
 /*theme modifiers
 ====================================================*/
 
-.rating {
+.#{$prefix}rating {
 
-  &.theme-kununu {
-    $kununu-color-white: #fff !default;
-    $kununu-color-lightgray: #f8f8f8 !default;
-    $kununu-color-gray: #e9ecec !default;
-    $kununu-color-blue: #2286dc !default;
-    $kununu-color-darkblue: #2f3940 !default;
-    $kununu-color-green: #99c613 !default;
+  &.theme-box {
+    $box-color-white: #fff !default;
+    $box-color-lightgray: #f8f8f8 !default;
+    $box-color-gray: #e9ecec !default;
+    $box-color-blue: #2286dc !default;
+    $box-color-darkblue: #2f3940 !default;
+    $box-color-green: #99c613 !default;
 
     flex-direction: column;
     width: 78px;
 
-    .label-value,
-    .star-container {
+    .#{$prefix}label-value,
+    .#{$prefix}star-container {
       width: 100%;
     }
 
-    .label-value {
+    .#{$prefix}label-value {
 
       display: flex;
       align-items: center;
@@ -29,35 +29,35 @@
 
       border-radius: 6px 6px 0 0;
       height: 50px;
-      border: 1px solid $kununu-color-gray;
+      border: 1px solid $box-color-gray;
       border-bottom: 0px;
       font-size: 18px;
       font-weight: bold;
-      color: $kununu-color-darkblue;
+      color: $box-color-darkblue;
       letter-spacing: -1px;
 
-      background-color: $kununu-color-lightgray;
+      background-color: $box-color-lightgray;
     }
-    .star-container {
+    .#{$prefix}star-container {
       border-radius: 0 0 6px 6px;
       padding: 2px 0 4px 0;
       margin-left: 0px;
       margin-right: 0px;
 
       justify-content: center;
-      background-color: $kununu-color-green;
+      background-color: $box-color-green;
 
-      border: 1px solid $kununu-color-green;
+      border: 1px solid $box-color-green;
       border-bottom: 0px;
 
-      .star {
+      .#{$prefix}star {
         height: 11px;
         width: 11px;
-        @extend .star.custom-icon;
+        @extend .#{$prefix}star.custom-icon;
 
         i {
           font-size: 11px;
-          color: $kununu-color-white;
+          color: $box-color-white;
           text-align: center;
         }
       }
@@ -69,18 +69,18 @@
     $google_places-color-default: #e1e1e1 !default;
     $google_places-color-red: #e7711b !default;
 
-    .label-value {
+    .#{$prefix}label-value {
       color: $google_places-color-red;
       font-family: arial, sans-serif;
       font-size: 13px;
       line-height: 15px;
     }
 
-    .star-container {
+    .#{$prefix}star-container {
       width: 65px;
       margin-left: 2px;
 
-      .star {
+      .#{$prefix}star {
 
         i {
           font-size: 17px;
@@ -119,8 +119,8 @@
 
   &.theme-rolling-stars {
 
-    .star-container {
-      .star {
+    .#{$prefix}star-container {
+      .#{$prefix}star {
         transition: transform 1s;
         transform: rotate(0deg);
       }
@@ -128,8 +128,8 @@
 
     @for $i from $minRatingValue through $maxNumOfStars {
       &.value-#{$i} {
-        .star-container {
-          .star:nth-child(-n+#{$i}) {
+        .#{$prefix}star-container {
+          .#{$prefix}star:nth-child(-n+#{$i}) {
             transition: transform 1s;
             transform: rotate(360deg);
           }
@@ -138,7 +138,7 @@
     }
 
     &.value-0.half {
-      .star:nth-child(1) {
+      .#{$prefix}star:nth-child(1) {
         transition: transform 1s;
         transform: rotate(360deg);
       }
@@ -146,9 +146,9 @@
 
     @for $i from $minRatingValue through $maxNumOfStars {
       &.value-#{$i}.half {
-        .star-container {
+        .#{$prefix}star-container {
           @if ($i < $maxNumOfStars) {
-            .star:nth-child(#{$i+1}) {
+            .#{$prefix}star:nth-child(#{$i+1}) {
               transition: transform 1s;
               transform: rotate(360deg);
             }
