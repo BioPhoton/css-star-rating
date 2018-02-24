@@ -28,6 +28,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var config = require(path.join('..','..','chore.config'));
 
 var sc5Folder = 'sc5-styleguide';
+var destFolder = 'docs';
 var defaultConfig = {
         srcFolder: [path.join(config.dist,'**','*.scss', config.src,'**','*.scss')],
         generateSrc:[path.join(config.src,'sc5-styleguide','*.scss')],
@@ -38,7 +39,7 @@ var defaultConfig = {
             , path.join('node_modules','font-awesome','css','font-awesome.min.css')
             , path.join('node_modules','ionicons','css','ionicons.min.css')
         ],
-        destFolder: path.join(sc5Folder),
+        destFolder: path.join(destFolder),
         sassOptions : {
             indentWidth: 4,
             outputStyle: 'expanded',
@@ -65,8 +66,8 @@ var defaultConfig = {
                         '<script src="../node_modules/ionicons/dist/css/ionicons.min.css"></script>',
             */
             server: true,
-            rootPath: sc5Folder,
-            overviewPath: path.join('README.md'),
+            rootPath: destFolder,
+            overviewPath: path.join('src','sc5-styleguide', 'SC5-README.md'),
             port: 3500
 
         }
@@ -99,6 +100,7 @@ gulp.task('styleguide:init', function () {
 
 gulp.task('styleguide:generate', ['styleguide:copy'], function (done) {
     helper.log('Generate components from ' + styleguideConfig.generateSrc);
+    console.log('DEST:', styleguideConfig.destFolder)
     return gulp.src(styleguideConfig.generateSrc)
         .pipe(styleguide.generate(styleguideConfig.styleguideOptions))
         .pipe(gulp.dest(styleguideConfig.destFolder), done);
