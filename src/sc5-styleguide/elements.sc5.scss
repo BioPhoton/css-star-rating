@@ -74,7 +74,6 @@ Star fill states
 
 The Star element visualizes the interactive star element it it's three fill states.
 
-none                    - displays the default star element (empty)
 .empty                  - displays the star element as empty
 .half                   - displays the star element as half filled
 .filled                 - displays the star element as filled
@@ -100,7 +99,6 @@ Star colors
 
 The different star colors.
 
-.default           - Stars is colored default
 .positive          - Stars is colored positive
 .ok            - Stars is colored ok
 .negative          - Stars is colored negative
@@ -149,7 +147,6 @@ Star types
 
 The different star types.
 
-none                  - Stars svg icon is used
 .svg                  - Stars svg icon is used
 .icon                 - Stars character icon is used
 .custom-icon          - Stars character icon is used
@@ -223,7 +220,6 @@ Star sizes
 
 The Star sizes.
 
-none                    - displays star in default size (medium)
 .small                  - displays star in small size
 .medium                 - displays star in medium size
 .large                  - displays star in large size
@@ -249,7 +245,6 @@ Star Disabled state
 
 The Star element in disabled state.
 
-none                    - displays star in normal (medium)
 .disabled               - displays star in disabled state
 
 markup:
@@ -271,7 +266,6 @@ Styleguide 1.2.1.4
 /*
 The the direction of the star icon.
 
-none                    - displays star icon in left to right direction. (direction-ltr)
 .direction-rtl          - displays star icon in right to left direction.
 .direction-ltr          - displays star icon in left to right direction.
 
@@ -328,7 +322,6 @@ Container Direction
 
 The the direction of the star container.
 
-none                    - displays star in left to right direction. (direction-ltr)
 .direction-rtl          - displays star in right to left direction.
 .direction-ltr          - displays star in left to right direction.
 
@@ -378,7 +371,6 @@ Container stars space
 
 The spacing between stars.
 
-none             - stars position at horizontal center.
 .space-between   - stars take all available space to position. Space is only between the stars.
 .space-around    - stars take all available space to position. Space is only around the stars.
 
@@ -420,7 +412,6 @@ Label Sizes
 
 The Label element.
 
-none                    - displays star in default size (medium)
 .small                  - displays star in small size
 .medium                 - displays star in medium size
 .large                  - displays star in large size
@@ -436,7 +427,6 @@ Label Disabled state
 
 The Label n disabled state.
 
-none                    - displays label in normal (medium)
 .disabled               - displays label in disabled state
 
 markup:

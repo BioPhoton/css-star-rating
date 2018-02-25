@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" href="kss-assets/kss.css">
-  <link rel="stylesheet" href="assets/css/star-rating.css">
+  <link rel="stylesheet" href="../dist/css/star-rating.css">
 <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
 
 </head>
@@ -357,10 +357,6 @@ Options are:</p>
 <li>Disabled</li>
 </ul>
 <p>(in this html is additional angular markup to make the showcase interactive)</p>
-<p>   sg-wrapper:
-   <div class="phone-simulator padding">
-       <sg-wrapper-content/>
-   </div></p>
 
           </div>
 
@@ -374,7 +370,7 @@ Options are:</p>
 
           <div class="kss-modifier__example">
                <div class="rating large direction-rtl value-3 half color-negative label-top">
-   <div class="label-value">3.5</div>
+    <div class="label-value">3.5</div>
     <div class="star-container">
         <div class="star">
             <svg class="star-empty">
@@ -443,7 +439,7 @@ Options are:</p>
                 Markup
             </summary>
             <pre class="prettyprint linenums lang-html"><code data-language="html">   &lt;div class&#x3D;&quot;rating large direction-rtl value-3 half color-negative label-top&quot;&gt;
-   &lt;div class&#x3D;&quot;label-value&quot;&gt;3.5&lt;/div&gt;
+    &lt;div class&#x3D;&quot;label-value&quot;&gt;3.5&lt;/div&gt;
     &lt;div class&#x3D;&quot;star-container&quot;&gt;
         &lt;div class&#x3D;&quot;star&quot;&gt;
             &lt;svg class&#x3D;&quot;star-empty&quot;&gt;
@@ -1199,7 +1195,7 @@ Default colors are red for values equal to 2 or below, yellow for 3, and green f
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>modifiers.sc5.scss</code>, line 87
+          Source: <code>modifiers.sc5.scss</code>, line 81
         </div>
 
     </section>
@@ -1757,7 +1753,7 @@ This is mostly useful for people hwo generate this html dynamically</p>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>modifiers.sc5.scss</code>, line 245
+          Source: <code>modifiers.sc5.scss</code>, line 239
         </div>
 
     </section>
@@ -2261,428 +2257,6 @@ Default colors are red for values equal to 2 or below, yellow for 3, and green f
             <div class="kss-modifier__example-footer"></div>
           </div>
 
-            <div class="kss-modifier__name kss-style">
-              default
-            </div>
-            <div class="kss-modifier__description kss-style">
-              rating with full stars
-            </div>
-            <div class="kss-modifier__example">
-              <div class="rating default">
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-<div class="rating value-0 default">
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-<div class="rating value-1 default">
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-<div class="rating value-2 default">
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div><div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-<div class="rating value-3 default">
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-<div class="rating value-4 default">
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-<div class="rating value-5 default">
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
             <div class="kss-modifier__name kss-style">
               .half
             </div>
@@ -3527,7 +3101,7 @@ Default colors are red for values equal to 2 or below, yellow for 3, and green f
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>modifiers.sc5.scss</code>, line 321
+          Source: <code>modifiers.sc5.scss</code>, line 315
         </div>
 
     </section>
@@ -4221,7 +3795,7 @@ The star and all previous the one the mouse hovers are visible as filled and hav
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>modifiers.sc5.scss</code>, line 166
+          Source: <code>modifiers.sc5.scss</code>, line 160
         </div>
 
     </section>
@@ -4294,8 +3868,7 @@ The star and all previous the one the mouse hovers are visible as filled and hav
           <div class="kss-description">
             <p>Different sizes of the stars and the label.
 Additional to the default size medium there are more sizes, small and large.</p>
-<p>default                  - Default size
-.small                   - Small size
+<p>.small                   - Small size
 .medium                  - Medium size
 .large                   - Large size</p>
 
@@ -4424,7 +3997,7 @@ Additional to the default size medium there are more sizes, small and large.</p>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>modifiers.sc5.scss</code>, line 749
+          Source: <code>modifiers.sc5.scss</code>, line 742
         </div>
 
     </section>
@@ -4558,59 +4131,6 @@ Additional to the default size medium there are more sizes, small and large.</p>
             <div class="kss-modifier__example-footer"></div>
           </div>
 
-            <div class="kss-modifier__name kss-style">
-              default
-            </div>
-            <div class="kss-modifier__description kss-style">
-              stars position at horizontal center.
-            </div>
-            <div class="kss-modifier__example">
-              <div class="rating value-4 default">
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
             <div class="kss-modifier__name kss-style">
               .space-between
             </div>
@@ -4770,7 +4290,7 @@ Additional to the default size medium there are more sizes, small and large.</p>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>modifiers.sc5.scss</code>, line 817
+          Source: <code>modifiers.sc5.scss</code>, line 809
         </div>
 
     </section>
@@ -5273,428 +4793,6 @@ Additional to the default size medium there are more sizes, small and large.</p>
             <div class="kss-modifier__example-footer"></div>
           </div>
 
-            <div class="kss-modifier__name kss-style">
-              default
-            </div>
-            <div class="kss-modifier__description kss-style">
-              No static color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="rating default">
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-<div class="rating half value-0 default">
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-<div class="rating value-1 half default">
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-<div class="rating half value-2 default">
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-<div class="rating half value-3 default">
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-<div class="rating half value-4 default">
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-<div class="rating value-5 default">
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
             <div class="kss-modifier__name kss-style">
               .color-default
             </div>
@@ -7805,7 +6903,7 @@ Additional to the default size medium there are more sizes, small and large.</p>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>modifiers.sc5.scss</code>, line 875
+          Source: <code>modifiers.sc5.scss</code>, line 866
         </div>
 
     </section>
@@ -8083,203 +7181,6 @@ Additional to the default size medium there are more sizes, small and large.</p>
             <div class="kss-modifier__example-footer"></div>
           </div>
 
-            <div class="kss-modifier__name kss-style">
-               default
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Value displayed on the left side
-            </div>
-            <div class="kss-modifier__example">
-              <div class="rating  ">
-    <div class="label-value">0</div>
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-<div class="rating value-2 small  ">
-    <div class="label-value">(bad)</div>
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-<div class="rating value-3 medium  ">
-    <div class="label-value">3.1</div>
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-<div class="rating value-4 large  ">
-    <div class="label-value">Good</div>
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
             <div class="kss-modifier__name kss-style">
               .label-top
             </div>
@@ -9265,7 +8166,7 @@ Additional to the default size medium there are more sizes, small and large.</p>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>modifiers.sc5.scss</code>, line 1305
+          Source: <code>modifiers.sc5.scss</code>, line 1295
         </div>
 
     </section>
@@ -9337,8 +8238,7 @@ Additional to the default size medium there are more sizes, small and large.</p>
 
           <div class="kss-description">
             <p>Visualizes the disabled state of the rating component. The styles symbolizing that no interaction is possible</p>
-<p>default                   - Stars are un usual style
-.disabled                - Stars are grayed out, no interaction is possible</p>
+<p>.disabled                - Stars are grayed out, no interaction is possible</p>
 <p></div></p>
 
           </div>
@@ -9720,7 +8620,7 @@ Additional to the default size medium there are more sizes, small and large.</p>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>modifiers.sc5.scss</code>, line 1510
+          Source: <code>modifiers.sc5.scss</code>, line 1499
         </div>
 
     </section>
@@ -9854,59 +8754,6 @@ Additional to the default size medium there are more sizes, small and large.</p>
             <div class="kss-modifier__example-footer"></div>
           </div>
 
-            <div class="kss-modifier__name kss-style">
-              default
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Transition runs in noticeable speed
-            </div>
-            <div class="kss-modifier__example">
-              <div class="rating  value-3 default">
- <div class="star-container">
-     <div class="star">
-         <svg class="star-empty">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-         </svg>
-         <svg class="star-filled">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-         </svg>
-     </div>
-     <div class="star">
-         <svg class="star-empty">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-         </svg>
-         <svg class="star-filled">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-         </svg>
-     </div>
-     <div class="star">
-         <svg class="star-empty">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-         </svg>
-         <svg class="star-filled">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-         </svg>
-     </div>
-     <div class="star">
-         <svg class="star-empty">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-         </svg>
-         <svg class="star-filled">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-         </svg>
-     </div>
-     <div class="star">
-         <svg class="star-empty">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-         </svg>
-         <svg class="star-filled">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-         </svg>
-     </div>
- </div>
-  </div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
             <div class="kss-modifier__name kss-style">
               .immediately
             </div>
@@ -10119,7 +8966,7 @@ Additional to the default size medium there are more sizes, small and large.</p>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>modifiers.sc5.scss</code>, line 1702
+          Source: <code>modifiers.sc5.scss</code>, line 1690
         </div>
 
     </section>
@@ -10283,89 +9130,6 @@ Additional to the default size medium there are more sizes, small and large.</p>
             <div class="kss-modifier__example-footer"></div>
           </div>
 
-            <div class="kss-modifier__name kss-style">
-              default
-            </div>
-            <div class="kss-modifier__description kss-style">
-              The default star type is svg
-            </div>
-            <div class="kss-modifier__example">
-                <div class="rating  value-3 half default">
- <div class="star-container">
-     <div class="star">
-         <svg class="star-empty">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-         </svg>
-         <svg class="star-half">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-         </svg>
-         <svg class="star-filled">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-         </svg>
-         <i class="star-empty fa fa-star-o"></i>
-         <i class="star-half fa fa-star-half-o"></i>
-         <i class="star-filled fa fa-star"></i>
-     </div>
-             <div class="star">
-         <svg class="star-empty">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-         </svg>
-         <svg class="star-half">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-         </svg>
-         <svg class="star-filled">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-         </svg>
-         <i class="star-empty fa fa-star-o"></i>
-         <i class="star-half fa fa-star-half-o"></i>
-         <i class="star-filled fa fa-star"></i>
-     </div>
-             <div class="star">
-         <svg class="star-empty">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-         </svg>
-         <svg class="star-half">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-         </svg>
-         <svg class="star-filled">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-         </svg>
-         <i class="star-empty fa fa-star-o"></i>
-         <i class="star-half fa fa-star-half-o"></i>
-         <i class="star-filled fa fa-star"></i>
-     </div>
-             <div class="star">
-         <svg class="star-empty">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-         </svg>
-         <svg class="star-half">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-         </svg>
-         <svg class="star-filled">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-         </svg>
-         <i class="star-empty fa fa-star-o"></i>
-         <i class="star-half fa fa-star-half-o"></i>
-         <i class="star-filled fa fa-star"></i>
-     </div>
-             <div class="star">
-         <svg class="star-empty">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-         </svg>
-         <svg class="star-half">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-         </svg>
-         <svg class="star-filled">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-         </svg>
-         <i class="star-empty fa fa-star-o"></i>
-         <i class="star-half fa fa-star-half-o"></i>
-         <i class="star-filled fa fa-star"></i>
-     </div>
- </div>
-  </div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
             <div class="kss-modifier__name kss-style">
               .star-icon
             </div>
@@ -10698,7 +9462,7 @@ Additional to the default size medium there are more sizes, small and large.</p>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>modifiers.sc5.scss</code>, line 1761
+          Source: <code>modifiers.sc5.scss</code>, line 1748
         </div>
 
     </section>
@@ -10848,75 +9612,6 @@ Additional to the default size medium there are more sizes, small and large.</p>
             <div class="kss-modifier__example-footer"></div>
           </div>
 
-            <div class="kss-modifier__name kss-style">
-              none
-            </div>
-            <div class="kss-modifier__description kss-style">
-              displays component elements in left to right direction. (direction-ltr)
-            </div>
-            <div class="kss-modifier__example">
-                <div class="rating  value-3 half none">
- <div class="label-value">3.5</div>
- <div class="star-container">
-     <div class="star">
-         <svg class="star-empty">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-         </svg>
-         <svg class="star-half">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-         </svg>
-         <svg class="star-filled">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-         </svg>
-     </div>
-     <div class="star">
-         <svg class="star-empty">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-         </svg>
-         <svg class="star-half">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-         </svg>
-         <svg class="star-filled">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-         </svg>
-     </div>
-     <div class="star">
-         <svg class="star-empty">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-         </svg>
-         <svg class="star-half">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-         </svg>
-         <svg class="star-filled">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-         </svg>
-     </div>
-     <div class="star">
-         <svg class="star-empty">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-         </svg>
-         <svg class="star-half">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-         </svg>
-         <svg class="star-filled">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-         </svg>
-     </div>
-     <div class="star">
-         <svg class="star-empty">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-         </svg>
-         <svg class="star-half">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-         </svg>
-         <svg class="star-filled">
-             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-         </svg>
-     </div>
- </div>
-  </div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
             <div class="kss-modifier__name kss-style">
               .direction-rtl
             </div>
@@ -11124,7 +9819,7 @@ Additional to the default size medium there are more sizes, small and large.</p>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>modifiers.sc5.scss</code>, line 1850
+          Source: <code>modifiers.sc5.scss</code>, line 1836
         </div>
 
     </section>
@@ -11259,60 +9954,6 @@ Additional to the default size medium there are more sizes, small and large.</p>
             <div class="kss-modifier__example-footer"></div>
           </div>
 
-            <div class="kss-modifier__name kss-style">
-              default
-            </div>
-            <div class="kss-modifier__description kss-style">
-              stars position at horizontal center.
-            </div>
-            <div class="kss-modifier__example">
-              <div class="rating value-4 default">
-    <div class="label-value">3.5</div>
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
             <div class="kss-modifier__name kss-style">
               .label-hidden
             </div>
@@ -11475,7 +10116,7 @@ Additional to the default size medium there are more sizes, small and large.</p>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>modifiers.sc5.scss</code>, line 1925
+          Source: <code>modifiers.sc5.scss</code>, line 1910
         </div>
 
     </section>
@@ -11856,26 +10497,6 @@ to display the additional test next to the rating</li>
           </div>
 
             <div class="kss-modifier__name kss-style">
-              none
-            </div>
-            <div class="kss-modifier__description kss-style">
-              displays the default star element (empty)
-            </div>
-            <div class="kss-modifier__example">
-              <div class="star none">
-  <svg class="star-empty">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-  </svg>
-  <svg class="star-half">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-  </svg>
-  <svg class="star-filled">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-  </svg>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
               .empty
             </div>
             <div class="kss-modifier__description kss-style">
@@ -12088,57 +10709,6 @@ to display the additional test next to the rating</li>
           </div>
 
             <div class="kss-modifier__name kss-style">
-              none
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Stars svg icon is used
-            </div>
-            <div class="kss-modifier__example">
-              <div class="star empty none">
-  <svg class="star-empty">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-  </svg>
-  <svg class="star-half">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-  </svg>
-  <svg class="star-filled">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-  </svg>
-<i class="star-empty fa fa-star-o"></i>
-  <i class="star-half fa fa-star-half-o"></i>
-  <i class="star-filled fa fa-star"></i>
-</div>
-<div class="star half none">
-  <svg class="star-empty">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-  </svg>
-  <svg class="star-half">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-  </svg>
-  <svg class="star-filled">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-  </svg>
-  <i class="star-empty fa fa-star-o"></i>
-  <i class="star-half fa fa-star-half-o"></i>
-  <i class="star-filled fa fa-star"></i>
-</div>
-<div class="star filled none">
-  <svg class="star-empty">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-  </svg>
-  <svg class="star-half">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-  </svg>
-  <svg class="star-filled">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-  </svg>
- <i class="star-empty fa fa-star-o"></i>
-  <i class="star-half fa fa-star-half-o"></i>
-  <i class="star-filled fa fa-star"></i>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
               .svg
             </div>
             <div class="kss-modifier__description kss-style">
@@ -12342,7 +10912,7 @@ to display the additional test next to the rating</li>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>elements.sc5.scss</code>, line 147
+          Source: <code>elements.sc5.scss</code>, line 145
         </div>
 
     </section>
@@ -12483,7 +11053,7 @@ to display the additional test next to the rating</li>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>elements.sc5.scss</code>, line 204
+          Source: <code>elements.sc5.scss</code>, line 201
         </div>
 
     </section>
@@ -12606,48 +11176,6 @@ to display the additional test next to the rating</li>
             <div class="kss-modifier__example-footer"></div>
           </div>
 
-            <div class="kss-modifier__name kss-style">
-              .default
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Stars is colored default
-            </div>
-            <div class="kss-modifier__example">
-              <div class="star filled svg default">
-  <svg class="star-empty">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-  </svg>
-  <svg class="star-half">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-  </svg>
-  <svg class="star-filled">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-  </svg>
-  <i class="star-empty "></i>
-  <i class="star-half "></i>
-  <i class="star-filled "></i>
-</div>
-<div class="star filled icon default">
-  <svg class="star-empty">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-  </svg>
-  <svg class="star-half">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-  </svg>
-  <svg class="star-filled">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-  </svg>
-  <i class="star-empty "></i>
-  <i class="star-half "></i>
-  <i class="star-filled "></i>
-</div>
-<div class="star filled custom-icon default">
-  <i class="star-empty fa fa-star-o"></i>
-  <i class="star-half  fa fa-star-half-o"></i>
-  <i class="star-filled  fa fa-star"></i>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
             <div class="kss-modifier__name kss-style">
               .positive
             </div>
@@ -12816,7 +11344,7 @@ to display the additional test next to the rating</li>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>elements.sc5.scss</code>, line 98
+          Source: <code>elements.sc5.scss</code>, line 97
         </div>
 
     </section>
@@ -12918,26 +11446,6 @@ to display the additional test next to the rating</li>
           </div>
 
             <div class="kss-modifier__name kss-style">
-              none
-            </div>
-            <div class="kss-modifier__description kss-style">
-              displays star in default size (medium)
-            </div>
-            <div class="kss-modifier__example">
-              <div class="star none">
-  <svg class="star-empty">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-  </svg>
-  <svg class="star-half">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-  </svg>
-  <svg class="star-filled">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-  </svg>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
               .small
             </div>
             <div class="kss-modifier__description kss-style">
@@ -13017,7 +11525,7 @@ to display the additional test next to the rating</li>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>elements.sc5.scss</code>, line 221
+          Source: <code>elements.sc5.scss</code>, line 218
         </div>
 
     </section>
@@ -13119,26 +11627,6 @@ to display the additional test next to the rating</li>
           </div>
 
             <div class="kss-modifier__name kss-style">
-              none
-            </div>
-            <div class="kss-modifier__description kss-style">
-              displays star in normal (medium)
-            </div>
-            <div class="kss-modifier__example">
-              <div class="star half positive none">
-  <svg class="star-empty">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-  </svg>
-  <svg class="star-half">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-  </svg>
-  <svg class="star-filled">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-  </svg>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
               .disabled
             </div>
             <div class="kss-modifier__description kss-style">
@@ -13178,7 +11666,7 @@ to display the additional test next to the rating</li>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>elements.sc5.scss</code>, line 247
+          Source: <code>elements.sc5.scss</code>, line 243
         </div>
 
     </section>
@@ -13249,8 +11737,7 @@ to display the additional test next to the rating</li>
           </p>
 
           <div class="kss-description">
-            <p>none                    - displays star icon in left to right direction. (direction-ltr)
-.direction-rtl          - displays star icon in right to left direction.
+            <p>.direction-rtl          - displays star icon in right to left direction.
 .direction-ltr          - displays star icon in left to right direction.</p>
 <p>sg-wrapper:</p>
 <div class="phone-simulator padding">
@@ -13301,7 +11788,7 @@ to display the additional test next to the rating</li>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>elements.sc5.scss</code>, line 271
+          Source: <code>elements.sc5.scss</code>, line 266
         </div>
 
     </section>
@@ -13431,7 +11918,7 @@ to display the additional test next to the rating</li>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>elements.sc5.scss</code>, line 299
+          Source: <code>elements.sc5.scss</code>, line 293
         </div>
 
     </section>
@@ -13556,50 +12043,6 @@ to display the additional test next to the rating</li>
             <div class="kss-modifier__example-footer"></div>
           </div>
 
-            <div class="kss-modifier__name kss-style">
-              none
-            </div>
-            <div class="kss-modifier__description kss-style">
-              displays star in left to right direction. (direction-ltr)
-            </div>
-            <div class="kss-modifier__example">
-              <div class="star-container none">
-  <div class="star filled positive large">
-     <svg class="star-empty">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-    </svg>
-    <svg class="star-half">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-    </svg>
-    <svg class="star-filled">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-    </svg>
-  </div>
-  <div class="star half positive large">
-   <svg class="star-empty">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-    </svg>
-    <svg class="star-half">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-    </svg>
-    <svg class="star-filled">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-    </svg>
-  </div>
-  <div class="star empty positive large">
-   <svg class="star-empty">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-    </svg>
-    <svg class="star-half">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-    </svg>
-    <svg class="star-filled">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-    </svg>
-  </div>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
             <div class="kss-modifier__name kss-style">
               .direction-rtl
             </div>
@@ -13732,7 +12175,7 @@ to display the additional test next to the rating</li>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>elements.sc5.scss</code>, line 326
+          Source: <code>elements.sc5.scss</code>, line 320
         </div>
 
     </section>
@@ -13840,32 +12283,6 @@ to display the additional test next to the rating</li>
           </div>
 
             <div class="kss-modifier__name kss-style">
-              none
-            </div>
-            <div class="kss-modifier__description kss-style">
-              stars position at horizontal center.
-            </div>
-            <div class="kss-modifier__example">
-              <div class="star-container none">
-<div class="star icon filled positive large">
-  <i class="star-empty"></i>
-  <i class="star-half"></i>
-  <i class="star-filled"></i>
-</div>
-<div class="star icon half positive large">
-  <i class="star-empty"></i>
-  <i class="star-half"></i>
-  <i class="star-filled"></i>
-</div>
-<div class="star icon empty positive large">
-  <i class="star-empty"></i>
-  <i class="star-half"></i>
-  <i class="star-filled"></i>
-</div>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
               .space-between
             </div>
             <div class="kss-modifier__description kss-style">
@@ -13943,7 +12360,7 @@ to display the additional test next to the rating</li>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>elements.sc5.scss</code>, line 376
+          Source: <code>elements.sc5.scss</code>, line 369
         </div>
 
     </section>
@@ -14041,7 +12458,7 @@ to display the additional test next to the rating</li>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>elements.sc5.scss</code>, line 407
+          Source: <code>elements.sc5.scss</code>, line 399
         </div>
 
     </section>
@@ -14133,16 +12550,6 @@ to display the additional test next to the rating</li>
           </div>
 
             <div class="kss-modifier__name kss-style">
-              none
-            </div>
-            <div class="kss-modifier__description kss-style">
-              displays star in default size (medium)
-            </div>
-            <div class="kss-modifier__example">
-              <div class="label-value none">3.5</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
               .small
             </div>
             <div class="kss-modifier__description kss-style">
@@ -14182,7 +12589,7 @@ to display the additional test next to the rating</li>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>elements.sc5.scss</code>, line 418
+          Source: <code>elements.sc5.scss</code>, line 410
         </div>
 
     </section>
@@ -14274,16 +12681,6 @@ to display the additional test next to the rating</li>
           </div>
 
             <div class="kss-modifier__name kss-style">
-              none
-            </div>
-            <div class="kss-modifier__description kss-style">
-              displays label in normal (medium)
-            </div>
-            <div class="kss-modifier__example">
-              <div class="label-value none">3.5</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
               .disabled
             </div>
             <div class="kss-modifier__description kss-style">
@@ -14303,7 +12700,7 @@ to display the additional test next to the rating</li>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>elements.sc5.scss</code>, line 434
+          Source: <code>elements.sc5.scss</code>, line 425
         </div>
 
     </section>
@@ -14377,8 +12774,7 @@ to display the additional test next to the rating</li>
             <p>Different themes for the star rating component. Easy to use as single modifier.
 Some themes expect a special background to look good.
 For demo-purpos the theme-[name]-gb classes are created.</p>
-<p>default                 - default theme
-.theme-rolling-stars    - animate stars
+<p>.theme-rolling-stars    - animate stars
 .theme-kununu           - kununu theme
 .theme-google-places    - google-places theme</p>
 <p>   sg-wrapper:
@@ -14508,12 +12904,9 @@ For demo-purpos the theme-[name]-gb classes are created.</p>
 
         <div class="kss-modifier__wrapper">
           <div class="kss-modifier__heading kss-style">
-            Examples
+            Example
           </div>
 
-            <div class="kss-modifier__default-name kss-style">
-              Default styling
-            </div>
 
           <div class="kss-modifier__example">
             <div class="star icon show-all">
@@ -14540,36 +12933,6 @@ For demo-purpos the theme-[name]-gb classes are created.</p>
             <div class="kss-modifier__example-footer"></div>
           </div>
 
-            <div class="kss-modifier__name kss-style">
-              none
-            </div>
-            <div class="kss-modifier__description kss-style">
-              displays the default star element (empty)
-            </div>
-            <div class="kss-modifier__example">
-              <div class="star icon show-all">
-  <svg class="star-empty">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-  </svg>
-  <i class="star-empty fa fa-star-o"></i>
-  <i class="star-empty"></i>
-</div>
-<div class="star star-half show-all">
-  <svg class="star-half">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-  </svg>
-  <i class="star-half fa fa-star-half-o"></i>
-  <i class="star-half"></i>
-</div>
-<div class="star star-filled show-all">
-  <svg class="star-filled">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-  </svg>
-  <i class="star-filled fa fa-star"></i>
-  <i class="star-filled"></i>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
         </div>
 
           <details class="kss-markup kss-style">
@@ -14600,7 +12963,7 @@ For demo-purpos the theme-[name]-gb classes are created.</p>
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>themes.scss</code>, line 33
+          Source: <code>themes.scss</code>, line 32
         </div>
 
     </section>

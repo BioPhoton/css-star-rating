@@ -13,10 +13,9 @@ Options are:
 
 (in this html is additional angular markup to make the showcase interactive)
 
-
    markup:
    <div class="rating large direction-rtl value-3 half color-negative label-top">
-   <div class="label-value">3.5</div>
+    <div class="label-value">3.5</div>
     <div class="star-container">
         <div class="star">
             <svg class="star-empty">
@@ -76,11 +75,6 @@ Options are:
     </div>
   </div>
 
-   sg-wrapper:
-   <div class="phone-simulator padding">
-       <sg-wrapper-content/>
-   </div>
-
 Styleguide 1.1
 */
 
@@ -90,7 +84,6 @@ Value
 Different styles for different rating values.
 Default colors are red for values equal to 2 or below, yellow for 3, and green for 4 or above.
 
-                        - no rating
 .value-0                - 0 rating
 .value-1                - 1 rating
 .value-2                - 2 rating
@@ -324,7 +317,6 @@ Half-Stars
 Different styles for different rating values.
 Default colors are red for values equal to 2 or below, yellow for 3, and green for 4 or above.
 
-default                 - rating with full stars
 .half                   - rating with half stars on the end
 
 markup:
@@ -753,7 +745,6 @@ Different sizes of the stars and the label.
 Additional to the default size medium there are more sizes, small and large.
 
 
-default                  - Default size
 .small                   - Small size
 .medium                  - Medium size
 .large                   - Large size
@@ -819,7 +810,6 @@ Space
 
 Different space options
 
-default          - stars position at horizontal center.
 .space-between   - stars take all available space to position. Space is only between the stars.
 .space-around    - stars take all available space to position. Space is only around the stars.
 
@@ -877,7 +867,6 @@ Static Color
 
 Overriding default colors of ratings to display the color independent of the rating.
 
-default                  - No static color
 .color-default           - Stars are always colored default
 .color-positive          - Stars are always colored positive
 .color-ok            - Stars are always colored ok
@@ -1307,7 +1296,6 @@ Label Position
 
 Displays the rating value as text label.
 
- default                 - Value displayed on the left side
 .label-top               - Value displayed on the top
 .label-right             - Value displayed on the right side
 .label-bottom            - Value displayed on the bottom
@@ -1512,7 +1500,6 @@ Styleguide 1.1.6
 
    Visualizes the disabled state of the rating component. The styles symbolizing that no interaction is possible
 
-   default                   - Stars are un usual style
    .disabled                - Stars are grayed out, no interaction is possible
 
    markup:
@@ -1704,7 +1691,6 @@ Styleguide 1.1.6
 
    By default the stars animate (fade) to the new state. These modifiers provide three different durations of the transition.
 
-   default                   - Transition runs in noticeable speed
    .immediately              - No Transition
    .noticeable               - Transition runs in noticeable speed
    .slow                     - Transition runs very slow
@@ -1763,7 +1749,6 @@ Styleguide 1.1.6
 
    The stars can be generated out of three different types. characters, svg's of any icon font
 
-   default                  - The default star type is svg
    .star-icon               - Star-Characters from default browser font
    .star-custom-icon        - Star-Characters from icon-fonts like fontawesome and others
    .star-svg                - Star-Vectors form the shipped svg images
@@ -1852,7 +1837,6 @@ Styleguide 1.1.6
 
    The the direction of the star container.
 
-   none                    - displays component elements in left to right direction. (direction-ltr)
    .direction-rtl          - displays component elements in right to left direction.
    .direction-ltr          - displays component elements in left to right direction.
 
@@ -1927,7 +1911,6 @@ Label Visibility
 
 Label hidden or not
 
-default          - stars position at horizontal center.
 .label-hidden     - stars take all available space to position. Space is only between the stars.
 .label-visible    - stars take all available space to position. Space is only around the stars.
 
