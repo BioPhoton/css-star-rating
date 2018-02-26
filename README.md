@@ -51,6 +51,10 @@ Easily compose your own rating component over a rich set of css modifiers for an
 | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/family/css3.png" width="100"> | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/family/angular1.png" width="100"> | <img src="https://raw.githubusercontent.com/BioPhoton/css-star-rating/master/resources/images/family/angular.png" width="80"> |
 | [Css Star Rating](https://github.com/BioPhoton/css-star-rating) | [Angular1 Star Rating](https://github.com/BioPhoton/angular1-star-rating) | [Angular Star Rating](https://github.com/BioPhoton/angular-star-rating) |
 
+## Demo
+
+- [x] [KSS documentation](https://biophoton.github.io/css-star-rating/)
+
 ## Install
 
 **Get Css Star Rating:**
