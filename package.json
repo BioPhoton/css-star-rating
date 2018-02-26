@@ -1,6 +1,6 @@
 {
   "name": "css-star-rating",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "license": "MIT",
   "keywords": [
     "Rating",
@@ -74,14 +74,16 @@
   },
   "dependencies": {},
   "scripts": {
-    "clean:dist": "rimraf dist",
-    "build": "gulp project:build",
+    "project:build":"npm run clean:dist && npm run build && npm run styleguide",
+    "build": "npm run build:css && npm run build:asstest",
+    "build:css": "gulp project:build",
     "build:asstest" : "copyfiles -u 0 README.md ./dist && copyfiles -u 0 ./package.json ./dist && copyfiles -u 0 ./LICENSE ./dist",
-    "styleguide": "npm run build && npm run styleguide:assets && npm run styleguide:build",
+    "styleguide": "npm run styleguide:assets && npm run styleguide:build",
     "styleguide:assets": "copyfiles -u 2 ./dist/css/* ./docs/assets/css && copyfiles -u 2 ./dist/images/* ./docs/assets/images && copyfiles -u 3 ./node_modules/font-awesome/css/font-awesome.css ./docs/assets/css",
     "styleguide:build": "./node_modules/.bin/kss --config ./kss-config.json",
     "version:bump": "gulp version:bump",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "release": "npm publish ./dist"
+    "release": "npm publish ./dist",
+    "clean:dist": "rimraf dist"
   }
 }
