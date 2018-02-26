@@ -1,3 +1,13 @@
+<a name="1.2.3"></a>
+## [1.2.3](https://github.com/BioPhoton/css-star-rating/compare/v1.1.3...v1.2.3) (2018-02-26)
+
+
+### Features
+
+* **KSS docs:** Implemented KSS docs hosted on github from docs folder ([53e453d](https://github.com/BioPhoton/css-star-rating/commit/53e453d))
+
+
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://github.com/BioPhoton/css-star-rating/compare/v1.1.2...v1.1.3) (2017-04-07)
 
