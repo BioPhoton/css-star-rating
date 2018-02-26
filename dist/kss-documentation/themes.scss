@@ -1,0 +1,61 @@
+/*
+Themes
+
+Different themes for the star rating component. Easy to use as single modifier.
+Some themes expect a special background to look good.
+For demo-purpos the theme-[name]-gb classes are created.
+
+.theme-rolling-stars    - animate stars
+.theme-kununu           - kununu theme
+.theme-google-places    - google-places theme
+
+   markup:
+   <div ng-init="data.rating=3" class="rating value-{{data.rating}} half {{modifier_class}}" >
+   <div class="label-value">{{data.rating}},57</div>
+    <div class="star-container">
+      <div class="star custom-icon" ng-repeat="i in [1,2,3,4,5] track by $index"  ng-click="data.rating = $index">
+        <i class="star-empty fa fa-star-o"></i>
+        <i class="star-half fa fa-star-half-o"></i>
+        <i class="star-filled fa fa-star"></i>
+      </div>
+    </div>
+  </div>
+
+   sg-wrapper:
+   <div class="phone-simulator padding no-border center-all">
+       <sg-wrapper-content/>
+   </div>
+
+Styleguide 1.3
+*/
+
+/*
+Star types position test
+
+All icons should lay exactly on top of each other.
+
+markup:
+<div class="star icon show-all">
+  <svg class="star-empty">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+  </svg>
+  <i class="star-empty fa fa-star-o"></i>
+  <i class="star-empty"></i>
+</div>
+<div class="star star-half show-all">
+  <svg class="star-half">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+  </svg>
+  <i class="star-half fa fa-star-half-o"></i>
+  <i class="star-half"></i>
+</div>
+<div class="star star-filled show-all">
+  <svg class="star-filled">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+  </svg>
+  <i class="star-filled fa fa-star"></i>
+  <i class="star-filled"></i>
+</div>
+
+Styleguide 1.3.1
+*/

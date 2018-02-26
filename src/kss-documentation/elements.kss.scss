@@ -1,0 +1,436 @@
+/*
+Elements
+
+The elements a css star rating component consists of.
+Her you can see the html structure and the combination of elements.
+The star rating component consists of:
+- A star element
+  to display the star state
+- A star-container element
+  to handle multiple stars as a rating
+- A label element
+  to display the additional test next to the rating
+
+markup:
+<b>Star:</b>
+<div class="star half large positive direction-ltr">
+  <svg class="star-empty">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+  </svg>
+  <svg class="star-half">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+  </svg>
+  <svg class="star-fille ">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+  </svg>
+</div>
+<b>Star Container:</b>
+<div class="star-container direction-rtl">
+  <div class="star icon filled positive large">
+    <i class="star-empty fa-circle-o"></i>
+    <i class="star-half fa fa-check-circle-o"></i>
+    <i class="star-filled fa fa-check-circle"></i>
+  </div>
+  <div class="star icon filled positive large">
+   <i class="star-empty fa-circle-o"></i>
+    <i class="star-half fa fa-check-circle-o"></i>
+    <i class="star-filled fa fa-check-circle"></i>
+  </div>
+  <div class="star icon empty positive large">
+    <i class="star-empty fa-circle-o"></i>
+    <i class="star-half fa fa-check-circle-o"></i>
+    <i class="star-filled fa fa-check-circle"></i>
+  </div>
+</div>
+<b>Label:</b>
+<div class="label-value {{modifier_class}}">good</div>
+
+sg-wrapper:
+<div class="phone-simulator no-border padding">
+   <sg-wrapper-content/>
+</div>
+
+Styleguide 1.2
+*/
+
+
+/*
+Star Element
+
+The Star element.
+
+markup:
+<div class="star icon filled positive large">
+  <i class="star-empty"></i>
+  <i class="star-half"></i>
+  <i class="star-filled"></i>
+</div>
+
+Styleguide 1.2.1
+*/
+
+/*
+Star fill states
+
+The Star element visualizes the interactive star element it it's three fill states.
+
+.empty                  - displays the star element as empty
+.half                   - displays the star element as half filled
+.filled                 - displays the star element as filled
+
+markup:
+<div class="star {{modifier_class}}">
+  <svg class="star-empty">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+  </svg>
+  <svg class="star-half">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+  </svg>
+  <svg class="star-filled">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+  </svg>
+</div>
+
+Styleguide 1.2.1.1
+*/
+
+/*
+Star colors
+
+The different star colors.
+
+.positive          - Stars is colored positive
+.ok            - Stars is colored ok
+.negative          - Stars is colored negative
+
+markup:
+<div class="star filled svg {{modifier_class}}">
+  <svg class="star-empty">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+  </svg>
+  <svg class="star-half">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+  </svg>
+  <svg class="star-filled">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+  </svg>
+  <i class="star-empty "></i>
+  <i class="star-half "></i>
+  <i class="star-filled "></i>
+</div>
+<div class="star filled icon {{modifier_class}}">
+  <svg class="star-empty">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+  </svg>
+  <svg class="star-half">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+  </svg>
+  <svg class="star-filled">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+  </svg>
+  <i class="star-empty "></i>
+  <i class="star-half "></i>
+  <i class="star-filled "></i>
+</div>
+<div class="star filled custom-icon {{modifier_class}}">
+  <i class="star-empty fa fa-star-o"></i>
+  <i class="star-half  fa fa-star-half-o"></i>
+  <i class="star-filled  fa fa-star"></i>
+</div>
+
+
+Styleguide 1.2.1.2
+*/
+
+/*
+Star types
+
+The different star types.
+
+.svg                  - Stars svg icon is used
+.icon                 - Stars character icon is used
+.custom-icon          - Stars character icon is used
+
+markup:
+<div class="star empty {{modifier_class}}">
+  <svg class="star-empty">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+  </svg>
+  <svg class="star-half">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+  </svg>
+  <svg class="star-filled">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+  </svg>
+<i class="star-empty fa fa-star-o"></i>
+  <i class="star-half fa fa-star-half-o"></i>
+  <i class="star-filled fa fa-star"></i>
+</div>
+<div class="star half {{modifier_class}}">
+  <svg class="star-empty">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+  </svg>
+  <svg class="star-half">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+  </svg>
+  <svg class="star-filled">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+  </svg>
+  <i class="star-empty fa fa-star-o"></i>
+  <i class="star-half fa fa-star-half-o"></i>
+  <i class="star-filled fa fa-star"></i>
+</div>
+<div class="star filled {{modifier_class}}">
+  <svg class="star-empty">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+  </svg>
+  <svg class="star-half">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+  </svg>
+  <svg class="star-filled">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+  </svg>
+ <i class="star-empty fa fa-star-o"></i>
+  <i class="star-half fa fa-star-half-o"></i>
+  <i class="star-filled fa fa-star"></i>
+</div>
+
+Styleguide 1.2.1.1.3
+*/
+
+/*
+Star icons
+
+The different star icons.
+
+.fa.fa-star-half-o    - font-awesome star-icon
+.ion-ios-star-half    - bootstrap star-icon
+.fa.fa-gear           - ionicons star-icon
+
+markup:
+<div class="star half custom-icon">
+  <i class="star-half {{modifier_class}}"></i>
+</div>
+
+Styleguide 1.2.1.1.3.1
+*/
+
+/*
+Star sizes
+
+The Star sizes.
+
+.small                  - displays star in small size
+.medium                 - displays star in medium size
+.large                  - displays star in large size
+
+markup:
+<div class="star {{modifier_class}}">
+  <svg class="star-empty">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+  </svg>
+  <svg class="star-half">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+  </svg>
+  <svg class="star-filled">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+  </svg>
+</div>
+
+Styleguide 1.2.1.3
+*/
+
+/*
+Star Disabled state
+
+The Star element in disabled state.
+
+.disabled               - displays star in disabled state
+
+markup:
+<div class="star half positive {{modifier_class}}">
+  <svg class="star-empty">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+  </svg>
+  <svg class="star-half">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+  </svg>
+  <svg class="star-filled">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+  </svg>
+</div>
+
+Styleguide 1.2.1.4
+*/
+
+/*
+The the direction of the star icon.
+
+.direction-rtl          - displays star icon in right to left direction.
+.direction-ltr          - displays star icon in left to right direction.
+
+markup:
+<div class="star half {{modifier_class}}">
+  <svg class="star-empty">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+  </svg>
+  <svg class="star-half">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+  </svg>
+  <svg class="star-filled">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+  </svg>
+</div>
+
+sg-wrapper:
+<div class="phone-simulator padding">
+   <sg-wrapper-content/>
+</div>
+
+Styleguide 1.2.1.5
+*/
+
+/*
+Star Container
+
+The wrapper container for many stars.
+
+markup:
+<div class="star-container">
+  <div class="star icon filled positive large">
+    <i class="star-empty"></i>
+    <i class="star-half"></i>
+    <i class="star-filled"></i>
+  </div>
+  <div class="star icon half positive large">
+    <i class="star-empty"></i>
+    <i class="star-half"></i>
+    <i class="star-filled"></i>
+  </div>
+  <div class="star icon empty positive large">
+    <i class="star-empty"></i>
+    <i class="star-half"></i>
+    <i class="star-filled"></i>
+  </div>
+</div>
+
+Styleguide 1.2.2
+*/
+
+/*
+Container Direction
+
+The the direction of the star container.
+
+.direction-rtl          - displays star in right to left direction.
+.direction-ltr          - displays star in left to right direction.
+
+
+markup:
+<div class="star-container {{modifier_class}}">
+  <div class="star filled positive large">
+     <svg class="star-empty">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+    </svg>
+    <svg class="star-half">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+    </svg>
+    <svg class="star-filled">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+    </svg>
+  </div>
+  <div class="star half positive large">
+   <svg class="star-empty">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+    </svg>
+    <svg class="star-half">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+    </svg>
+    <svg class="star-filled">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+    </svg>
+  </div>
+  <div class="star empty positive large">
+   <svg class="star-empty">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
+    </svg>
+    <svg class="star-half">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
+    </svg>
+    <svg class="star-filled">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
+    </svg>
+  </div>
+</div>
+
+Styleguide 1.2.2.1
+*/
+
+/*
+Container stars space
+
+The spacing between stars.
+
+.space-between   - stars take all available space to position. Space is only between the stars.
+.space-around    - stars take all available space to position. Space is only around the stars.
+
+markup:
+<div class="star-container {{modifier_class}}">
+<div class="star icon filled positive large">
+  <i class="star-empty"></i>
+  <i class="star-half"></i>
+  <i class="star-filled"></i>
+</div>
+<div class="star icon half positive large">
+  <i class="star-empty"></i>
+  <i class="star-half"></i>
+  <i class="star-filled"></i>
+</div>
+<div class="star icon empty positive large">
+  <i class="star-empty"></i>
+  <i class="star-half"></i>
+  <i class="star-filled"></i>
+</div>
+</div>
+
+Styleguide 1.2.2.4
+*/
+
+/*
+Label Element
+
+The Label element.
+
+markup:
+<div class="label-value">3.5</div>
+
+Styleguide 1.2.3
+*/
+
+/*
+Label Sizes
+
+The Label element.
+
+.small                  - displays star in small size
+.medium                 - displays star in medium size
+.large                  - displays star in large size
+
+markup:
+<div class="label-value {{modifier_class}}">3.5</div>
+
+Styleguide 1.2.3.1
+*/
+
+/*
+Label Disabled state
+
+The Label n disabled state.
+
+.disabled               - displays label in disabled state
+
+markup:
+<div class="label-value {{modifier_class}}">3.5</div>
+
+Styleguide 1.2.3.2
+*/

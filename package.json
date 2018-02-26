@@ -41,6 +41,7 @@
   "devDependencies": {
     "angularic-ionicon": "^1.1.0",
     "conventional-changelog": "^1.1.0",
+    "copyfiles": "^1.2.0",
     "css-loader": "^0.26.0",
     "del": "^2.2.2",
     "extendify": "^1.0.0",
@@ -75,11 +76,13 @@
   "scripts": {
     "clean:dist": "rimraf dist",
     "build": "gulp project:build",
-    "styleguide": "gulp styleguide:watch",
-    "styleguide:build": "gulp styleguide:build",
-    "newstyleguide": "./node_modules/.bin/kss --config ./kss-config.json",
+    "styleguide:assets": "copyfiles -u 2 dist/css/* docs/assets/css && copyfiles -u 2 dist/images/* docs/assets/images && copyfiles -u 3 node_modules/font-awesome/css/font-awesome.css docs/assets/css",
+    "styleguide:build": "./node_modules/.bin/kss --config ./kss-config.json",
+    "styleguide": "npm run build && npm run styleguide:assets && npm run styleguide:build",
     "version:bump": "gulp version:bump",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "release": "npm publish"
+    "release": "npm publish",
+    "old_styleguide": "gulp styleguide:watch",
+    "old_styleguide:build": "gulp styleguide:build"
   }
 }

@@ -21,15 +21,30 @@ Rating Component
 
         .star {
           @if $i <= 2 {
-            @extend .star.negative;
+            svg {
+              fill: $color-negative-rating;
+            }
+            i {
+              color: $color-negative-rating;
+            }
           }
 
           @if $i == 3 {
-            @extend .ok;
+            svg {
+              fill: $color-ok-rating;
+            }
+            i {
+              color: $color-ok-rating;
+            }
           }
 
           @if $i >= 4 {
-            @extend .positive;
+            svg {
+              fill: $color-positive-rating;
+            }
+            i {
+              color: $color-positive-rating;
+            }
           }
         }
       }

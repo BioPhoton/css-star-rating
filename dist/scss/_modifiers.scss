@@ -21,15 +21,30 @@ Rating Component
 
         .star {
           @if $i <= 2 {
-            @extend .star.negative;
+            svg {
+              fill: $color-negative-rating;
+            }
+            i {
+              color: $color-negative-rating;
+            }
           }
 
           @if $i == 3 {
-            @extend .ok;
+            svg {
+              fill: $color-ok-rating;
+            }
+            i {
+              color: $color-ok-rating;
+            }
           }
 
           @if $i >= 4 {
-            @extend .positive;
+            svg {
+              fill: $color-positive-rating;
+            }
+            i {
+              color: $color-positive-rating;
+            }
           }
         }
       }
@@ -268,10 +283,10 @@ Rating Component
     .star-container {
       .star {
         svg {
-          fill: $color-default-rating;
+          fill: $color-default-rating !important;
         }
         i {
-          color: $color-default-rating;
+          color: $color-default-rating !important;
         }
       }
     }
@@ -281,10 +296,10 @@ Rating Component
     .star-container {
       .star {
         svg {
-          fill: $color-ok-rating;
+          fill: $color-ok-rating !important;
         }
         i {
-          color: $color-ok-rating;
+          color: $color-ok-rating !important;
         }
       }
     }
@@ -294,10 +309,10 @@ Rating Component
     .star-container {
       .star {
         svg {
-          fill: $color-positive-rating;
+          fill: $color-positive-rating !important;
         }
         i {
-          color: $color-positive-rating;
+          color: $color-positive-rating !important;
         }
       }
     }
@@ -307,10 +322,10 @@ Rating Component
     .star-container {
       .star {
         svg {
-          fill: $color-negative-rating;
+          fill: $color-negative-rating !important;
         }
         i {
-          color: $color-negative-rating;
+          color: $color-negative-rating !important;
         }
       }
     }

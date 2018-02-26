@@ -162,7 +162,6 @@ Hover
 Styles for mouse hover effects.
 The star and all previous the one the mouse hovers are visible as filled and have opacity
 
-                        - no hover
 .hover-0                - hover over no star
 .hover-1                - hover over 1st star
 .hover-2                - hover over 2nd star
@@ -232,83 +231,6 @@ markup:
 </div>
 
 Styleguide 1.1.2.1
-*/
-
-
-/*
-Value Fallback
-
-The different value modifiers are defined over the $maxNumOfStars. Values greater then this value get are handled here.
-This is mostly useful for people hwo generate this html dynamically
-
-.value-4                - 4 rating
-.value-5                - 5 rating
-.value-6                - 6 rating
-.value-7                - 7 rating
-.value-8                - 8 rating
-
-markup:
-<div class="rating {{modifier_class}}">
-    <div class="star-container">
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-        <div class="star">
-            <svg class="star-empty">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
-            </svg>
-            <svg class="star-half">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
-            </svg>
-            <svg class="star-filled">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
-            </svg>
-        </div>
-    </div>
-</div>
-
-Styleguide 1.1.1.1
 */
 
 /*
@@ -621,7 +543,6 @@ markup:
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
             </svg>
             <svg class="star-half">
-            <svg class="star-half">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
             </svg>
             <svg class="star-filled">
@@ -744,10 +665,9 @@ Size
 Different sizes of the stars and the label.
 Additional to the default size medium there are more sizes, small and large.
 
-
-.small                   - Small size
-.medium                  - Medium size
-.large                   - Large size
+.small               - Small size
+.medium              - Medium size
+.large               - Large size
 
 markup:
 <div class="rating value-4 {{modifier_class}}">
