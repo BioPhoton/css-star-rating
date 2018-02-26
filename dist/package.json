@@ -37,7 +37,7 @@
     "url": "https://github.com/BioPhoton/css-star-rating/issues"
   },
   "homepage": "https://github.com/BioPhoton/css-star-rating#readme",
-  "main": "css/star-rating.css",
+  "main": "dist/css/star-rating.css",
   "devDependencies": {
     "angularic-ionicon": "^1.1.0",
     "conventional-changelog": "^1.1.0",
@@ -77,11 +77,11 @@
     "clean:dist": "rimraf dist",
     "build": "gulp project:build",
     "build:asstest" : "copyfiles -u 0 README.md ./dist && copyfiles -u 0 ./package.json ./dist && copyfiles -u 0 ./LICENSE ./dist",
-    "styleguide": "npm run build && npm run styleguide:assets && npm run styleguide:build",
     "styleguide:assets": "copyfiles -u 2 ./dist/css/* ./docs/assets/css && copyfiles -u 2 ./dist/images/* ./docs/assets/images && copyfiles -u 3 ./node_modules/font-awesome/css/font-awesome.css ./docs/assets/css",
     "styleguide:build": "./node_modules/.bin/kss --config ./kss-config.json",
+    "styleguide": "npm run build && npm run styleguide:assets && npm run styleguide:build",
     "version:bump": "gulp version:bump",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "release": "npm publish ./dist"
+    "release": "npm publish"
   }
 }
