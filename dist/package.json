@@ -1,6 +1,6 @@
 {
   "name": "css-star-rating",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "license": "MIT",
   "keywords": [
     "Rating",
@@ -37,7 +37,7 @@
     "url": "https://github.com/BioPhoton/css-star-rating/issues"
   },
   "homepage": "https://github.com/BioPhoton/css-star-rating#readme",
-  "main": "css/star-rating.css",
+  "main": "dist/css/star-rating.css",
   "devDependencies": {
     "angularic-ionicon": "^1.1.0",
     "conventional-changelog": "^1.1.0",
@@ -74,6 +74,7 @@
   },
   "dependencies": {},
   "scripts": {
+    "INLINE_DOCUMENTATION" : "To release the project: bump version, run changelog, run project:build, check travis,",
     "project:build":"npm run clean:dist && npm run build && npm run styleguide",
     "build": "npm run build:css && npm run build:asstest",
     "build:css": "gulp project:build",
@@ -83,7 +84,8 @@
     "styleguide:build": "./node_modules/.bin/kss --config ./kss-config.json",
     "version:bump": "gulp version:bump",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "release": "npm publish ./dist",
+    "release:github": "conventional-github-releaser",
+    "release:npm": "npm publish ./dist",
     "clean:dist": "rimraf dist"
   }
 }

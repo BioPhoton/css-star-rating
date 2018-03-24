@@ -1,3 +1,13 @@
+<a name="1.2.5"></a>
+## [1.2.5](https://github.com/BioPhoton/css-star-rating/compare/v1.1.3...v1.2.5) (2018-03-24)
+
+
+### Bug Fixes
+
+* **docs:** updated readme
+
+
+
 <a name="1.2.4"></a>
 ## [1.2.4](https://github.com/BioPhoton/css-star-rating/compare/v1.1.3...v1.2.4) (2018-02-26)
 

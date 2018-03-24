@@ -1,5 +1,5 @@
 # Css Star Rating ⭐⭐⭐⭐⭐
-####  ⭐ Css Star Rating is a pure css star rating plugin based on best practice UX/UI methods. ⭐  
+####  ⭐ Css Star Rating is a pure css star rating plugin based on best practice UX/UI methods. ⭐
 
 ![License](https://img.shields.io/npm/l/css-star-rating.svg) 
 ![Bower Version](https://img.shields.io/bower/v/css-star-rating.svg)
@@ -13,6 +13,9 @@
 
 Css Star Rating is written in scss and fully customizable over variables.  
 Easily compose your own rating component over a rich set of css modifiers for any kind of UI state.  
+## Demo
+
+Demos in the **[KSS style guide](https://biophoton.github.io/css-star-rating/)**
 
 ## Features
 
