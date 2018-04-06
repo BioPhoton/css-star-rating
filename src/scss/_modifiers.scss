@@ -81,7 +81,13 @@ Rating Component
       &.hover-#{$i} {
         .star-container {
           .star {
-            @extend .empty;
+            &.star-half,
+            &.star-filled {
+              opacity: 0;
+            }
+            &.star-empty {
+              opacity: 1;
+            }
           }
         }
       }
@@ -90,20 +96,43 @@ Rating Component
         .star-container {
 
           .star:nth-child(-n+#{$i}) {
-            @extend .filled;
+            svg, i {
+              &.star-empty,
+              &.star-filled {
+                opacity: 0;
+              }
+              &.star-filled {
+                opacity: 1;
+              }
+            }
           }
 
           .star {
             @if $i <= 2 {
-              @extend .star.negative;
+              svg {
+                fill: $color-negative-rating;
+              }
+              i {
+                color: $color-negative-rating;
+              }
             }
 
             @if $i == 3 {
-              @extend .ok;
+              svg {
+                fill: $color-ok-rating;
+              }
+              i {
+                color: $color-ok-rating;
+              }
             }
 
             @if $i >= 4 {
-              @extend .positive;
+              svg {
+                fill: $color-positive-rating;
+              }
+              i {
+                color: $color-positive-rating;
+              }
             }
           }
         }

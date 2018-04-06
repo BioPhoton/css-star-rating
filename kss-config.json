@@ -6,7 +6,7 @@
   "destination":  "docs/",
   "css": [
     "assets/css/star-rating.css",
-    "assets/css/font-awesome.min.css"
+    "assets/css/fontawesome-all.min.css"
   ],
   "js": []
 }
