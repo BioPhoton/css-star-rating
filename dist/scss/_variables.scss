@@ -3,10 +3,13 @@
 /*VARIABLES
 ====================================================*/
 
+/*Classname of project*/
+$projectClass: "bp";
+
 /*Range*/
-$minRatingValue: 1;
-$maxNumOfStars: 6;
-$numFractions: 3;
+$minRatingValue: 1 !default;
+$maxNumOfStars: 6 !default;
+$numFractions: 3 !default;
 $fractionSize: $maxNumOfStars/$numFractions;
 
 /*Spacing*/

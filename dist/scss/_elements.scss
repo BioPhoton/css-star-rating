@@ -15,7 +15,7 @@
 /*
 Star element
 ==================================================================*/
-.star {
+.#{$projectClass}-star {
   position: relative;
   width: $default-star-width;
   height: $default-star-height;
@@ -224,7 +224,7 @@ Disabled
 Label Element
 ===================================================================*/
 
-.label-value {
+.#{$projectClass}-label-value {
   font-size: $default-label-font-size;
   line-height: $default-label-line-height;
 
@@ -258,7 +258,7 @@ Label Element
 /*
 Star Container
 ==================================================================*/
-.star-container {
+.#{$projectClass}-star-container {
   display: flex;
   align-items: center;
   flex: 0 0 auto;
@@ -294,13 +294,13 @@ Star Container
   &.direction-rtl {
     direction: rtl;
     .star {
-      @extend .star.direction-rtl;
+      @extend .#{$projectClass}-star.direction-rtl;
     }
   }
   &.direction-ltr {
     direction: ltr;
     .star {
-      @extend .star.direction-ltr;
+      @extend .#{$projectClass}-star.direction-ltr;
     }
   }
 

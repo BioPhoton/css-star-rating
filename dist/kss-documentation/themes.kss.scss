@@ -10,10 +10,10 @@ For demo-purpos the theme-[name]-gb classes are created.
 .theme-google-places    - google-places theme
 
    markup:
-   <div ng-init="data.rating=3" class="rating value-{{data.rating}} half {{modifier_class}}" >
-   <div class="label-value">{{data.rating}},57</div>
-    <div class="star-container">
-      <div class="star custom-icon" ng-repeat="i in [1,2,3,4,5] track by $index"  ng-click="data.rating = $index">
+   <div ng-init="data.rating=3" class="bp-rating value-{{data.rating}} half {{modifier_class}}" >
+   <div class="bp-label-value">{{data.rating}},57</div>
+    <div class="bp-star-container">
+      <div class="bp-star custom-icon" ng-repeat="i in [1,2,3,4,5] track by $index"  ng-clibp-ck="data.rating = $index">
         <i class="star-empty fa fa-star-o"></i>
         <i class="star-half fa fa-star-half-o"></i>
         <i class="star-filled fa fa-star"></i>
@@ -35,21 +35,21 @@ Star types position test
 All icons should lay exactly on top of each other.
 
 markup:
-<div class="star icon show-all">
+<div class="bp-star icon show-all">
   <svg class="star-empty">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-empty"></use>
   </svg>
   <i class="star-empty fa fa-star-o"></i>
   <i class="star-empty"></i>
 </div>
-<div class="star star-half show-all">
+<div class="bp-star star-half show-all">
   <svg class="star-half">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-half"></use>
   </svg>
   <i class="star-half fa fa-star-half-o"></i>
   <i class="star-half"></i>
 </div>
-<div class="star star-filled show-all">
+<div class="bp-star star-filled show-all">
   <svg class="star-filled">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/star-rating.icons.svg#star-filled"></use>
   </svg>
