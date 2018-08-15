@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*VARIABLES
 ====================================================*/
+/*Classname of project*/
 /*Range*/
 /*Spacing*/
 /*Colors*/
@@ -32,7 +33,7 @@
 /*
 Star element
 ==================================================================*/
-.star {
+.bp-star {
     position: relative;
     width: 20px;
     height: 20px;
@@ -71,7 +72,7 @@ Disabled
   =================================================*/
 }
 
-.star svg, .star i {
+.bp-star svg, .bp-star i {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -95,98 +96,98 @@ Disabled
     font-style: normal;
 }
 
-.star svg.star-half, .star svg.star-filled, .star i.star-half, .star i.star-filled {
+.bp-star svg.star-half, .bp-star svg.star-filled, .bp-star i.star-half, .bp-star i.star-filled {
     opacity: 0;
 }
 
-.star i {
+.bp-star i {
     top: 1px;
     display: none;
 }
 
-.star.icon i, .rating.star-icon i {
+.bp-star.icon i, .bp-rating.star-icon i {
     font-size: 25px;
     line-height: 25px;
 }
 
-.star.icon i.star-empty:before, .rating.star-icon i.star-empty:before {
+.bp-star.icon i.star-empty:before, .bp-rating.star-icon i.star-empty:before {
     content: "☆";
 }
 
-.star.icon i.star-half:before, .rating.star-icon i.star-half:before {
+.bp-star.icon i.star-half:before, .bp-rating.star-icon i.star-half:before {
     content: "★";
 }
 
-.star.icon i.star-filled:before, .rating.star-icon i.star-filled:before {
+.bp-star.icon i.star-filled:before, .bp-rating.star-icon i.star-filled:before {
     content: "★";
 }
 
-.star.custom-icon i, .rating.star-custom-icon i, .rating.theme-kununu .star-container .star i {
+.bp-star.custom-icon i, .bp-rating.star-custom-icon i, .rating.theme-kununu .star-container .star i {
     font-size: 18px;
     line-height: 18px;
 }
 
-.star.empty svg.star-half, .rating.hover:hover.value-1.half .star-container .star svg.star-half, .rating.value-0.half .rating.hover.star:hover.value-1:nth-child(1) .star-container .star svg.star-half, .rating.value-1.half .star-container .rating.hover.star:hover.value-1:nth-child(2) .star-container .star svg.star-half, .rating.value-2.half .star-container .rating.hover.star:hover.value-1:nth-child(3) .star-container .star svg.star-half, .rating.value-3.half .star-container .rating.hover.star:hover.value-1:nth-child(4) .star-container .star svg.star-half, .rating.value-4.half .star-container .rating.hover.star:hover.value-1:nth-child(5) .star-container .star svg.star-half, .rating.value-5.half .star-container .rating.hover.star:hover.value-1:nth-child(6) .star-container .star svg.star-half, .rating.hover:hover.hover-1 .star-container .star svg.star-half, .rating.hover:hover.value-2.half .star-container .star svg.star-half, .rating.value-0.half .rating.hover.star:hover.value-2:nth-child(1) .star-container .star svg.star-half, .rating.value-1.half .star-container .rating.hover.star:hover.value-2:nth-child(2) .star-container .star svg.star-half, .rating.value-2.half .star-container .rating.hover.star:hover.value-2:nth-child(3) .star-container .star svg.star-half, .rating.value-3.half .star-container .rating.hover.star:hover.value-2:nth-child(4) .star-container .star svg.star-half, .rating.value-4.half .star-container .rating.hover.star:hover.value-2:nth-child(5) .star-container .star svg.star-half, .rating.value-5.half .star-container .rating.hover.star:hover.value-2:nth-child(6) .star-container .star svg.star-half, .rating.hover:hover.hover-2 .star-container .star svg.star-half, .rating.hover:hover.value-3.half .star-container .star svg.star-half, .rating.value-0.half .rating.hover.star:hover.value-3:nth-child(1) .star-container .star svg.star-half, .rating.value-1.half .star-container .rating.hover.star:hover.value-3:nth-child(2) .star-container .star svg.star-half, .rating.value-2.half .star-container .rating.hover.star:hover.value-3:nth-child(3) .star-container .star svg.star-half, .rating.value-3.half .star-container .rating.hover.star:hover.value-3:nth-child(4) .star-container .star svg.star-half, .rating.value-4.half .star-container .rating.hover.star:hover.value-3:nth-child(5) .star-container .star svg.star-half, .rating.value-5.half .star-container .rating.hover.star:hover.value-3:nth-child(6) .star-container .star svg.star-half, .rating.hover:hover.hover-3 .star-container .star svg.star-half, .rating.hover:hover.value-4.half .star-container .star svg.star-half, .rating.value-0.half .rating.hover.star:hover.value-4:nth-child(1) .star-container .star svg.star-half, .rating.value-1.half .star-container .rating.hover.star:hover.value-4:nth-child(2) .star-container .star svg.star-half, .rating.value-2.half .star-container .rating.hover.star:hover.value-4:nth-child(3) .star-container .star svg.star-half, .rating.value-3.half .star-container .rating.hover.star:hover.value-4:nth-child(4) .star-container .star svg.star-half, .rating.value-4.half .star-container .rating.hover.star:hover.value-4:nth-child(5) .star-container .star svg.star-half, .rating.value-5.half .star-container .rating.hover.star:hover.value-4:nth-child(6) .star-container .star svg.star-half, .rating.hover:hover.hover-4 .star-container .star svg.star-half, .rating.hover:hover.value-5.half .star-container .star svg.star-half, .rating.value-0.half .rating.hover.star:hover.value-5:nth-child(1) .star-container .star svg.star-half, .rating.value-1.half .star-container .rating.hover.star:hover.value-5:nth-child(2) .star-container .star svg.star-half, .rating.value-2.half .star-container .rating.hover.star:hover.value-5:nth-child(3) .star-container .star svg.star-half, .rating.value-3.half .star-container .rating.hover.star:hover.value-5:nth-child(4) .star-container .star svg.star-half, .rating.value-4.half .star-container .rating.hover.star:hover.value-5:nth-child(5) .star-container .star svg.star-half, .rating.value-5.half .star-container .rating.hover.star:hover.value-5:nth-child(6) .star-container .star svg.star-half, .rating.hover:hover.hover-5 .star-container .star svg.star-half, .rating.hover:hover.value-6.half .star-container .star svg.star-half, .rating.value-0.half .rating.hover.star:hover.value-6:nth-child(1) .star-container .star svg.star-half, .rating.value-1.half .star-container .rating.hover.star:hover.value-6:nth-child(2) .star-container .star svg.star-half, .rating.value-2.half .star-container .rating.hover.star:hover.value-6:nth-child(3) .star-container .star svg.star-half, .rating.value-3.half .star-container .rating.hover.star:hover.value-6:nth-child(4) .star-container .star svg.star-half, .rating.value-4.half .star-container .rating.hover.star:hover.value-6:nth-child(5) .star-container .star svg.star-half, .rating.value-5.half .star-container .rating.hover.star:hover.value-6:nth-child(6) .star-container .star svg.star-half, .rating.hover:hover.hover-6 .star-container .star svg.star-half, .star.empty svg.star-filled, .rating.hover:hover.value-1.half .star-container .star svg.star-filled, .rating.value-0.half .rating.hover.star:hover.value-1:nth-child(1) .star-container .star svg.star-filled, .rating.value-1.half .star-container .rating.hover.star:hover.value-1:nth-child(2) .star-container .star svg.star-filled, .rating.value-2.half .star-container .rating.hover.star:hover.value-1:nth-child(3) .star-container .star svg.star-filled, .rating.value-3.half .star-container .rating.hover.star:hover.value-1:nth-child(4) .star-container .star svg.star-filled, .rating.value-4.half .star-container .rating.hover.star:hover.value-1:nth-child(5) .star-container .star svg.star-filled, .rating.value-5.half .star-container .rating.hover.star:hover.value-1:nth-child(6) .star-container .star svg.star-filled, .rating.hover:hover.hover-1 .star-container .star svg.star-filled, .rating.hover:hover.value-2.half .star-container .star svg.star-filled, .rating.value-0.half .rating.hover.star:hover.value-2:nth-child(1) .star-container .star svg.star-filled, .rating.value-1.half .star-container .rating.hover.star:hover.value-2:nth-child(2) .star-container .star svg.star-filled, .rating.value-2.half .star-container .rating.hover.star:hover.value-2:nth-child(3) .star-container .star svg.star-filled, .rating.value-3.half .star-container .rating.hover.star:hover.value-2:nth-child(4) .star-container .star svg.star-filled, .rating.value-4.half .star-container .rating.hover.star:hover.value-2:nth-child(5) .star-container .star svg.star-filled, .rating.value-5.half .star-container .rating.hover.star:hover.value-2:nth-child(6) .star-container .star svg.star-filled, .rating.hover:hover.hover-2 .star-container .star svg.star-filled, .rating.hover:hover.value-3.half .star-container .star svg.star-filled, .rating.value-0.half .rating.hover.star:hover.value-3:nth-child(1) .star-container .star svg.star-filled, .rating.value-1.half .star-container .rating.hover.star:hover.value-3:nth-child(2) .star-container .star svg.star-filled, .rating.value-2.half .star-container .rating.hover.star:hover.value-3:nth-child(3) .star-container .star svg.star-filled, .rating.value-3.half .star-container .rating.hover.star:hover.value-3:nth-child(4) .star-container .star svg.star-filled, .rating.value-4.half .star-container .rating.hover.star:hover.value-3:nth-child(5) .star-container .star svg.star-filled, .rating.value-5.half .star-container .rating.hover.star:hover.value-3:nth-child(6) .star-container .star svg.star-filled, .rating.hover:hover.hover-3 .star-container .star svg.star-filled, .rating.hover:hover.value-4.half .star-container .star svg.star-filled, .rating.value-0.half .rating.hover.star:hover.value-4:nth-child(1) .star-container .star svg.star-filled, .rating.value-1.half .star-container .rating.hover.star:hover.value-4:nth-child(2) .star-container .star svg.star-filled, .rating.value-2.half .star-container .rating.hover.star:hover.value-4:nth-child(3) .star-container .star svg.star-filled, .rating.value-3.half .star-container .rating.hover.star:hover.value-4:nth-child(4) .star-container .star svg.star-filled, .rating.value-4.half .star-container .rating.hover.star:hover.value-4:nth-child(5) .star-container .star svg.star-filled, .rating.value-5.half .star-container .rating.hover.star:hover.value-4:nth-child(6) .star-container .star svg.star-filled, .rating.hover:hover.hover-4 .star-container .star svg.star-filled, .rating.hover:hover.value-5.half .star-container .star svg.star-filled, .rating.value-0.half .rating.hover.star:hover.value-5:nth-child(1) .star-container .star svg.star-filled, .rating.value-1.half .star-container .rating.hover.star:hover.value-5:nth-child(2) .star-container .star svg.star-filled, .rating.value-2.half .star-container .rating.hover.star:hover.value-5:nth-child(3) .star-container .star svg.star-filled, .rating.value-3.half .star-container .rating.hover.star:hover.value-5:nth-child(4) .star-container .star svg.star-filled, .rating.value-4.half .star-container .rating.hover.star:hover.value-5:nth-child(5) .star-container .star svg.star-filled, .rating.value-5.half .star-container .rating.hover.star:hover.value-5:nth-child(6) .star-container .star svg.star-filled, .rating.hover:hover.hover-5 .star-container .star svg.star-filled, .rating.hover:hover.value-6.half .star-container .star svg.star-filled, .rating.value-0.half .rating.hover.star:hover.value-6:nth-child(1) .star-container .star svg.star-filled, .rating.value-1.half .star-container .rating.hover.star:hover.value-6:nth-child(2) .star-container .star svg.star-filled, .rating.value-2.half .star-container .rating.hover.star:hover.value-6:nth-child(3) .star-container .star svg.star-filled, .rating.value-3.half .star-container .rating.hover.star:hover.value-6:nth-child(4) .star-container .star svg.star-filled, .rating.value-4.half .star-container .rating.hover.star:hover.value-6:nth-child(5) .star-container .star svg.star-filled, .rating.value-5.half .star-container .rating.hover.star:hover.value-6:nth-child(6) .star-container .star svg.star-filled, .rating.hover:hover.hover-6 .star-container .star svg.star-filled, .star.empty i.star-half, .rating.hover:hover.value-1.half .star-container .star i.star-half, .rating.value-0.half .rating.hover.star:hover.value-1:nth-child(1) .star-container .star i.star-half, .rating.value-1.half .star-container .rating.hover.star:hover.value-1:nth-child(2) .star-container .star i.star-half, .rating.value-2.half .star-container .rating.hover.star:hover.value-1:nth-child(3) .star-container .star i.star-half, .rating.value-3.half .star-container .rating.hover.star:hover.value-1:nth-child(4) .star-container .star i.star-half, .rating.value-4.half .star-container .rating.hover.star:hover.value-1:nth-child(5) .star-container .star i.star-half, .rating.value-5.half .star-container .rating.hover.star:hover.value-1:nth-child(6) .star-container .star i.star-half, .rating.hover:hover.hover-1 .star-container .star i.star-half, .rating.hover:hover.value-2.half .star-container .star i.star-half, .rating.value-0.half .rating.hover.star:hover.value-2:nth-child(1) .star-container .star i.star-half, .rating.value-1.half .star-container .rating.hover.star:hover.value-2:nth-child(2) .star-container .star i.star-half, .rating.value-2.half .star-container .rating.hover.star:hover.value-2:nth-child(3) .star-container .star i.star-half, .rating.value-3.half .star-container .rating.hover.star:hover.value-2:nth-child(4) .star-container .star i.star-half, .rating.value-4.half .star-container .rating.hover.star:hover.value-2:nth-child(5) .star-container .star i.star-half, .rating.value-5.half .star-container .rating.hover.star:hover.value-2:nth-child(6) .star-container .star i.star-half, .rating.hover:hover.hover-2 .star-container .star i.star-half, .rating.hover:hover.value-3.half .star-container .star i.star-half, .rating.value-0.half .rating.hover.star:hover.value-3:nth-child(1) .star-container .star i.star-half, .rating.value-1.half .star-container .rating.hover.star:hover.value-3:nth-child(2) .star-container .star i.star-half, .rating.value-2.half .star-container .rating.hover.star:hover.value-3:nth-child(3) .star-container .star i.star-half, .rating.value-3.half .star-container .rating.hover.star:hover.value-3:nth-child(4) .star-container .star i.star-half, .rating.value-4.half .star-container .rating.hover.star:hover.value-3:nth-child(5) .star-container .star i.star-half, .rating.value-5.half .star-container .rating.hover.star:hover.value-3:nth-child(6) .star-container .star i.star-half, .rating.hover:hover.hover-3 .star-container .star i.star-half, .rating.hover:hover.value-4.half .star-container .star i.star-half, .rating.value-0.half .rating.hover.star:hover.value-4:nth-child(1) .star-container .star i.star-half, .rating.value-1.half .star-container .rating.hover.star:hover.value-4:nth-child(2) .star-container .star i.star-half, .rating.value-2.half .star-container .rating.hover.star:hover.value-4:nth-child(3) .star-container .star i.star-half, .rating.value-3.half .star-container .rating.hover.star:hover.value-4:nth-child(4) .star-container .star i.star-half, .rating.value-4.half .star-container .rating.hover.star:hover.value-4:nth-child(5) .star-container .star i.star-half, .rating.value-5.half .star-container .rating.hover.star:hover.value-4:nth-child(6) .star-container .star i.star-half, .rating.hover:hover.hover-4 .star-container .star i.star-half, .rating.hover:hover.value-5.half .star-container .star i.star-half, .rating.value-0.half .rating.hover.star:hover.value-5:nth-child(1) .star-container .star i.star-half, .rating.value-1.half .star-container .rating.hover.star:hover.value-5:nth-child(2) .star-container .star i.star-half, .rating.value-2.half .star-container .rating.hover.star:hover.value-5:nth-child(3) .star-container .star i.star-half, .rating.value-3.half .star-container .rating.hover.star:hover.value-5:nth-child(4) .star-container .star i.star-half, .rating.value-4.half .star-container .rating.hover.star:hover.value-5:nth-child(5) .star-container .star i.star-half, .rating.value-5.half .star-container .rating.hover.star:hover.value-5:nth-child(6) .star-container .star i.star-half, .rating.hover:hover.hover-5 .star-container .star i.star-half, .rating.hover:hover.value-6.half .star-container .star i.star-half, .rating.value-0.half .rating.hover.star:hover.value-6:nth-child(1) .star-container .star i.star-half, .rating.value-1.half .star-container .rating.hover.star:hover.value-6:nth-child(2) .star-container .star i.star-half, .rating.value-2.half .star-container .rating.hover.star:hover.value-6:nth-child(3) .star-container .star i.star-half, .rating.value-3.half .star-container .rating.hover.star:hover.value-6:nth-child(4) .star-container .star i.star-half, .rating.value-4.half .star-container .rating.hover.star:hover.value-6:nth-child(5) .star-container .star i.star-half, .rating.value-5.half .star-container .rating.hover.star:hover.value-6:nth-child(6) .star-container .star i.star-half, .rating.hover:hover.hover-6 .star-container .star i.star-half, .star.empty i.star-filled, .rating.hover:hover.value-1.half .star-container .star i.star-filled, .rating.value-0.half .rating.hover.star:hover.value-1:nth-child(1) .star-container .star i.star-filled, .rating.value-1.half .star-container .rating.hover.star:hover.value-1:nth-child(2) .star-container .star i.star-filled, .rating.value-2.half .star-container .rating.hover.star:hover.value-1:nth-child(3) .star-container .star i.star-filled, .rating.value-3.half .star-container .rating.hover.star:hover.value-1:nth-child(4) .star-container .star i.star-filled, .rating.value-4.half .star-container .rating.hover.star:hover.value-1:nth-child(5) .star-container .star i.star-filled, .rating.value-5.half .star-container .rating.hover.star:hover.value-1:nth-child(6) .star-container .star i.star-filled, .rating.hover:hover.hover-1 .star-container .star i.star-filled, .rating.hover:hover.value-2.half .star-container .star i.star-filled, .rating.value-0.half .rating.hover.star:hover.value-2:nth-child(1) .star-container .star i.star-filled, .rating.value-1.half .star-container .rating.hover.star:hover.value-2:nth-child(2) .star-container .star i.star-filled, .rating.value-2.half .star-container .rating.hover.star:hover.value-2:nth-child(3) .star-container .star i.star-filled, .rating.value-3.half .star-container .rating.hover.star:hover.value-2:nth-child(4) .star-container .star i.star-filled, .rating.value-4.half .star-container .rating.hover.star:hover.value-2:nth-child(5) .star-container .star i.star-filled, .rating.value-5.half .star-container .rating.hover.star:hover.value-2:nth-child(6) .star-container .star i.star-filled, .rating.hover:hover.hover-2 .star-container .star i.star-filled, .rating.hover:hover.value-3.half .star-container .star i.star-filled, .rating.value-0.half .rating.hover.star:hover.value-3:nth-child(1) .star-container .star i.star-filled, .rating.value-1.half .star-container .rating.hover.star:hover.value-3:nth-child(2) .star-container .star i.star-filled, .rating.value-2.half .star-container .rating.hover.star:hover.value-3:nth-child(3) .star-container .star i.star-filled, .rating.value-3.half .star-container .rating.hover.star:hover.value-3:nth-child(4) .star-container .star i.star-filled, .rating.value-4.half .star-container .rating.hover.star:hover.value-3:nth-child(5) .star-container .star i.star-filled, .rating.value-5.half .star-container .rating.hover.star:hover.value-3:nth-child(6) .star-container .star i.star-filled, .rating.hover:hover.hover-3 .star-container .star i.star-filled, .rating.hover:hover.value-4.half .star-container .star i.star-filled, .rating.value-0.half .rating.hover.star:hover.value-4:nth-child(1) .star-container .star i.star-filled, .rating.value-1.half .star-container .rating.hover.star:hover.value-4:nth-child(2) .star-container .star i.star-filled, .rating.value-2.half .star-container .rating.hover.star:hover.value-4:nth-child(3) .star-container .star i.star-filled, .rating.value-3.half .star-container .rating.hover.star:hover.value-4:nth-child(4) .star-container .star i.star-filled, .rating.value-4.half .star-container .rating.hover.star:hover.value-4:nth-child(5) .star-container .star i.star-filled, .rating.value-5.half .star-container .rating.hover.star:hover.value-4:nth-child(6) .star-container .star i.star-filled, .rating.hover:hover.hover-4 .star-container .star i.star-filled, .rating.hover:hover.value-5.half .star-container .star i.star-filled, .rating.value-0.half .rating.hover.star:hover.value-5:nth-child(1) .star-container .star i.star-filled, .rating.value-1.half .star-container .rating.hover.star:hover.value-5:nth-child(2) .star-container .star i.star-filled, .rating.value-2.half .star-container .rating.hover.star:hover.value-5:nth-child(3) .star-container .star i.star-filled, .rating.value-3.half .star-container .rating.hover.star:hover.value-5:nth-child(4) .star-container .star i.star-filled, .rating.value-4.half .star-container .rating.hover.star:hover.value-5:nth-child(5) .star-container .star i.star-filled, .rating.value-5.half .star-container .rating.hover.star:hover.value-5:nth-child(6) .star-container .star i.star-filled, .rating.hover:hover.hover-5 .star-container .star i.star-filled, .rating.hover:hover.value-6.half .star-container .star i.star-filled, .rating.value-0.half .rating.hover.star:hover.value-6:nth-child(1) .star-container .star i.star-filled, .rating.value-1.half .star-container .rating.hover.star:hover.value-6:nth-child(2) .star-container .star i.star-filled, .rating.value-2.half .star-container .rating.hover.star:hover.value-6:nth-child(3) .star-container .star i.star-filled, .rating.value-3.half .star-container .rating.hover.star:hover.value-6:nth-child(4) .star-container .star i.star-filled, .rating.value-4.half .star-container .rating.hover.star:hover.value-6:nth-child(5) .star-container .star i.star-filled, .rating.value-5.half .star-container .rating.hover.star:hover.value-6:nth-child(6) .star-container .star i.star-filled, .rating.hover:hover.hover-6 .star-container .star i.star-filled {
+.bp-star.empty svg.star-half, .bp-star.empty svg.star-filled, .bp-star.empty i.star-half, .bp-star.empty i.star-filled {
     opacity: 0;
 }
 
-.star.empty svg.star-empty, .rating.hover:hover.value-1.half .star-container .star svg.star-empty, .rating.value-0.half .rating.hover.star:hover.value-1:nth-child(1) .star-container .star svg.star-empty, .rating.value-1.half .star-container .rating.hover.star:hover.value-1:nth-child(2) .star-container .star svg.star-empty, .rating.value-2.half .star-container .rating.hover.star:hover.value-1:nth-child(3) .star-container .star svg.star-empty, .rating.value-3.half .star-container .rating.hover.star:hover.value-1:nth-child(4) .star-container .star svg.star-empty, .rating.value-4.half .star-container .rating.hover.star:hover.value-1:nth-child(5) .star-container .star svg.star-empty, .rating.value-5.half .star-container .rating.hover.star:hover.value-1:nth-child(6) .star-container .star svg.star-empty, .rating.hover:hover.hover-1 .star-container .star svg.star-empty, .rating.hover:hover.value-2.half .star-container .star svg.star-empty, .rating.value-0.half .rating.hover.star:hover.value-2:nth-child(1) .star-container .star svg.star-empty, .rating.value-1.half .star-container .rating.hover.star:hover.value-2:nth-child(2) .star-container .star svg.star-empty, .rating.value-2.half .star-container .rating.hover.star:hover.value-2:nth-child(3) .star-container .star svg.star-empty, .rating.value-3.half .star-container .rating.hover.star:hover.value-2:nth-child(4) .star-container .star svg.star-empty, .rating.value-4.half .star-container .rating.hover.star:hover.value-2:nth-child(5) .star-container .star svg.star-empty, .rating.value-5.half .star-container .rating.hover.star:hover.value-2:nth-child(6) .star-container .star svg.star-empty, .rating.hover:hover.hover-2 .star-container .star svg.star-empty, .rating.hover:hover.value-3.half .star-container .star svg.star-empty, .rating.value-0.half .rating.hover.star:hover.value-3:nth-child(1) .star-container .star svg.star-empty, .rating.value-1.half .star-container .rating.hover.star:hover.value-3:nth-child(2) .star-container .star svg.star-empty, .rating.value-2.half .star-container .rating.hover.star:hover.value-3:nth-child(3) .star-container .star svg.star-empty, .rating.value-3.half .star-container .rating.hover.star:hover.value-3:nth-child(4) .star-container .star svg.star-empty, .rating.value-4.half .star-container .rating.hover.star:hover.value-3:nth-child(5) .star-container .star svg.star-empty, .rating.value-5.half .star-container .rating.hover.star:hover.value-3:nth-child(6) .star-container .star svg.star-empty, .rating.hover:hover.hover-3 .star-container .star svg.star-empty, .rating.hover:hover.value-4.half .star-container .star svg.star-empty, .rating.value-0.half .rating.hover.star:hover.value-4:nth-child(1) .star-container .star svg.star-empty, .rating.value-1.half .star-container .rating.hover.star:hover.value-4:nth-child(2) .star-container .star svg.star-empty, .rating.value-2.half .star-container .rating.hover.star:hover.value-4:nth-child(3) .star-container .star svg.star-empty, .rating.value-3.half .star-container .rating.hover.star:hover.value-4:nth-child(4) .star-container .star svg.star-empty, .rating.value-4.half .star-container .rating.hover.star:hover.value-4:nth-child(5) .star-container .star svg.star-empty, .rating.value-5.half .star-container .rating.hover.star:hover.value-4:nth-child(6) .star-container .star svg.star-empty, .rating.hover:hover.hover-4 .star-container .star svg.star-empty, .rating.hover:hover.value-5.half .star-container .star svg.star-empty, .rating.value-0.half .rating.hover.star:hover.value-5:nth-child(1) .star-container .star svg.star-empty, .rating.value-1.half .star-container .rating.hover.star:hover.value-5:nth-child(2) .star-container .star svg.star-empty, .rating.value-2.half .star-container .rating.hover.star:hover.value-5:nth-child(3) .star-container .star svg.star-empty, .rating.value-3.half .star-container .rating.hover.star:hover.value-5:nth-child(4) .star-container .star svg.star-empty, .rating.value-4.half .star-container .rating.hover.star:hover.value-5:nth-child(5) .star-container .star svg.star-empty, .rating.value-5.half .star-container .rating.hover.star:hover.value-5:nth-child(6) .star-container .star svg.star-empty, .rating.hover:hover.hover-5 .star-container .star svg.star-empty, .rating.hover:hover.value-6.half .star-container .star svg.star-empty, .rating.value-0.half .rating.hover.star:hover.value-6:nth-child(1) .star-container .star svg.star-empty, .rating.value-1.half .star-container .rating.hover.star:hover.value-6:nth-child(2) .star-container .star svg.star-empty, .rating.value-2.half .star-container .rating.hover.star:hover.value-6:nth-child(3) .star-container .star svg.star-empty, .rating.value-3.half .star-container .rating.hover.star:hover.value-6:nth-child(4) .star-container .star svg.star-empty, .rating.value-4.half .star-container .rating.hover.star:hover.value-6:nth-child(5) .star-container .star svg.star-empty, .rating.value-5.half .star-container .rating.hover.star:hover.value-6:nth-child(6) .star-container .star svg.star-empty, .rating.hover:hover.hover-6 .star-container .star svg.star-empty, .star.empty i.star-empty, .rating.hover:hover.value-1.half .star-container .star i.star-empty, .rating.value-0.half .rating.hover.star:hover.value-1:nth-child(1) .star-container .star i.star-empty, .rating.value-1.half .star-container .rating.hover.star:hover.value-1:nth-child(2) .star-container .star i.star-empty, .rating.value-2.half .star-container .rating.hover.star:hover.value-1:nth-child(3) .star-container .star i.star-empty, .rating.value-3.half .star-container .rating.hover.star:hover.value-1:nth-child(4) .star-container .star i.star-empty, .rating.value-4.half .star-container .rating.hover.star:hover.value-1:nth-child(5) .star-container .star i.star-empty, .rating.value-5.half .star-container .rating.hover.star:hover.value-1:nth-child(6) .star-container .star i.star-empty, .rating.hover:hover.hover-1 .star-container .star i.star-empty, .rating.hover:hover.value-2.half .star-container .star i.star-empty, .rating.value-0.half .rating.hover.star:hover.value-2:nth-child(1) .star-container .star i.star-empty, .rating.value-1.half .star-container .rating.hover.star:hover.value-2:nth-child(2) .star-container .star i.star-empty, .rating.value-2.half .star-container .rating.hover.star:hover.value-2:nth-child(3) .star-container .star i.star-empty, .rating.value-3.half .star-container .rating.hover.star:hover.value-2:nth-child(4) .star-container .star i.star-empty, .rating.value-4.half .star-container .rating.hover.star:hover.value-2:nth-child(5) .star-container .star i.star-empty, .rating.value-5.half .star-container .rating.hover.star:hover.value-2:nth-child(6) .star-container .star i.star-empty, .rating.hover:hover.hover-2 .star-container .star i.star-empty, .rating.hover:hover.value-3.half .star-container .star i.star-empty, .rating.value-0.half .rating.hover.star:hover.value-3:nth-child(1) .star-container .star i.star-empty, .rating.value-1.half .star-container .rating.hover.star:hover.value-3:nth-child(2) .star-container .star i.star-empty, .rating.value-2.half .star-container .rating.hover.star:hover.value-3:nth-child(3) .star-container .star i.star-empty, .rating.value-3.half .star-container .rating.hover.star:hover.value-3:nth-child(4) .star-container .star i.star-empty, .rating.value-4.half .star-container .rating.hover.star:hover.value-3:nth-child(5) .star-container .star i.star-empty, .rating.value-5.half .star-container .rating.hover.star:hover.value-3:nth-child(6) .star-container .star i.star-empty, .rating.hover:hover.hover-3 .star-container .star i.star-empty, .rating.hover:hover.value-4.half .star-container .star i.star-empty, .rating.value-0.half .rating.hover.star:hover.value-4:nth-child(1) .star-container .star i.star-empty, .rating.value-1.half .star-container .rating.hover.star:hover.value-4:nth-child(2) .star-container .star i.star-empty, .rating.value-2.half .star-container .rating.hover.star:hover.value-4:nth-child(3) .star-container .star i.star-empty, .rating.value-3.half .star-container .rating.hover.star:hover.value-4:nth-child(4) .star-container .star i.star-empty, .rating.value-4.half .star-container .rating.hover.star:hover.value-4:nth-child(5) .star-container .star i.star-empty, .rating.value-5.half .star-container .rating.hover.star:hover.value-4:nth-child(6) .star-container .star i.star-empty, .rating.hover:hover.hover-4 .star-container .star i.star-empty, .rating.hover:hover.value-5.half .star-container .star i.star-empty, .rating.value-0.half .rating.hover.star:hover.value-5:nth-child(1) .star-container .star i.star-empty, .rating.value-1.half .star-container .rating.hover.star:hover.value-5:nth-child(2) .star-container .star i.star-empty, .rating.value-2.half .star-container .rating.hover.star:hover.value-5:nth-child(3) .star-container .star i.star-empty, .rating.value-3.half .star-container .rating.hover.star:hover.value-5:nth-child(4) .star-container .star i.star-empty, .rating.value-4.half .star-container .rating.hover.star:hover.value-5:nth-child(5) .star-container .star i.star-empty, .rating.value-5.half .star-container .rating.hover.star:hover.value-5:nth-child(6) .star-container .star i.star-empty, .rating.hover:hover.hover-5 .star-container .star i.star-empty, .rating.hover:hover.value-6.half .star-container .star i.star-empty, .rating.value-0.half .rating.hover.star:hover.value-6:nth-child(1) .star-container .star i.star-empty, .rating.value-1.half .star-container .rating.hover.star:hover.value-6:nth-child(2) .star-container .star i.star-empty, .rating.value-2.half .star-container .rating.hover.star:hover.value-6:nth-child(3) .star-container .star i.star-empty, .rating.value-3.half .star-container .rating.hover.star:hover.value-6:nth-child(4) .star-container .star i.star-empty, .rating.value-4.half .star-container .rating.hover.star:hover.value-6:nth-child(5) .star-container .star i.star-empty, .rating.value-5.half .star-container .rating.hover.star:hover.value-6:nth-child(6) .star-container .star i.star-empty, .rating.hover:hover.hover-6 .star-container .star i.star-empty {
+.bp-star.empty svg.star-empty, .bp-star.empty i.star-empty {
     opacity: 1;
 }
 
-.star.half svg.star-filled, .rating.value-0.half .star:nth-child(1) svg.star-filled, .rating.value-1.half .star-container .star:nth-child(2) svg.star-filled, .rating.value-2.half .star-container .star:nth-child(3) svg.star-filled, .rating.value-3.half .star-container .star:nth-child(4) svg.star-filled, .rating.value-4.half .star-container .star:nth-child(5) svg.star-filled, .rating.value-5.half .star-container .star:nth-child(6) svg.star-filled, .star.half svg.star-empty, .rating.value-0.half .star:nth-child(1) svg.star-empty, .rating.value-1.half .star-container .star:nth-child(2) svg.star-empty, .rating.value-2.half .star-container .star:nth-child(3) svg.star-empty, .rating.value-3.half .star-container .star:nth-child(4) svg.star-empty, .rating.value-4.half .star-container .star:nth-child(5) svg.star-empty, .rating.value-5.half .star-container .star:nth-child(6) svg.star-empty, .star.half i.star-filled, .rating.value-0.half .star:nth-child(1) i.star-filled, .rating.value-1.half .star-container .star:nth-child(2) i.star-filled, .rating.value-2.half .star-container .star:nth-child(3) i.star-filled, .rating.value-3.half .star-container .star:nth-child(4) i.star-filled, .rating.value-4.half .star-container .star:nth-child(5) i.star-filled, .rating.value-5.half .star-container .star:nth-child(6) i.star-filled, .star.half i.star-empty, .rating.value-0.half .star:nth-child(1) i.star-empty, .rating.value-1.half .star-container .star:nth-child(2) i.star-empty, .rating.value-2.half .star-container .star:nth-child(3) i.star-empty, .rating.value-3.half .star-container .star:nth-child(4) i.star-empty, .rating.value-4.half .star-container .star:nth-child(5) i.star-empty, .rating.value-5.half .star-container .star:nth-child(6) i.star-empty {
+.bp-star.half svg.star-filled, .bp-rating.value-0.half .bp-star:nth-child(1) svg.star-filled, .bp-rating.value-1.half .bp-star-container .bp-star:nth-child(2) svg.star-filled, .bp-rating.value-2.half .bp-star-container .bp-star:nth-child(3) svg.star-filled, .bp-rating.value-3.half .bp-star-container .bp-star:nth-child(4) svg.star-filled, .bp-rating.value-4.half .bp-star-container .bp-star:nth-child(5) svg.star-filled, .bp-rating.value-5.half .bp-star-container .bp-star:nth-child(6) svg.star-filled, .bp-star.half svg.star-empty, .bp-rating.value-0.half .bp-star:nth-child(1) svg.star-empty, .bp-rating.value-1.half .bp-star-container .bp-star:nth-child(2) svg.star-empty, .bp-rating.value-2.half .bp-star-container .bp-star:nth-child(3) svg.star-empty, .bp-rating.value-3.half .bp-star-container .bp-star:nth-child(4) svg.star-empty, .bp-rating.value-4.half .bp-star-container .bp-star:nth-child(5) svg.star-empty, .bp-rating.value-5.half .bp-star-container .bp-star:nth-child(6) svg.star-empty, .bp-star.half i.star-filled, .bp-rating.value-0.half .bp-star:nth-child(1) i.star-filled, .bp-rating.value-1.half .bp-star-container .bp-star:nth-child(2) i.star-filled, .bp-rating.value-2.half .bp-star-container .bp-star:nth-child(3) i.star-filled, .bp-rating.value-3.half .bp-star-container .bp-star:nth-child(4) i.star-filled, .bp-rating.value-4.half .bp-star-container .bp-star:nth-child(5) i.star-filled, .bp-rating.value-5.half .bp-star-container .bp-star:nth-child(6) i.star-filled, .bp-star.half i.star-empty, .bp-rating.value-0.half .bp-star:nth-child(1) i.star-empty, .bp-rating.value-1.half .bp-star-container .bp-star:nth-child(2) i.star-empty, .bp-rating.value-2.half .bp-star-container .bp-star:nth-child(3) i.star-empty, .bp-rating.value-3.half .bp-star-container .bp-star:nth-child(4) i.star-empty, .bp-rating.value-4.half .bp-star-container .bp-star:nth-child(5) i.star-empty, .bp-rating.value-5.half .bp-star-container .bp-star:nth-child(6) i.star-empty {
     opacity: 0;
 }
 
-.star.half svg.star-half, .rating.value-0.half .star:nth-child(1) svg.star-half, .rating.value-1.half .star-container .star:nth-child(2) svg.star-half, .rating.value-2.half .star-container .star:nth-child(3) svg.star-half, .rating.value-3.half .star-container .star:nth-child(4) svg.star-half, .rating.value-4.half .star-container .star:nth-child(5) svg.star-half, .rating.value-5.half .star-container .star:nth-child(6) svg.star-half, .star.half i.star-half, .rating.value-0.half .star:nth-child(1) i.star-half, .rating.value-1.half .star-container .star:nth-child(2) i.star-half, .rating.value-2.half .star-container .star:nth-child(3) i.star-half, .rating.value-3.half .star-container .star:nth-child(4) i.star-half, .rating.value-4.half .star-container .star:nth-child(5) i.star-half, .rating.value-5.half .star-container .star:nth-child(6) i.star-half {
+.bp-star.half svg.star-half, .bp-rating.value-0.half .bp-star:nth-child(1) svg.star-half, .bp-rating.value-1.half .bp-star-container .bp-star:nth-child(2) svg.star-half, .bp-rating.value-2.half .bp-star-container .bp-star:nth-child(3) svg.star-half, .bp-rating.value-3.half .bp-star-container .bp-star:nth-child(4) svg.star-half, .bp-rating.value-4.half .bp-star-container .bp-star:nth-child(5) svg.star-half, .bp-rating.value-5.half .bp-star-container .bp-star:nth-child(6) svg.star-half, .bp-star.half i.star-half, .bp-rating.value-0.half .bp-star:nth-child(1) i.star-half, .bp-rating.value-1.half .bp-star-container .bp-star:nth-child(2) i.star-half, .bp-rating.value-2.half .bp-star-container .bp-star:nth-child(3) i.star-half, .bp-rating.value-3.half .bp-star-container .bp-star:nth-child(4) i.star-half, .bp-rating.value-4.half .bp-star-container .bp-star:nth-child(5) i.star-half, .bp-rating.value-5.half .bp-star-container .bp-star:nth-child(6) i.star-half {
     opacity: 1;
 }
 
-.star.filled svg.star-empty, .rating.value-1 .star-container .star:nth-child(-n+1) svg.star-empty, .rating.value-2 .star-container .star:nth-child(-n+2) svg.star-empty, .rating.value-3 .star-container .star:nth-child(-n+3) svg.star-empty, .rating.value-4 .star-container .star:nth-child(-n+4) svg.star-empty, .rating.value-5 .star-container .star:nth-child(-n+5) svg.star-empty, .rating.value-6 .star-container .star:nth-child(-n+6) svg.star-empty, .rating.value-7 .star-container .star:nth-child(-n+7) svg.star-empty, .rating.value-8 .star-container .star:nth-child(-n+8) svg.star-empty, .rating.value-9 .star-container .star:nth-child(-n+9) svg.star-empty, .rating.value-10 .star-container .star:nth-child(-n+10) svg.star-empty, .rating.value-11 .star-container .star:nth-child(-n+11) svg.star-empty, .rating.value-12 .star-container .star:nth-child(-n+12) svg.star-empty, .rating.hover:hover.hover-1 .star-container .star:nth-child(-n+1) svg.star-empty, .rating.hover:hover.hover-2 .star-container .star:nth-child(-n+2) svg.star-empty, .rating.hover:hover.hover-3 .star-container .star:nth-child(-n+3) svg.star-empty, .rating.hover:hover.hover-4 .star-container .star:nth-child(-n+4) svg.star-empty, .rating.hover:hover.hover-5 .star-container .star:nth-child(-n+5) svg.star-empty, .rating.hover:hover.hover-6 .star-container .star:nth-child(-n+6) svg.star-empty, .star.filled svg.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) svg.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) svg.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) svg.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) svg.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) svg.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) svg.star-filled, .rating.value-7 .star-container .star:nth-child(-n+7) svg.star-filled, .rating.value-8 .star-container .star:nth-child(-n+8) svg.star-filled, .rating.value-9 .star-container .star:nth-child(-n+9) svg.star-filled, .rating.value-10 .star-container .star:nth-child(-n+10) svg.star-filled, .rating.value-11 .star-container .star:nth-child(-n+11) svg.star-filled, .rating.value-12 .star-container .star:nth-child(-n+12) svg.star-filled, .rating.hover:hover.hover-1 .star-container .star:nth-child(-n+1) svg.star-filled, .rating.hover:hover.hover-2 .star-container .star:nth-child(-n+2) svg.star-filled, .rating.hover:hover.hover-3 .star-container .star:nth-child(-n+3) svg.star-filled, .rating.hover:hover.hover-4 .star-container .star:nth-child(-n+4) svg.star-filled, .rating.hover:hover.hover-5 .star-container .star:nth-child(-n+5) svg.star-filled, .rating.hover:hover.hover-6 .star-container .star:nth-child(-n+6) svg.star-filled, .star.filled i.star-empty, .rating.value-1 .star-container .star:nth-child(-n+1) i.star-empty, .rating.value-2 .star-container .star:nth-child(-n+2) i.star-empty, .rating.value-3 .star-container .star:nth-child(-n+3) i.star-empty, .rating.value-4 .star-container .star:nth-child(-n+4) i.star-empty, .rating.value-5 .star-container .star:nth-child(-n+5) i.star-empty, .rating.value-6 .star-container .star:nth-child(-n+6) i.star-empty, .rating.value-7 .star-container .star:nth-child(-n+7) i.star-empty, .rating.value-8 .star-container .star:nth-child(-n+8) i.star-empty, .rating.value-9 .star-container .star:nth-child(-n+9) i.star-empty, .rating.value-10 .star-container .star:nth-child(-n+10) i.star-empty, .rating.value-11 .star-container .star:nth-child(-n+11) i.star-empty, .rating.value-12 .star-container .star:nth-child(-n+12) i.star-empty, .rating.hover:hover.hover-1 .star-container .star:nth-child(-n+1) i.star-empty, .rating.hover:hover.hover-2 .star-container .star:nth-child(-n+2) i.star-empty, .rating.hover:hover.hover-3 .star-container .star:nth-child(-n+3) i.star-empty, .rating.hover:hover.hover-4 .star-container .star:nth-child(-n+4) i.star-empty, .rating.hover:hover.hover-5 .star-container .star:nth-child(-n+5) i.star-empty, .rating.hover:hover.hover-6 .star-container .star:nth-child(-n+6) i.star-empty, .star.filled i.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) i.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) i.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) i.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) i.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) i.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) i.star-filled, .rating.value-7 .star-container .star:nth-child(-n+7) i.star-filled, .rating.value-8 .star-container .star:nth-child(-n+8) i.star-filled, .rating.value-9 .star-container .star:nth-child(-n+9) i.star-filled, .rating.value-10 .star-container .star:nth-child(-n+10) i.star-filled, .rating.value-11 .star-container .star:nth-child(-n+11) i.star-filled, .rating.value-12 .star-container .star:nth-child(-n+12) i.star-filled, .rating.hover:hover.hover-1 .star-container .star:nth-child(-n+1) i.star-filled, .rating.hover:hover.hover-2 .star-container .star:nth-child(-n+2) i.star-filled, .rating.hover:hover.hover-3 .star-container .star:nth-child(-n+3) i.star-filled, .rating.hover:hover.hover-4 .star-container .star:nth-child(-n+4) i.star-filled, .rating.hover:hover.hover-5 .star-container .star:nth-child(-n+5) i.star-filled, .rating.hover:hover.hover-6 .star-container .star:nth-child(-n+6) i.star-filled {
+.bp-star.filled svg.star-empty, .bp-rating.value-1 .bp-star-container .bp-star:nth-child(-n+1) svg.star-empty, .bp-rating.value-2 .bp-star-container .bp-star:nth-child(-n+2) svg.star-empty, .bp-rating.value-3 .bp-star-container .bp-star:nth-child(-n+3) svg.star-empty, .bp-rating.value-4 .bp-star-container .bp-star:nth-child(-n+4) svg.star-empty, .bp-rating.value-5 .bp-star-container .bp-star:nth-child(-n+5) svg.star-empty, .bp-rating.value-6 .bp-star-container .bp-star:nth-child(-n+6) svg.star-empty, .bp-rating.value-7 .bp-star-container .bp-star:nth-child(-n+7) svg.star-empty, .bp-rating.value-8 .bp-star-container .bp-star:nth-child(-n+8) svg.star-empty, .bp-rating.value-9 .bp-star-container .bp-star:nth-child(-n+9) svg.star-empty, .bp-rating.value-10 .bp-star-container .bp-star:nth-child(-n+10) svg.star-empty, .bp-rating.value-11 .bp-star-container .bp-star:nth-child(-n+11) svg.star-empty, .bp-rating.value-12 .bp-star-container .bp-star:nth-child(-n+12) svg.star-empty, .bp-star.filled svg.star-filled, .bp-rating.value-1 .bp-star-container .bp-star:nth-child(-n+1) svg.star-filled, .bp-rating.value-2 .bp-star-container .bp-star:nth-child(-n+2) svg.star-filled, .bp-rating.value-3 .bp-star-container .bp-star:nth-child(-n+3) svg.star-filled, .bp-rating.value-4 .bp-star-container .bp-star:nth-child(-n+4) svg.star-filled, .bp-rating.value-5 .bp-star-container .bp-star:nth-child(-n+5) svg.star-filled, .bp-rating.value-6 .bp-star-container .bp-star:nth-child(-n+6) svg.star-filled, .bp-rating.value-7 .bp-star-container .bp-star:nth-child(-n+7) svg.star-filled, .bp-rating.value-8 .bp-star-container .bp-star:nth-child(-n+8) svg.star-filled, .bp-rating.value-9 .bp-star-container .bp-star:nth-child(-n+9) svg.star-filled, .bp-rating.value-10 .bp-star-container .bp-star:nth-child(-n+10) svg.star-filled, .bp-rating.value-11 .bp-star-container .bp-star:nth-child(-n+11) svg.star-filled, .bp-rating.value-12 .bp-star-container .bp-star:nth-child(-n+12) svg.star-filled, .bp-star.filled i.star-empty, .bp-rating.value-1 .bp-star-container .bp-star:nth-child(-n+1) i.star-empty, .bp-rating.value-2 .bp-star-container .bp-star:nth-child(-n+2) i.star-empty, .bp-rating.value-3 .bp-star-container .bp-star:nth-child(-n+3) i.star-empty, .bp-rating.value-4 .bp-star-container .bp-star:nth-child(-n+4) i.star-empty, .bp-rating.value-5 .bp-star-container .bp-star:nth-child(-n+5) i.star-empty, .bp-rating.value-6 .bp-star-container .bp-star:nth-child(-n+6) i.star-empty, .bp-rating.value-7 .bp-star-container .bp-star:nth-child(-n+7) i.star-empty, .bp-rating.value-8 .bp-star-container .bp-star:nth-child(-n+8) i.star-empty, .bp-rating.value-9 .bp-star-container .bp-star:nth-child(-n+9) i.star-empty, .bp-rating.value-10 .bp-star-container .bp-star:nth-child(-n+10) i.star-empty, .bp-rating.value-11 .bp-star-container .bp-star:nth-child(-n+11) i.star-empty, .bp-rating.value-12 .bp-star-container .bp-star:nth-child(-n+12) i.star-empty, .bp-star.filled i.star-filled, .bp-rating.value-1 .bp-star-container .bp-star:nth-child(-n+1) i.star-filled, .bp-rating.value-2 .bp-star-container .bp-star:nth-child(-n+2) i.star-filled, .bp-rating.value-3 .bp-star-container .bp-star:nth-child(-n+3) i.star-filled, .bp-rating.value-4 .bp-star-container .bp-star:nth-child(-n+4) i.star-filled, .bp-rating.value-5 .bp-star-container .bp-star:nth-child(-n+5) i.star-filled, .bp-rating.value-6 .bp-star-container .bp-star:nth-child(-n+6) i.star-filled, .bp-rating.value-7 .bp-star-container .bp-star:nth-child(-n+7) i.star-filled, .bp-rating.value-8 .bp-star-container .bp-star:nth-child(-n+8) i.star-filled, .bp-rating.value-9 .bp-star-container .bp-star:nth-child(-n+9) i.star-filled, .bp-rating.value-10 .bp-star-container .bp-star:nth-child(-n+10) i.star-filled, .bp-rating.value-11 .bp-star-container .bp-star:nth-child(-n+11) i.star-filled, .bp-rating.value-12 .bp-star-container .bp-star:nth-child(-n+12) i.star-filled {
     opacity: 0;
 }
 
-.star.filled svg.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) svg.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) svg.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) svg.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) svg.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) svg.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) svg.star-filled, .rating.value-7 .star-container .star:nth-child(-n+7) svg.star-filled, .rating.value-8 .star-container .star:nth-child(-n+8) svg.star-filled, .rating.value-9 .star-container .star:nth-child(-n+9) svg.star-filled, .rating.value-10 .star-container .star:nth-child(-n+10) svg.star-filled, .rating.value-11 .star-container .star:nth-child(-n+11) svg.star-filled, .rating.value-12 .star-container .star:nth-child(-n+12) svg.star-filled, .rating.hover:hover.hover-1 .star-container .star:nth-child(-n+1) svg.star-filled, .rating.hover:hover.hover-2 .star-container .star:nth-child(-n+2) svg.star-filled, .rating.hover:hover.hover-3 .star-container .star:nth-child(-n+3) svg.star-filled, .rating.hover:hover.hover-4 .star-container .star:nth-child(-n+4) svg.star-filled, .rating.hover:hover.hover-5 .star-container .star:nth-child(-n+5) svg.star-filled, .rating.hover:hover.hover-6 .star-container .star:nth-child(-n+6) svg.star-filled, .star.filled i.star-filled, .rating.value-1 .star-container .star:nth-child(-n+1) i.star-filled, .rating.value-2 .star-container .star:nth-child(-n+2) i.star-filled, .rating.value-3 .star-container .star:nth-child(-n+3) i.star-filled, .rating.value-4 .star-container .star:nth-child(-n+4) i.star-filled, .rating.value-5 .star-container .star:nth-child(-n+5) i.star-filled, .rating.value-6 .star-container .star:nth-child(-n+6) i.star-filled, .rating.value-7 .star-container .star:nth-child(-n+7) i.star-filled, .rating.value-8 .star-container .star:nth-child(-n+8) i.star-filled, .rating.value-9 .star-container .star:nth-child(-n+9) i.star-filled, .rating.value-10 .star-container .star:nth-child(-n+10) i.star-filled, .rating.value-11 .star-container .star:nth-child(-n+11) i.star-filled, .rating.value-12 .star-container .star:nth-child(-n+12) i.star-filled, .rating.hover:hover.hover-1 .star-container .star:nth-child(-n+1) i.star-filled, .rating.hover:hover.hover-2 .star-container .star:nth-child(-n+2) i.star-filled, .rating.hover:hover.hover-3 .star-container .star:nth-child(-n+3) i.star-filled, .rating.hover:hover.hover-4 .star-container .star:nth-child(-n+4) i.star-filled, .rating.hover:hover.hover-5 .star-container .star:nth-child(-n+5) i.star-filled, .rating.hover:hover.hover-6 .star-container .star:nth-child(-n+6) i.star-filled {
+.bp-star.filled svg.star-filled, .bp-rating.value-1 .bp-star-container .bp-star:nth-child(-n+1) svg.star-filled, .bp-rating.value-2 .bp-star-container .bp-star:nth-child(-n+2) svg.star-filled, .bp-rating.value-3 .bp-star-container .bp-star:nth-child(-n+3) svg.star-filled, .bp-rating.value-4 .bp-star-container .bp-star:nth-child(-n+4) svg.star-filled, .bp-rating.value-5 .bp-star-container .bp-star:nth-child(-n+5) svg.star-filled, .bp-rating.value-6 .bp-star-container .bp-star:nth-child(-n+6) svg.star-filled, .bp-rating.value-7 .bp-star-container .bp-star:nth-child(-n+7) svg.star-filled, .bp-rating.value-8 .bp-star-container .bp-star:nth-child(-n+8) svg.star-filled, .bp-rating.value-9 .bp-star-container .bp-star:nth-child(-n+9) svg.star-filled, .bp-rating.value-10 .bp-star-container .bp-star:nth-child(-n+10) svg.star-filled, .bp-rating.value-11 .bp-star-container .bp-star:nth-child(-n+11) svg.star-filled, .bp-rating.value-12 .bp-star-container .bp-star:nth-child(-n+12) svg.star-filled, .bp-star.filled i.star-filled, .bp-rating.value-1 .bp-star-container .bp-star:nth-child(-n+1) i.star-filled, .bp-rating.value-2 .bp-star-container .bp-star:nth-child(-n+2) i.star-filled, .bp-rating.value-3 .bp-star-container .bp-star:nth-child(-n+3) i.star-filled, .bp-rating.value-4 .bp-star-container .bp-star:nth-child(-n+4) i.star-filled, .bp-rating.value-5 .bp-star-container .bp-star:nth-child(-n+5) i.star-filled, .bp-rating.value-6 .bp-star-container .bp-star:nth-child(-n+6) i.star-filled, .bp-rating.value-7 .bp-star-container .bp-star:nth-child(-n+7) i.star-filled, .bp-rating.value-8 .bp-star-container .bp-star:nth-child(-n+8) i.star-filled, .bp-rating.value-9 .bp-star-container .bp-star:nth-child(-n+9) i.star-filled, .bp-rating.value-10 .bp-star-container .bp-star:nth-child(-n+10) i.star-filled, .bp-rating.value-11 .bp-star-container .bp-star:nth-child(-n+11) i.star-filled, .bp-rating.value-12 .bp-star-container .bp-star:nth-child(-n+12) i.star-filled {
     opacity: 1;
 }
 
-.star.default svg, .star-container .star svg {
+.bp-star.default svg, .bp-star-container .bp-star.star svg {
     fill: #999;
 }
 
-.star.default i, .star-container .star i {
+.bp-star.default i, .bp-star-container .bp-star.star i {
     color: #999;
 }
 
-.star.negative svg, .rating.hover:hover.hover-1 .star-container .star svg, .rating.hover:hover.hover-2 .star-container .star svg, .rating.value-0.half .star svg, .rating.value-1.half .star-container .rating.value-0.star:nth-child(2) .star svg, .rating.value-2.half .star-container .rating.value-0.star:nth-child(3) .star svg, .rating.value-3.half .star-container .rating.value-0.star:nth-child(4) .star svg, .rating.value-4.half .star-container .rating.value-0.star:nth-child(5) .star svg, .rating.value-5.half .star-container .rating.value-0.star:nth-child(6) .star svg {
+.bp-star.negative svg, .bp-rating.value-0.half .bp-star svg, .bp-rating.value-1.half .bp-star-container .bp-rating.value-0.bp-star:nth-child(2) .bp-star svg, .bp-rating.value-2.half .bp-star-container .bp-rating.value-0.bp-star:nth-child(3) .bp-star svg, .bp-rating.value-3.half .bp-star-container .bp-rating.value-0.bp-star:nth-child(4) .bp-star svg, .bp-rating.value-4.half .bp-star-container .bp-rating.value-0.bp-star:nth-child(5) .bp-star svg, .bp-rating.value-5.half .bp-star-container .bp-rating.value-0.bp-star:nth-child(6) .bp-star svg {
     fill: #f03c56;
 }
 
-.star.negative i, .rating.hover:hover.hover-1 .star-container .star i, .rating.hover:hover.hover-2 .star-container .star i, .rating.value-0.half .star i, .rating.value-1.half .star-container .rating.value-0.star:nth-child(2) .star i, .rating.value-2.half .star-container .rating.value-0.star:nth-child(3) .star i, .rating.value-3.half .star-container .rating.value-0.star:nth-child(4) .star i, .rating.value-4.half .star-container .rating.value-0.star:nth-child(5) .star i, .rating.value-5.half .star-container .rating.value-0.star:nth-child(6) .star i {
+.bp-star.negative i, .bp-rating.value-0.half .bp-star i, .bp-rating.value-1.half .bp-star-container .bp-rating.value-0.bp-star:nth-child(2) .bp-star i, .bp-rating.value-2.half .bp-star-container .bp-rating.value-0.bp-star:nth-child(3) .bp-star i, .bp-rating.value-3.half .bp-star-container .bp-rating.value-0.bp-star:nth-child(4) .bp-star i, .bp-rating.value-4.half .bp-star-container .bp-rating.value-0.bp-star:nth-child(5) .bp-star i, .bp-rating.value-5.half .bp-star-container .bp-rating.value-0.bp-star:nth-child(6) .bp-star i {
     color: #f03c56;
 }
 
-.star.ok svg, .rating.hover:hover.hover-3 .star-container .star svg {
+.bp-star.ok svg {
     fill: #ffc058;
 }
 
-.star.ok i, .rating.hover:hover.hover-3 .star-container .star i {
+.bp-star.ok i {
     color: #ffc058;
 }
 
-.star.positive svg, .rating.value-6 .star-container .star svg, .rating.value-7 .star-container .star svg, .rating.value-8 .star-container .star svg, .rating.value-9 .star-container .star svg, .rating.value-10 .star-container .star svg, .rating.value-11 .star-container .star svg, .rating.value-12 .star-container .star svg, .rating.hover:hover.hover-4 .star-container .star svg, .rating.hover:hover.hover-5 .star-container .star svg, .rating.hover:hover.hover-6 .star-container .star svg {
+.bp-star.positive svg, .bp-rating.value-6 .bp-star-container .bp-star svg, .bp-rating.value-7 .bp-star-container .bp-star svg, .bp-rating.value-8 .bp-star-container .bp-star svg, .bp-rating.value-9 .bp-star-container .bp-star svg, .bp-rating.value-10 .bp-star-container .bp-star svg, .bp-rating.value-11 .bp-star-container .bp-star svg, .bp-rating.value-12 .bp-star-container .bp-star svg {
     fill: #7ed321;
 }
 
-.star.positive i, .rating.value-6 .star-container .star i, .rating.value-7 .star-container .star i, .rating.value-8 .star-container .star i, .rating.value-9 .star-container .star i, .rating.value-10 .star-container .star i, .rating.value-11 .star-container .star i, .rating.value-12 .star-container .star i, .rating.hover:hover.hover-4 .star-container .star i, .rating.hover:hover.hover-5 .star-container .star i, .rating.hover:hover.hover-6 .star-container .star i {
+.bp-star.positive i, .bp-rating.value-6 .bp-star-container .bp-star i, .bp-rating.value-7 .bp-star-container .bp-star i, .bp-rating.value-8 .bp-star-container .bp-star i, .bp-rating.value-9 .bp-star-container .bp-star i, .bp-rating.value-10 .bp-star-container .bp-star i, .bp-rating.value-11 .bp-star-container .bp-star i, .bp-rating.value-12 .bp-star-container .bp-star i {
     color: #7ed321;
 }
 
-.star.svg i, .rating.star-svg i {
+.bp-star.svg i, .bp-rating.star-svg i {
     display: none;
 }
 
-.star.svg svg, .rating.star-svg svg {
+.bp-star.svg svg, .bp-rating.star-svg svg {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -194,11 +195,11 @@ Disabled
     display: flex;
 }
 
-.star.custom-icon svg, .rating.star-custom-icon svg, .rating.theme-kununu .star-container .star svg, .star.icon svg, .rating.star-icon svg {
+.bp-star.custom-icon svg, .bp-rating.star-custom-icon svg, .rating.theme-kununu .star-container .star svg, .bp-star.icon svg, .bp-rating.star-icon svg {
     display: none;
 }
 
-.star.custom-icon i, .rating.star-custom-icon i, .rating.theme-kununu .star-container .star i, .star.icon i, .rating.star-icon i {
+.bp-star.custom-icon i, .bp-rating.star-custom-icon i, .rating.theme-kununu .star-container .star i, .bp-star.icon i, .bp-rating.star-icon i {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -206,48 +207,48 @@ Disabled
     display: flex;
 }
 
-.star.small, .rating.small .star {
+.bp-star.small, .bp-rating.small .bp-star {
     width: 10px;
     height: 9, 5px;
 }
 
-.star.small i, .rating.small .star i {
+.bp-star.small i, .bp-rating.small .bp-star i {
     font-size: 11px;
     line-height: 10px;
 }
 
-.star.medium, .rating.medium .star {
+.bp-star.medium, .bp-rating.medium .bp-star {
     width: 20px;
     height: 20px;
 }
 
-.star.medium i, .rating.medium .star i {
+.bp-star.medium i, .bp-rating.medium .bp-star i {
     font-size: 25px;
     line-height: 25px;
 }
 
-.star.large, .rating.large .star {
+.bp-star.large, .bp-rating.large .bp-star {
     width: 35px;
     height: 33.3px;
 }
 
-.star.large i, .rating.large .star i {
+.bp-star.large i, .bp-rating.large .bp-star i {
     font-size: 36px;
     line-height: 35px;
 }
 
-.star.disabled, .rating.disabled .star-container .star {
+.bp-star.disabled, .bp-rating.disabled .bp-star-container .bp-star {
     opacity: 0.5;
 }
 
-.star.direction-rtl svg.star-half, .star-container.direction-rtl .star svg.star-half, .rating.direction-rtl .star-container .star svg.star-half, .star.direction-rtl i.star-half, .star-container.direction-rtl .star i.star-half, .rating.direction-rtl .star-container .star i.star-half {
+.bp-star.direction-rtl svg.star-half, .bp-star-container.direction-rtl .star svg.star-half, .bp-rating.direction-rtl .bp-star-container .star svg.star-half, .bp-rating.direction-rtl .bp-star-container .bp-star svg.star-half, .bp-star.direction-rtl i.star-half, .bp-star-container.direction-rtl .star i.star-half, .bp-rating.direction-rtl .bp-star-container .star i.star-half, .bp-rating.direction-rtl .bp-star-container .bp-star i.star-half {
     -webkit-transform: scale(-1, 1);
     -moz-transform: scale(-1, 1);
     -ms-transform: scale(-1, 1);
     transform: scale(-1, 1);
 }
 
-.star.direction-ltr svg.star-half, .star-container.direction-ltr .star svg.star-half, .star.direction-ltr i.star-half, .star-container.direction-ltr .star i.star-half {
+.bp-star.direction-ltr svg.star-half, .bp-star-container.direction-ltr .star svg.star-half, .bp-star.direction-ltr i.star-half, .bp-star-container.direction-ltr .star i.star-half {
     -webkit-transform: scale(1, 1);
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
@@ -257,7 +258,7 @@ Disabled
 /*
 Label Element
 ===================================================================*/
-.label-value {
+.bp-label-value {
     font-size: 18px;
     line-height: 18px;
     /*
@@ -268,29 +269,29 @@ Label Element
   =================================================*/
 }
 
-.label-value.small, .rating.small .label-value {
+.bp-label-value.small, .bp-rating.small .bp-label-value {
     font-size: 9.5px;
     line-height: 9.5px;
 }
 
-.label-value.medium, .rating.medium .label-value {
+.bp-label-value.medium, .bp-rating.medium .bp-label-value {
     font-size: 18px;
     line-height: 25px;
 }
 
-.label-value.large, .rating.large .label-value {
+.bp-label-value.large, .bp-rating.large .bp-label-value {
     font-size: 28px;
     line-height: 35px;
 }
 
-.label-value.disabled, .rating.disabled .label-value {
+.bp-label-value.disabled, .bp-rating.disabled .bp-label-value {
     opacity: 0.5;
 }
 
 /*
 Star Container
 ==================================================================*/
-.star-container {
+.bp-star-container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -324,39 +325,39 @@ Star Container
   ======================================================*/
 }
 
-.star-container + .star {
+.bp-star-container + .star {
     margin-left: 5px;
 }
 
-.star-container .star {
+.bp-star-container .star {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
-.star-container .star svg, .star-container .star i {
+.bp-star-container .star svg, .bp-star-container .star i {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
-.star-container svg {
+.bp-star-container svg {
     z-index: 2;
 }
 
-.star-container i {
+.bp-star-container i {
     z-index: 1;
 }
 
-.star-container.direction-rtl, .rating.direction-rtl .star-container {
+.bp-star-container.direction-rtl, .bp-rating.direction-rtl .bp-star-container {
     direction: rtl;
 }
 
-.star-container.direction-ltr {
+.bp-star-container.direction-ltr {
     direction: ltr;
 }
 
-.star-container.space-no, .rating.space-no .star-container {
+.bp-star-container.space-no, .bp-rating.space-no .bp-star-container {
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 auto;
     -moz-box-flex: 1;
@@ -369,7 +370,7 @@ Star Container
     justify-content: center;
 }
 
-.star-container.space-between, .rating.space-between .star-container {
+.bp-star-container.space-between, .bp-rating.space-between .bp-star-container {
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 auto;
     -moz-box-flex: 1;
@@ -382,7 +383,7 @@ Star Container
     justify-content: space-between;
 }
 
-.star-container.space-around, .rating.space-around .star-container {
+.bp-star-container.space-around, .bp-rating.space-around .bp-star-container {
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 auto;
     -moz-box-flex: 1;
@@ -396,7 +397,7 @@ Star Container
 /*
 Rating Component
 ========================================================================= */
-.rating {
+.bp-rating {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -440,59 +441,203 @@ Rating Component
  ====================================================*/
 }
 
-.rating.value-1 .star-container .star svg {
+.bp-rating.value-1 .bp-star-container .bp-star svg {
     fill: #f03c56;
 }
 
-.rating.value-1 .star-container .star i {
+.bp-rating.value-1 .bp-star-container .bp-star i {
     color: #f03c56;
 }
 
-.rating.value-2 .star-container .star svg {
+.bp-rating.value-2 .bp-star-container .bp-star svg {
     fill: #f03c56;
 }
 
-.rating.value-2 .star-container .star i {
+.bp-rating.value-2 .bp-star-container .bp-star i {
     color: #f03c56;
 }
 
-.rating.value-3 .star-container .star svg {
+.bp-rating.value-3 .bp-star-container .bp-star svg {
     fill: #ffc058;
 }
 
-.rating.value-3 .star-container .star i {
+.bp-rating.value-3 .bp-star-container .bp-star i {
     color: #ffc058;
 }
 
-.rating.value-4 .star-container .star svg {
+.bp-rating.value-4 .bp-star-container .bp-star svg {
     fill: #7ed321;
 }
 
-.rating.value-4 .star-container .star i {
+.bp-rating.value-4 .bp-star-container .bp-star i {
     color: #7ed321;
 }
 
-.rating.value-5 .star-container .star svg {
+.bp-rating.value-5 .bp-star-container .bp-star svg {
     fill: #7ed321;
 }
 
-.rating.value-5 .star-container .star i {
+.bp-rating.value-5 .bp-star-container .bp-star i {
     color: #7ed321;
 }
 
-.rating.value-6 .star-container .star svg {
+.bp-rating.value-6 .bp-star-container .bp-star svg {
     fill: #7ed321;
 }
 
-.rating.value-6 .star-container .star i {
+.bp-rating.value-6 .bp-star-container .bp-star i {
     color: #7ed321;
 }
 
-.rating.label-hidden .label-value {
+.bp-rating.hover:hover.value-1.half .bp-star-container .bp-star.star-half, .bp-rating.value-0.half .bp-rating.hover.bp-star:hover.value-1:nth-child(1) .bp-star-container .bp-star.star-half, .bp-rating.value-1.half .bp-star-container .bp-rating.hover.bp-star:hover.value-1:nth-child(2) .bp-star-container .bp-star.star-half, .bp-rating.value-2.half .bp-star-container .bp-rating.hover.bp-star:hover.value-1:nth-child(3) .bp-star-container .bp-star.star-half, .bp-rating.value-3.half .bp-star-container .bp-rating.hover.bp-star:hover.value-1:nth-child(4) .bp-star-container .bp-star.star-half, .bp-rating.value-4.half .bp-star-container .bp-rating.hover.bp-star:hover.value-1:nth-child(5) .bp-star-container .bp-star.star-half, .bp-rating.value-5.half .bp-star-container .bp-rating.hover.bp-star:hover.value-1:nth-child(6) .bp-star-container .bp-star.star-half, .bp-rating.hover:hover.value-1.half .bp-star-container .bp-star.star-filled, .bp-rating.value-0.half .bp-rating.hover.bp-star:hover.value-1:nth-child(1) .bp-star-container .bp-star.star-filled, .bp-rating.value-1.half .bp-star-container .bp-rating.hover.bp-star:hover.value-1:nth-child(2) .bp-star-container .bp-star.star-filled, .bp-rating.value-2.half .bp-star-container .bp-rating.hover.bp-star:hover.value-1:nth-child(3) .bp-star-container .bp-star.star-filled, .bp-rating.value-3.half .bp-star-container .bp-rating.hover.bp-star:hover.value-1:nth-child(4) .bp-star-container .bp-star.star-filled, .bp-rating.value-4.half .bp-star-container .bp-rating.hover.bp-star:hover.value-1:nth-child(5) .bp-star-container .bp-star.star-filled, .bp-rating.value-5.half .bp-star-container .bp-rating.hover.bp-star:hover.value-1:nth-child(6) .bp-star-container .bp-star.star-filled, .bp-rating.hover:hover.hover-1 .bp-star-container .bp-star.star-half, .bp-rating.hover:hover.hover-1 .bp-star-container .bp-star.star-filled {
+    opacity: 0;
+}
+
+.bp-rating.hover:hover.value-1.half .bp-star-container .bp-star.star-empty, .bp-rating.value-0.half .bp-rating.hover.bp-star:hover.value-1:nth-child(1) .bp-star-container .bp-star.star-empty, .bp-rating.value-1.half .bp-star-container .bp-rating.hover.bp-star:hover.value-1:nth-child(2) .bp-star-container .bp-star.star-empty, .bp-rating.value-2.half .bp-star-container .bp-rating.hover.bp-star:hover.value-1:nth-child(3) .bp-star-container .bp-star.star-empty, .bp-rating.value-3.half .bp-star-container .bp-rating.hover.bp-star:hover.value-1:nth-child(4) .bp-star-container .bp-star.star-empty, .bp-rating.value-4.half .bp-star-container .bp-rating.hover.bp-star:hover.value-1:nth-child(5) .bp-star-container .bp-star.star-empty, .bp-rating.value-5.half .bp-star-container .bp-rating.hover.bp-star:hover.value-1:nth-child(6) .bp-star-container .bp-star.star-empty, .bp-rating.hover:hover.hover-1 .bp-star-container .bp-star.star-empty {
+    opacity: 1;
+}
+
+.bp-rating.hover:hover.hover-1 .bp-star-container .bp-star:nth-child(-n+1) svg.star-empty, .bp-rating.hover:hover.hover-1 .bp-star-container .bp-star:nth-child(-n+1) svg.star-filled, .bp-rating.hover:hover.hover-1 .bp-star-container .bp-star:nth-child(-n+1) i.star-empty, .bp-rating.hover:hover.hover-1 .bp-star-container .bp-star:nth-child(-n+1) i.star-filled {
+    opacity: 0;
+}
+
+.bp-rating.hover:hover.hover-1 .bp-star-container .bp-star:nth-child(-n+1) svg.star-filled, .bp-rating.hover:hover.hover-1 .bp-star-container .bp-star:nth-child(-n+1) i.star-filled {
+    opacity: 1;
+}
+
+.bp-rating.hover:hover.hover-1 .bp-star-container .bp-star svg {
+    fill: #f03c56;
+}
+
+.bp-rating.hover:hover.hover-1 .bp-star-container .bp-star i {
+    color: #f03c56;
+}
+
+.bp-rating.hover:hover.value-2.half .bp-star-container .bp-star.star-half, .bp-rating.value-0.half .bp-rating.hover.bp-star:hover.value-2:nth-child(1) .bp-star-container .bp-star.star-half, .bp-rating.value-1.half .bp-star-container .bp-rating.hover.bp-star:hover.value-2:nth-child(2) .bp-star-container .bp-star.star-half, .bp-rating.value-2.half .bp-star-container .bp-rating.hover.bp-star:hover.value-2:nth-child(3) .bp-star-container .bp-star.star-half, .bp-rating.value-3.half .bp-star-container .bp-rating.hover.bp-star:hover.value-2:nth-child(4) .bp-star-container .bp-star.star-half, .bp-rating.value-4.half .bp-star-container .bp-rating.hover.bp-star:hover.value-2:nth-child(5) .bp-star-container .bp-star.star-half, .bp-rating.value-5.half .bp-star-container .bp-rating.hover.bp-star:hover.value-2:nth-child(6) .bp-star-container .bp-star.star-half, .bp-rating.hover:hover.value-2.half .bp-star-container .bp-star.star-filled, .bp-rating.value-0.half .bp-rating.hover.bp-star:hover.value-2:nth-child(1) .bp-star-container .bp-star.star-filled, .bp-rating.value-1.half .bp-star-container .bp-rating.hover.bp-star:hover.value-2:nth-child(2) .bp-star-container .bp-star.star-filled, .bp-rating.value-2.half .bp-star-container .bp-rating.hover.bp-star:hover.value-2:nth-child(3) .bp-star-container .bp-star.star-filled, .bp-rating.value-3.half .bp-star-container .bp-rating.hover.bp-star:hover.value-2:nth-child(4) .bp-star-container .bp-star.star-filled, .bp-rating.value-4.half .bp-star-container .bp-rating.hover.bp-star:hover.value-2:nth-child(5) .bp-star-container .bp-star.star-filled, .bp-rating.value-5.half .bp-star-container .bp-rating.hover.bp-star:hover.value-2:nth-child(6) .bp-star-container .bp-star.star-filled, .bp-rating.hover:hover.hover-2 .bp-star-container .bp-star.star-half, .bp-rating.hover:hover.hover-2 .bp-star-container .bp-star.star-filled {
+    opacity: 0;
+}
+
+.bp-rating.hover:hover.value-2.half .bp-star-container .bp-star.star-empty, .bp-rating.value-0.half .bp-rating.hover.bp-star:hover.value-2:nth-child(1) .bp-star-container .bp-star.star-empty, .bp-rating.value-1.half .bp-star-container .bp-rating.hover.bp-star:hover.value-2:nth-child(2) .bp-star-container .bp-star.star-empty, .bp-rating.value-2.half .bp-star-container .bp-rating.hover.bp-star:hover.value-2:nth-child(3) .bp-star-container .bp-star.star-empty, .bp-rating.value-3.half .bp-star-container .bp-rating.hover.bp-star:hover.value-2:nth-child(4) .bp-star-container .bp-star.star-empty, .bp-rating.value-4.half .bp-star-container .bp-rating.hover.bp-star:hover.value-2:nth-child(5) .bp-star-container .bp-star.star-empty, .bp-rating.value-5.half .bp-star-container .bp-rating.hover.bp-star:hover.value-2:nth-child(6) .bp-star-container .bp-star.star-empty, .bp-rating.hover:hover.hover-2 .bp-star-container .bp-star.star-empty {
+    opacity: 1;
+}
+
+.bp-rating.hover:hover.hover-2 .bp-star-container .bp-star:nth-child(-n+2) svg.star-empty, .bp-rating.hover:hover.hover-2 .bp-star-container .bp-star:nth-child(-n+2) svg.star-filled, .bp-rating.hover:hover.hover-2 .bp-star-container .bp-star:nth-child(-n+2) i.star-empty, .bp-rating.hover:hover.hover-2 .bp-star-container .bp-star:nth-child(-n+2) i.star-filled {
+    opacity: 0;
+}
+
+.bp-rating.hover:hover.hover-2 .bp-star-container .bp-star:nth-child(-n+2) svg.star-filled, .bp-rating.hover:hover.hover-2 .bp-star-container .bp-star:nth-child(-n+2) i.star-filled {
+    opacity: 1;
+}
+
+.bp-rating.hover:hover.hover-2 .bp-star-container .bp-star svg {
+    fill: #f03c56;
+}
+
+.bp-rating.hover:hover.hover-2 .bp-star-container .bp-star i {
+    color: #f03c56;
+}
+
+.bp-rating.hover:hover.value-3.half .bp-star-container .bp-star.star-half, .bp-rating.value-0.half .bp-rating.hover.bp-star:hover.value-3:nth-child(1) .bp-star-container .bp-star.star-half, .bp-rating.value-1.half .bp-star-container .bp-rating.hover.bp-star:hover.value-3:nth-child(2) .bp-star-container .bp-star.star-half, .bp-rating.value-2.half .bp-star-container .bp-rating.hover.bp-star:hover.value-3:nth-child(3) .bp-star-container .bp-star.star-half, .bp-rating.value-3.half .bp-star-container .bp-rating.hover.bp-star:hover.value-3:nth-child(4) .bp-star-container .bp-star.star-half, .bp-rating.value-4.half .bp-star-container .bp-rating.hover.bp-star:hover.value-3:nth-child(5) .bp-star-container .bp-star.star-half, .bp-rating.value-5.half .bp-star-container .bp-rating.hover.bp-star:hover.value-3:nth-child(6) .bp-star-container .bp-star.star-half, .bp-rating.hover:hover.value-3.half .bp-star-container .bp-star.star-filled, .bp-rating.value-0.half .bp-rating.hover.bp-star:hover.value-3:nth-child(1) .bp-star-container .bp-star.star-filled, .bp-rating.value-1.half .bp-star-container .bp-rating.hover.bp-star:hover.value-3:nth-child(2) .bp-star-container .bp-star.star-filled, .bp-rating.value-2.half .bp-star-container .bp-rating.hover.bp-star:hover.value-3:nth-child(3) .bp-star-container .bp-star.star-filled, .bp-rating.value-3.half .bp-star-container .bp-rating.hover.bp-star:hover.value-3:nth-child(4) .bp-star-container .bp-star.star-filled, .bp-rating.value-4.half .bp-star-container .bp-rating.hover.bp-star:hover.value-3:nth-child(5) .bp-star-container .bp-star.star-filled, .bp-rating.value-5.half .bp-star-container .bp-rating.hover.bp-star:hover.value-3:nth-child(6) .bp-star-container .bp-star.star-filled, .bp-rating.hover:hover.hover-3 .bp-star-container .bp-star.star-half, .bp-rating.hover:hover.hover-3 .bp-star-container .bp-star.star-filled {
+    opacity: 0;
+}
+
+.bp-rating.hover:hover.value-3.half .bp-star-container .bp-star.star-empty, .bp-rating.value-0.half .bp-rating.hover.bp-star:hover.value-3:nth-child(1) .bp-star-container .bp-star.star-empty, .bp-rating.value-1.half .bp-star-container .bp-rating.hover.bp-star:hover.value-3:nth-child(2) .bp-star-container .bp-star.star-empty, .bp-rating.value-2.half .bp-star-container .bp-rating.hover.bp-star:hover.value-3:nth-child(3) .bp-star-container .bp-star.star-empty, .bp-rating.value-3.half .bp-star-container .bp-rating.hover.bp-star:hover.value-3:nth-child(4) .bp-star-container .bp-star.star-empty, .bp-rating.value-4.half .bp-star-container .bp-rating.hover.bp-star:hover.value-3:nth-child(5) .bp-star-container .bp-star.star-empty, .bp-rating.value-5.half .bp-star-container .bp-rating.hover.bp-star:hover.value-3:nth-child(6) .bp-star-container .bp-star.star-empty, .bp-rating.hover:hover.hover-3 .bp-star-container .bp-star.star-empty {
+    opacity: 1;
+}
+
+.bp-rating.hover:hover.hover-3 .bp-star-container .bp-star:nth-child(-n+3) svg.star-empty, .bp-rating.hover:hover.hover-3 .bp-star-container .bp-star:nth-child(-n+3) svg.star-filled, .bp-rating.hover:hover.hover-3 .bp-star-container .bp-star:nth-child(-n+3) i.star-empty, .bp-rating.hover:hover.hover-3 .bp-star-container .bp-star:nth-child(-n+3) i.star-filled {
+    opacity: 0;
+}
+
+.bp-rating.hover:hover.hover-3 .bp-star-container .bp-star:nth-child(-n+3) svg.star-filled, .bp-rating.hover:hover.hover-3 .bp-star-container .bp-star:nth-child(-n+3) i.star-filled {
+    opacity: 1;
+}
+
+.bp-rating.hover:hover.hover-3 .bp-star-container .bp-star svg {
+    fill: #ffc058;
+}
+
+.bp-rating.hover:hover.hover-3 .bp-star-container .bp-star i {
+    color: #ffc058;
+}
+
+.bp-rating.hover:hover.value-4.half .bp-star-container .bp-star.star-half, .bp-rating.value-0.half .bp-rating.hover.bp-star:hover.value-4:nth-child(1) .bp-star-container .bp-star.star-half, .bp-rating.value-1.half .bp-star-container .bp-rating.hover.bp-star:hover.value-4:nth-child(2) .bp-star-container .bp-star.star-half, .bp-rating.value-2.half .bp-star-container .bp-rating.hover.bp-star:hover.value-4:nth-child(3) .bp-star-container .bp-star.star-half, .bp-rating.value-3.half .bp-star-container .bp-rating.hover.bp-star:hover.value-4:nth-child(4) .bp-star-container .bp-star.star-half, .bp-rating.value-4.half .bp-star-container .bp-rating.hover.bp-star:hover.value-4:nth-child(5) .bp-star-container .bp-star.star-half, .bp-rating.value-5.half .bp-star-container .bp-rating.hover.bp-star:hover.value-4:nth-child(6) .bp-star-container .bp-star.star-half, .bp-rating.hover:hover.value-4.half .bp-star-container .bp-star.star-filled, .bp-rating.value-0.half .bp-rating.hover.bp-star:hover.value-4:nth-child(1) .bp-star-container .bp-star.star-filled, .bp-rating.value-1.half .bp-star-container .bp-rating.hover.bp-star:hover.value-4:nth-child(2) .bp-star-container .bp-star.star-filled, .bp-rating.value-2.half .bp-star-container .bp-rating.hover.bp-star:hover.value-4:nth-child(3) .bp-star-container .bp-star.star-filled, .bp-rating.value-3.half .bp-star-container .bp-rating.hover.bp-star:hover.value-4:nth-child(4) .bp-star-container .bp-star.star-filled, .bp-rating.value-4.half .bp-star-container .bp-rating.hover.bp-star:hover.value-4:nth-child(5) .bp-star-container .bp-star.star-filled, .bp-rating.value-5.half .bp-star-container .bp-rating.hover.bp-star:hover.value-4:nth-child(6) .bp-star-container .bp-star.star-filled, .bp-rating.hover:hover.hover-4 .bp-star-container .bp-star.star-half, .bp-rating.hover:hover.hover-4 .bp-star-container .bp-star.star-filled {
+    opacity: 0;
+}
+
+.bp-rating.hover:hover.value-4.half .bp-star-container .bp-star.star-empty, .bp-rating.value-0.half .bp-rating.hover.bp-star:hover.value-4:nth-child(1) .bp-star-container .bp-star.star-empty, .bp-rating.value-1.half .bp-star-container .bp-rating.hover.bp-star:hover.value-4:nth-child(2) .bp-star-container .bp-star.star-empty, .bp-rating.value-2.half .bp-star-container .bp-rating.hover.bp-star:hover.value-4:nth-child(3) .bp-star-container .bp-star.star-empty, .bp-rating.value-3.half .bp-star-container .bp-rating.hover.bp-star:hover.value-4:nth-child(4) .bp-star-container .bp-star.star-empty, .bp-rating.value-4.half .bp-star-container .bp-rating.hover.bp-star:hover.value-4:nth-child(5) .bp-star-container .bp-star.star-empty, .bp-rating.value-5.half .bp-star-container .bp-rating.hover.bp-star:hover.value-4:nth-child(6) .bp-star-container .bp-star.star-empty, .bp-rating.hover:hover.hover-4 .bp-star-container .bp-star.star-empty {
+    opacity: 1;
+}
+
+.bp-rating.hover:hover.hover-4 .bp-star-container .bp-star:nth-child(-n+4) svg.star-empty, .bp-rating.hover:hover.hover-4 .bp-star-container .bp-star:nth-child(-n+4) svg.star-filled, .bp-rating.hover:hover.hover-4 .bp-star-container .bp-star:nth-child(-n+4) i.star-empty, .bp-rating.hover:hover.hover-4 .bp-star-container .bp-star:nth-child(-n+4) i.star-filled {
+    opacity: 0;
+}
+
+.bp-rating.hover:hover.hover-4 .bp-star-container .bp-star:nth-child(-n+4) svg.star-filled, .bp-rating.hover:hover.hover-4 .bp-star-container .bp-star:nth-child(-n+4) i.star-filled {
+    opacity: 1;
+}
+
+.bp-rating.hover:hover.hover-4 .bp-star-container .bp-star svg {
+    fill: #7ed321;
+}
+
+.bp-rating.hover:hover.hover-4 .bp-star-container .bp-star i {
+    color: #7ed321;
+}
+
+.bp-rating.hover:hover.value-5.half .bp-star-container .bp-star.star-half, .bp-rating.value-0.half .bp-rating.hover.bp-star:hover.value-5:nth-child(1) .bp-star-container .bp-star.star-half, .bp-rating.value-1.half .bp-star-container .bp-rating.hover.bp-star:hover.value-5:nth-child(2) .bp-star-container .bp-star.star-half, .bp-rating.value-2.half .bp-star-container .bp-rating.hover.bp-star:hover.value-5:nth-child(3) .bp-star-container .bp-star.star-half, .bp-rating.value-3.half .bp-star-container .bp-rating.hover.bp-star:hover.value-5:nth-child(4) .bp-star-container .bp-star.star-half, .bp-rating.value-4.half .bp-star-container .bp-rating.hover.bp-star:hover.value-5:nth-child(5) .bp-star-container .bp-star.star-half, .bp-rating.value-5.half .bp-star-container .bp-rating.hover.bp-star:hover.value-5:nth-child(6) .bp-star-container .bp-star.star-half, .bp-rating.hover:hover.value-5.half .bp-star-container .bp-star.star-filled, .bp-rating.value-0.half .bp-rating.hover.bp-star:hover.value-5:nth-child(1) .bp-star-container .bp-star.star-filled, .bp-rating.value-1.half .bp-star-container .bp-rating.hover.bp-star:hover.value-5:nth-child(2) .bp-star-container .bp-star.star-filled, .bp-rating.value-2.half .bp-star-container .bp-rating.hover.bp-star:hover.value-5:nth-child(3) .bp-star-container .bp-star.star-filled, .bp-rating.value-3.half .bp-star-container .bp-rating.hover.bp-star:hover.value-5:nth-child(4) .bp-star-container .bp-star.star-filled, .bp-rating.value-4.half .bp-star-container .bp-rating.hover.bp-star:hover.value-5:nth-child(5) .bp-star-container .bp-star.star-filled, .bp-rating.value-5.half .bp-star-container .bp-rating.hover.bp-star:hover.value-5:nth-child(6) .bp-star-container .bp-star.star-filled, .bp-rating.hover:hover.hover-5 .bp-star-container .bp-star.star-half, .bp-rating.hover:hover.hover-5 .bp-star-container .bp-star.star-filled {
+    opacity: 0;
+}
+
+.bp-rating.hover:hover.value-5.half .bp-star-container .bp-star.star-empty, .bp-rating.value-0.half .bp-rating.hover.bp-star:hover.value-5:nth-child(1) .bp-star-container .bp-star.star-empty, .bp-rating.value-1.half .bp-star-container .bp-rating.hover.bp-star:hover.value-5:nth-child(2) .bp-star-container .bp-star.star-empty, .bp-rating.value-2.half .bp-star-container .bp-rating.hover.bp-star:hover.value-5:nth-child(3) .bp-star-container .bp-star.star-empty, .bp-rating.value-3.half .bp-star-container .bp-rating.hover.bp-star:hover.value-5:nth-child(4) .bp-star-container .bp-star.star-empty, .bp-rating.value-4.half .bp-star-container .bp-rating.hover.bp-star:hover.value-5:nth-child(5) .bp-star-container .bp-star.star-empty, .bp-rating.value-5.half .bp-star-container .bp-rating.hover.bp-star:hover.value-5:nth-child(6) .bp-star-container .bp-star.star-empty, .bp-rating.hover:hover.hover-5 .bp-star-container .bp-star.star-empty {
+    opacity: 1;
+}
+
+.bp-rating.hover:hover.hover-5 .bp-star-container .bp-star:nth-child(-n+5) svg.star-empty, .bp-rating.hover:hover.hover-5 .bp-star-container .bp-star:nth-child(-n+5) svg.star-filled, .bp-rating.hover:hover.hover-5 .bp-star-container .bp-star:nth-child(-n+5) i.star-empty, .bp-rating.hover:hover.hover-5 .bp-star-container .bp-star:nth-child(-n+5) i.star-filled {
+    opacity: 0;
+}
+
+.bp-rating.hover:hover.hover-5 .bp-star-container .bp-star:nth-child(-n+5) svg.star-filled, .bp-rating.hover:hover.hover-5 .bp-star-container .bp-star:nth-child(-n+5) i.star-filled {
+    opacity: 1;
+}
+
+.bp-rating.hover:hover.hover-5 .bp-star-container .bp-star svg {
+    fill: #7ed321;
+}
+
+.bp-rating.hover:hover.hover-5 .bp-star-container .bp-star i {
+    color: #7ed321;
+}
+
+.bp-rating.hover:hover.value-6.half .bp-star-container .bp-star.star-half, .bp-rating.value-0.half .bp-rating.hover.bp-star:hover.value-6:nth-child(1) .bp-star-container .bp-star.star-half, .bp-rating.value-1.half .bp-star-container .bp-rating.hover.bp-star:hover.value-6:nth-child(2) .bp-star-container .bp-star.star-half, .bp-rating.value-2.half .bp-star-container .bp-rating.hover.bp-star:hover.value-6:nth-child(3) .bp-star-container .bp-star.star-half, .bp-rating.value-3.half .bp-star-container .bp-rating.hover.bp-star:hover.value-6:nth-child(4) .bp-star-container .bp-star.star-half, .bp-rating.value-4.half .bp-star-container .bp-rating.hover.bp-star:hover.value-6:nth-child(5) .bp-star-container .bp-star.star-half, .bp-rating.value-5.half .bp-star-container .bp-rating.hover.bp-star:hover.value-6:nth-child(6) .bp-star-container .bp-star.star-half, .bp-rating.hover:hover.value-6.half .bp-star-container .bp-star.star-filled, .bp-rating.value-0.half .bp-rating.hover.bp-star:hover.value-6:nth-child(1) .bp-star-container .bp-star.star-filled, .bp-rating.value-1.half .bp-star-container .bp-rating.hover.bp-star:hover.value-6:nth-child(2) .bp-star-container .bp-star.star-filled, .bp-rating.value-2.half .bp-star-container .bp-rating.hover.bp-star:hover.value-6:nth-child(3) .bp-star-container .bp-star.star-filled, .bp-rating.value-3.half .bp-star-container .bp-rating.hover.bp-star:hover.value-6:nth-child(4) .bp-star-container .bp-star.star-filled, .bp-rating.value-4.half .bp-star-container .bp-rating.hover.bp-star:hover.value-6:nth-child(5) .bp-star-container .bp-star.star-filled, .bp-rating.value-5.half .bp-star-container .bp-rating.hover.bp-star:hover.value-6:nth-child(6) .bp-star-container .bp-star.star-filled, .bp-rating.hover:hover.hover-6 .bp-star-container .bp-star.star-half, .bp-rating.hover:hover.hover-6 .bp-star-container .bp-star.star-filled {
+    opacity: 0;
+}
+
+.bp-rating.hover:hover.value-6.half .bp-star-container .bp-star.star-empty, .bp-rating.value-0.half .bp-rating.hover.bp-star:hover.value-6:nth-child(1) .bp-star-container .bp-star.star-empty, .bp-rating.value-1.half .bp-star-container .bp-rating.hover.bp-star:hover.value-6:nth-child(2) .bp-star-container .bp-star.star-empty, .bp-rating.value-2.half .bp-star-container .bp-rating.hover.bp-star:hover.value-6:nth-child(3) .bp-star-container .bp-star.star-empty, .bp-rating.value-3.half .bp-star-container .bp-rating.hover.bp-star:hover.value-6:nth-child(4) .bp-star-container .bp-star.star-empty, .bp-rating.value-4.half .bp-star-container .bp-rating.hover.bp-star:hover.value-6:nth-child(5) .bp-star-container .bp-star.star-empty, .bp-rating.value-5.half .bp-star-container .bp-rating.hover.bp-star:hover.value-6:nth-child(6) .bp-star-container .bp-star.star-empty, .bp-rating.hover:hover.hover-6 .bp-star-container .bp-star.star-empty {
+    opacity: 1;
+}
+
+.bp-rating.hover:hover.hover-6 .bp-star-container .bp-star:nth-child(-n+6) svg.star-empty, .bp-rating.hover:hover.hover-6 .bp-star-container .bp-star:nth-child(-n+6) svg.star-filled, .bp-rating.hover:hover.hover-6 .bp-star-container .bp-star:nth-child(-n+6) i.star-empty, .bp-rating.hover:hover.hover-6 .bp-star-container .bp-star:nth-child(-n+6) i.star-filled {
+    opacity: 0;
+}
+
+.bp-rating.hover:hover.hover-6 .bp-star-container .bp-star:nth-child(-n+6) svg.star-filled, .bp-rating.hover:hover.hover-6 .bp-star-container .bp-star:nth-child(-n+6) i.star-filled {
+    opacity: 1;
+}
+
+.bp-rating.hover:hover.hover-6 .bp-star-container .bp-star svg {
+    fill: #7ed321;
+}
+
+.bp-rating.hover:hover.hover-6 .bp-star-container .bp-star i {
+    color: #7ed321;
+}
+
+.bp-rating.label-hidden .bp-label-value {
     display: none;
 }
 
-.rating.label-visible {
+.bp-rating.label-visible {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -500,7 +645,7 @@ Rating Component
     display: flex;
 }
 
-.rating.label-top {
+.bp-rating.label-top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -510,13 +655,13 @@ Rating Component
     flex-direction: column;
 }
 
-.rating.label-top .label-value + .star-container {
+.bp-rating.label-top .bp-label-value + .bp-star-container {
     margin-left: 0;
     margin-right: 0;
     margin-top: 5px;
 }
 
-.rating.label-left .label-value {
+.bp-rating.label-left .bp-label-value {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 auto;
     -moz-box-flex: 0;
@@ -524,12 +669,12 @@ Rating Component
     flex: 0 0 auto;
 }
 
-.rating.label-left .label-value + .star-container {
+.bp-rating.label-left .bp-label-value + .bp-star-container {
     margin-left: 5px;
     margin-right: 0;
 }
 
-.rating.label-right {
+.bp-rating.label-right {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
     -webkit-flex-direction: row-reverse;
@@ -539,12 +684,12 @@ Rating Component
     flex-direction: row-reverse;
 }
 
-.rating.label-right .label-value + .star-container {
+.bp-rating.label-right .bp-label-value + .bp-star-container {
     margin-left: 0;
     margin-right: 5px;
 }
 
-.rating.label-bottom {
+.bp-rating.label-bottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -webkit-flex-direction: column-reverse;
@@ -554,101 +699,101 @@ Rating Component
     flex-direction: column-reverse;
 }
 
-.rating.label-bottom .label-value + .star-container {
+.bp-rating.label-bottom .bp-label-value + .bp-star-container {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 5px;
 }
 
-.rating.direction-rtl {
+.bp-rating.direction-rtl {
     direction: rtl;
 }
 
-.rating.direction-ltr {
+.bp-rating.direction-ltr {
     direction: ltr;
 }
 
-.rating.color-default .star-container .star svg {
+.bp-rating.color-default .bp-star-container .bp-star svg {
     fill: #999 !important;
 }
 
-.rating.color-default .star-container .star i {
+.bp-rating.color-default .bp-star-container .bp-star i {
     color: #999 !important;
 }
 
-.rating.color-ok .star-container .star svg {
+.bp-rating.color-ok .bp-star-container .bp-star svg {
     fill: #ffc058 !important;
 }
 
-.rating.color-ok .star-container .star i {
+.bp-rating.color-ok .bp-star-container .bp-star i {
     color: #ffc058 !important;
 }
 
-.rating.color-positive .star-container .star svg {
+.bp-rating.color-positive .bp-star-container .bp-star svg {
     fill: #7ed321 !important;
 }
 
-.rating.color-positive .star-container .star i {
+.bp-rating.color-positive .bp-star-container .bp-star i {
     color: #7ed321 !important;
 }
 
-.rating.color-negative .star-container .star svg {
+.bp-rating.color-negative .bp-star-container .bp-star svg {
     fill: #f03c56 !important;
 }
 
-.rating.color-negative .star-container .star i {
+.bp-rating.color-negative .bp-star-container .bp-star i {
     color: #f03c56 !important;
 }
 
-.rating.immediately .star-container {
+.bp-rating.immediately .bp-star-container {
     -webkit-transition: all none;
     -moz-transition: all none;
     transition: all none;
 }
 
-.rating.immediately .star-container .star {
+.bp-rating.immediately .bp-star-container .bp-star {
     -webkit-transition: none;
     -moz-transition: none;
     transition: none;
 }
 
-.rating.immediately .star-container .star svg, .rating.immediately .star-container .star i {
+.bp-rating.immediately .bp-star-container .bp-star svg, .bp-rating.immediately .bp-star-container .bp-star i {
     -webkit-transition: none;
     -moz-transition: none;
     transition: none;
 }
 
-.rating.noticeable .star-container {
+.bp-rating.noticeable .bp-star-container {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
-.rating.noticeable .star-container .star {
+.bp-rating.noticeable .bp-star-container .bp-star {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
-.rating.noticeable .star-container .star svg, .rating.noticeable .star-container .star i {
+.bp-rating.noticeable .bp-star-container .bp-star svg, .bp-rating.noticeable .bp-star-container .bp-star i {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
-.rating.slow .star-container {
+.bp-rating.slow .bp-star-container {
     -webkit-transition: all 0.8s ease;
     -moz-transition: all 0.8s ease;
     transition: all 0.8s ease;
 }
 
-.rating.slow .star-container .star {
+.bp-rating.slow .bp-star-container .bp-star {
     -webkit-transition: all 0.8s ease;
     -moz-transition: all 0.8s ease;
     transition: all 0.8s ease;
 }
 
-.rating.slow .star-container .star svg, .rating.slow .star-container .star i {
+.bp-rating.slow .bp-star-container .bp-star svg, .bp-rating.slow .bp-star-container .bp-star i {
     -webkit-transition: all 0.8s ease;
     -moz-transition: all 0.8s ease;
     transition: all 0.8s ease;
@@ -848,7 +993,7 @@ Rating Component
     transform: rotate(360deg);
 }
 
-.rating.theme-rolling-stars.value-0.half .star:nth-child(1), .rating.value-0.half .rating.theme-rolling-stars.value-0.star:nth-child(1) .star:nth-child(1), .rating.value-1.half .star-container .rating.theme-rolling-stars.value-0.star:nth-child(2) .star:nth-child(1), .rating.value-2.half .star-container .rating.theme-rolling-stars.value-0.star:nth-child(3) .star:nth-child(1), .rating.value-3.half .star-container .rating.theme-rolling-stars.value-0.star:nth-child(4) .star:nth-child(1), .rating.value-4.half .star-container .rating.theme-rolling-stars.value-0.star:nth-child(5) .star:nth-child(1), .rating.value-5.half .star-container .rating.theme-rolling-stars.value-0.star:nth-child(6) .star:nth-child(1) {
+.rating.theme-rolling-stars.value-0.half .star:nth-child(1), .bp-rating.value-0.half .rating.theme-rolling-stars.value-0.bp-star:nth-child(1) .star:nth-child(1), .bp-rating.value-1.half .bp-star-container .rating.theme-rolling-stars.value-0.bp-star:nth-child(2) .star:nth-child(1), .bp-rating.value-2.half .bp-star-container .rating.theme-rolling-stars.value-0.bp-star:nth-child(3) .star:nth-child(1), .bp-rating.value-3.half .bp-star-container .rating.theme-rolling-stars.value-0.bp-star:nth-child(4) .star:nth-child(1), .bp-rating.value-4.half .bp-star-container .rating.theme-rolling-stars.value-0.bp-star:nth-child(5) .star:nth-child(1), .bp-rating.value-5.half .bp-star-container .rating.theme-rolling-stars.value-0.bp-star:nth-child(6) .star:nth-child(1) {
     -webkit-transition: -webkit-transform 1s;
     transition: -webkit-transform 1s;
     -moz-transition: transform 1s, -moz-transform 1s;
@@ -860,7 +1005,7 @@ Rating Component
     transform: rotate(360deg);
 }
 
-.rating.theme-rolling-stars.value-1.half .star-container .star:nth-child(2), .rating.value-0.half .rating.theme-rolling-stars.value-1.star:nth-child(1) .star-container .star:nth-child(2), .rating.value-1.half .star-container .rating.theme-rolling-stars.value-1.star:nth-child(2) .star-container .star:nth-child(2), .rating.value-2.half .star-container .rating.theme-rolling-stars.value-1.star:nth-child(3) .star-container .star:nth-child(2), .rating.value-3.half .star-container .rating.theme-rolling-stars.value-1.star:nth-child(4) .star-container .star:nth-child(2), .rating.value-4.half .star-container .rating.theme-rolling-stars.value-1.star:nth-child(5) .star-container .star:nth-child(2), .rating.value-5.half .star-container .rating.theme-rolling-stars.value-1.star:nth-child(6) .star-container .star:nth-child(2) {
+.rating.theme-rolling-stars.value-1.half .star-container .star:nth-child(2), .bp-rating.value-0.half .rating.theme-rolling-stars.value-1.bp-star:nth-child(1) .star-container .star:nth-child(2), .bp-rating.value-1.half .bp-star-container .rating.theme-rolling-stars.value-1.bp-star:nth-child(2) .star-container .star:nth-child(2), .bp-rating.value-2.half .bp-star-container .rating.theme-rolling-stars.value-1.bp-star:nth-child(3) .star-container .star:nth-child(2), .bp-rating.value-3.half .bp-star-container .rating.theme-rolling-stars.value-1.bp-star:nth-child(4) .star-container .star:nth-child(2), .bp-rating.value-4.half .bp-star-container .rating.theme-rolling-stars.value-1.bp-star:nth-child(5) .star-container .star:nth-child(2), .bp-rating.value-5.half .bp-star-container .rating.theme-rolling-stars.value-1.bp-star:nth-child(6) .star-container .star:nth-child(2) {
     -webkit-transition: -webkit-transform 1s;
     transition: -webkit-transform 1s;
     -moz-transition: transform 1s, -moz-transform 1s;
@@ -872,7 +1017,7 @@ Rating Component
     transform: rotate(360deg);
 }
 
-.rating.theme-rolling-stars.value-2.half .star-container .star:nth-child(3), .rating.value-0.half .rating.theme-rolling-stars.value-2.star:nth-child(1) .star-container .star:nth-child(3), .rating.value-1.half .star-container .rating.theme-rolling-stars.value-2.star:nth-child(2) .star-container .star:nth-child(3), .rating.value-2.half .star-container .rating.theme-rolling-stars.value-2.star:nth-child(3) .star-container .star:nth-child(3), .rating.value-3.half .star-container .rating.theme-rolling-stars.value-2.star:nth-child(4) .star-container .star:nth-child(3), .rating.value-4.half .star-container .rating.theme-rolling-stars.value-2.star:nth-child(5) .star-container .star:nth-child(3), .rating.value-5.half .star-container .rating.theme-rolling-stars.value-2.star:nth-child(6) .star-container .star:nth-child(3) {
+.rating.theme-rolling-stars.value-2.half .star-container .star:nth-child(3), .bp-rating.value-0.half .rating.theme-rolling-stars.value-2.bp-star:nth-child(1) .star-container .star:nth-child(3), .bp-rating.value-1.half .bp-star-container .rating.theme-rolling-stars.value-2.bp-star:nth-child(2) .star-container .star:nth-child(3), .bp-rating.value-2.half .bp-star-container .rating.theme-rolling-stars.value-2.bp-star:nth-child(3) .star-container .star:nth-child(3), .bp-rating.value-3.half .bp-star-container .rating.theme-rolling-stars.value-2.bp-star:nth-child(4) .star-container .star:nth-child(3), .bp-rating.value-4.half .bp-star-container .rating.theme-rolling-stars.value-2.bp-star:nth-child(5) .star-container .star:nth-child(3), .bp-rating.value-5.half .bp-star-container .rating.theme-rolling-stars.value-2.bp-star:nth-child(6) .star-container .star:nth-child(3) {
     -webkit-transition: -webkit-transform 1s;
     transition: -webkit-transform 1s;
     -moz-transition: transform 1s, -moz-transform 1s;
@@ -884,7 +1029,7 @@ Rating Component
     transform: rotate(360deg);
 }
 
-.rating.theme-rolling-stars.value-3.half .star-container .star:nth-child(4), .rating.value-0.half .rating.theme-rolling-stars.value-3.star:nth-child(1) .star-container .star:nth-child(4), .rating.value-1.half .star-container .rating.theme-rolling-stars.value-3.star:nth-child(2) .star-container .star:nth-child(4), .rating.value-2.half .star-container .rating.theme-rolling-stars.value-3.star:nth-child(3) .star-container .star:nth-child(4), .rating.value-3.half .star-container .rating.theme-rolling-stars.value-3.star:nth-child(4) .star-container .star:nth-child(4), .rating.value-4.half .star-container .rating.theme-rolling-stars.value-3.star:nth-child(5) .star-container .star:nth-child(4), .rating.value-5.half .star-container .rating.theme-rolling-stars.value-3.star:nth-child(6) .star-container .star:nth-child(4) {
+.rating.theme-rolling-stars.value-3.half .star-container .star:nth-child(4), .bp-rating.value-0.half .rating.theme-rolling-stars.value-3.bp-star:nth-child(1) .star-container .star:nth-child(4), .bp-rating.value-1.half .bp-star-container .rating.theme-rolling-stars.value-3.bp-star:nth-child(2) .star-container .star:nth-child(4), .bp-rating.value-2.half .bp-star-container .rating.theme-rolling-stars.value-3.bp-star:nth-child(3) .star-container .star:nth-child(4), .bp-rating.value-3.half .bp-star-container .rating.theme-rolling-stars.value-3.bp-star:nth-child(4) .star-container .star:nth-child(4), .bp-rating.value-4.half .bp-star-container .rating.theme-rolling-stars.value-3.bp-star:nth-child(5) .star-container .star:nth-child(4), .bp-rating.value-5.half .bp-star-container .rating.theme-rolling-stars.value-3.bp-star:nth-child(6) .star-container .star:nth-child(4) {
     -webkit-transition: -webkit-transform 1s;
     transition: -webkit-transform 1s;
     -moz-transition: transform 1s, -moz-transform 1s;
@@ -896,7 +1041,7 @@ Rating Component
     transform: rotate(360deg);
 }
 
-.rating.theme-rolling-stars.value-4.half .star-container .star:nth-child(5), .rating.value-0.half .rating.theme-rolling-stars.value-4.star:nth-child(1) .star-container .star:nth-child(5), .rating.value-1.half .star-container .rating.theme-rolling-stars.value-4.star:nth-child(2) .star-container .star:nth-child(5), .rating.value-2.half .star-container .rating.theme-rolling-stars.value-4.star:nth-child(3) .star-container .star:nth-child(5), .rating.value-3.half .star-container .rating.theme-rolling-stars.value-4.star:nth-child(4) .star-container .star:nth-child(5), .rating.value-4.half .star-container .rating.theme-rolling-stars.value-4.star:nth-child(5) .star-container .star:nth-child(5), .rating.value-5.half .star-container .rating.theme-rolling-stars.value-4.star:nth-child(6) .star-container .star:nth-child(5) {
+.rating.theme-rolling-stars.value-4.half .star-container .star:nth-child(5), .bp-rating.value-0.half .rating.theme-rolling-stars.value-4.bp-star:nth-child(1) .star-container .star:nth-child(5), .bp-rating.value-1.half .bp-star-container .rating.theme-rolling-stars.value-4.bp-star:nth-child(2) .star-container .star:nth-child(5), .bp-rating.value-2.half .bp-star-container .rating.theme-rolling-stars.value-4.bp-star:nth-child(3) .star-container .star:nth-child(5), .bp-rating.value-3.half .bp-star-container .rating.theme-rolling-stars.value-4.bp-star:nth-child(4) .star-container .star:nth-child(5), .bp-rating.value-4.half .bp-star-container .rating.theme-rolling-stars.value-4.bp-star:nth-child(5) .star-container .star:nth-child(5), .bp-rating.value-5.half .bp-star-container .rating.theme-rolling-stars.value-4.bp-star:nth-child(6) .star-container .star:nth-child(5) {
     -webkit-transition: -webkit-transform 1s;
     transition: -webkit-transform 1s;
     -moz-transition: transform 1s, -moz-transform 1s;
@@ -908,7 +1053,7 @@ Rating Component
     transform: rotate(360deg);
 }
 
-.rating.theme-rolling-stars.value-5.half .star-container .star:nth-child(6), .rating.value-0.half .rating.theme-rolling-stars.value-5.star:nth-child(1) .star-container .star:nth-child(6), .rating.value-1.half .star-container .rating.theme-rolling-stars.value-5.star:nth-child(2) .star-container .star:nth-child(6), .rating.value-2.half .star-container .rating.theme-rolling-stars.value-5.star:nth-child(3) .star-container .star:nth-child(6), .rating.value-3.half .star-container .rating.theme-rolling-stars.value-5.star:nth-child(4) .star-container .star:nth-child(6), .rating.value-4.half .star-container .rating.theme-rolling-stars.value-5.star:nth-child(5) .star-container .star:nth-child(6), .rating.value-5.half .star-container .rating.theme-rolling-stars.value-5.star:nth-child(6) .star-container .star:nth-child(6) {
+.rating.theme-rolling-stars.value-5.half .star-container .star:nth-child(6), .bp-rating.value-0.half .rating.theme-rolling-stars.value-5.bp-star:nth-child(1) .star-container .star:nth-child(6), .bp-rating.value-1.half .bp-star-container .rating.theme-rolling-stars.value-5.bp-star:nth-child(2) .star-container .star:nth-child(6), .bp-rating.value-2.half .bp-star-container .rating.theme-rolling-stars.value-5.bp-star:nth-child(3) .star-container .star:nth-child(6), .bp-rating.value-3.half .bp-star-container .rating.theme-rolling-stars.value-5.bp-star:nth-child(4) .star-container .star:nth-child(6), .bp-rating.value-4.half .bp-star-container .rating.theme-rolling-stars.value-5.bp-star:nth-child(5) .star-container .star:nth-child(6), .bp-rating.value-5.half .bp-star-container .rating.theme-rolling-stars.value-5.bp-star:nth-child(6) .star-container .star:nth-child(6) {
     -webkit-transition: -webkit-transform 1s;
     transition: -webkit-transform 1s;
     -moz-transition: transform 1s, -moz-transform 1s;
