@@ -5,7 +5,7 @@
  * ``
  * npm install gulp gulp-load-plugins wrench gulp-task-listing  --save-dev
  * ``
- * 
+ *
  *  The gulp tasks are separated into several files in the chore/gulp/tasks directory
  *
  *  When starting gulp this file will load all files located in ./gulp/tasks.
@@ -15,10 +15,11 @@
 
 'use strict';
 
-var gulp = require('gulp');
+let gulp = require('gulp');
 
-var wrench = require('wrench');
-var $ = require('gulp-load-plugins')();
+let wrench = require('wrench');
+let $ = require('gulp-load-plugins');
+let taskListing = require('gulp-task-listing');
 
 /**
  *  This will load all js or coffee files in the gulp directory
@@ -33,5 +34,5 @@ wrench.readdirSyncRecursive('./chore/gulp/tasks').filter(function(file) {
 /**
  * List the available gulp tasks
  */
-gulp.task('help', $.taskListing);
-gulp.task('default', ['help']);
+gulp.task('help', taskListing);
+gulp.task('default', gulp.series('help'));

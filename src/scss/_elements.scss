@@ -294,13 +294,13 @@ Star Container
   &.direction-rtl {
     direction: rtl;
     .star {
-      @extend .star.direction-rtl;
+      @extend .star, .direction-rtl;
     }
   }
   &.direction-ltr {
     direction: ltr;
     .star {
-      @extend .star.direction-ltr;
+      @extend .star, .direction-ltr;
     }
   }
 
