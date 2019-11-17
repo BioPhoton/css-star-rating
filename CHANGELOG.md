@@ -1,3 +1,12 @@
+## [1.2.6](https://github.com/BioPhoton/css-star-rating/compare/v1.1.3...v1.2.6) (2019-11-17)
+
+
+### Bug Fixes
+
+* **KSS docs:** Implemented KSS docs hosted on github from docs folder ([53e453d](https://github.com/BioPhoton/css-star-rating/commit/53e453d12b95b630f9042951a04990ffd81a21a0))
+
+
+
 <a name="1.2.5"></a>
 ## [1.2.5](https://github.com/BioPhoton/css-star-rating/compare/v1.1.3...v1.2.5) (2018-03-24)
 
