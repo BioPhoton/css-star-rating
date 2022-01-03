@@ -3,7 +3,7 @@
 /*
 Rating Component
 ========================================================================= */
-.rating {
+.#{$projectClass}-rating {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,12 +14,12 @@ Rating Component
   @for $i from $minRatingValue through $maxNumOfStars {
     &.value-#{$i} {
 
-      .star-container {
-        .star:nth-child(-n+#{$i}) {
+      .#{$projectClass}-star-container {
+        .#{$projectClass}-star:nth-child(-n+#{$i}) {
           @extend .filled;
         }
 
-        .star {
+        .#{$projectClass}-star {
           @if $i <= 2 {
             svg {
               fill: $color-negative-rating;
@@ -55,12 +55,12 @@ Rating Component
   @for $i from $maxNumOfStars through $maxNumOfStars*2 {
     &.value-#{$i} {
 
-      .star-container {
-        .star:nth-child(-n+#{$i}) {
-          @extend .star.filled
+      .#{$projectClass}-star-container {
+        .#{$projectClass}-star:nth-child(-n+#{$i}) {
+          @extend .#{$projectClass}-star.filled
         }
 
-        .star {
+        .#{$projectClass}-star {
           @extend .positive;
         }
       }
@@ -79,31 +79,60 @@ Rating Component
 
       &.value-#{$i}.half,
       &.hover-#{$i} {
-        .star-container {
-          .star {
-            @extend .empty;
+        .#{$projectClass}-star-container {
+          .#{$projectClass}-star {
+            &.star-half,
+            &.star-filled {
+              opacity: 0;
+            }
+            &.star-empty {
+              opacity: 1;
+            }
           }
         }
       }
 
       &.hover-#{$i} {
-        .star-container {
+        .#{$projectClass}-star-container {
 
-          .star:nth-child(-n+#{$i}) {
-            @extend .filled;
+          .#{$projectClass}-star:nth-child(-n+#{$i}) {
+            svg, i {
+              &.star-empty,
+              &.star-filled {
+                opacity: 0;
+              }
+              &.star-filled {
+                opacity: 1;
+              }
+            }
           }
 
-          .star {
+          .#{$projectClass}-star {
             @if $i <= 2 {
-              @extend .star.negative;
+              svg {
+                fill: $color-negative-rating;
+              }
+              i {
+                color: $color-negative-rating;
+              }
             }
 
             @if $i == 3 {
-              @extend .ok;
+              svg {
+                fill: $color-ok-rating;
+              }
+              i {
+                color: $color-ok-rating;
+              }
             }
 
             @if $i >= 4 {
-              @extend .positive;
+              svg {
+                fill: $color-positive-rating;
+              }
+              i {
+                color: $color-positive-rating;
+              }
             }
           }
         }
@@ -117,10 +146,10 @@ Rating Component
 
   //if we hals ratings > 0 && < 1 we color the first star
   &.value-0.half {
-    .star {
+    .#{$projectClass}-star {
       @extend .negative;
     }
-    .star:nth-child(1) {
+    .#{$projectClass}-star:nth-child(1) {
       @extend .half;
     }
   }
@@ -128,9 +157,9 @@ Rating Component
   @for $i from $minRatingValue through $maxNumOfStars {
     &.value-#{$i}.half {
 
-      .star-container {
+      .#{$projectClass}-star-container {
         @if ($i < $maxNumOfStars) {
-          .star:nth-child(#{$i+1}) {
+          .#{$projectClass}-star:nth-child(#{$i+1}) {
             @extend .half;
           }
         }
@@ -142,7 +171,7 @@ Rating Component
   /*Label Visible
   ====================================================*/
   &.label-hidden {
-    .label-value {
+    .#{$projectClass}-label-value {
       display: none;
     }
   }
@@ -155,8 +184,8 @@ Rating Component
   &.label-top {
     flex-direction: column;
 
-    .label-value {
-      + .star-container {
+    .#{$projectClass}-label-value {
+      + .#{$projectClass}-star-container {
         margin-left: 0;
         margin-right: 0;
         margin-top: $default-stars-label-margin;
@@ -164,10 +193,10 @@ Rating Component
     }
   }
 
-  &.label-left .label-value {
+  &.label-left .#{$projectClass}-label-value {
     flex: 0 0 auto;
 
-    + .star-container {
+    + .#{$projectClass}-star-container {
       margin-left: $default-stars-label-margin;
       margin-right: 0;
     }
@@ -176,8 +205,8 @@ Rating Component
   &.label-right {
     flex-direction: row-reverse;
 
-    .label-value {
-      + .star-container {
+    .#{$projectClass}-label-value {
+      + .#{$projectClass}-star-container {
         margin-left: 0;
         margin-right: $default-stars-label-margin;
       }
@@ -187,8 +216,8 @@ Rating Component
   &.label-bottom {
     flex-direction: column-reverse;
 
-    .label-value {
-      + .star-container {
+    .#{$projectClass}-label-value {
+      + .#{$projectClass}-star-container {
         margin-left: 0;
         margin-right: 0;
         margin-bottom: $default-stars-label-margin;
@@ -202,10 +231,10 @@ Rating Component
   &.direction-rtl {
     direction: rtl;
 
-    .star-container {
-      @extend .star-container.direction-rtl;
-      .star {
-        @extend .star.direction-rtl;
+    .#{$projectClass}-star-container {
+      @extend .#{$projectClass}-star-container.direction-rtl;
+      .#{$projectClass}-star {
+        @extend .#{$projectClass}-star.direction-rtl;
       }
     }
   }
@@ -216,72 +245,72 @@ Rating Component
   /* Star Type
   ====================================================*/
   &.star-icon {
-    @extend .star.icon;
+    @extend .#{$projectClass}-star.icon;
   }
   &.star-custom-icon {
-    @extend .star.custom-icon;
+    @extend .#{$projectClass}-star.custom-icon;
   }
   &.star-svg {
-    @extend .star.svg;
+    @extend .#{$projectClass}-star.svg;
   }
 
   /* Sizes
   ==========================================================*/
   &.small {
-    .star {
-      @extend .star.small;
+    .#{$projectClass}-star {
+      @extend .#{$projectClass}-star.small;
     }
 
-    .label-value {
-      @extend .label-value.small;
+    .#{$projectClass}-label-value {
+      @extend .#{$projectClass}-label-value.small;
     }
   }
 
   &.medium {
-    .star {
-      @extend .star.medium;
+    .#{$projectClass}-star {
+      @extend .#{$projectClass}-star.medium;
     }
 
-    .label-value {
-      @extend .label-value.medium;
+    .#{$projectClass}-label-value {
+      @extend .#{$projectClass}-label-value.medium;
     }
   }
 
   &.large {
-    .star {
-      @extend .star.large;
+    .#{$projectClass}-star {
+      @extend .#{$projectClass}-star.large;
     }
 
-    .label-value {
-      @extend .label-value.large;
+    .#{$projectClass}-label-value {
+      @extend .#{$projectClass}-label-value.large;
     }
   }
 
   /* Space
   ====================================================*/
   &.space-no {
-    .star-container {
-      @extend .star-container.space-no;
+    .#{$projectClass}-star-container {
+      @extend .#{$projectClass}-star-container.space-no;
     }
   }
 
   &.space-between {
-    .star-container {
-      @extend .star-container.space-between;
+    .#{$projectClass}-star-container {
+      @extend .#{$projectClass}-star-container.space-between;
     }
   }
 
   &.space-around {
-    .star-container {
-      @extend .star-container.space-around;
+    .#{$projectClass}-star-container {
+      @extend .#{$projectClass}-star-container.space-around;
     }
   }
 
   /* Static Color
     ====================================================*/
   &.color-default {
-    .star-container {
-      .star {
+    .#{$projectClass}-star-container {
+      .#{$projectClass}-star {
         svg {
           fill: $color-default-rating !important;
         }
@@ -293,8 +322,8 @@ Rating Component
   }
 
   &.color-ok {
-    .star-container {
-      .star {
+    .#{$projectClass}-star-container {
+      .#{$projectClass}-star {
         svg {
           fill: $color-ok-rating !important;
         }
@@ -306,8 +335,8 @@ Rating Component
   }
 
   &.color-positive {
-    .star-container {
-      .star {
+    .#{$projectClass}-star-container {
+      .#{$projectClass}-star {
         svg {
           fill: $color-positive-rating !important;
         }
@@ -319,8 +348,8 @@ Rating Component
   }
 
   &.color-negative {
-    .star-container {
-      .star {
+    .#{$projectClass}-star-container {
+      .#{$projectClass}-star {
         svg {
           fill: $color-negative-rating !important;
         }
@@ -334,12 +363,12 @@ Rating Component
   /*Disabled
   ====================================================*/
   &.disabled {
-    .label-value {
-      @extend .label-value.disabled;
+    .#{$projectClass}-label-value {
+      @extend .#{$projectClass}-label-value.disabled;
     }
-    .star-container {
-      .star {
-        @extend .star.disabled;
+    .#{$projectClass}-star-container {
+      .#{$projectClass}-star {
+        @extend .#{$projectClass}-star.disabled;
       }
     }
   }
@@ -347,9 +376,9 @@ Rating Component
   /*AnimationSpeed
  ====================================================*/
   &.immediately
-  .star-container {
+  .#{$projectClass}-star-container {
     transition: all $immediately-animation-type;
-    .star {
+    .#{$projectClass}-star {
       transition: $immediately-animation-type;
       svg, i {
         transition: $immediately-animation-type;
@@ -358,9 +387,9 @@ Rating Component
   }
 
   &.noticeable {
-    .star-container {
+    .#{$projectClass}-star-container {
       transition: all $default-animation-speed $default-animation-type;
-      .star {
+      .#{$projectClass}-star {
         transition: all $default-animation-speed $default-animation-type;
         svg, i {
           transition: all $default-animation-speed $default-animation-type;
@@ -370,9 +399,9 @@ Rating Component
   }
 
   &.slow {
-    .star-container {
+    .#{$projectClass}-star-container {
       transition: all $slow-animation-speed $default-animation-type;
-      .star {
+      .#{$projectClass}-star {
         transition: all $slow-animation-speed $default-animation-type;
         svg, i {
           transition: all $slow-animation-speed $default-animation-type;
