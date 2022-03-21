@@ -34,4 +34,4 @@ wrench.readdirSyncRecursive('./chore/gulp/tasks').filter(function(file) {
  * List the available gulp tasks
  */
 gulp.task('help', $.taskListing);
-gulp.task('default', ['help']);
+gulp.task('default', gulp.series('help'));

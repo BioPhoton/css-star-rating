@@ -53,7 +53,7 @@
       .star {
         height: 11px;
         width: 11px;
-        @extend .star.custom-icon;
+        @extend .custom-icon;
 
         i {
           font-size: 11px;
