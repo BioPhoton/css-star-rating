@@ -57,7 +57,7 @@ Rating Component
 
       .star-container {
         .star:nth-child(-n+#{$i}) {
-          @extend .star.filled
+          @extend .filled
         }
 
         .star {
@@ -234,7 +234,7 @@ Rating Component
     .star-container {
       @extend .star-container.direction-rtl;
       .star {
-        @extend .star.direction-rtl;
+        @extend .direction-rtl;
       }
     }
   }
@@ -245,44 +245,44 @@ Rating Component
   /* Star Type
   ====================================================*/
   &.star-icon {
-    @extend .star.icon;
+    @extend .icon;
   }
   &.star-custom-icon {
-    @extend .star.custom-icon;
+    @extend .custom-icon;
   }
   &.star-svg {
-    @extend .star.svg;
+    @extend .svg;
   }
 
   /* Sizes
   ==========================================================*/
   &.small {
     .star {
-      @extend .star.small;
+      @extend .small;
     }
 
     .label-value {
-      @extend .label-value.small;
+      @extend .small;
     }
   }
 
   &.medium {
     .star {
-      @extend .star.medium;
+      @extend .medium;
     }
 
     .label-value {
-      @extend .label-value.medium;
+      @extend .medium;
     }
   }
 
   &.large {
     .star {
-      @extend .star.large;
+      @extend .large;
     }
 
     .label-value {
-      @extend .label-value.large;
+      @extend .large;
     }
   }
 
@@ -290,19 +290,19 @@ Rating Component
   ====================================================*/
   &.space-no {
     .star-container {
-      @extend .star-container.space-no;
+      @extend .space-no;
     }
   }
 
   &.space-between {
     .star-container {
-      @extend .star-container.space-between;
+      @extend .space-between;
     }
   }
 
   &.space-around {
     .star-container {
-      @extend .star-container.space-around;
+      @extend .space-around;
     }
   }
 
@@ -364,7 +364,7 @@ Rating Component
   ====================================================*/
   &.disabled {
     .label-value {
-      @extend .label-value.disabled;
+      @extend .disabled;
     }
     .star-container {
       .star {

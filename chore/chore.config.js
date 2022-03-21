@@ -3,20 +3,20 @@
  *  which defines tasks
  */
 'use strict';
-var path = require('path');
+const path = require('path');
 module.exports = (function () {
 
-    var projectName = "Css Star Rating";
+    const projectName = "Css Star Rating";
 
-    var ENV_LOCAL = "local",
+    const ENV_LOCAL = "local",
         ENV_STAGING = "staging",
         ENV_PRODUCTION = "production",
         ENV_TESTING = "testing";
 
-    var validEnvs = [ENV_LOCAL, ENV_STAGING, ENV_PRODUCTION, ENV_TESTING];
+    const validEnvs = [ENV_LOCAL, ENV_STAGING, ENV_PRODUCTION, ENV_TESTING];
 
     //dir paths
-    var root = './',
+    const root = './',
         src = 'src',
         dist = 'dist',
 
@@ -25,8 +25,8 @@ module.exports = (function () {
         app = 'app',
         assets = 'assets';
 
-    var styleguideFolder = 'docs';
-    var styleguideCopies = [
+    const styleguideFolder = 'docs';
+    const styleguideCopies = [
         {
             src: [
                 path.join( 'src', 'assets', 'star-rating.icons.svg')
@@ -36,7 +36,7 @@ module.exports = (function () {
         }
     ];
 
-    var config = {
+    const config = {
         projectName:projectName,
         root: root,
         src: src,

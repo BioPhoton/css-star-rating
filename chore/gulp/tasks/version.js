@@ -9,21 +9,18 @@
  * ``
  */
 'use strict';
-var path = require('path');
+const path = require('path');
+const gulp = require('gulp');
+const args = require('yargs').argv;
+const helper = require('../helper');
+const merge = require('merge-stream');
+const $ = require('gulp-load-plugins')();
 
-var gulp = require('gulp'),
-  args = require('yargs').argv,
-  helper = require('../helper'),
-  merge = require('merge-stream'),
-  $ = require('gulp-load-plugins')();
+const config = require(path.join('..', '..', 'chore.config'));
 
-var config = require(path.join('..', '..', 'chore.config'));
-
-var defaultConfig = {
+const defaultConfig = {
   root: config.root,
-  appPackages: [
-    './config/base.config.json'
-  ],
+  appPackages: ['./config/base.config.json'],
   devPackages: [
     './package.json',
     './bower.json'
@@ -33,8 +30,7 @@ var defaultConfig = {
 
 //////////////////
 
-
-var versionConfig = defaultConfig;
+const versionConfig = defaultConfig;
 
 /**
  *  Overrides
@@ -49,11 +45,10 @@ if ('versionConfig' in config) {
 
 //__________________________________________________________________________________________________
 
-
-var typePre = "pre",
-  typePatch = "patch",
-  typeMinor = "minor",
-  typeMajor = "major";
+const typePre = 'pre';
+const typePatch = 'patch';
+const typeMinor = 'minor';
+const typeMajor = 'major';
 
 /**
  * Bump the version
@@ -84,7 +79,6 @@ gulp.task('version:bump-major', function (done) {
 });
 
 function bumpVersion(options, done) {
-
   var merged = merge();
 
   merged.add(
@@ -97,7 +91,8 @@ function bumpVersion(options, done) {
 
   merged.add(
     gulp
-      .src(versionConfig.appPackages).pipe($.print())
+      .src(versionConfig.appPackages)
+      .pipe($.print())
       .pipe($.bump(options))
       .pipe(gulp.dest(versionConfig.root + 'config/'))
   );
@@ -116,8 +111,7 @@ function getOptions(type, version) {
     if (type != undefined) {
       options.type = type;
       msg += 'for a ' + type;
-    }
-    else {
+    } else {
       helper.log('No param to bump version to. Task stopped!');
       return;
     }
