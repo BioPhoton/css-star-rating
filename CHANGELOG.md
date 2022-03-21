@@ -1,3 +1,18 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [1.3.0](https://github.com/BioPhoton/css-star-rating/compare/v1.1.3...v1.3.0) (2022-03-21)
+
+### Features
+
+* Support newer version of sass
+
+### Bug Fixes
+
+* **KSS docs:** Implemented KSS docs hosted on github from docs folder ([53e453d](https://github.com/BioPhoton/css-star-rating/commit/53e453d12b95b630f9042951a04990ffd81a21a0))
+* remove unused folder from dist ([ddeb090](https://github.com/BioPhoton/css-star-rating/commit/ddeb09035561a32efd0a07abbe5095328eb8b8e0))
+
 <a name="1.2.5"></a>
 ## [1.2.5](https://github.com/BioPhoton/css-star-rating/compare/v1.1.3...v1.2.5) (2018-03-24)
 
