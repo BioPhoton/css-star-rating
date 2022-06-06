@@ -1,3 +1,18 @@
+## [1.3.1](https://github.com/BioPhoton/css-star-rating/compare/v1.3.0...v1.3.1) (2022-06-06)
+
+
+### Bug Fixes
+
+* Fix [#44](https://github.com/BioPhoton/css-star-rating/issues/44)
+* remove generated dist folder from repository ([31fa356](https://github.com/BioPhoton/css-star-rating/commit/31fa3568a9a9ce14e75ac0e8a53d38d787912f2a))
+
+
+### Features
+
+* add support for newer versions of dart sass ([d304c37](https://github.com/BioPhoton/css-star-rating/commit/d304c37d98621983ad956da6bccfd42ab7141514))
+
+
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
