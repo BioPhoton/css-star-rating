@@ -72,7 +72,7 @@ Demos in the **[KSS style guide](https://biophoton.github.io/css-star-rating/)**
 If you want to use svg as icon type copy the  
 ```star-rating.icons.svg``` image form ```node_modules/css-star-rating/images/star-rating.css``` to your roots assets folder.
 
-**Use it**
+**Usage**
 ```html
 <div class="rating large star-icon direction-rtl value-1 half color-default label-top">
    <div class="label-value">1.5</div>
