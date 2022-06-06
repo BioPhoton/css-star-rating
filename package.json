@@ -1,6 +1,6 @@
 {
   "name": "css-star-rating",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "license": "MIT",
   "keywords": [
     "Rating",
@@ -64,7 +64,7 @@
     "merge-stream": "^2.0.0",
     "node-sass": "^7.0.1",
     "prettier": "^2.6.0",
-    "sass": "^1.49.9",
+    "sass": "^1.51.0",
     "sass-loader": "^12.6.0",
     "sc5-styleguide": "^2.2.0",
     "style-loader": "^3.3.1",

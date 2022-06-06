@@ -12,16 +12,16 @@
 
 'use strict';
 
-const gulp = require('gulp'),
-  helper = require('../helper'),
-  $ = require('gulp-load-plugins')({ lazy: false }),
-  //postcss = require('gulp-postcss'),
-  autoprefixer = require('gulp-autoprefixer');
-const sass = require('gulp-sass')(require('node-sass'));
+const gulp = require('gulp');
+const helper = require('../helper');
+const $ = require('gulp-load-plugins')();
+//postcss = require('gulp-postcss'),
+const autoprefixer = require('gulp-autoprefixer');
+const sass = require('gulp-sass')(require('sass'));
 
-const config = require('../../chore.config.js'),
-  assetsFolder = config.dist + 'assets/',
-  scssFoldername = 'scss/';
+const config = require('../../chore.config.js');
+const assetsFolder = config.dist + 'assets/';
+const scssFoldername = 'scss/';
 
 const defaultConfig = {
   indexFile: config.buildIndex,

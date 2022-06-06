@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@use "sass:math";
 
 /*VARIABLES
 ====================================================*/
@@ -7,7 +8,7 @@
 $minRatingValue: 1 !default;
 $maxNumOfStars: 6 !default;
 $numFractions: 3 !default;
-$fractionSize: $maxNumOfStars/$numFractions;
+$fractionSize: math.div($maxNumOfStars, $numFractions);
 
 /*Spacing*/
 $rating-margin-bottom: 5px;

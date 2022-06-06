@@ -15,10 +15,10 @@
 
 'use strict';
 
-var gulp = require('gulp');
+const gulp = require('gulp');
 
-var wrench = require('wrench');
-var $ = require('gulp-load-plugins')();
+const wrench = require('wrench');
+const $ = require('gulp-load-plugins')();
 
 /**
  *  This will load all js or coffee files in the gulp directory
