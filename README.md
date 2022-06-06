@@ -2,10 +2,8 @@
 ####  ⭐ Css Star Rating is a pure css star rating plugin based on best practice UX/UI methods. ⭐
 
 ![License](https://img.shields.io/npm/l/css-star-rating.svg) 
-![Bower Version](https://img.shields.io/bower/v/css-star-rating.svg)
-[![NPM Version](https://img.shields.io/npm/v/css-star-rating.svg)](https://www.npmjs.com/package/css-star-rating)  
-[![Standard Version](https://img.shields.io/badge/release-standard%20version-brightgreen.svg)](https://github.com/BioPhoton/css-star-rating) 
-
+[![NPM Version](https://img.shields.io/npm/v/css-star-rating.svg)](https://www.npmjs.com/package/css-star-rating) 
+[![Standard Version](https://img.shields.io/badge/release-standard%20version-brightgreen.svg)](https://github.com/BioPhoton/css-star-rating)
 [![Build Status](https://travis-ci.org/BioPhoton/css-star-rating.svg?branch=dev)](https://travis-ci.org/BioPhoton/css-star-rating)
 [![npm](https://img.shields.io/npm/dt/css-star-rating.svg)](https://www.npmjs.com/package/css-star-rating)  
 
@@ -64,16 +62,15 @@ Demos in the **[KSS style guide](https://biophoton.github.io/css-star-rating/)**
  - clone & build this repository
  - [download as .zip](https://github.com/BioPhoton/css-star-rating/releases)
  - via **[npm](https://www.npmjs.org/)**: by running `$ npm install css-star-rating` from your console
- - via **[bower](https://bower.io/)**: by running `$ bower install css-star-rating` from your console
  
 **Load library**
 ```html
-<link rel="stylesheet" href="bower_components/css-star-rating/dist/css/star-rating.css">
+<link rel="stylesheet" href="node_modules/css-star-rating/css/star-rating.css">
 ```
 
-**Copy asstes (optional)**
+**Copy assets (optional)**
 If you want to use svg as icon type copy the  
-```star-rating.icons.svg``` image form ```bower_components/css-star-rating/dist/images/star-rating.css``` to your roots assets folder.
+```star-rating.icons.svg``` image form ```node_modules/css-star-rating/images/star-rating.css``` to your roots assets folder.
 
 **Use it**
 ```html
