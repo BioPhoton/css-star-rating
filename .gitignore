@@ -6,3 +6,4 @@
 node_modules/
 /sc5-styleguide/
 /npm-debug.log
+dist/
