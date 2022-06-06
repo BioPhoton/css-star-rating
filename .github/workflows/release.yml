@@ -10,7 +10,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Setup node
         uses: actions/setup-node@v1
         with:
@@ -18,7 +18,7 @@ jobs:
       - name: Restore npm packages
         run: npm install
       - name: Build package & config git workspace
-        run: npm run project:build && git config --global --add safe.directory /github/workspace
+        run: npm run project:build
       - name: Publish if version has been updated
         if: github.ref == 'refs/heads/master'
         uses: pascalgn/npm-publish-action@1.3.8
